@@ -64,7 +64,7 @@ GitHub - https://github.com/bchiang7/v4
 
 <h1 align='center'>"To-Do-List" & "The-Done-List"</h1>
 
-### Version 3.0 🌱
+### Version 3.0 - coming soon ... 🌱
 ---------------------------------------------------
 
 <!-- VERSION 2.1 -->
