@@ -70,7 +70,7 @@ GitHub - https://github.com/bchiang7/v4
 <!-- VERSION 2.1 -->
 <details>
 <summary>
-<h4> These are some of the things I would like to do with this project </h4>
+<h3> These are some of the things I would like to do with this project </h3>
 </summary>
 A list of all the issues I have fixed and features I have added.
 <!--  no. 1 -->
