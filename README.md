@@ -6,7 +6,7 @@
 <!-- Introduction Text -->
 <div align="center">
     <h1>👋 Welcome to my Portfolio's GitHub Repo 👋 </h1>
-    <h3> ❗🔗-www.devongifford.com - vesion 2.1 </h3>
+    <h3> www.devongifford.com 🎯 - vesion 2.2 </h3>
     <h5>
         This is the second iteration of <a href="">devongifford.com🎯</a>
         <h6>
