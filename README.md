@@ -67,7 +67,6 @@ GitHub - https://github.com/bchiang7/v4
 ### Version 3.0 🌱
 ---------------------------------------------------
 
-These are some of the things I would like to do with this project
 <!-- VERSION 2.1 -->
 <details>
 <summary>
