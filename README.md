@@ -88,9 +88,8 @@ A list of all the issues I have fixed and features I have added.
 </details> 
 <!-- UPDATE TEMPLATE -->
 <details>
-<summary><h6> ISSUE / UPGRADE TEMPLATE </h6></summary>
-<li> list of issues
-<li> list of issues
+<summary><h6> - TEMPLATE - </h6></summary>
+<li> list of issues to fix
 <pre><code>
 Solution🎯
 </code></pre>
