@@ -74,9 +74,21 @@ These are some of the things I would like to do with this project
 <h4> These are some of the things I would like to do with this project </h4>
 </summary>
 A list of all the issues I have fixed and features I have added.
+<!--  no. 1 -->
+<details>
+<summary><h6> Making the main projects section's code more DRY </h6></summary>
+</details> 
+<!--  no. 2 -->
+<details>
+<summary><h6> Updating information and links </h6></summary>
+</details> 
+<!--  no. 3 -->
+<details>
+<summary><h6> Adding an initial load animation </h6></summary>
+</details> 
 <!-- UPDATE TEMPLATE -->
 <details>
-<summary><h6> ISSUE / UPGRADE </h6></summary>
+<summary><h6> ISSUE / UPGRADE TEMPLATE </h6></summary>
 <li> list of issues
 <li> list of issues
 <pre><code>
