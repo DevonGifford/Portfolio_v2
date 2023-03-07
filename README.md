@@ -170,11 +170,13 @@ Solution 🎯
 </code></pre>
 <li> Fix responsivness of noteworthy projects forsmall mobile devices
 <pre><code>
-Solution 🎯
+I solved this by turning this from a gird layout to a flex-box layout and then having min and max widths.
 </code></pre>
 <li> Fix animation loading bug 
 <pre><code>
-Solution 🎯
+My previouse fix was causing some issues of when having the more noteworthy projects open
+would cause issues when scrolling to the bottom and scrolling back up.
+I had to implement an auto-closing of more projects when scrolling past the projects section into contact.
 </code></pre>
 <li> Import small photos for moile view
 <pre><code>
