@@ -178,9 +178,14 @@ My previouse fix was causing some issues of when having the more noteworthy proj
 would cause issues when scrolling to the bottom and scrolling back up.
 I had to implement an auto-closing of more projects when scrolling past the projects section into contact.
 </code></pre>
-<li> Import small photos for moile view
+<li> Import small photos for moible view
 <pre><code>
-Solution 🎯
+This was a challenge as I wanted to implement the pictures of the project as a background image.
+So what I ended up doing was;
+- I edited/photo-shopped the images to work as a background images.
+- Implementing a tailwind style for the different background images.
+- Then using mediaqueries I could swap between the two different styles.
+Eventually I want to clean this code up and keep it DRY
 </code></pre>
 </details>
 
@@ -189,15 +194,16 @@ Solution 🎯
 <summary><h6> Contact & Footer Section </h6></summary>
 <li> Fix footer bug not showing up in medium screen sizes
 <pre><code>
-Solution 🎯
+This was simple fix of amending how the media queries were being implemented.
 </code></pre>
 <li> Adding credit to Brittany Chiangs website on all resolutions
 <pre><code>
-Solution 🎯
+I added links to Brittany's website in the footer
+I also made it so this section will alwasy be shown no matter the screen size
 </code></pre>
 <li> Increase size of headings and responsivness of text
 <pre><code>
-Solution 🎯
+This was simple styling and media-queries implementation
 </code></pre>
 </details>
 
