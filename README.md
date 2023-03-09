@@ -151,11 +151,13 @@ This was a small fix, as there was simple implementation of some styling updates
 <summary><h6> Experiences section </h6></summary>
 <li> Creating a mobile view section section - with a hidden horizontal screen 
 <pre><code>
-Solution 🎯
+This was decevingly less easy to implement as I would have to create a parent div for the sidebar.
+This was necessary to handle the overflow-x
+Additionally I wanted to hide the scroll bar and had to implement @layers in the global.css
 </code></pre>
 <li> Decrease the gap between 'About' & 'Experiences' section
 <pre><code>
-Solution 🎯
+Relativley simple however had to balance this between media queries and screen sizes and padding.
 </code></pre>
 </details>
 
