@@ -134,9 +134,11 @@ Solution🎯
 <summary><h6> About Section </h6></summary>
 <li> Complete overhaul of the layout of this section - ersponsivness issues
 <pre><code>
-Initially I was using flex box to handle this, however this was causing responsivness issues in the image section.
+Initially I was using flex box to handle this, 
+however this was causing responsivness issues in the image section.
 I decided to implement a grid style for this section on larger screens
-then add a media querey to turn it back into flex style for mobile devices to float the image in the text portion
+then add a media querey to turn it back into flex style for mobile devices 
+and to float the image in the text portion for mobile device viewing.
 </code></pre>
 <li> Update the styling of favourite technologies heading
 <pre><code>
