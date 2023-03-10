@@ -205,15 +205,16 @@ Solution 🎯
 <summary><h6> NavBar Section </h6></summary>
 <li> Create a Logo for my portfolio and include it in the Navbar Section
 <pre><code>
-Solution🎯
+Created my logo with online logo maker
 </code></pre>
 <li> Create a mobile view for the Navbar section with media queries 
 <pre><code>
-Solution🎯
+This was a little challenging at first as I had to convert my initial simple navbar to be able to incorporate all the other links that would be lost in the smaller mobile screen - such as my email and images with links to github, twitter, linkedin etc.
+Further I wanted the mobile view to have animated-loading with framer-motion 
 </code></pre>
 <li> Adding a button with a link to a pdf of my CV 
 <pre><code>
-Solution🎯
+Simple enough to incorporate as just had to include my pdf in the assets folder and then wrap it with an anchor tag to link open it in a new tab. 
 </code></pre>
 </details> 
 <!-- HOME/BANNER SECTION -->
@@ -221,11 +222,12 @@ Solution🎯
 <summary><h6> Banner Page section </h6></summary>
 <li> Include a auto typing heading effect with job titles 
 <pre><code>
-Solution🎯
+I have used this in a previouse portfolio, a portfolio I actually built with python and the flask framework.  So I found an npm package that had the same capabilities and followed the documentation to implement it.   
 </code></pre>
 <li> Include a delayed loading effect 
 <pre><code>
-Solution🎯
+Again I have used framer-motion in some past projects however because of all the different moving parts in this project I had to find a way to make it simpler to understand and use. 
+I did this by rather applying this to sections and divs instead of individual elements.
 </code></pre>
 <li> Update the links and sizing of the headings with media queries 
 <pre><code>
@@ -315,21 +317,21 @@ A high level overview and list of required componenets & thoughts behind creatin
 <summary>
 <h6> Creating basic layout and list of components made: </h6>
 </summary>
-Variouse components needed 
+Various components needed & created:
 <ul>
-<li>NavBar Secton - with a mobile and clickable
+<li>NavBar Section - with a mobile and clickable
 <li>Splash/Banner Page 
 <li>About Page - with a profile picture and list of skills
 <li>Experiences Page - copy of CV information
 <li>Capstone Project Portfolio Page
 <li>Small Projects 
-<li>Small Project Card componenets
+<li>Small Project Card components
 <li>Contact Page
 <li>Footer Page
+<li>Creating an assets folder for images, favicon and pdf's - including index.ts for exporting images
 </ul>
 <pre>
-<code>Implement the layout in the pages:
-In the pages/index.ts file (or create a new page) and import the list of components.
+<code>Implement the layout in the pages with pages/index.ts file and import the list of components.
 </code>
 </pre>
 </details>
