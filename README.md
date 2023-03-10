@@ -98,42 +98,52 @@ Solution🎯
 <h3> Version 2.1 </h3>
 </summary>
 A list of all the issues I have fixed and features I have added.
+
 <!-- NAVBAR SECTION -->
 <details>
 <summary><h6> NavBar Section </h6></summary>
 <li> Create interactive logo and fixing the broken link
 <pre><code>
-Solution🎯
+Initially I wanted this to be an interactive logo that would have some kind of a hover effect.
+However, I decided against it and rather put in a simple tailwind animation.
+Eventually I want this to reload the page.
 </code></pre>
 <li> Clean up the mobile version of the navbar - centering and styling
 <pre><code>
-Solution🎯
+This was a small fix, as there was simple implementation of some styling fixes 
+I also decided to include links to my different social media pages. 
 </code></pre>
 </details> 
+
 <!-- HOME/BANNER SECTION -->
 <details>
 <summary><h6> Banner Page section </h6></summary>
 <li> Increase the size and responsivness of the heading text's 
 <pre><code>
-Solution🎯
+This was a small fix, as there was simple implementation of some styling fixes.
+As well as some media queries.
 </code></pre>
 <li> Update button link & styling
 <pre><code>
 Solution🎯
 </code></pre>
 </details> 
+
 <!-- ABOUT SECTION -->
 <details>
 <summary><h6> About Section </h6></summary>
 <li> Complete overhaul of the layout of this section - ersponsivness issues
 <pre><code>
-Solution 🎯
+Initially I was using flex box to handle this, however this was causing responsivness issues in the image section.
+I decided to implement a grid style for this section on larger screens
+then add a media querey to turn it back into flex style for mobile devices to float the image in the text portion
 </code></pre>
 <li> Update the styling of favourite technologies heading
 <pre><code>
-Solution 🎯
+This was a small fix, as there was simple implementation of some styling updates
 </code></pre>
 </details>
+
 <!-- EXPERIENCES SECTION -->
 <details>
 <summary><h6> Experiences section </h6></summary>
@@ -146,6 +156,7 @@ Solution 🎯
 Solution 🎯
 </code></pre>
 </details>
+
 <!-- PROJECTS SECTION -->
 <details>
 <summary><h6> Projects Section </h6></summary>
@@ -166,6 +177,7 @@ Solution 🎯
 Solution 🎯
 </code></pre>
 </details>
+
 <!-- Contact & Footer Section -->
 <details>
 <summary><h6> Contact & Footer Section </h6></summary>
@@ -182,9 +194,11 @@ Solution 🎯
 Solution 🎯
 </code></pre>
 </details>
+
 </details> 
 <!-- CLOSING -->
 
+<!-- ----------------------------------------------------------------------------------- -->
 
 <!-- VERSION 2.0 -->
 <details>
@@ -300,6 +314,11 @@ There was an issue of how the different cards were being called in.
 
 </details> 
 <!-- CLOSING -->
+
+
+
+<!-- ----------------------------------------------------------------------------------- -->
+
 
 
 <!-- VERSION 1.0  -->
