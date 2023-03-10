@@ -191,15 +191,6 @@ Solution 🎯
 <summary>
 <h3> Version 2.0 </h3>
 </summary>
-A list of all the issues I have fixed and features I have added.
-<!-- TICKET TEMPLATE -->
-<details>
-<summary><h6> Template - HEADING </h6></summary>
-<li> issue
-<pre><code>
-Solution 🎯
-</code></pre>
-</details>
 
 <!-- NAVBAR SECTION -->
 <details>
