@@ -209,7 +209,9 @@ Created my logo with online logo maker
 </code></pre>
 <li> Create a mobile view for the Navbar section with media queries 
 <pre><code>
-This was a little challenging at first as I had to convert my initial simple navbar to be able to incorporate all the other links that would be lost in the smaller mobile screen - such as my email and images with links to github, twitter, linkedin etc.
+This was a little challenging at first as I had to rework my initial simple navbar.
+I needed it to be able to incorporate all the other links that would be lost in the smaller mobile screen 
+- such as my email and images with links to github, twitter, linkedin etc.
 Further I wanted the mobile view to have animated-loading with framer-motion 
 </code></pre>
 <li> Adding a button with a link to a pdf of my CV 
