@@ -95,7 +95,7 @@ Solution🎯
 <!-- VERSION 2.1 -->
 <details>
 <summary>
-<h4> Version 2.1 </h4>
+<h3> Version 2.1 </h3>
 </summary>
 A list of all the issues I have fixed and features I have added.
 <!-- NAVBAR SECTION -->
@@ -189,12 +189,12 @@ Solution 🎯
 <!-- VERSION 2.0 -->
 <details>
 <summary>
-<h4> Version 2.0 </h4>
+<h3> Version 2.0 </h3>
 </summary>
 A list of all the issues I have fixed and features I have added.
 <!-- TICKET TEMPLATE -->
 <details>
-<summary><h6> HEADING </h6></summary>
+<summary><h6> Template - HEADING </h6></summary>
 <li> issue
 <pre><code>
 Solution 🎯
@@ -283,9 +283,9 @@ Solution 🎯
 <!-- VERSION 1.0  -->
 <details>
 <summary>
-   <h4> Setting up the project - high level overview: </h4>
+   <h3> Setting up the project: </h3>
 </summary>
-A list of required componenets and thoughts behind creating and instantiating my portfolio 
+A high level overview and list of required componenets & thoughts behind creating and instantiating my portfolio:
 <!-- TICKET 1 -->
 <details>
 <summary><h6> Setting up the environment </h6></summary>
@@ -305,26 +305,31 @@ A list of required componenets and thoughts behind creating and instantiating my
 <li>Generating a Tailwind CSS configuration file: <br>Run <code> npx tailwindcss init</code> to generate the tailwind.config.js file.
 <li>Customize the configuration: Open tailwind.config.js and modify the default settings.
 <li>Including Tailwind CSS in my project - Open the styles/globals.css file and add the necessaites.
+<li>Setting up container sizes for theme and mobile views
+<li>Setting up screen sizes horizontal aspect ratio
+<li>Incorporating google fonts
 </ul>
 </details>
-<!-- TICKET 3 -->
+<!-- Component List -->
 <details>
 <summary>
-<h6> Creating basic layout components: </h6>
+<h6> Creating basic layout and list of components made: </h6>
 </summary>
-quick summary
+Variouse components needed 
 <ul>
-<li>NavBar Secton
-<li>Splash/Banner Page
-<li>About Page
-<li>Experiences Page
-<li>Project Portfolio Page
+<li>NavBar Secton - with a mobile and clickable
+<li>Splash/Banner Page 
+<li>About Page - with a profile picture and list of skills
+<li>Experiences Page - copy of CV information
+<li>Capstone Project Portfolio Page
+<li>Small Projects 
+<li>Small Project Card componenets
 <li>Contact Page
 <li>Footer Page
 </ul>
 <pre>
 <code>Implement the layout in the pages:
-In the pages/index.js file (or create a new page) and import the list of components.
+In the pages/index.ts file (or create a new page) and import the list of components.
 </code>
 </pre>
 </details>
