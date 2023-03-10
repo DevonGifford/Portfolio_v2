@@ -249,7 +249,6 @@ Applied media queries to handle responsivness
 <li> Update the profile image and try replicate the design and animations of Britanny Chiang
 <pre><code>
 This was challenging to replicating the animation
-
 I solved the first problem by wrapping the children div in a container div
 using groups, group-styling and absolute styling, as well as z indexes
 </code></pre>
@@ -281,11 +280,16 @@ I could then call on the different files depending on the onClick
 <summary><h6> Projects Section </h6></summary>
 <li> Fixing a bug with medium screen sizes causing componenets to dissapear
 <pre><code>
-Solution 🎯
+This was a simple fix with an error in how I was using and implementing the media-queries
 </code></pre>
 <li> Create a special Mobile view for capston projects
 <pre><code>
-Solution 🎯
+This was a challenge as I wanted to implement the pictures of the project as a background image.
+So what I ended up doing was;
+- I edited/photo-shopped the images to work as a background images.
+- Implementing a tailwind style for the different background images.
+- Then using mediaqueries I could swap between the two different styles.
+Eventually I want to clean this code up and keep it DRY
 </code></pre>
 <li> Fixing a bug for styling issues in the 'other noteworthy projects'
 <pre><code>
