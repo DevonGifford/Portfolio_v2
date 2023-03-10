@@ -214,7 +214,8 @@ Further I wanted the mobile view to have animated-loading with framer-motion
 </code></pre>
 <li> Adding a button with a link to a pdf of my CV 
 <pre><code>
-Simple enough to incorporate as just had to include my pdf in the assets folder and then wrap it with an anchor tag to link open it in a new tab. 
+Simple enough to incorporate as just had to include my pdf in the assets folder, 
+then wrap it with an anchor tag to link open it to open in a new tab. 
 </code></pre>
 </details> 
 <!-- HOME/BANNER SECTION -->
@@ -222,16 +223,21 @@ Simple enough to incorporate as just had to include my pdf in the assets folder 
 <summary><h6> Banner Page section </h6></summary>
 <li> Include a auto typing heading effect with job titles 
 <pre><code>
-I have used this in a previouse portfolio, a portfolio I actually built with python and the flask framework.  So I found an npm package that had the same capabilities and followed the documentation to implement it.   
+I have used this in a previouse portfolio, 
+a portfolio I actually built with python and the flask framework.  
+So I found an npm package that had the same capabilities and followed the documentation to implement it.  
+Simple enough   
 </code></pre>
 <li> Include a delayed loading effect 
 <pre><code>
-Again I have used framer-motion in some past projects however because of all the different moving parts in this project I had to find a way to make it simpler to understand and use. 
+Again I have used framer-motion in some past projects.
+However because of all the different moving parts in this project, 
+I had to find a way to make it simpler to understand and use. 
 I did this by rather applying this to sections and divs instead of individual elements.
 </code></pre>
 <li> Update the links and sizing of the headings with media queries 
 <pre><code>
-Solution🎯
+Very simply just used media queries within tailwind.
 </code></pre>
 </details> 
 <!-- ABOUT SECTION -->
