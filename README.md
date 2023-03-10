@@ -200,6 +200,7 @@ A list of all the issues I have fixed and features I have added.
 Solution 🎯
 </code></pre>
 </details>
+
 <!-- NAVBAR SECTION -->
 <details>
 <summary><h6> NavBar Section </h6></summary>
@@ -220,6 +221,7 @@ Simple enough to incorporate as just had to include my pdf in the assets folder,
 then wrap it with an anchor tag to link open it to open in a new tab. 
 </code></pre>
 </details> 
+
 <!-- HOME/BANNER SECTION -->
 <details>
 <summary><h6> Banner Page section </h6></summary>
@@ -242,34 +244,46 @@ I did this by rather applying this to sections and divs instead of individual el
 Very simply just used media queries within tailwind.
 </code></pre>
 </details> 
+
 <!-- ABOUT SECTION -->
 <details>
 <summary><h6> About Section </h6></summary>
 <li> Create Skills-Icons with some hover effects
 <pre><code>
-Solution 🎯
+Simply added some images to my assets folder
+Imported them to the component 
+Applied some tailwind styling with simple animation
+Applied media queries to handle responsivness
 </code></pre>
 <li> Update the profile image and try replicate the design and animations of Britanny Chiang
 <pre><code>
-Solution 🎯
+This was challenging to replicating the animation
+
+I solved the first problem by wrapping the children div in a container div
+using groups, group-styling and absolute styling, as well as z indexes
 </code></pre>
 <li> Making the image dynamic 
 <pre><code>
-Solution 🎯
+The second problem I decided to keep it more simple for mobile devices
+by simplifying the image and then floating it inside the text section.
 </code></pre>
 </details>
+
 <!-- EXPERIENCES SECTION -->
 <details>
 <summary><h6> Experiences section </h6></summary>
 <li> Replicate the same style as Brittany Chang
 <pre><code>
-Solution 🎯
+When I initially tried to do this, it was getting a little convoluded.
+I initially tried to keep this in one component, however soon realised this would not work.
+So I had to create pages then create a sidebar that could link to the different pages 
 </code></pre>
 <li> Trying to implement a way to keep this code dry and easier to update
 <pre><code>
-Solution 🎯
+I did this by seperating my work into a folder in componenets that I could call on in the Experience section
 </code></pre>
 </details>
+
 <!-- PROJECTS SECTION -->
 <details>
 <summary><h6> Projects Section </h6></summary>
@@ -286,6 +300,7 @@ Solution 🎯
 Solution 🎯
 </code></pre>
 </details>
+
 </details> 
 <!-- CLOSING -->
 
