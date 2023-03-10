@@ -280,7 +280,8 @@ So I had to create pages then create a sidebar that could link to the different 
 </code></pre>
 <li> Trying to implement a way to keep this code dry and easier to update
 <pre><code>
-I did this by seperating my work into a folder in componenets that I could call on in the Experience section
+I did this by seperating my work experiences into a seperate folder 
+I could then call on the different files depending on the onClick 
 </code></pre>
 </details>
 
