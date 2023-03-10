@@ -293,7 +293,8 @@ Eventually I want to clean this code up and keep it DRY
 </code></pre>
 <li> Fixing a bug for styling issues in the 'other noteworthy projects'
 <pre><code>
-Solution 🎯
+This bug was created because of the framer-motion implementation.
+There was an issue of how the different cards were being called in.
 </code></pre>
 </details>
 
