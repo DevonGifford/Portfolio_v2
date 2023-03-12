@@ -84,7 +84,7 @@ Solution🎯
 </code></pre>
 </details> 
 <!-- CLOSING DIV -->
-<details>
+</details>
 
 
 <br><br>
