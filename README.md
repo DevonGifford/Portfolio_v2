@@ -36,16 +36,21 @@
 ### About & History of this project 🤓
 ---------------------------------------------------
 Once upon a time, there was a dedicated individual who embarked on a journey into the world of web development. As they began their learning process, they discovered a vast ocean of inspirational portfolios that showcased the incredible possibilities of modern web design. Among these, they stumbled upon a portfolio website that captivated their attention with its sleek and contemporary aesthetics.
-<br><br>
+<br>
+<br>
 However, a wave of demoralization washed over them as they realized that this impressive project was constructed with technologies that seemed light years beyond their current skill set, such as; Framer-Motion-Animations, Gatsby.js, TypeScript and Tailwind CSS.
 <br>
 Undeterred by this initial setback, our aspiring developer made a pivotal decision: instead of succumbing to discouragement, they viewed this encounter as a catalyst for growth. With unwavering determination, they embarked on a journey of self-improvement. They devoted countless hours to study and practice, devouring every piece of knowledge they could find.
-<br><br>
+<br>
+<br>
 As time flowed onward, six months passed —a period of intense dedication and perseverance. Our aspiring developer emerged from this transformative experience with newfound confidence and proficiency. They had successfully acquired the skills necessary to build that once seemingly unattainable portfolio project from scratch. Not only that, but they also went above and beyond by incorporating their own innovative ideas and enhancements, elevating the project to new heights.
-<br><br>
+<br>
+<br>
 This individual's triumph was not merely measured by their ability to replicate the initial inspirational portfolio; it was a testament to their tenacity, adaptability, and unyielding passion for self-improvement. Their accomplishment exemplified the spirit of continuous learning and growth that is highly sought after in the world of web development.
 <br>
-When an employer encounters this inspiring story, they are met with an impressive narrative of an individual who faced a daunting challenge head-on, turned it into an opportunity for growth, and emerged victorious. This individual's journey showcases their ability to embrace complexity, overcome obstacles, and strive for excellence. Their story serves as a testament to their resilience, adaptability, and commitment to personal and professional development—a remarkable tale that speaks volumes about their potential as a valuable asset to any team or organization.
+When an employer encounters this inspiring story, they are met with an impressive narrative of an individual who faced a daunting challenge head-on, turned it into an opportunity for growth, and emerged victorious. This individual's journey showcases their ability to embrace complexity, overcome obstacles, and strive for excellence. 
+<br>
+Their story serves as a testament to their resilience, adaptability, and commitment to personal and professional development—a remarkable tale that speaks volumes about their potential as a valuable asset to any team or organization.
 <br>
 
 ### Credit where credit is due: <em>Brittany Chiang</em> 🙏
@@ -63,10 +68,24 @@ GitHub - https://github.com/bchiang7/v4
 ---------------------------------------------------
 
 These are some of the things I would like to do with this project
-<h6>🔲  This is what I am going to do: </h6>
-<h6>🔲  This is what I am going to do: </h6>
-<h6>🔲  This is what I am going to do: </h6>
-<h6>🔲  This is what I am going to do: </h6>
+<!-- VERSION 2.1 -->
+<details>
+<summary>
+<h4> These are some of the things I would like to do with this project </h4>
+</summary>
+A list of all the issues I have fixed and features I have added.
+<!-- UPDATE TEMPLATE -->
+<details>
+<summary><h6> ISSUE / UPGRADE </h6></summary>
+<li> list of issues
+<li> list of issues
+<pre><code>
+Solution🎯
+</code></pre>
+</details> 
+<!-- CLOSING DIV -->
+<details>
+
 
 <br><br>
 
