@@ -48,8 +48,8 @@ As time flowed onward, six months passed —a period of intense dedication and p
 <br>
 This individual's triumph was not merely measured by their ability to replicate the initial inspirational portfolio; it was a testament to their tenacity, adaptability, and unyielding passion for self-improvement. Their accomplishment exemplified the spirit of continuous learning and growth that is highly sought after in the world of web development.
 <br>
-When an employer encounters this inspiring story, they are met with an impressive narrative of an individual who faced a daunting challenge head-on, turned it into an opportunity for growth, and emerged victorious. This individual's journey showcases their ability to embrace complexity, overcome obstacles, and strive for excellence. 
-<br>
+Hopefully when an employer encounters this inspiring story, they are met with an impressive narrative of an individual who faced a daunting challenge head-on, turned it into an opportunity for growth, and emerged victorious. This individual's journey showcases their ability to embrace complexity, overcome obstacles, and strive for excellence. 
+<br><br>
 Their story serves as a testament to their resilience, adaptability, and commitment to personal and professional development—a remarkable tale that speaks volumes about their potential as a valuable asset to any team or organization.
 <br>
 
