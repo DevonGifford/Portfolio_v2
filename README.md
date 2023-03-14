@@ -35,13 +35,15 @@
 
 ### About & History of this project 🤓
 ---------------------------------------------------
-
-Here I will insert a history of the development of this website. <br>
-Where everything started, How I got here <br>
-This is not necessarily a finished website, there are many things I would like to do
+Once upon a time, there was a dedicated individual who embarked on a journey into the world of web development. As they began their learning process, they discovered a vast ocean of inspirational portfolios that showcased the incredible possibilities of modern web design. Among these, they stumbled upon a portfolio website that captivated their attention with its sleek and contemporary aesthetics. However, a wave of demoralization washed over them as they realized that this impressive project was constructed with technologies that seemed light years beyond their current skill set—Next.js, TypeScript, hooks, and Tailwind CSS.
 <br>
-You can see a list of some of these 'things' below under a "work in progress"
-
+Undeterred by this initial setback, our aspiring developer made a pivotal decision: instead of succumbing to discouragement, they viewed this encounter as a catalyst for growth. With unwavering determination, they embarked on a journey of self-improvement. They devoted countless hours to study and practice, devouring every piece of knowledge they could find about Next.js, TypeScript, hooks, and Tailwind CSS.
+<br>
+As time flowed onward, six months passed—a period of intense dedication and perseverance. Our aspiring developer emerged from this transformative experience with newfound confidence and proficiency. They had successfully acquired the skills necessary to build that once seemingly unattainable portfolio project from scratch. Not only that, but they also went above and beyond by incorporating their own innovative ideas and enhancements, elevating the project to new heights.
+<br>
+This individual's triumph was not merely measured by their ability to replicate the initial inspirational portfolio; it was a testament to their tenacity, adaptability, and unyielding passion for self-improvement. Their accomplishment exemplified the spirit of continuous learning and growth that is highly sought after in the world of web development.
+<br>
+When an employer encounters this inspiring story, they are met with an impressive narrative of an individual who faced a daunting challenge head-on, turned it into an opportunity for growth, and emerged victorious. This individual's journey showcases their ability to embrace complexity, overcome obstacles, and strive for excellence. Their story serves as a testament to their resilience, adaptability, and commitment to personal and professional development—a remarkable tale that speaks volumes about their potential as a valuable asset to any team or organization.
 <br>
 
 ### Credit where credit is due: <em>Brittany Chiang</em> 🙏
@@ -377,9 +379,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <h2 align='center'>📃🖋 MIT LICENSE 📃🖋</h2>
 
 <p align='center'>
-    Copyright 2023 - Devon Gifford
-    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Copyright 2023 - Devon Gifford
+</p>
+<p align='center'>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+</p>
+<p align='center'>
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </p>
