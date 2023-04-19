@@ -75,27 +75,89 @@ These are some of the things I would like to do with this project
 <h4> Version 2.1 </h4>
 </summary>
 A list of all the issues I have fixed and features I have added.
-<!-- TICKET TEMPLATE -->
+<!-- NAVBAR SECTION -->
 <details>
-<summary><h6> ✅  This was the problem: </h6></summary>
-🤔  The solution test
+<summary><h6> NavBar Section </h6></summary>
+<li> Create interactive logo and fixing the broken link
 <pre><code>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+Solution🎯
+</code></pre>
+<li> Clean up the mobile version of the navbar - centering and styling
+<pre><code>
+Solution🎯
 </code></pre>
 </details> 
-<!-- TICKET 2 -->
+<!-- HOME/BANNER SECTION -->
 <details>
-<summary>
-<h6> ✅  This was the problem: </h6>
-</summary>
-🤔  The solution test
-<pre>
-<code>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-</code>
-</pre>
+<summary><h6> Banner Page section </h6></summary>
+<li> Increase the size and responsivness of the heading text's 
+<pre><code>
+Solution🎯
+</code></pre>
+<li> Update button link & styling
+<pre><code>
+Solution🎯
+</code></pre>
+</details> 
+<!-- ABOUT SECTION -->
+<details>
+<summary><h6> About Section </h6></summary>
+<li> Complete overhaul of the layout of this section - ersponsivness issues
+<pre><code>
+Solution 🎯
+</code></pre>
+<li> Update the styling of favourite technologies heading
+<pre><code>
+Solution 🎯
+</code></pre>
+</details>
+<!-- EXPERIENCES SECTION -->
+<details>
+<summary><h6> Experiences section </h6></summary>
+<li> Creating a mobile view section section - with a hidden horizontal screen 
+<pre><code>
+Solution 🎯
+</code></pre>
+<li> Decrease the gap between 'About' & 'Experiences' section
+<pre><code>
+Solution 🎯
+</code></pre>
+</details>
+<!-- PROJECTS SECTION -->
+<details>
+<summary><h6> Projects Section </h6></summary>
+<li> Make titel fo projects clickable and with a hover effect. (mobile and desktop view)
+<pre><code>
+Solution 🎯
+</code></pre>
+<li> Fix responsivness of noteworthy projects forsmall mobile devices
+<pre><code>
+Solution 🎯
+</code></pre>
+<li> Fix animation loading bug 
+<pre><code>
+Solution 🎯
+</code></pre>
+<li> Import small photos for moile view
+<pre><code>
+Solution 🎯
+</code></pre>
+</details>
+<!-- Contact & Footer Section -->
+<details>
+<summary><h6> Contact & Footer Section </h6></summary>
+<li> Fix footer bug not showing up in medium screen sizes
+<pre><code>
+Solution 🎯
+</code></pre>
+<li> Adding credit to Brittany Chiangs website on all resolutions
+<pre><code>
+Solution 🎯
+</code></pre>
+<li> Increase size of headings and responsivness of text
+<pre><code>
+Solution 🎯
+</code></pre>
 </details>
 </details> 
 <!-- CLOSING -->
@@ -190,19 +252,6 @@ Solution 🎯
 <pre><code>
 Solution 🎯
 </code></pre>
-</details>
-<!-- TICKET 2 -->
-<details>
-<summary>
-<h6> ✅  This was the problem: </h6>
-</summary>
-🤔  The solution test
-<pre>
-<code>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-</code>
-</pre>
 </details>
 </details> 
 <!-- CLOSING -->
