@@ -1,15 +1,21 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 const RightSide = () => {
   return (
-    <div className='w-full h-full flex flex-col items-center justify-end gap-6 text-textLight'>
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 4}}
+      className='w-full h-full flex flex-col items-center justify-end gap-40 text-textLight'>
         <a href="mailto:devongifford@outlook.com">
             <p 
-            className='text-sm rotate-90 w-72 tracking-wide text-textGreen '
-            >send me an email
+            className='text-sm rotate-90 w-62 tracking-widest hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'
+            >devongifford@outlook.com
             </p>
         </a>
-    </div>
+        <span className='w-[2px] h-52 bg-textDark inline-flex'></span>
+    </motion.div>
   )
 }
 
