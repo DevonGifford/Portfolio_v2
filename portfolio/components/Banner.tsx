@@ -54,7 +54,8 @@ const Banner = () => {
           className='text-base md:min-w-[650px] text-textDark font-medium'
         >
             {" "}
-            Self taught programmer, with a Bachelors in Business Administration & training in project management.  Experience in Software Testing with one of the major <em>FAANG</em> companies.  Eager to contribute to team success through hard work, attention to detail & creative problem solving. <br /> 
+            South African by Birth, British citizen, Based in Madrid, Spain.<br />
+            Self taught programmer, with a Bachelors in Business Administration & training in project management, with experience in Software Testing at one of the major <em>FAANG</em> companies.  Eager to contribute to team success through hard work, attention to detail & creative problem solving. <br /> 
             <em>Fully committed to the philosophy of life-long learning.</em> {" "} <br />
             {/* 🎯INSERT REAL LINK HERE LATER🎯 */}
             <a href="https://www.instagram.com/princedevon_za/">

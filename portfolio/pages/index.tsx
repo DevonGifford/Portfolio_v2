@@ -6,6 +6,8 @@ import LeftSide from '@/components/LeftSide';
 import RightSide from '@/components/RightSide';
 import Banner from '@/components/Banner';
 import About from '@/components/About';
+import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,18 +20,17 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='w-full h-screen font-bodyFont bg-bodyColor text-textLight'>     
+      <main className='w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll' >     
         <Navbar />
         <div className='w-full h-[88vh] lg:flex items-center gap-20 justify-between'> 
           <div className='hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0'>
             <LeftSide />
           </div>
           <div className='h-[88vh] w-full mx-auto p-4'>
-             <Banner /> 
-             {/* About Section */}
+             <Banner />
              <About />
-             {/* Experience */}
-             {/* Projects */}
+             <Experience />
+             <Projects/>
              {/* small projects */}
              {/* Contact */}
              {/* Footer */}
