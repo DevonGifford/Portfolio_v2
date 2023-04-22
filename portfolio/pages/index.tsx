@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
+import LeftSide from '@/components/LeftSide';
+import RightSide from '@/components/RightSide';
+
 import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,6 +19,17 @@ export default function Home() {
       </Head>
       <main className='w-full h-screen font-bodyFont bg-bodyColor text-textLight'>     
         <Navbar />
+        <div className='w-full h-[88vh] lg:flex items-center gap-20 justify-between'> 
+        {/* Should it rather be xl:flex?? review later */}
+          <div className='hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0'>
+            <LeftSide />
+          </div>
+          <div>Middle</div>
+          <div>
+            <RightSide />
+          </div>
+
+        </div>
       </main>
     </>
   )
