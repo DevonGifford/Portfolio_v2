@@ -7,12 +7,11 @@ import { motion } from "framer-motion";
 const Navbar = () => {
     return ( 
         <div className="w-full shadow-navbarShadow h-20 lg:h-[10vh] stick top-0 z-50 bg-bodyColor px-4">
-            <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between" >
+            <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
                 <motion.div 
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5}}
-
                 >
                     <Image className="w-14 rounded-full" src={logo} alt="logo" />
                 </motion.div>
@@ -26,7 +25,7 @@ const Navbar = () => {
                             <motion.li
                               initial={{ y: -10, opacity: 0 }}
                               animate={{ y: 0, opacity: 1 }}
-                              transition={{ duration: 0.5 }}
+                              transition={{ duration: 0.5}}
                             >Home</motion.li>
                         </Link>
                         {/* ABOUT */}
@@ -37,7 +36,7 @@ const Navbar = () => {
                           <motion.li
                             initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.75 }}
+                            transition={{ duration: 0.5, delay: 0.25 }}
                           >
                             <span className="text-textGreen">01.</span>
                             About
@@ -51,7 +50,7 @@ const Navbar = () => {
                           <motion.li
                             initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 1 }}
+                            transition={{ duration: 0.5, delay: 0.5 }}
                           >
                             <span className="text-textGreen">02.</span>
                             Experience
@@ -65,7 +64,7 @@ const Navbar = () => {
                           <motion.li
                             initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 1.25 }}
+                            transition={{ duration: 0.5, delay: 0.75 }}
                           >
                             <span className="text-textGreen">03.</span>
                             Project
@@ -79,7 +78,7 @@ const Navbar = () => {
                           <motion.li
                             initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 1.75 }}
+                            transition={{ duration: 0.5, delay: 1 }}
                           >
                             <span className="text-textGreen">04.</span>
                             Contact
@@ -91,7 +90,7 @@ const Navbar = () => {
                         <motion.button
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 1.75 }}
+                        transition={{ duration: 0.5 , delay: 1.25 }}
                         className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
                         >
                             Resume

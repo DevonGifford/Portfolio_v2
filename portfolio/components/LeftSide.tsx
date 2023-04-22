@@ -12,7 +12,7 @@ const LeftSide = () => {
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 4.5}}          
+          transition={{ duration: 1.5, delay: 3}}          
           className='flex flex-col gap-4'>
             {/* Github Icon */}
             <a href="https://github.com/DevonGifford" target='_blank'>

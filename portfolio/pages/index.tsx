@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
+import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import LeftSide from '@/components/LeftSide';
 import RightSide from '@/components/RightSide';
-
-import Head from 'next/head';
+import Banner from '@/components/Banner';
+import About from '@/components/About';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +24,16 @@ export default function Home() {
           <div className='hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0'>
             <LeftSide />
           </div>
-          <div className='h-[88vh] mx-auto p-4'>Middle</div>
+          <div className='h-[88vh] w-full mx-auto p-4'>
+             <Banner /> 
+             {/* About Section */}
+             <About />
+             {/* Experience */}
+             {/* Projects */}
+             {/* small projects */}
+             {/* Contact */}
+             {/* Footer */}
+          </div>
           <div className='hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0'>
             <RightSide />
           </div>
