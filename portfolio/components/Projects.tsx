@@ -9,7 +9,7 @@ import { SlSocialYoutube } from "react-icons/Sl";
 
 const Projects = () => {
   return (
-    <section id='project' className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8'>
+    <section id='Projects' className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8'>
     <SectionTitle 
       titleName='Capstone Projects' 
       titleNumber='03' 

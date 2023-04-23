@@ -23,7 +23,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20' >     
+      <main className='w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60' >     
         <Navbar />
         <div className='w-full h-[88vh] lg:flex items-center gap-20 justify-between'> 
           <div className='hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0'>
