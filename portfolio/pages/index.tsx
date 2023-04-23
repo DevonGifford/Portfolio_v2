@@ -8,6 +8,9 @@ import Banner from '@/components/Banner';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
+import SmallProjects from '@/components/SmallProjects';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +23,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll' >     
+      <main className='w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20' >     
         <Navbar />
         <div className='w-full h-[88vh] lg:flex items-center gap-20 justify-between'> 
           <div className='hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0'>
@@ -31,9 +34,9 @@ export default function Home() {
              <About />
              <Experience />
              <Projects/>
-             {/* small projects */}
-             {/* Contact */}
-             {/* Footer */}
+             <SmallProjects />
+             <Contact />
+             <Footer />
           </div>
           <div className='hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0'>
             <RightSide />
