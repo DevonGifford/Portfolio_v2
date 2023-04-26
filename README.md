@@ -1,3 +1,48 @@
+
+<h1 align="center">Welcome to my Portfolio's Repo 👋  </h1>
+<h4 align="center"> ❗🔗-www.devongifford.com-🔗❗ - vesion 2.3 </h4>
+
+<h5 align="center">This is the second iteration of ❗🔗- devongifford.com -🔗❗ built with ❗🔗-NextJS-❗ and hosted with ❗🔗-Vercel-❗</h5>
+
+Centered heading 
+
+
+
+# Welcome & Introductory 
+---------------------------------------------------
+
+
+
+### About & History of this project
+
+##  
+
+#### Credit where credit is due
+
+Insert links to Brittney Chang's information 
+
+
+##  Forking this repo
+
+
+# Work in progress - to-do-list
+---------------------------------------------------
+
+🔲
+🔲
+🔲
+🔲
+✅
+
+
+# Completed  
+---------------------------------------------------
+
+✅  This was the problem 
+>   This is how I fixed the problem
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -6,10 +51,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
