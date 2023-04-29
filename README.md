@@ -1,7 +1,7 @@
 🎯 - INSERT MY LITTLE LOGO HERE
 
 
-<h1 align="center">Welcome to my Portfolio's Repo 👋  </h1>
+<h1 align="center">Welcome to my Portfolio's GitHub Repo 👋  </h1>
 <h4 align="center"> ❗🔗-www.devongifford.com - vesion 2.3 </h4>
 
 <h5 align="center">This is the second iteration of ❗🔗- devongifford.com built with ❗🔗-NextJS and hosted with ❗🔗-Vercel</h5>
@@ -12,8 +12,6 @@
 
 # Welcome & Introductory 
 ---------------------------------------------------
-
-
 
 ### About & History of this project
 
