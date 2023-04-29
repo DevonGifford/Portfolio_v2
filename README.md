@@ -1,10 +1,12 @@
+🎯 - INSERT MY LITTLE LOGO HERE
+
 
 <h1 align="center">Welcome to my Portfolio's Repo 👋  </h1>
 <h4 align="center"> ❗🔗-www.devongifford.com - vesion 2.3 </h4>
 
 <h5 align="center">This is the second iteration of ❗🔗- devongifford.com built with ❗🔗-NextJS and hosted with ❗🔗-Vercel</h5>
 
-Centered heading 
+🎯 - INSERT A SCREEN SHOT OF THE HOME PAGE HERE
 
 
 
@@ -15,11 +17,20 @@ Centered heading
 
 ### About & History of this project
 
-##  
+Here I will insert a history of the development of this website.
+Where everything started, 
+How I got here,
+This is not necessarily a finished website, there are many things I would like to do
 
-#### Credit where credit is due
+You can see a list of some of these 'things' below under a "work in progress"
 
-Insert links to Brittney Chang's information 
+## Credit where credit is due
+
+Insert links to Brittney Chang's information
+
+Website - https://brittanychiang.com/
+GitHub - https://github.com/bchiang7/v4
+(etc.) 
 
 
 ##  Forking this repo
