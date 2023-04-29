@@ -24,7 +24,7 @@ You can see a list of some of these 'things' below under a "work in progress"
 
 ## Credit where credit is due
 
-Insert links to Brittney Chang's information
+As mentioned in the about section, I used Brittany Chiangs website as all my inspiration and therefore all credit goes to her.
 
 Website - https://brittanychiang.com/
 GitHub - https://github.com/bchiang7/v4
@@ -32,7 +32,8 @@ GitHub - https://github.com/bchiang7/v4
 
 
 ##  Forking this repo
-
+Yes, you can fork this repo. 
+Please give proper credit by linking back to brittanychiang.com. Thanks!
 
 # Work in progress - to-do-list
 ---------------------------------------------------
