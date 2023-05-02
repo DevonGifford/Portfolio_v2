@@ -51,7 +51,16 @@ Please give proper credit by linking back to brittanychiang.com. Thanks!
 ✅  This was the problem 
 >   This is how I fixed the problem
 
-
+<details>
+<summary>dropdown?</summary>
+<br>
+✅  This was the problem 
+>   This is how I fixed the problem
+✅  This was the problem 
+>   This is how I fixed the problem
+✅  This was the problem 
+>   This is how I fixed the problem
+</details>
 
 
 
