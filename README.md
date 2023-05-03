@@ -56,8 +56,10 @@ Please give proper credit by linking back to brittanychiang.com. Thanks!
 <br>
 ✅  This was the problem 
 >   This is how I fixed the problem
+<br>
 ✅  This was the problem 
 >   This is how I fixed the problem
+<br>
 ✅  This was the problem 
 >   This is how I fixed the problem
 </details>
