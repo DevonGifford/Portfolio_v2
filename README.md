@@ -3,6 +3,12 @@
 
 <h1 align="center">Welcome to my Portfolio's GitHub Repo 👋  </h1>
 <h4 align="center"> ❗🔗-www.devongifford.com - vesion 2.3 </h4>
+---------------------------------------------------
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ts,nextjs,tailwind" />
+  </a>
+</p>
 
 <h5 align="center">This is the second iteration of ❗🔗- devongifford.com built with ❗🔗-NextJS and hosted with ❗🔗-Vercel</h5>
 
@@ -10,10 +16,11 @@
 
 
 
-# Welcome & Introductory 
----------------------------------------------------
+## Welcome & Introductory 
+
 
 ### About & History of this project
+---------------------------------------------------
 
 Here I will insert a history of the development of this website.
 Where everything started, 
@@ -22,7 +29,8 @@ This is not necessarily a finished website, there are many things I would like t
 
 You can see a list of some of these 'things' below under a "work in progress"
 
-## Credit where credit is due
+### Credit where credit is due
+---------------------------------------------------
 
 As mentioned in the about section, I used Brittany Chiangs website as all my inspiration and therefore all credit goes to her.
 
@@ -78,7 +86,7 @@ Please give proper credit by linking back to brittanychiang.com. Thanks!
 
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
@@ -103,5 +111,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 🎯 INSERT MIT LICENSE HERE
