@@ -3,7 +3,7 @@
 
 <h1 align="center">Welcome to my Portfolio's GitHub Repo 👋  </h1>
 <h4 align="center"> ❗🔗-www.devongifford.com - vesion 2.3 </h4>
----------------------------------------------------
+
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,vscode" />
@@ -60,7 +60,7 @@ Please give proper credit by linking back to brittanychiang.com. Thanks!
 >   This is how I fixed the problem
 
 <details>
-<summary>dropdown?</summary>
+<summary>## dropdown?</summary>
 <br>
 ✅  This was the problem <br>
 >   This is how I fixed the problem
