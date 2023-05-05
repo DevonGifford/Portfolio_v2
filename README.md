@@ -2,6 +2,7 @@
 
 
 <h1 align="center">Welcome to my Portfolio's GitHub Repo 👋  </h1>
+<hr>
 <h4 align="center"> ❗🔗-www.devongifford.com - vesion 2.3 </h4>
 
 <p align="center">
