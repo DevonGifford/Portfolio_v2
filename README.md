@@ -1,18 +1,19 @@
 🎯 - INSERT MY LITTLE LOGO HERE
 
+<div align="center">
+    <h1>Welcome to my Portfolio's GitHub Repo 👋  </h1>
+    <hr>
+    <h3> ❗🔗-www.devongifford.com - vesion 2.3 </h3>
 
-<h1 align="center">Welcome to my Portfolio's GitHub Repo 👋  </h1>
-<hr>
-<h4 align="center"> ❗🔗-www.devongifford.com - vesion 2.3 </h4>
+    <p>
+        <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,vscode" />
+        </a>
+    </p>
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,vscode" />
-  </a>
-</p>
+    <h5 align="center">This is the second iteration of ❗🔗- devongifford.com built with [Next.js](https://nextjs.org/) and hosted with ❗🔗-Vercel</h5>
 
-<h5 align="center">This is the second iteration of ❗🔗- devongifford.com built with ❗🔗-NextJS and hosted with ❗🔗-Vercel</h5>
-
+</div>
 🎯 - INSERT A SCREEN SHOT OF THE HOME PAGE HERE
 
 
