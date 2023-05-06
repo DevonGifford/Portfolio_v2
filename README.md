@@ -8,7 +8,7 @@
 
 </div>
 
-<p>
+<p align='center'>
     <a href="https://skillicons.dev">
         <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,vscode" />
     </a>
