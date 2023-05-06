@@ -4,16 +4,17 @@
     <h1>Welcome to my Portfolio's GitHub Repo 👋  </h1>
     <hr>
     <h3> ❗🔗-www.devongifford.com - vesion 2.3 </h3>
-
-    <p>
-        <a href="https://skillicons.dev">
-            <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,vscode" />
-        </a>
-    </p>
-
-    <h5 align="center">This is the second iteration of ❗🔗- devongifford.com built with [Next.js](https://nextjs.org/) and hosted with ❗🔗-Vercel</h5>
+    <h5>This is the second iteration of ❗🔗- devongifford.com built with [Next.js](https://nextjs.org/) and hosted with ❗🔗-Vercel</h5>
 
 </div>
+
+<p>
+    <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,vscode" />
+    </a>
+</p>
+
+
 🎯 - INSERT A SCREEN SHOT OF THE HOME PAGE HERE
 
 
