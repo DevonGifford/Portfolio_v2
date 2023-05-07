@@ -4,7 +4,11 @@
     <h1>Welcome to my Portfolio's GitHub Repo 👋  </h1>
     <hr>
     <h3> ❗🔗-www.devongifford.com - vesion 2.3 </h3>
-    <h5>This is the second iteration of ❗🔗- devongifford.com built with [Next.js](https://nextjs.org/) and hosted with ❗🔗-Vercel</h5>
+    <h5>
+        This is the second iteration of <a href="">devongifford.com🎯</a>
+        built with <a href="https://nextjs.org">Next.js</a> 
+        and hosted by <a href="https://vercel.com/">Vercel</a>
+    </h5>
 
 </div>
 
