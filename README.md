@@ -5,18 +5,19 @@
     <hr>
     <h3> ❗🔗-www.devongifford.com - vesion 2.3 </h3>
     <h5>
-        This is the second iteration of <a href="">devongifford.com🎯</a> <br>
+        This is the second iteration of <a href="">devongifford.com🎯</a>
+        <h6>
+            built with <a href="https://nextjs.org">Next.js</a> &
+            hosted by <a href="https://vercel.com/">Vercel</a> <br>
+        </h6>
     </h5>
-    <h6>
-        built with <a href="https://nextjs.org">Next.js</a> &
-        hosted by <a href="https://vercel.com/">Vercel</a>
-    </h6>
 
 </div>
 
 <p align='center'>
+    Tehnologies used in this project <br> 
     <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,vscode" />
+        <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,github,vscode" />
     </a>
 </p>
 
