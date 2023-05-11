@@ -7,9 +7,9 @@
         This is the second iteration of <a href="">devongifford.com🎯</a>
         <h6>
             built with <a href="https://nextjs.org">Next.js</a> &
-            hosted by <a href="https://vercel.com/">Vercel</a>
+            hosted by <a href="https://vercel.com/">Vercel</a> <br>
+            other technologies used in this project include:
         </h6>
-        Technologies used in this project include:
     </h5>
 
 </div>
