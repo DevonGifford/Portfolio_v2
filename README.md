@@ -2,10 +2,9 @@
 
 <div align="center">
     <h1>Welcome to my Portfolio's GitHub Repo 👋  </h1>
-    <hr>
     <h3> ❗🔗-www.devongifford.com - vesion 2.3 </h3>
     <h5>
-        This is the second iteration of <a href="">devongifford.com🎯</a> <br>
+        This is the second iteration of <a href="">devongifford.com🎯</a>
         <h6>
             built with <a href="https://nextjs.org">Next.js</a> &
             hosted by <a href="https://vercel.com/">Vercel</a>
