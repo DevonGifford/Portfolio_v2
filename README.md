@@ -25,7 +25,7 @@
 
 
 
-## Welcome & Introductory 
+<h1 align='center'> Welcome & Introductory </h1>
 
 
 ### About & History of this project
@@ -38,19 +38,19 @@ This is not necessarily a finished website, there are many things I would like t
 
 You can see a list of some of these 'things' below under a "work in progress"
 
-### Credit where credit is due
+#### Credit where credit is due: Brittany Chiang
 ---------------------------------------------------
 
-As mentioned in the about section, I used Brittany Chiangs website as all my inspiration and therefore all credit goes to her.
+As mentioned in the about section, while I built this website from scratch myself, I heavily used Brittany Chiang's website as inspiration and therefore all credit goes to her.
 
-Website - https://brittanychiang.com/
+Website - https://brittanychiang.com/ <br>
 GitHub - https://github.com/bchiang7/v4
-(etc.) 
-
+<br>
 
 ##  Forking this repo
-Yes, you can fork this repo. 
-Please give proper credit by linking back to brittanychiang.com. Thanks!
+Yes, you can fork this repo. <br>
+However, I please give proper credit by linking back to brittanychiang.com. Thanks!
+
 
 # Work in progress - to-do-list
 ---------------------------------------------------
