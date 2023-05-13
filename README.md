@@ -38,7 +38,9 @@ This is not necessarily a finished website, there are many things I would like t
 
 You can see a list of some of these 'things' below under a "work in progress"
 
-#### Credit where credit is due: Brittany Chiang
+<br>
+
+### Credit where credit is due: Brittany Chiang
 ---------------------------------------------------
 
 As mentioned in the about section, while I built this website from scratch myself, I heavily used Brittany Chiang's website as inspiration and therefore all credit goes to her.
@@ -47,9 +49,6 @@ Website - https://brittanychiang.com/ <br>
 GitHub - https://github.com/bchiang7/v4
 <br>
 
-##  Forking this repo
-Yes, you can fork this repo. <br>
-However, I please give proper credit by linking back to brittanychiang.com. Thanks!
 
 
 # Work in progress - to-do-list
@@ -91,10 +90,17 @@ However, I please give proper credit by linking back to brittanychiang.com. Than
 
 
 
+#  Forking and Building/Running
 
 
+## Forking the repo
 
-
+Yes, you can fork this repo. <br>
+However, please give proper credit by linking back to brittanychiang.com. Thanks!
+<br><br>
+Website - https://brittanychiang.com/ <br>
+GitHub - https://github.com/bchiang7/v4
+<br>
 
 
 ## Getting Started
