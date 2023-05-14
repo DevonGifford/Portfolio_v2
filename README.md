@@ -28,7 +28,7 @@
 <h1 align='center'> Welcome & Introductory </h1>
 
 
-### About & History of this project
+### About & History of this project 🎯
 ---------------------------------------------------
 
 Here I will insert a history of the development of this website.
@@ -51,7 +51,7 @@ GitHub - https://github.com/bchiang7/v4
 
 
 
-# Work in progress - to-do-list
+### Work in progress - current to-do-list
 ---------------------------------------------------
 
 🔲
@@ -61,14 +61,16 @@ GitHub - https://github.com/bchiang7/v4
 ✅
 
 
-# Completed  
+### Completed  
 ---------------------------------------------------
 
 ✅  This was the problem 
 >   This is how I fixed the problem
 
 <details>
-<summary>## dropdown?</summary>
+<summary>
+   <h3> Version 1.0 </h3>
+</summary>
 <br>
 ✅  This was the problem <br>
 >   This is how I fixed the problem
@@ -129,4 +131,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-🎯 INSERT MIT LICENSE HERE
+# 🎯 INSERT MIT LICENSE HERE
