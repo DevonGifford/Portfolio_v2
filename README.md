@@ -51,7 +51,7 @@ GitHub - https://github.com/bchiang7/v4
 
 
 
-### Work in progress - current to-do-list
+### Version 3.0 - current to-do-list
 ---------------------------------------------------
 
 🔲
@@ -61,15 +61,33 @@ GitHub - https://github.com/bchiang7/v4
 ✅
 
 
-### Completed  
+### Previouse Versions and Fixes
 ---------------------------------------------------
 
 ✅  This was the problem 
 >   This is how I fixed the problem
 
 <details>
+    <summary>
+        <h3> Version 1.0 </h3>
+    </summary>
+    <br>
+        <div>
+            ✅  This was the problem <br>
+            <code>This is how I fixed the problem</code>
+        </div>
+<br><br>
+✅  This was the problem <br>
+>   This is how I fixed the problem
+<br><br>
+✅  This was the problem <br>
+>   This is how I fixed the problem
+<br><br>
+</details>
+
+<details>
 <summary>
-   <h3> Version 1.0 </h3>
+   <h3> Initial Build </h3>
 </summary>
 <br>
 ✅  This was the problem <br>
