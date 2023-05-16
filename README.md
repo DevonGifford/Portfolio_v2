@@ -78,16 +78,19 @@ GitHub - https://github.com/bchiang7/v4
             🤔  This is how I fixed the problem <br>
             <code>insert</code>
         </div>
-<br><br>
+        </br>
         <div>
             <details>
                 <summary>
-                    <h3> ✅  This was the problem: </h3>
+                    <h6> ✅  This was the problem: </h6>
                 </summary>
                 <br>
                     <div>
                         🤔  This is how I fixed the problem <br>
-                        <code>insert</code>
+                        <code>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem. <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+                        </code>
                     </div>
                 <br><br>
             </details>
