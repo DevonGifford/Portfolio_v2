@@ -84,7 +84,6 @@ GitHub - https://github.com/bchiang7/v4
                 <summary>
                     <h6> ✅  This was the problem: </h6>
                 </summary>
-                <br>
                     <div>
                         🤔  This is how I fixed the problem <br>
                         <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem. <br>
@@ -92,11 +91,20 @@ GitHub - https://github.com/bchiang7/v4
                     </div>
                 <br><br>
             </details>
-        </div>            
-<br><br>
-✅  This was the problem <br>
->   This is how I fixed the problem
-<br><br>
+        </div>
+        <div>
+            <details>
+                <summary>
+                    <h6> ✅  This was the problem: </h6>
+                </summary>
+                    <div>
+                        🤔  This is how I fixed the problem <br>
+                        <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem. <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.</code>
+                    </div>
+                <br><br>
+            </details>
+        </div>  
 </details>
 
 <details>
