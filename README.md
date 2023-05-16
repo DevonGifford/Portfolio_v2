@@ -73,8 +73,10 @@ GitHub - https://github.com/bchiang7/v4
     </summary>
     <br>
         <div>
-            ✅  This was the problem <br>
-            <code>This is how I fixed the problem</code>
+            ✅  This was the problem: <br>
+            <code>insert</code><br>
+            🤔  This is how I fixed the problem <br>
+            <code>insert</code>
         </div>
 <br><br>
 ✅  This was the problem <br>
