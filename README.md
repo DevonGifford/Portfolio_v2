@@ -87,10 +87,8 @@ GitHub - https://github.com/bchiang7/v4
                 <br>
                     <div>
                         🤔  This is how I fixed the problem <br>
-                        <code>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem. <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-                        </code>
+                        <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem. <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.</code>
                     </div>
                 <br><br>
             </details>
