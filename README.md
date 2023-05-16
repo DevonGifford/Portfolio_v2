@@ -79,8 +79,19 @@ GitHub - https://github.com/bchiang7/v4
             <code>insert</code>
         </div>
 <br><br>
-✅  This was the problem <br>
->   This is how I fixed the problem
+        <div>
+            <details>
+                <summary>
+                    <h3> ✅  This was the problem: </h3>
+                </summary>
+                <br>
+                    <div>
+                        🤔  This is how I fixed the problem <br>
+                        <code>insert</code>
+                    </div>
+                <br><br>
+            </details>
+        </div>            
 <br><br>
 ✅  This was the problem <br>
 >   This is how I fixed the problem
