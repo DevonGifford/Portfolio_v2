@@ -97,7 +97,7 @@ GitHub - https://github.com/bchiang7/v4
                     <h6> ✅  This was the problem: </h6>
                 </summary>
                     <div>
-                        🤔  This is how I fixed the problem
+                        🤔  The solution
                         <pre>
 <code>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
@@ -106,8 +106,29 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
                         </pre>
                     </div>
             </details>
-        </div>  
+<div>
+<details>
+<summary>
+<h6> ✅  This was the problem: </h6>
+</summary>
+<div>
+🤔  The solution test
+<pre>
+<code>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+</code>
+</pre>
+</div>
 </details>
+        </div>  
+</details> 
+<!-- CLOSING -->
+
+
+
+
+
 
 <details>
 <summary>
