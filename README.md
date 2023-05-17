@@ -71,9 +71,7 @@ GitHub - https://github.com/bchiang7/v4
 <br>
 <!-- TICKET TEMPLATE -->
 <details>
-<summary>
-<h6> ✅  This was the problem: </h6>
-</summary>
+<summary><h6> ✅  This was the problem: </h6></summary>
 <div>
 🤔  The solution test
 <pre>
@@ -86,12 +84,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 </details> 
 
 <!-- TICKET 2 -->
-<div>
 <details>
 <summary>
 <h6> ✅  This was the problem: </h6>
 </summary>
-<div>
 🤔  The solution test
 <pre>
 <code>
@@ -99,9 +95,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
 </code>
 </pre>
-</div>
 </details>
-</div> 
 
 </details> 
 <!-- CLOSING -->
