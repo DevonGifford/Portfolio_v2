@@ -64,48 +64,12 @@ GitHub - https://github.com/bchiang7/v4
 ### Previouse Versions and Fixes
 ---------------------------------------------------
 
-✅  This was the problem 
->   This is how I fixed the problem
-
 <details>
-    <summary>
-        <h3> Version 1.0 </h3>
-    </summary>
-    <br>
-        <div>
-            ✅  This was the problem: <br>
-            <code>insert</code><br>
-            🤔  This is how I fixed the problem <br>
-            <code>insert</code>
-        </div>
-        </br>
-        <div>
-            <details>
-                <summary>
-                    <h6> ✅  This was the problem: </h6>
-                </summary>
-                    <div>
-                        🤔  This is how I fixed the problem
-                        <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.</code>
-                    </div>
-            </details>
-        </div>
-        <div>
-            <details>
-                <summary>
-                    <h6> ✅  This was the problem: </h6>
-                </summary>
-                    <div>
-                        🤔  The solution
-                        <pre>
-<code>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-</code>
-                        </pre>
-                    </div>
-            </details>
+<summary>
+<h3> Version 1.0 </h3>
+</summary>
+<br>
+<!-- TICKET TEMPLATE -->
 <div>
 <details>
 <summary>
@@ -121,7 +85,26 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 </pre>
 </div>
 </details>
-        </div>  
+</div>  
+
+<!-- TICKET 2 -->
+<div>
+<details>
+<summary>
+<h6> ✅  This was the problem: </h6>
+</summary>
+<div>
+🤔  The solution test
+<pre>
+<code>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+</code>
+</pre>
+</div>
+</details>
+</div> 
+
 </details> 
 <!-- CLOSING -->
 
