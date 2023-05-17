@@ -70,7 +70,6 @@ GitHub - https://github.com/bchiang7/v4
 </summary>
 <br>
 <!-- TICKET TEMPLATE -->
-<div>
 <details>
 <summary>
 <h6> ✅  This was the problem: </h6>
@@ -84,8 +83,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 </code>
 </pre>
 </div>
-</details>
-</div>  
+</details> 
 
 <!-- TICKET 2 -->
 <div>
