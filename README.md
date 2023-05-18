@@ -72,15 +72,11 @@ A list of all the issues I have fixed and features I have added.
 <!-- TICKET TEMPLATE -->
 <details>
 <summary><h6> ✅  This was the problem: </h6></summary>
-<div>
 🤔  The solution test
-<pre>
-<code>
+<pre><code>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-</code>
-</pre>
-</div>
+</code></pre>
 </details> 
 
 <!-- TICKET 2 -->
