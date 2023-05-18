@@ -78,7 +78,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
 </code></pre>
 </details> 
-
 <!-- TICKET 2 -->
 <details>
 <summary>
