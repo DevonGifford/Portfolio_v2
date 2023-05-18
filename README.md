@@ -68,7 +68,7 @@ GitHub - https://github.com/bchiang7/v4
 <summary>
 <h3> Version 1.0 </h3>
 </summary>
-<br>
+A list of all the issues I have fixed and features I have added.
 <!-- TICKET TEMPLATE -->
 <details>
 <summary><h6> ✅  This was the problem: </h6></summary>
