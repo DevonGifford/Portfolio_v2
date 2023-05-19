@@ -28,7 +28,7 @@
 <h1 align='center'> Welcome & Introductory </h1>
 
 
-### About & History of this project 🎯
+### About & History of this project 🤓
 ---------------------------------------------------
 
 Here I will insert a history of the development of this website.
@@ -40,16 +40,17 @@ You can see a list of some of these 'things' below under a "work in progress"
 
 <br>
 
-### Credit where credit is due: <em>Brittany Chiang</em>
+### Credit where credit is due: <em>Brittany Chiang</em> 🙏
 ---------------------------------------------------
 
 As mentioned in the about section, while I built this website from scratch myself, I heavily used Brittany Chiang's website as inspiration and therefore all credit goes to her.
 
 Website - https://brittanychiang.com/ <br>
 GitHub - https://github.com/bchiang7/v4
-<br>
+<br><br>
 
 
+## What I have done and what I want to do in future updates
 
 ### Version 3.0 - to-do-list
 ---------------------------------------------------
@@ -138,21 +139,24 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 
 
 
+<h2 align='center'>Building, Running & Forking</h2>
 
-#  Forking and Building/Running
 
+### Forking this repo
+---------------------------------------------------
 
-## Forking the repo
-
-Yes, you can fork this repo. <br>
-However, please give proper credit by linking back to brittanychiang.com. Thanks!
+Yes, you are welcome to fork this repo. <br>
+However, please give proper credit by linking back to brittanychiang.com
 <br><br>
 Website - https://brittanychiang.com/ <br>
 GitHub - https://github.com/bchiang7/v4
 <br>
 
+<h6> You could also give me a star if you like this project 😉⭐ </h6>
 
-## Getting Started
+
+### Running this project
+---------------------------------------------------
 
 First, run the development server:
 
@@ -170,7 +174,9 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Deploy on Vercel
+
+### Building and Deploying on Vercel
+---------------------------------------------------
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
@@ -178,4 +184,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# 🎯 INSERT MIT LICENSE HERE
+
+<h2 align='center'>🎯 INSERT MIT - LICENSE HERE</h2>
