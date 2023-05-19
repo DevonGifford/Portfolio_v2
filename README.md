@@ -2,7 +2,7 @@
 
 <div align="center">
     <h1>Welcome to my Portfolio's GitHub Repo 👋  </h1>
-    <h3> ❗🔗-www.devongifford.com - vesion 2.3 </h3>
+    <h3> ❗🔗-www.devongifford.com - vesion 2.1 </h3>
     <h5>
         This is the second iteration of <a href="">devongifford.com🎯</a>
         <h6>
@@ -40,7 +40,7 @@ You can see a list of some of these 'things' below under a "work in progress"
 
 <br>
 
-### Credit where credit is due: Brittany Chiang
+### Credit where credit is due: <em>Brittany Chiang</em>
 ---------------------------------------------------
 
 As mentioned in the about section, while I built this website from scratch myself, I heavily used Brittany Chiang's website as inspiration and therefore all credit goes to her.
@@ -51,7 +51,7 @@ GitHub - https://github.com/bchiang7/v4
 
 
 
-### Version 3.0 - current to-do-list
+### Version 3.0 - to-do-list
 ---------------------------------------------------
 
 <h6>🔲  This was the problem: </h6>
@@ -62,7 +62,7 @@ GitHub - https://github.com/bchiang7/v4
 
 <details>
 <summary>
-<h3> Version 1.0 </h3>
+<h3> Version 2.0 </h3>
 </summary>
 A list of all the issues I have fixed and features I have added.
 <!-- TICKET TEMPLATE -->
@@ -106,9 +106,9 @@ A list of required componenets and thoughts behind creating the
 <summary><h6> ✅  This was the problem: </h6></summary>
 🤔  The solution test
 <ul>
-<li>one <li>
-<li>two <li>
-<li>three <li>
+<li>one
+<li>two
+<li>three 
 </ul>
 <pre><code>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
