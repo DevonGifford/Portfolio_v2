@@ -11,7 +11,6 @@
             other technologies used in this project include:
         </h6>
     </h5>
-
 </div>
 
 <p align='center'>
@@ -19,6 +18,7 @@
         <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,github,vscode" />
     </a>
 </p>
+<hr>
 
 
 🎯 - INSERT A SCREEN SHOT OF THE HOME PAGE HERE
@@ -49,20 +49,26 @@ Website - https://brittanychiang.com/ <br>
 GitHub - https://github.com/bchiang7/v4
 <br><br>
 
-<h1 align='center'>The TO-DO-LIST and TO-DONE-LIST's</h1>
+<h1 align='center'>"To-Do-List" & "The-Done-List"</h1>
 
-### Version 3.0 - to-do-list
+### Version 3.0 🌱
 ---------------------------------------------------
 
-<h6>🔲  This was the problem: </h6>
+These are some of the things I would like to do with this project
+<h6>🔲  This is what I am going to do: </h6>
+<h6>🔲  This is what I am going to do: </h6>
+<h6>🔲  This is what I am going to do: </h6>
+<h6>🔲  This is what I am going to do: </h6>
 
+<br><br>
 
-### Previouse Versions and Fixes
+### Previouse Versions and Fixes 👴
 ---------------------------------------------------
 
+<!-- VERSION 2.0 -->
 <details>
 <summary>
-<h3> Version 2.0 </h3>
+<h4> Version 2.0 </h4>
 </summary>
 A list of all the issues I have fixed and features I have added.
 <!-- TICKET TEMPLATE -->
@@ -87,18 +93,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 </code>
 </pre>
 </details>
-
 </details> 
 <!-- CLOSING -->
 
 
-
-
-
-
+<!-- VERSION 1.0  -->
 <details>
 <summary>
-   <h3> Initial Build </h3>
+   <h4> Initial Build </h4>
 </summary>
 A list of required componenets and thoughts behind creating the 
 <!-- TICKET TEMPLATE -->
@@ -131,9 +133,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 </details>
 <!-- CLOSING -->
 
-
-
-
+<br><br>
 
 
 
@@ -141,7 +141,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 <h1 align='center'>Building, Running & Forking</h1>
 
 
-### Forking this repo
+### 🍴🔱 Forking this repo 🍴🔱
 ---------------------------------------------------
 
 Yes, you are welcome to fork this repo. <br>
@@ -174,7 +174,7 @@ Second, run the development server:
 npm run dev
 ```
 
-Third, Visit http://localhost:3000 to view your application.
+Third, Open up <code>localhost:3000<code> to view your application. <br>
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 <ul>
@@ -186,7 +186,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 <br>
 
-### 👷‍♂️ Building and Deploying on Vercel 👷‍♂️🏗 
+### 👷‍♂️🏗 Building and Deploying on Vercel 👷‍♂️🏗 
 ---------------------------------------------------
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
