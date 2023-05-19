@@ -54,11 +54,7 @@ GitHub - https://github.com/bchiang7/v4
 ### Version 3.0 - current to-do-list
 ---------------------------------------------------
 
-🔲
-🔲
-🔲
-🔲
-✅
+<h6>🔲  This was the problem: </h6>
 
 
 ### Previouse Versions and Fixes
@@ -78,7 +74,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
 </code></pre>
 </details> 
-<!-- TICKET 2 --><details>
+<!-- TICKET 2 -->
+<details>
 <summary>
 <h6> ✅  This was the problem: </h6>
 </summary>
@@ -103,18 +100,36 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 <summary>
    <h3> Initial Build </h3>
 </summary>
-<br>
-✅  This was the problem <br>
->   This is how I fixed the problem
-<br><br>
-✅  This was the problem <br>
->   This is how I fixed the problem
-<br><br>
-✅  This was the problem <br>
->   This is how I fixed the problem
-<br><br>
+A list of required componenets and thoughts behind creating the 
+<!-- TICKET TEMPLATE -->
+<details>
+<summary><h6> ✅  This was the problem: </h6></summary>
+🤔  The solution test
+<ul>
+<li>one <li>
+<li>two <li>
+<li>three <li>
+</ul>
+<pre><code>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+</code></pre>
 </details>
-
+<!-- TICKET 2 -->
+<details>
+<summary>
+<h6> ✅  This was the problem: </h6>
+</summary>
+🤔  The solution test
+<pre>
+<code>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+</code>
+</pre>
+</details>
+</details>
+<!-- CLOSING -->
 
 
 
