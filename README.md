@@ -146,34 +146,46 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 ---------------------------------------------------
 
 Yes, you are welcome to fork this repo. <br>
-However, please give proper credit by linking back to brittanychiang.com
+However, please give all proper credit by linking back to https://brittanychiang.com/
 <br><br>
 Website - https://brittanychiang.com/ <br>
 GitHub - https://github.com/bchiang7/v4
 <br>
 
 <h6> You could also give me a star if you like this project 😉⭐ </h6>
+<br>
 
-
-### Running this project
+### Running this project locally
 ---------------------------------------------------
 
-First, run the development server:
+System Requirements:
+<ul>
+<li>Node.js 16.8 or later.
+<li>macOS, Windows (including WSL), and Linux are supported.
+<ul>
+
+First, Install dependencies
+```bash
+npm install
+```
+
+Second, run the development server:
 
 ```bash
 npm run dev
 ```
 
+Third, Visit http://localhost:3000 to view your application.
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<ul>
+<li>You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<li>[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<li>The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<li>This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<ul>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
+<br>
 
 ### Building and Deploying on Vercel
 ---------------------------------------------------
@@ -183,6 +195,15 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br>
+
+
+
+
 
 
 <h2 align='center'>🎯 INSERT MIT - LICENSE HERE</h2>
+
+<p align='center'>
+    xxx
+</p>
