@@ -1,4 +1,5 @@
 🎯 - INSERT MY LITTLE LOGO HERE
+<img align='center' src="public/assets/PortfolioDemoLogo.png" alt="Demo" title="DemoImage">
 
 <div align="center">
     <h1>Welcome to my Portfolio's GitHub Repo 👋  </h1>
@@ -22,7 +23,7 @@
 
 
 🎯 - INSERT A SCREEN SHOT OF THE HOME PAGE HERE
-
+<img align='center' src="public/assets/PortfolioDemoDevon.png" alt="Demo" title="DemoImage">
 
 
 <h1 align='center'> Welcome & Introductory </h1>
