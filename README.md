@@ -49,8 +49,7 @@ Website - https://brittanychiang.com/ <br>
 GitHub - https://github.com/bchiang7/v4
 <br><br>
 
-
-## What I have done and what I want to do in future updates
+<h1 align='center'>The TO-DO-LIST and TO-DONE-LIST's</h1>
 
 ### Version 3.0 - to-do-list
 ---------------------------------------------------
@@ -139,7 +138,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque en
 
 
 
-<h2 align='center'>Building, Running & Forking</h2>
+<h1 align='center'>Building, Running & Forking</h1>
 
 
 ### Forking this repo
@@ -155,14 +154,14 @@ GitHub - https://github.com/bchiang7/v4
 <h6> You could also give me a star if you like this project 😉⭐ </h6>
 <br>
 
-### Running this project locally
+### 🏃‍♂️💨 Running this project locally 🏃‍♂️💨
 ---------------------------------------------------
 
 System Requirements:
 <ul>
 <li>Node.js 16.8 or later.
 <li>macOS, Windows (including WSL), and Linux are supported.
-<ul>
+</ul>
 
 First, Install dependencies
 ```bash
@@ -183,11 +182,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 <li>[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 <li>The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 <li>This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-<ul>
+</ul>
 
 <br>
 
-### Building and Deploying on Vercel
+### 👷‍♂️ Building and Deploying on Vercel 👷‍♂️🏗 
 ---------------------------------------------------
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
@@ -202,7 +201,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 
-<h2 align='center'>🎯 INSERT MIT - LICENSE HERE</h2>
+<h2 align='center'>📃🖋 INSERT MIT - LICENSE HERE 📃🖋</h2>
 
 <p align='center'>
     xxx
