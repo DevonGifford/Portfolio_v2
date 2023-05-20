@@ -1,5 +1,5 @@
 <p align='center'>
-    <img src="public/assets/PortfolioDemoLogo.png" alt="Demo" title="DemoImage" width="100" height="100">
+    <img src="public/assets/PortfolioDemoLogo.png" alt="Demo" title="DemoImage" width="150" height="150">
 </p>
 
 <div align="center">
@@ -22,8 +22,9 @@
 </p>
 <hr>
 
-
-<img align='center' src="public/assets/PortfolioDemoDevon.png" alt="Demo" title="DemoImage">
+<p align='center'>
+    <img align='center' src="public/assets/PortfolioDemoDevon.png" alt="Demo" title="DemoImage" width="400" height="400">
+</p>
 
 
 <h1 align='center'> Welcome & Introductory </h1>
