@@ -40,7 +40,7 @@ const Footer = () => {
       <p className='text-center justify-center py-3 text-xs'>
         Built from scratch by <a href="https://www.linkedin.com/in/dbgifford/" target='_blank' className='text-textGreen'>Devon Gifford</a>
         <br /> 
-        Inspired by <a href="https://brittanychiang.com/" target='_blank' className='text-textGreen'> Brittany Chang</a>
+        Inspired by <a href="https://brittanychiang.com/" target='_blank' className='text-textGreen'> Brittany Chiang</a>
       </p>
     </div>
   )
