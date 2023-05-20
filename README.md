@@ -1,9 +1,11 @@
+<!-- :ogo -->
 <p align='center'>
     <img src="public/assets/PortfolioDemoLogo.png" alt="Demo" title="DemoImage" width="150" height="150">
 </p>
 
+<!-- Introduction Text -->
 <div align="center">
-    <h1>Welcome to my Portfolio's GitHub Repo 👋  </h1>
+    <h1>👋 Welcome to my Portfolio's GitHub Repo 👋 </h1>
     <h3> ❗🔗-www.devongifford.com - vesion 2.1 </h3>
     <h5>
         This is the second iteration of <a href="">devongifford.com🎯</a>
@@ -15,6 +17,7 @@
     </h5>
 </div>
 
+<!-- Tech Used in this Project -->
 <p align='center'>
     <a href="https://skillicons.dev">
         <img src="https://skillicons.dev/icons?i=ts,tailwind,nextjs,vercel,github,vscode" />
@@ -22,12 +25,13 @@
 </p>
 <hr>
 
+<!-- Demo Image -->
 <p align='center'>
-    <img src="public/assets/PortfolioDemoDevon.png" alt="Demo" title="DemoImage" width="600" height="600">
+    <img src="public/assets/PortfolioDemoDevon.png" alt="Demo" title="DemoImage" width="650" height="650">
 </p>
 
-<h1 align='center'> Welcome & Introductory </h1>
 
+<h1 align='center'> Welcome & Introductory </h1>
 
 ### About & History of this project 🤓
 ---------------------------------------------------
@@ -175,7 +179,7 @@ Second, run the development server:
 npm run dev
 ```
 
-Third, Open up <code>localhost:3000<code> to view your application. <br>
+Third, Open up <code>localhost:3000</code> to view your application. <br>
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 <ul>
@@ -184,8 +188,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 <li>The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 <li>This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 </ul>
-
-<br>
 
 ### 👷‍♂️🏗 Building and Deploying on Vercel 👷‍♂️🏗 
 ---------------------------------------------------
@@ -202,8 +204,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 
-<h2 align='center'>📃🖋 INSERT MIT - LICENSE HERE 📃🖋</h2>
+<h2 align='center'>📃🖋 MIT LICENSE 📃🖋</h2>
 
 <p align='center'>
-    xxx
+    🎯 xxx 🎯
 </p>
