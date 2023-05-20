@@ -23,9 +23,8 @@
 <hr>
 
 <p align='center'>
-    <img align='center' src="public/assets/PortfolioDemoDevon.png" alt="Demo" title="DemoImage" width="400" height="400">
+    <img src="public/assets/PortfolioDemoDevon.png" alt="Demo" title="DemoImage" width="600" height="600">
 </p>
-
 
 <h1 align='center'> Welcome & Introductory </h1>
 
