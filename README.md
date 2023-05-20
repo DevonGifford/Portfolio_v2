@@ -1,4 +1,6 @@
-<img align='center' src="public/assets/PortfolioDemoLogo.png" alt="Demo" title="DemoImage" width="50" height="50">
+<p align='center'>
+    <img src="public/assets/PortfolioDemoLogo.png" alt="Demo" title="DemoImage" width="100" height="100">
+</p>
 
 <div align="center">
     <h1>Welcome to my Portfolio's GitHub Repo 👋  </h1>
