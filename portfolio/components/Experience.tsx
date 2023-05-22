@@ -58,14 +58,18 @@ const Experience = () => {
   return (
     <section
       id='Experience'
-      className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8'
+      className='max-w-containerSmall min-h-fit h-screen mx-auto py-96 lgl:py-32 flex flex-col gap-5 justify-center'
       >
         <SectionTitle 
           titleName='Where I have worked' 
           titleNumber='02' 
         />
-        <div className='w-full mt-10 flex flex-col md:flex-row gap-16'>
-            <ul className='md:w-80 flex flex-col'>
+        {/* CONTAINER DIV */}
+        <div className='w-full h-fit mt-5 flex flex-col sml:flex-row gap-4 '>
+
+          {/*  SIDE BAR */}
+          <div className='flex w-[fit-content] h-[fit-content] sml:flex-col '>
+            <ul className='flex whitespace-nowrap max-sml:w-6/12 max-sml:overflow-x-scroll max-sml:no-scrollbar sml:h-auto sml:flex-col'>
                 {/* TeamLead */}
                 <li
                   onClick={handleTeamLead} 
@@ -73,10 +77,10 @@ const Experience = () => {
                     workTeamLead 
                         ? "border-l-textGreen text-textGreen" 
                         : "border-l-hoverColor : text-textDark"
-                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
                     >
-                   Cognizant 
-                   <br /><em>(Team-lead)</em> 
+                    Cognizant 
+                    <br /><em>(Team-lead)</em> 
                 </li>
 
                 {/* QA */}
@@ -86,9 +90,9 @@ const Experience = () => {
                     workQA 
                         ? "border-l-textGreen text-textGreen" 
                         : "border-l-hoverColor : text-textDark"
-                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
                     >
-                   Cognizant 
+                    Cognizant 
                 </li>
 
                 {/* Internship */}
@@ -98,10 +102,10 @@ const Experience = () => {
                     workInternship 
                         ? "border-l-textGreen text-textGreen" 
                         : "border-l-hoverColor : text-textDark"
-                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
                     >
-                   IE Business School
-                   <br /><em>(Internship)</em>  
+                    IE Business School
+                    <br /><em>(Internship)</em>  
                 </li>
 
                 {/* StartUp */}
@@ -111,10 +115,10 @@ const Experience = () => {
                     workStartUp 
                         ? "border-l-textGreen text-textGreen" 
                         : "border-l-hoverColor : text-textDark"
-                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
                     >
-                   Out-of-the-Cube
-                   <br /><em>(Start-up)</em>  
+                    Out-of-the-Cube
+                    <br /><em>(Start-up)</em>  
                 </li>
 
                 {/* Freelance */}
@@ -124,16 +128,20 @@ const Experience = () => {
                     workFreelance 
                         ? "border-l-textGreen text-textGreen" 
                         : "border-l-hoverColor : text-textDark"
-                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                    } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
                     >
-                   Freelance 
+                    Freelance 
                 </li>
             </ul>
-            {workTeamLead && <TeamLead />}
-            {workQA && <QA />}
-            {workInternship && <Internship />}
-            {workStartUp && <StartUp />}
-            {workFreelance && <Freelance />}
+          </div>
+
+          {/* Work information */}
+          {workTeamLead && <TeamLead />}
+          {workQA && <QA />}
+          {workInternship && <Internship />}
+          {workStartUp && <StartUp />}
+          {workFreelance && <Freelance />}
+
         </div>
     </section>
   )

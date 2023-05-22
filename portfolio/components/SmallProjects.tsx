@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ProjectCard from './ProjectCard';
+import ProjectCard from './SmallProjectCard';
 import { motion } from "framer-motion";
 
 
@@ -10,12 +10,9 @@ const SmallProjects = () => {
   return (
     <div className='max-w-contentContainer mx-auto px-4 py-24'>
       <div className='w-full flex flex-col items-center'>
-        <h2 className='text-3xl font-titleFont font-semibold'>Other Noteworthy Projects</h2>
+        <h2 className='text-2xl sml:text-3xl font-titleFont font-semibold'>Other Noteworthy Projects</h2>
       </div>
-      <div className='grid grid-cols-1 sml:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 lgl:px-10'>
-
-
-
+      <div className='flex flex-wrap items-center justify-center gap-6 mt-10 lgl:px-10'>
 
 
         {/* PROJECT 1 */}

@@ -38,14 +38,16 @@ const Navbar = () => {
   }
   
     return ( 
-        <div className="w-full shadow-navbarShadow h-20 lg:h-[10vh] sticky top-0 z-50 bg-bodyColor px-4">
+        <div className="w-full shadow-navbarShadow h-18 lg:h-[06vh] sticky top-0 z-50 bg-bodyColor px-4">
             <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
                 <motion.div 
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5}}
                 >
-                    <Image className="w-14 rounded-full" src={logo} alt="logo" />
+                  <a className="hover:animate-spin" href="#home">
+                    <Image className="w-12 pt-2 rounded-full sml:w-16 hover:animate-spin" src={logo} alt="logo" />
+                  </a>
                 </motion.div>
                 <div className="hidden mdl:inline-flex items-center gap-7">
                     <ul className="flex text-[13] gap-7">
@@ -148,7 +150,7 @@ const Navbar = () => {
                     <div 
                       ref={(node) => (ref.current = node)} 
                       onClick={handleClick}
-                      className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-end"
+                      className="absolute mdl:hidden top-0 right-end w-full h-screen bg-black bg-opacity-50 flex flex-col items-end"
                       >
                         <motion.div
                           initial={{ x: 20, opacity: 0 }}
@@ -156,19 +158,23 @@ const Navbar = () => {
                           transition={{ 
                             duration: 0.1, 
                           }}
-                          className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#112240] flex flex-col items-center px-4 py-10 relative"
+                          className="w-[80%] h-full scrollbar-hide bg-[#112240] flex flex-col items-center px-4 py-16 relative"
                           >
                             <MdOutlineClose  
                               onClick={() => setShowMenu(false)}
                               className="text-3xl text-textGreen cursor-pointer hover:text-textGreen/80 absolute top-4 right-4"/>
-                              <div className="flex flex-col text-base gap-7">
+                              
+                              {/* ITEMS CONTAINER */}
+                              <div className="w-[80%] flex flex-col text-base text-center items-center gap-8">
                                 
                                 {/* List of Section Mobile View */}
-                                <ul className="flex flex-col text-base gap-7 items-left">
+                                <ul className="flex flex-col text-base gap-12 items-left pt-12">
+                                  
+                                  {/* HOME */}
                                   <Link 
                                     href="#home"
                                     onClick={handleScroll}
-                                    className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+                                    className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link "
                                   >
                                     <motion.li
                                       initial={{ x: 20, opacity: 0 }}
@@ -180,6 +186,7 @@ const Navbar = () => {
                                       }}
                                     >Home</motion.li>
                                   </Link>
+
                                   {/* ABOUT */}
                                   <Link 
                                       href="#about"
@@ -195,7 +202,7 @@ const Navbar = () => {
                                         ease: "easeIn" ,
                                       }}
                                     >
-                                      <span className="text-textGreen">01.</span>
+                                      <span className="text-textGreen"> 01.  </span>
                                       About
                                     </motion.li>
                                   </Link>
@@ -214,7 +221,7 @@ const Navbar = () => {
                                         ease: "easeIn" ,
                                       }}
                                     >
-                                      <span className="text-textGreen">02.</span>
+                                      <span className="text-textGreen">02. </span>
                                       Experience
                                     </motion.li>
                                   </Link>
@@ -233,7 +240,7 @@ const Navbar = () => {
                                         ease: "easeIn" ,
                                       }}
                                     >
-                                      <span className="text-textGreen">03.</span>
+                                      <span className="text-textGreen">03. </span>
                                       Projects
                                     </motion.li>
                                   </Link>
@@ -252,7 +259,7 @@ const Navbar = () => {
                                         ease: "easeIn" ,
                                       }}
                                     >
-                                      <span className="text-textGreen">04.</span>
+                                      <span className="text-textGreen">04. </span>
                                       Contact
                                     </motion.li>
                                   </Link>
@@ -261,7 +268,7 @@ const Navbar = () => {
                                 <a 
                                   href="/assets/DevonCV.pdf" 
                                   target="_blank"
-                                  className="pt-2"
+                                  className="pt-8"
                                 >
                                     <motion.button
                                       initial={{ opacity: 0 }}
@@ -273,7 +280,7 @@ const Navbar = () => {
                                     </motion.button>
                                 </a>
                                 {/* ICONS for Mobile view */}
-                                <div className="flex gap-4 pt-2">
+                                <div className="flex gap-4 pt-4">
                                 {/* Github Icon */}
                                 <motion.a
                                   initial={{ x: 20, opacity: 0 }}
@@ -351,7 +358,7 @@ const Navbar = () => {
                                   }}
                                   >
                                 <p 
-                                  className='text-sm w-72 tracking-widest hover:text-textGreen mt-4'
+                                  className='text-sm w-72 tracking-widest pl-4 hover:text-textGreen mt-4'
                                 >devongifford@outlook.com
                                 </p>
                                 </motion.a>
