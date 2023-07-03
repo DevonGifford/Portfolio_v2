@@ -36,10 +36,11 @@ const Banner = () => {
                     '    ',
                     'Full-Stack Developer', 
                     'Quality Engineer',
+                    'React Developer',
                     'Next.js Developer',
-                    'React Native Developer',
                     'Python Enthusiast',
                     'Web Developer',
+                    'ex-FAANG',
                     'Future Senior Dev',
                     'Aspiring Principal Engineer',
                 ],
@@ -58,13 +59,14 @@ const Banner = () => {
         className='text-sm sml:text-base text-textDark font-medium'
       >
           {" "}
-          South African by birth, British citizen, Based in Madrid, Spain.<br />
-          Self taught programmer, with a Bachelors in Business Administration & training in project management, with experience in Software Testing at one of the major <em>FAANG</em> companies.  Eager to contribute to team success through hard work, attention to detail & creative problem solving. <br /> <br />
-          <em>Fully committed to the philosophy of life-long learning.</em> {" "} <br />
+          Born in South Africa, holding British citizenship, and currently based in Madrid, Spain, my expertise and passion lies in full-stack web development. <br />
+
+          Leveraging my background in Marketing and Project Management, complemented by experience in Software Testing at a major <em>FAANG</em> company, my approach brings a unique perspective to deliver high-quality web solutions.
+          <br /><br />
+          <em>Fully committed to the philosophy of life-long learning.</em> {" "} <br /><br />
           
           
-          {/* 🎯INSERT REAL LINK HERE LATER🎯 */}
-          <a href="https://www.instagram.com/princedevon_za/">
+          <a href="https://www.linkedin.com/in/dbgifford/" target='_blank'>
               
               <span
               className='text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group'

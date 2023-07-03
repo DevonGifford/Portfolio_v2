@@ -8,7 +8,7 @@ const BigProjects = () => {
   const [showMore, setShowMore] = useState (false);
 
   return (
-    <div id='Projects' className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8'>
+    <div id='Projects' className='max-w-containerSmall mx-auto min-h-fit py-10 lgl:py-32 flex flex-col gap-8'>
       <SectionTitle 
        titleName='Capstone Projects' 
        titleNumber='03' 

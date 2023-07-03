@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { BsArrowRightShort } from "react-icons/Bs";
+import BulletPoint from './BulletPoint';
 
 
 const StartUp = () => {
@@ -12,44 +12,30 @@ const StartUp = () => {
     className='w-full'    
     >
       {/* JOB TITLE & COMPANY */}
-      <h3 className='flex gap-1 font-medium text-xl font-titleFont'>
-        JOB TITLE STARTUP
-        <span className='text-sm mt-1 font-medium text-textGreen'>
-          @ Company 
-        </span>
-      </h3>
+      <div className='flex flex-wrap gap-1 font-medium text-xl font-titleFont'>
+        <h3>Web Assistant | Art Auction</h3>
+        <span className='text-sm mt-1 font-medium text-textGreen flex'>@ Start-up</span>
+      </div>
       
       {/* Working Dates */}
-      <p>Date to Date</p>
+      <p>January 2019 - June 2019</p>
 
       {/* INTRODUCTION */}
       <p className='mt-3 text-base font-light flex gap-2 text-textDark'><strong>
-      INTRODUCTION STUFF - Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-      </strong></p>
+      By utilizing technical skills in SQL database management, Python scripting, and content management with WordPress, I actively supported the growth and success of the art auction start-up. Collaborating closely with the team, I ensured seamless data migration, enhanced website content, and facilitated efficient product management.      </strong></p>
 
       {/* Bullet Points */}
       <ul className='mt-4 flex flex-col gap-3 text-textDark'>
         
-        <li className='text-base flex gap-2'>
-          <span className='text-textGreen mt-1'> 
-            <BsArrowRightShort />
-          </span> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-        </li>
+        <BulletPoint
+          headningText='Managed database operations, including data migration from Excel to SQL database'
+          contentText="I successfully designed and executed a seamless data migration process, utilizing 'openpyxl' library to extract data from Excel sheets, mapping and ensuring accurate representation in the SQL database while maintaining data integrity and minimizing downtime through thorough verification."
+        />
 
-        <li className='text-base flex gap-2'>
-          <span className='text-textGreen mt-1'> 
-            <BsArrowRightShort />
-          </span> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-        </li>
-
-        <li className='text-base flex gap-2 '>
-          <span className='text-textGreen mt-1'> 
-            <BsArrowRightShort />
-          </span> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-        </li>
+        <BulletPoint
+          headningText='Content Management and Website Enhancement'
+          contentText="I efficiently managed website content, including the addition of new pages, articles, images, and multimedia elements, utilizing the powerful features of WordPress. By leveraging the Theme Editor, I made impactful styling and CSS changes, resulting in an appealing and user-friendly website interface. Additionally, I played a pivotal role in product management, contributing to the addition of new products and ensuring accurate inventory management with up-to-date stock levels."
+        />
 
       </ul>
 

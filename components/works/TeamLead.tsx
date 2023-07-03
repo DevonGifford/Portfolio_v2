@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { BsArrowRightShort } from "react-icons/Bs";
+import { BsApple } from "react-icons/bs";
+import BulletPoint from './BulletPoint';
 
 
 const TeamLead = () => {
@@ -12,44 +13,54 @@ const TeamLead = () => {
     className='w-full'    
     >
       {/* JOB TITLE & COMPANY */}
-      <h3 className='flex gap-1 font-medium text-xl font-titleFont'>
-        JOB TITLE TEAMLEAD
-        <span className='text-sm mt-1 font-medium text-textGreen'>
-          @ Company 
+      <div className='flex flex-wrap gap-1 font-medium text-xl font-titleFont'>
+        <h3>
+          Locale/Team Lead - English Variant Locales
+        </h3>
+        <span className='text-sm mt-1 font-medium text-textGreen flex'>
+          @ Cognizant
+          &ensp; 
+          <BsApple />
         </span>
-      </h3>
+      </div>
       
       {/* Working Dates */}
-      <p>Date to Date</p>
+      <p>June 2022 - December 2022</p>
 
       {/* INTRODUCTION */}
       <p className='mt-3 text-base font-light flex gap-2 text-textDark'><strong>
-      INTRODUCTION STUFF - Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
+        Promoted to a taem lead position along with my QA/QE responsibilities.  My role involved actively supporting managers and overseeing the operations of multiple teams. 
+        <br/>
+        Key responsibilities included:
       </strong></p>
 
       {/* Bullet Points */}
       <ul className='mt-4 flex flex-col gap-3 text-textDark'>
-        
-        <li className='text-base flex gap-2'>
-          <span className='text-textGreen mt-1'> 
-            <BsArrowRightShort />
-          </span> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-        </li>
 
-        <li className='text-base flex gap-2'>
-          <span className='text-textGreen mt-1'> 
-            <BsArrowRightShort />
-          </span> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-        </li>
+        <BulletPoint 
+          headningText='Assisting and supporting managers'
+          contentText='Collaborating closely with managers to provide seamless assistance and support in their day-to-day responsibilities, ensuring efficient workflow and effective team coordination.'
+        />
 
-        <li className='text-base flex gap-2 '>
-          <span className='text-textGreen mt-1'> 
-            <BsArrowRightShort />
-          </span> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quasi eaque enim autem.
-        </li>
+        <BulletPoint 
+          headningText='Coordinating and reviewing tasks'
+          contentText='Taking charge of task coordination and reviewing processes across multiple teams, ensuring that high quality standards were met while adhering to deadlines. This involved meticulous monitoring of progress and providing guidance to team members to ensure successful project completion.'
+        />
+
+        <BulletPoint
+          headningText='Providing clear instructions and guidance'
+          contentText='Offering comprehensive instructions and guidance to the team, effectively communicating new tasks, objectives, and performance expectations. This ensured that team members had the necessary direction and resources to accomplish their roles effectively.'
+        />
+
+        <BulletPoint
+          headningText='Reporting progress to management'
+          contentText='Regularly updating management on project progress, highlighting achievements, addressing challenges, and reporting any issues encountered. This facilitated informed decision-making and proactive problem-solving.'
+        />
+
+        <BulletPoint
+          headningText='Facilitating onboarding and performance feedback'
+          contentText='Assisting in the smooth onboarding process for new team members, ensuring a seamless transition and supporting their integration into the team. Additionally, providing constructive performance feedback to both management and team members, recognizing accomplishments and identifying areas for improvement.'
+        />
 
       </ul>
 

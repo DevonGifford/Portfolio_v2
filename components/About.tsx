@@ -50,11 +50,15 @@ const About = () => {
                     </div>
 
                     <p>
-                        Hello! My name is Devon Gifford and I am a <span className='text-textGreen'>full stack developer</span> with a passion for learning and problem solving.  I have a strong foundation in front and back end development and I am skilled in creating user-friendly and responsiv web applications using React and it's ecosystem.
+                        Hello! I'm Devon Gifford, a <span className='text-textGreen'>full stack developer</span> driven by a passion for continuous learning and problem-solving. With a solid background in front-end and back-end development, I specialize in crafting user-friendly and responsive web applications using  <span className='text-textGreen'>React</span> and its ecosystem.
+              
                         <br /> <br />
-                        My interest in web development started when I was creating websites for my freelance marketing clients in <span className='text-textGreen'>South Africa</span>.  Since then moving to Europe I had an opportunity to work in QA for one of the <span className='text-textGreen'>major FAANG</span> companies where I learned I wanted to be solving problems.
-                        <br /> <br />
-                        My interest in web development started when I was creating websites for my freelance marketing clients in <span className='text-textGreen'>South Africa</span>.  Since then moving to Europe I had an opportunity to work in QA for one of the <span className='text-textGreen'>major FAANG</span> companies where I learned I wanted to be solving problems.
+                        My journey into web development began during my time as a freelancer, creating websites for marketing clients in South Africa. Since then, I've had the opportunity to work in QA for a major <span className='text-textGreen'>FAANG</span> company in Europe, where I discovered my true passion for problem-solving.
+                        <br/><br/>
+
+                        Combining my technical skills, creativity, and a keen eye for detail, I strive to deliver <span className='text-textGreen'>innovative solutions</span> that meet client needs and exceed expectations. I am excited to contribute my expertise to collaborative projects and continue expanding my knowledge in this <span className='text-textGreen'>ever-evolving</span> field.
+                        <br/>
+                        Let's create something amazing together!
                           
                     </p>
 
@@ -92,8 +96,12 @@ const About = () => {
 
             {/* Skill Logo's */}
             <div className='row-start-3 col-span-full pt-5'>
-                <p className='pb-5 font-codeFont text-textDark font-bold underline underline-offset-1'>The Technologies I am most profficient & passionate about:</p>
-                <ul className='flex flex-row flex-wrap gap-4 ml-3 mt-1'>
+                
+                <p className='pb-5 font-codeFont text-textDark font-bold text-center text-sm lg:text-base'>
+                    The Technologies I am most profficient & passionate about:
+                </p>
+                
+                <ul className='flex flex-row flex-wrap gap-4 ml-3 mt-1 justify-center'>
                     {/* JavaScriptLogo */}
                     <li className='flex items-center gap-2 hover:-translate-y-2 transition-all duration-300'>
                         <Image 
@@ -136,7 +144,7 @@ const About = () => {
                     </li>
 
                 </ul>
-                <ul className='flex flex-row flex-wrap gap-4 ml-3 mt-5'>
+                <ul className='flex flex-row flex-wrap gap-4 ml-3 mt-5 justify-center'>
                     {/* React Logo */}
                     <li className='flex items-center gap-2 hover:-translate-y-2 transition-all duration-300'>
                         <Image 
@@ -179,7 +187,7 @@ const About = () => {
                     </li>
 
                 </ul>
-                <ul className='flex flex-row flex-wrap gap-4 ml-3 mt-5'>
+                <ul className='flex flex-row flex-wrap gap-4 ml-3 mt-5 justify-center'>
                     {/* PostgreSQL */}
                     <li className='flex items-center gap-2 hover:-translate-y-2 transition-all duration-300'>
                         <Image 

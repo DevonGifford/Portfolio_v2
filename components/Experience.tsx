@@ -58,14 +58,14 @@ const Experience = () => {
   return (
     <section
       id='Experience'
-      className='max-w-containerSmall min-h-fit h-screen mx-auto py-96 lgl:py-32 flex flex-col gap-5 justify-center'
+      className='max-w-containerSmall min-h-fit mx-auto py-96 lgl:py-32 flex flex-col gap-5 justify-center'
       >
         <SectionTitle 
           titleName='Where I have worked' 
           titleNumber='02' 
         />
         {/* CONTAINER DIV */}
-        <div className='w-full h-fit mt-5 flex flex-col sml:flex-row gap-4 '>
+        <div className='w-full h-screen mt-5 flex flex-col sml:flex-row gap-4 '>
 
           {/*  SIDE BAR */}
           <div className='flex w-[fit-content] h-[fit-content] sml:flex-col '>
@@ -104,7 +104,7 @@ const Experience = () => {
                         : "border-l-hoverColor : text-textDark"
                     } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
                     >
-                    IE Business School
+                    Mashauri Limited
                     <br /><em>(Internship)</em>  
                 </li>
 
