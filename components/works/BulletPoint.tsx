@@ -8,7 +8,7 @@ interface Props {
 
 const BulletPoint = ({ headningText, contentText }: Props) => {
   return (
-    <li className='text-base  gap-2'>
+    <li className='text-base gap-2'>
 
       {/* HEADING SECTION */}
       <div className='text-textGreen flex flex-row'> 

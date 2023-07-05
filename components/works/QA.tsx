@@ -13,7 +13,7 @@ const QA = () => {
     className='w-full'    
     >
       {/* JOB TITLE & COMPANY */}
-      <h3 className='flex gap-1 font-medium text-xl font-titleFont'>
+      <h3 className='flex gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row'>
         QA/QE Analyst
         <span className='text-sm mt-1 font-medium text-textGreen flex'>
           @ Cognizant
@@ -23,7 +23,7 @@ const QA = () => {
       </h3>
       
       {/* Working Dates */}
-      <p>September 2021 - December 2022</p>
+      <p className='pt-3'>September 2021 - December 2022</p>
 
       {/* INTRODUCTION */}
       <p className='mt-3 text-base font-light flex gap-2 text-textDark'><strong>

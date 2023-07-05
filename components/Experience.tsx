@@ -58,17 +58,18 @@ const Experience = () => {
   return (
     <section
       id='Experience'
-      className='max-w-containerSmall min-h-fit mx-auto py-96 lgl:py-32 flex flex-col gap-5 justify-center'
+      className='max-w-containerSmall min-h-screen mx-auto py-96 lgl:py-32 flex flex-col gap-5 justify-center'
       >
         <SectionTitle 
           titleName='Where I have worked' 
           titleNumber='02' 
         />
         {/* CONTAINER DIV */}
-        <div className='w-full h-screen mt-5 flex flex-col sml:flex-row gap-4 '>
+        <div className='w-full h-fit mt-5 flex flex-col sml:flex-row gap-4 '>
 
           {/*  SIDE BAR */}
           <div className='flex w-[fit-content] h-[fit-content] sml:flex-col '>
+            
             <ul className='flex whitespace-nowrap max-sml:w-6/12 max-sml:overflow-x-scroll max-sml:no-scrollbar sml:h-auto sml:flex-col'>
                 {/* TeamLead */}
                 <li
@@ -133,6 +134,7 @@ const Experience = () => {
                     Freelance 
                 </li>
             </ul>
+
           </div>
 
           {/* Work information */}

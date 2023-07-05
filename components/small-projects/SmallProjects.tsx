@@ -15,9 +15,9 @@ const SmallProjects = () => {
       <div className='flex flex-wrap items-center justify-center gap-6 mt-10 lgl:px-10'>
 
 
-        {/* PROJECT 1 */}
+        {/* PROJECT 1 🎯 */}
         <ProjectCard 
-          title="Pomodoro App"
+          title="Planet Finder"
           description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
           gitLink="https://github.com/DevonGifford"
           liveLink="https://github.com/DevonGifford"
@@ -25,9 +25,9 @@ const SmallProjects = () => {
         />
 
 
-        {/* PROJECT 2 */}
+        {/* PROJECT 2 🎯 */}
         <ProjectCard 
-          title="Music Player"
+          title="Multiplayer Pong "
           description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
           gitLink="https://github.com/DevonGifford"
           liveLink="https://github.com/DevonGifford"
@@ -37,7 +37,7 @@ const SmallProjects = () => {
 
         {/* PROJECT 3 */}
         <ProjectCard 
-          title="Password Checker"
+          title="Python Password Checker 🎯"
           description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
           gitLink="https://github.com/DevonGifford"
           liveLink="https://github.com/DevonGifford"
@@ -47,7 +47,7 @@ const SmallProjects = () => {
 
         {/* PROJECT 4 */}
         <ProjectCard 
-          title="Quote Generator"
+          title="Twitter Quote Generator"
           description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
           gitLink="https://github.com/DevonGifford"
           liveLink="https://github.com/DevonGifford"
@@ -57,7 +57,7 @@ const SmallProjects = () => {
 
         {/* PROJECT 5 */}
         <ProjectCard 
-          title="Animated Navigation"
+          title="Animated Nav-Bar"
           description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
           gitLink="https://github.com/DevonGifford"
           liveLink="https://github.com/DevonGifford"
@@ -67,7 +67,7 @@ const SmallProjects = () => {
 
         {/* PROJECT 6 */}
         <ProjectCard 
-          title="Joke Teller"
+          title="Music Player"
           description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
           gitLink="https://github.com/DevonGifford"
           liveLink="https://github.com/DevonGifford"
@@ -95,14 +95,14 @@ const SmallProjects = () => {
               />
             </motion.div>
               
-            {/* PROJECT 8 */}
+            {/* PROJECT 8 🎯*/}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.9, delay: 0.6}}
             >
               <ProjectCard 
-                title="Web Scraper Bot"
+                title="Video Player"
                 description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
                 gitLink="https://github.com/DevonGifford"
                 liveLink="https://github.com/DevonGifford"
@@ -118,7 +118,7 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 0.9}}
             >
               <ProjectCard 
-                title="Robot Rolodex"
+                title="Picture in Picture app"
                 description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
                 gitLink="https://github.com/DevonGifford"
                 liveLink="https://github.com/DevonGifford"
@@ -126,7 +126,7 @@ const SmallProjects = () => {
               />
             </motion.div>
               
-            {/* PROJECT 10 */}
+            {/* PROJECT 10 🎯 */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -142,14 +142,14 @@ const SmallProjects = () => {
             </motion.div>
                           
               
-            {/* PROJECT 11 */}
+            {/* PROJECT 11 🎯*/}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.9, delay: 1.5}}
             >
                 <ProjectCard 
-                  title="MultiPlayer Pong"
+                  title="Bookmark Keeper"
                   description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
                   gitLink="https://github.com/DevonGifford"
                   liveLink="https://github.com/DevonGifford"
@@ -157,14 +157,14 @@ const SmallProjects = () => {
                 />
             </motion.div>
               
-            {/* PROJECT 12 */}
+            {/* PROJECT 12 🎯*/}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.9, delay: 1.8}}
             >
                 <ProjectCard 
-                  title="Instagram Clone"
+                  title="Math Sprint Game"
                   description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
                   gitLink="https://github.com/DevonGifford"
                   liveLink="https://github.com/DevonGifford"

@@ -12,13 +12,13 @@ const Freelance = () => {
     className='w-full'    
     >
       {/* JOB TITLE & COMPANY */}
-      <div className='flex flex-wrap gap-1 font-medium text-xl font-titleFont'>
-        <h3>Web developer</h3>
+      <div className='flex flex-wrap gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row'>
+        <h3>Web developer | Wordpress</h3>
         <span className='text-sm mt-1 font-medium text-textGreen flex'>@ Freelance</span>
       </div>
       
       {/* Working Dates */}
-      <p>Mach 2016 - January 2019</p>
+      <p className='pt-3'>Mach 2016 - January 2019</p>
 
       {/* INTRODUCTION */}
       <p className='mt-3 text-base font-light flex gap-2 text-textDark'><strong>

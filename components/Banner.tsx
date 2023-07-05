@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <section
       id='home'
-      className='max-w-contentContainer min-h-fit h-full mx-auto mdl:py-12 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4 justify-center'
+      className='max-w-contentContainer min-h-screen h-full mx-auto mdl:py-12 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4 justify-center'
     >
 
       {/* Hello World Heading */}
@@ -36,9 +36,9 @@ const Banner = () => {
                     '    ',
                     'Full-Stack Developer', 
                     'Quality Engineer',
-                    'React Developer',
-                    'Next.js Developer',
+                    'React Specialist',
                     'Python Enthusiast',
+                    'Next.js Developer',
                     'Web Developer',
                     'ex-FAANG',
                     'Future Senior Dev',

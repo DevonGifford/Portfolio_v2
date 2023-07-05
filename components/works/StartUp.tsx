@@ -12,13 +12,13 @@ const StartUp = () => {
     className='w-full'    
     >
       {/* JOB TITLE & COMPANY */}
-      <div className='flex flex-wrap gap-1 font-medium text-xl font-titleFont'>
+      <div className='flex flex-wrap gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row'>
         <h3>Web Assistant | Art Auction</h3>
         <span className='text-sm mt-1 font-medium text-textGreen flex'>@ Start-up</span>
       </div>
       
       {/* Working Dates */}
-      <p>January 2019 - June 2019</p>
+      <p className='pt-3'>January 2019 - June 2019</p>
 
       {/* INTRODUCTION */}
       <p className='mt-3 text-base font-light flex gap-2 text-textDark'><strong>

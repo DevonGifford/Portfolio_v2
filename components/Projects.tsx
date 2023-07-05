@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionTitle from './SectionTitle';
 import Image from "next/image";
-import { ComingSoon1, ComingSoon2, ComingSoon3, ComingSoon4, } from '@/public/assets';
+import { ComingSoon1, ComingSoon2, ComingSoon3, ComingSoon4, Ecommerce, SpotifyClone, } from '@/public/assets';
 import { RiGithubLine } from "react-icons/Ri";
 import { FiExternalLink } from "react-icons/Fi";
 import { SlSocialYoutube } from "react-icons/Sl";
@@ -31,7 +31,7 @@ const Projects = () => {
             <div>
                 {/* Actual Image */}
                 <Image className="w-full h-full object-contain rounded-lg"  
-                src={ComingSoon2}
+                src={Ecommerce}
                 alt="Project1" 
                 />
                 {/* Green overlay */}
