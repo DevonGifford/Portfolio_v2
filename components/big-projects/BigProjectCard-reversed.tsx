@@ -1,7 +1,7 @@
 import React from 'react'
-import { RiGithubLine } from "react-icons/Ri";
-import { FiExternalLink } from "react-icons/Fi";
-import { SlSocialYoutube } from "react-icons/Sl";
+import { RiGithubLine } from "react-icons/ri";
+import { FiExternalLink } from "react-icons/fi";
+import { SlSocialYoutube } from "react-icons/sl";
 
 import { ImageProps } from 'next/image';
 import Image from "next/image";

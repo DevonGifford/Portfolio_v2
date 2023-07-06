@@ -6,7 +6,7 @@
 <!-- Introduction Text -->
 <div align="center">
     <h1>👋 Welcome to my Portfolio's GitHub Repo 👋 </h1>
-    <h3> www.devongifford.com 🎯 - vesion 2.2 </h3>
+    <h3> www.devongifford.com 🎯 - vesion 3.0 </h3>
     <h5>
         This is the second iteration of <a href="">devongifford.com🎯</a>
         <h6>
@@ -35,23 +35,17 @@
 
 ### About & History of this project 🤓
 ---------------------------------------------------
-Once upon a time, there was a dedicated individual who embarked on a journey into the world of web development. As they began their learning process, they discovered a vast ocean of inspirational portfolios that showcased the incredible possibilities of modern web design. Among these, they stumbled upon a portfolio website that captivated their attention with its sleek and contemporary aesthetics.
-<br>
-<br>
-However, a wave of demoralization washed over them as they realized that this impressive project was constructed with technologies that seemed light years beyond their current skill set, such as; Framer-Motion-Animations, Gatsby.js, TypeScript and Tailwind CSS.
-<br>
-Undeterred by this initial setback, our aspiring developer made a pivotal decision: instead of succumbing to discouragement, they viewed this encounter as a catalyst for growth. With unwavering determination, they embarked on a journey of self-improvement. They devoted countless hours to study and practice, devouring every piece of knowledge they could find.
-<br>
-<br>
-As time flowed onward, six months passed —a period of intense dedication and perseverance. Our aspiring developer emerged from this transformative experience with newfound confidence and proficiency. They had successfully acquired the skills necessary to build that once seemingly unattainable portfolio project from scratch. Not only that, but they also went above and beyond by incorporating their own innovative ideas and enhancements, elevating the project to new heights.
-<br>
-<br>
-This individual's triumph was not merely measured by their ability to replicate the initial inspirational portfolio; it was a testament to their tenacity, adaptability, and unyielding passion for self-improvement. Their accomplishment exemplified the spirit of continuous learning and growth that is highly sought after in the world of web development.
-<br>
-Hopefully when an employer encounters this inspiring story, they are met with an impressive narrative of an individual who faced a daunting challenge head-on, turned it into an opportunity for growth, and emerged victorious. This individual's journey showcases their ability to embrace complexity, overcome obstacles, and strive for excellence. 
-<br><br>
-Their story serves as a testament to their resilience, adaptability, and commitment to personal and professional development—a remarkable tale that speaks volumes about their potential as a valuable asset to any team or organization.
-<br>
+
+Once upon a time, I embarked on a journey into the world of web development. 
+Inspired by a captivating portfolio website, I was initially demoralized by the advanced technologies used, such as Framer-Motion-Animations, Gatsby.js, TypeScript, and Tailwind CSS. 
+<br/>
+<br/>
+However, I saw this as an opportunity for growth and dedicated myself to learning. Over six months, I tirelessly studied and practiced, acquiring the skills to build the once seemingly unattainable portfolio project from scratch
+<br/>
+<br/>
+Not only did I replicate the design, but I also added my own innovative ideas and enhancements. This experience taught me the importance of tenacity, adaptability, and continuous learning in web development.
+<br/>
+I hope my journey inspires other developers and showcases my ability to overcome challenges and strive for excellence. My story reflects resilience, adaptability, and a commitment to personal and professional development, making me a valuable asset to any team or organization.
 
 ### Credit where credit is due: <em>Brittany Chiang</em> 🙏
 ---------------------------------------------------
@@ -64,37 +58,44 @@ GitHub - https://github.com/bchiang7/v4
 
 <h1 align='center'>"To-Do-List" & "The-Done-List"</h1>
 
-### Version 3.0 - coming soon ... 🌱
+### Version 3.0 - now complete ... ✅
 ---------------------------------------------------
 
-<!-- VERSION 2.1 -->
+<!-- VERSION 4.1 -->
 <details>
 <summary>
-<h3> These are some of the things I would like to do with this project </h3>
+<h3> List of issues/features I have fixed/added this patch: </h3>
 </summary>
-A list of all the issues I have fixed and features I have added.
-<!--  no. 1 -->
-<details>
-<summary><h6> Making the main projects section's code more DRY </h6></summary>
-</details> 
-<!--  no. 2 -->
-<details>
-<summary><h6> Updating information and links </h6></summary>
-</details> 
-<!--  no. 3 -->
-<details>
-<summary><h6> Adding an initial load animation </h6></summary>
-</details> 
-<!-- UPDATE TEMPLATE -->
-<details>
-<summary><h6> - TEMPLATE - </h6></summary>
-<li> list of issues to fix
-<pre><code>
-Solution🎯
-</code></pre>
+<ul>
+
+<li><h6> Making the main projects section's code more DRY </h6>
+<li><h6> Updating information and links </h6>
+<li><h6> Fixing some typescript erros and warnings </h6>
+<li><h6> Adding some images of the projects created with photoshop (GIMP) </h6>
+<li><h6> Fixing some minor styling bugs </h6>
+<li><h6> MAde the website entirely responsive and mobile friendly </h6>
+
+</ul>
+
 </details> 
 <!-- CLOSING DIV -->
-</details>
+
+<!-- VERSION 3.0 -->
+<details>
+<summary>
+<h3> Future version ideas... </h3>
+</summary>
+<li><h6> Adding an initial load animation </h6>
+<li><h6> Adding more projects to the list </h6>
+
+</details> 
+<!-- CLOSING DIV -->
+
+
+
+
+
+
 
 
 <br><br>
@@ -346,9 +347,11 @@ There was an issue of how the different cards were being called in.
 <!-- VERSION 1.0  -->
 <details>
 <summary>
-   <h3> Setting up the project: </h3>
+   <h3> Version 1.0 <em>(initial creation)</em></h3>
 </summary>
 A high level overview and list of required componenets & thoughts behind creating and instantiating my portfolio:
+<br>
+Adding all the information (CV, about... data)
 <!-- TICKET 1 -->
 <details>
 <summary><h6> Setting up the environment </h6></summary>

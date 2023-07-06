@@ -1,6 +1,6 @@
 import React from 'react'
-import { RiGithubLine } from "react-icons/Ri";
-import { FiExternalLink } from "react-icons/Fi";
+import { RiGithubLine } from "react-icons/ri";
+import { FiExternalLink } from "react-icons/fi";
 
 interface Props {
     title:string;

@@ -1,8 +1,8 @@
 import React from 'react';
-import { SiGithub } from "react-icons/Si";
-import { BsLinkedin } from "react-icons/Bs";
-import { TiSocialTwitter } from "react-icons/Ti";
-import { TiSocialInstagram } from "react-icons/Ti";
+import { SiGithub } from "react-icons/si";
+import { BsLinkedin } from "react-icons/bs";
+import { TiSocialTwitter } from "react-icons/ti";
+import { TiSocialInstagram } from "react-icons/ti";
 import { motion } from "framer-motion";
 
 

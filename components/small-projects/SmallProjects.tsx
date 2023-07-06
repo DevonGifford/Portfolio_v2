@@ -57,7 +57,7 @@ const SmallProjects = () => {
 
         {/* PROJECT 5 */}
         <ProjectCard 
-          title="Animated Nav-Bar"
+          title="Animated NavBar"
           description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
           gitLink="https://github.com/DevonGifford"
           liveLink="https://github.com/DevonGifford"

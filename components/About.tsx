@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from "next/image";
 import SectionTitle from './SectionTitle';
-import { BsArrowRightSquare } from "react-icons/Bs";
 import { profileImgCircle , CSS, HTML, ReactL, Next, Redux, NodeJS, Express, PostgreSQL, MongoDB, GraphQL, JavaScriptL, TypeScript, Python} from "@/public/assets";
 
 const About = () => {
@@ -50,15 +49,15 @@ const About = () => {
                     </div>
 
                     <p>
-                        Hello! I'm Devon Gifford, a <span className='text-textGreen'>full stack developer</span> driven by a passion for continuous learning and problem-solving. With a solid background in front-end and back-end development, I specialize in crafting user-friendly and responsive web applications using  <span className='text-textGreen'>React</span> and its ecosystem.
+                        Hello! I&apos;m Devon Gifford, a <span className='text-textGreen'>full stack developer</span> driven by a passion for continuous learning and problem-solving. With a solid background in front-end and back-end development, I specialize in crafting user-friendly and responsive web applications using  <span className='text-textGreen'>React</span> and its ecosystem.
               
                         <br /> <br />
-                        My journey into web development began during my time as a freelancer, creating websites for marketing clients in South Africa. Since then, I've had the opportunity to work in QA for a major <span className='text-textGreen'>FAANG</span> company in Europe, where I discovered my true passion for problem-solving.
+                        My journey into web development began during my time as a freelancer, creating websites for marketing clients in South Africa. Since then, I&apos;ve had the opportunity to work in QA for a major <span className='text-textGreen'>FAANG</span> company in Europe, where I discovered my true passion for problem-solving.
                         <br/><br/>
 
                         Combining my technical skills, creativity, and a keen eye for detail, I strive to deliver <span className='text-textGreen'>innovative solutions</span> that meet client needs and exceed expectations. I am excited to contribute my expertise to collaborative projects and continue expanding my knowledge in this <span className='text-textGreen'>ever-evolving</span> field.
                         <br/>
-                        Let's create something amazing together!
+                        Let&apos;s create something amazing together!
                           
                     </p>
 

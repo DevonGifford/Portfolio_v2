@@ -1,10 +1,28 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import Typewriter from 'typewriter-effect';
+import Typewriter, {Options} from 'typewriter-effect';
 
 
 
 const Banner = () => {
+
+  const options: Options = {
+    strings: [
+      '    ',
+      'Full-Stack Developer',
+      'Quality Engineer',
+      'React Specialist',
+      'Python Enthusiast',
+      'Next.js Developer',
+      'Web Developer',
+      'ex-FAANG',
+      'Future Senior Dev',
+      'Aspiring Principal Engineer',
+    ],
+    autoStart: true,
+    loop: true,
+  };
+
   return (
     <section
       id='home'
@@ -30,24 +48,8 @@ const Banner = () => {
         <span
           className='text-lg md:text-2xl lg:text-3xl text-textDark mt-2 lgl:mt-4'
         >
-            <Typewriter
-                options={{
-                strings: [
-                    '    ',
-                    'Full-Stack Developer', 
-                    'Quality Engineer',
-                    'React Specialist',
-                    'Python Enthusiast',
-                    'Next.js Developer',
-                    'Web Developer',
-                    'ex-FAANG',
-                    'Future Senior Dev',
-                    'Aspiring Principal Engineer',
-                ],
-                autoStart: true,
-                loop: true,
-                }}>
-            </Typewriter>
+            <Typewriter options={options} />
+            
         </span>
       </motion.h1>
 

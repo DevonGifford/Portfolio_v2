@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { BsArrowRightShort } from "react-icons/Bs";
 import BulletPoint from './BulletPoint';
 
 
