@@ -128,7 +128,7 @@ const ProjectCard: React.FC<Props> = ({
             <h3 className='font-titleFont text-2xl font-bold hover:text-textGreen'> {title} </h3>
             
             {/* description block */}
-            <p className='text-xs sml:text-base rounded-md'>
+            <p className='text-xs font-semibold sml:text-base rounded-md'>
               {description}
             </p>
             

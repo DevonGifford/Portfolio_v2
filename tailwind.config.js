@@ -25,12 +25,6 @@ module.exports = {
         lgl: "1024px",
         xl: "1280px",
       },
-      backgroundImage: {
-        'no1': "url('../public/assets/images/ProjectPictures/ComingSoon2.png')",
-        'no2': "url('../public/assets/images/ProjectPictures/Smallened/ComingSoon3_small.png')",
-        'no3': "url('../public/assets/images/ProjectPictures/Smallened/ComingSoon1_small.png')",
-        'no4': "url('../public/assets/images/ProjectPictures/Smallened/ComingSoon4_small.png')",
-      },
       fontFamily : {
         bodyFont: ['Montserrat', 'sans-serif'],
         titleFont: ['Inter', 'sans-serif'],

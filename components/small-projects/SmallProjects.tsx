@@ -15,63 +15,63 @@ const SmallProjects = () => {
       <div className='flex flex-wrap items-center justify-center gap-6 mt-10 lgl:px-10'>
 
 
-        {/* PROJECT 1 🎯 */}
+        {/* PROJECT 1  */}
         <ProjectCard 
-          title="Planet Finder"
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
-          listItems={["React Native","NodeJS","TypeScript"]} 
+          title="Python Converters"
+          description="Python Converters: JPEG to PNG, JSON to CSV, XML to JSON, and more! Simplifying data transformation and file handling"
+          gitLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
+          liveLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
+          listItems={["Python","JSON","XML","JPEG","PDF"]} 
         />
 
 
-        {/* PROJECT 2 🎯 */}
+        {/* PROJECT 2  */}
         <ProjectCard 
-          title="Multiplayer Pong "
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
-          listItems={["JavaScript","HTML","Sass","API"]} 
+          title="Classic Pong"
+          description="Classic Pong: Relive retro gaming with this browser-based implementation. Engaging gameplay, responsive design, and realistic ball physics"
+          gitLink="https://github.com/DevonGifford/Single-Player-Pong-Game"
+          liveLink="https://devon-pong-game.netlify.app/"
+          listItems={["JavaScript","HTML","CSS", "Netlify"]} 
         />
 
 
         {/* PROJECT 3 */}
         <ProjectCard 
-          title="Python Password Checker 🎯"
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
-          listItems={["Python","Hashing","Encryption"]} 
+          title="Web Scrapers"
+          description="Built movie info & hacker news scrapers with Beautiful Soup library. Extracted valuable data efficiently"
+          gitLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
+          liveLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
+          listItems={["Python","BeautifulSoup4","Requests"]} 
         />
 
 
         {/* PROJECT 4 */}
         <ProjectCard 
           title="Twitter Quote Generator"
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
-          listItems={["Reactjs","Next-auth","Firebase"]} 
+          description="Utilized API for fetching and tweeting inspiring quotes. Upgraded from 2D array to dynamic API integration."
+          gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+          liveLink="https://devon-quote-generator.netlify.app/"
+          listItems={["JavaScript","API's","HTML","CSS"]} 
         />
 
 
         {/* PROJECT 5 */}
         <ProjectCard 
           title="Animated NavBar"
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
-          listItems={["React","Node","Vercel Deploy"]} 
+          description="Interactive & responsive website with UI design focus. Utilized CSS @keyframes for animations and maintained code efficiency."
+          gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+          liveLink="https://devon-animated-navigation-bar.netlify.app/"
+          listItems={["JavaScript","HTML","CSS", "keyframes"]} 
         />
 
 
         {/* PROJECT 6 */}
         <ProjectCard 
-          title="Music Player"
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
-          listItems={["Reactjs","Heroku","Stripe"]} 
+          title="Whatsapp chatbot"
+          description="Chatbot enthusiast building various bots (general, WhatsApp, Telegram) using Python with pywhatkit, wechaty, and typing libraries"
+          gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+          liveLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
+          listItems={["Python","pywhatkit","wechaty", "typing"]} 
         />
 
         
@@ -88,10 +88,10 @@ const SmallProjects = () => {
             >
               <ProjectCard 
                 title="Custom Countdwon"
-                description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-                gitLink="https://github.com/DevonGifford"
-                liveLink="https://github.com/DevonGifford"
-                listItems={["React","Node","TypeScript"]} 
+                description="countdown app with localStorage to remember countdowns and animated background using .mp4 format. Fun and functional!"
+                gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+                liveLink="https://devon-countdown-app.netlify.app/"
+                listItems={["LocalStorage","JavaScript","Netlify"]} 
               />
             </motion.div>
               
@@ -103,10 +103,10 @@ const SmallProjects = () => {
             >
               <ProjectCard 
                 title="Video Player"
-                description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-                gitLink="https://github.com/DevonGifford"
-                liveLink="https://github.com/DevonGifford"
-                listItems={["React","Node","TypeScript"]} 
+                description="Created a JavaScript video player with essential controls: play, pause, volume, mute, playback speed, and fullscreen. Excited for future possibilities"
+                gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+                liveLink="https://devon-javascript-videoplayer.netlify.app/"
+                listItems={["PlayBack Controls","JavaScript","Netlify"]} 
               />
             </motion.div>
               
@@ -118,11 +118,11 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 0.9}}
             >
               <ProjectCard 
-                title="Picture in Picture app"
-                description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-                gitLink="https://github.com/DevonGifford"
-                liveLink="https://github.com/DevonGifford"
-                listItems={["React","Node","TypeScript"]} 
+                title="Always-On-Top App"
+                description="Create floating, resizable windows for any screen or app, staying on top. Ideal for coding with YouTube tutorials. Easy and efficient solution"
+                gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+                liveLink="https://devon-picture-in-picture-app.netlify.app/"
+                listItems={["JavaScript","HTML","CSS","Async"]} 
               />
             </motion.div>
               
@@ -134,10 +134,10 @@ const SmallProjects = () => {
             >
               <ProjectCard 
                 title="Calculator"
-                description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-                gitLink="https://github.com/DevonGifford"
-                liveLink="https://github.com/DevonGifford"
-                listItems={["React","Node","TypeScript"]} 
+                description="A personal victory over past challenges. Simple yet powerful, offering potential for future enhancements and personalized themes"
+                gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+                liveLink="https://devon-javascript-calculator.netlify.app/"
+                listItems={["JavaScript","HTML","CSS"]} 
               />
             </motion.div>
                           
@@ -150,10 +150,10 @@ const SmallProjects = () => {
             >
                 <ProjectCard 
                   title="Bookmark Keeper"
-                  description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-                  gitLink="https://github.com/DevonGifford"
-                  liveLink="https://github.com/DevonGifford"
-                  listItems={["React","Node","TypeScript"]} 
+                  description="Simple website for saving bookmarks. Explored dynamic rendering, local storage, and form validation"
+                  gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+                  liveLink="https://devon-bookmark-app.netlify.app/"
+                  listItems={["JavaScript","HTML","CSS"]} 
                 />
             </motion.div>
               
@@ -165,10 +165,10 @@ const SmallProjects = () => {
             >
                 <ProjectCard 
                   title="Math Sprint Game"
-                  description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-                  gitLink="https://github.com/DevonGifford"
-                  liveLink="https://github.com/DevonGifford"
-                  listItems={["React","Node","TypeScript"]} 
+                  description="TInteractive web app testing math skills. Unique page management approach for better organization. Aspiring to create advanced games for technical interview preparation"
+                  gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+                  liveLink="https://devon-math-sprint-game.netlify.app/"
+                  listItems={["JavaScript","HTML","CSS"]} 
               />
             </motion.div>
               

@@ -13,7 +13,7 @@ interface Props {
 const ProjectCard = ({ title, description, gitLink, liveLink, listItems }:Props) => {
   return (
 
-    <div className='w-full max-w-[320px] min-w-[280px] h-fit rounded-lg bg-[#112240] p-6 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group'>
+    <div className='w-full max-w-[320px] min-w-[280px] h-72 rounded-lg bg-[#112240] p-6 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group'>
         
         {/* Icon-Links */}
         <div className='flex justify-between items-center'>

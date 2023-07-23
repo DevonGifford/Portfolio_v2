@@ -36,7 +36,7 @@ const BigProjects: React.FC = () => {
   };
   const imageUrl3 = '/assets/images/ProjectPictures/small-images/FaceDetectionSmall.png';
 
-  {/* PROJECT 4 */}
+  {/* PROJECT 4 - ON HOLD */}
   //-------------------------------------------------------------
   const imageProps4 = {
     src: '/assets/images/ProjectPictures/Mission-Control.jpg',
@@ -46,6 +46,19 @@ const BigProjects: React.FC = () => {
   };
   const imageUrl4 = '/assets/images/ProjectPictures/small-images/Mission-ControlSmall.jpg';
 
+    {/* PROJECT 5 */}
+  //-------------------------------------------------------------
+  const imageProps5 = {
+    src: '/assets/images/ProjectPictures/Ai-toolbox.png',
+    alt: 'Image-Description',
+    width: 500,
+    height: 300,
+  };
+  const imageUrl5 = '/assets/images/ProjectPictures/small-images/Ai-toolboxSmall.png';
+
+
+
+
   return (
     <div id='Projects' className='max-w-containerSmall mx-auto min-h-fit py-10  lgl:py-32 flex flex-col gap-8'>
       <SectionTitle 
@@ -54,47 +67,56 @@ const BigProjects: React.FC = () => {
       />
       <div>
 
-        {/* PROJECT 1 */}
+        {/* PROJECT 2 */}
         <BigProjectCard 
-          image={imageProps1}
-          imageUrl={imageUrl1}
-          title="E-commerce Website"
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress.
-          This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
+          image={imageProps5}
+          imageUrl={imageUrl5}
+          title="AI Toolbox"
+          description="A powerful repository of Language Model-based AI tools powered by OpenAI. Seamlessly access natural language processing, sentiment analysis, and text generation from one webpage. Embrace AI with effortless integration, revolutionize data processing, and unlock deeper insights. Stripe integration ensures seamless payment handling"
+          gitLink="https://github.com/DevonGifford/LLM-AI-Toolbox/tree/main"
+          liveLink="https://ai-toolbox-devongifford.vercel.app/"
           youtubeLink="https://github.com/DevonGifford"
-          techStackList={["test","test for Real","NodeJS","TypeScript"]} 
+          techStackList={["NextJs","Open Ai","Prisma","Stripe","TypeScript"]} 
         />
 
+
         {/* PROJECT 2 */}
-        <BigProjectCardReversed 
+        <BigProjectCardReversed
           image={imageProps2}
           imageUrl={imageUrl2}
           title="Spotify Clone"
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress
-          This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
+          description="Fullstack Spotify clone with core functionality like music streaming, song uploads & premium upgrades powered by Stripe. A comprehensive music experience awaits users. Explore the code and features to witness the passion and expertise behind its creation."
+          gitLink="https://github.com/DevonGifford/Fullstack-Spotify-Clone"
+          liveLink="https://devon-fullstack-spotify-clone.vercel.app/"
           youtubeLink="https://github.com/DevonGifford"
-          techStackList={["test","test for Real","NodeJS","TypeScript"]} 
+          techStackList={["PostgreSQL","Supabase","TypeScript","Tailwind"]} 
         />
 
         {/* PROJECT 3 */}
-        <BigProjectCard 
+        <BigProjectCard
           image={imageProps3}
           imageUrl={imageUrl3}
           title="Face detection app"
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress.
-          This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
+          description="Fullstack web app utilizing Clarifai's deep learning AI to detect and locate human faces in images. Built entirely by me, including database, frontend, and backend. PERN stack + Clarifai + Tachyons + tsParticles. Seamless user experience for image upload, face detection, and tracking."
+          gitLink="https://github.com/DevonGifford/FaceDetectionApp-BackEnd"
+          liveLink="https://devon-facedetection-app.onrender.com/"
           youtubeLink="https://github.com/DevonGifford"
-          techStackList={["test","test for Real","NodeJS","TypeScript"]} 
+          techStackList={["React","ExpressJS","NodeJS","PostgreSQL"]} 
         />
 
-        {/* PROJECT 4 */}
+        {/* PROJECT 1 */}
         <BigProjectCardReversed 
+          image={imageProps1}
+          imageUrl={imageUrl1}
+          title="E-commerce Website"
+          description="Fullstack Ecommerce project exploring diverse tech: TypeScript, Redux, GraphQL, & PWA. Emphasis on business logic, integration, and learning. Minimalistic design, focus on development. Showcasing my journey of honing skills and expertise through tech integration."
+          gitLink="https://github.com/DevonGifford/Ecommerce_Showcase"
+          liveLink="https://bulk-basics.netlify.app/"
+          youtubeLink="https://github.com/DevonGifford"
+          techStackList={["Vite","Firebase","Redux","Styled Components"]} 
+        />
+        {/* PROJECT 4 */}
+        {/* <BigProjectCardReversed 
           image={imageProps4}
           imageUrl={imageUrl4}
           title="NASA Mission Control"
@@ -104,7 +126,7 @@ const BigProjects: React.FC = () => {
           liveLink="https://github.com/DevonGifford"
           youtubeLink="https://github.com/DevonGifford"
           techStackList={["test","test for Real","NodeJS","TypeScript"]} 
-        />
+        /> */}
 
       </div>
     </div>
