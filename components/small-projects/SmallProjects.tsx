@@ -14,6 +14,38 @@ const SmallProjects = () => {
       </div>
       <div className='flex flex-wrap items-center justify-center gap-6 mt-10 lgl:px-10'>
 
+        <ProjectCard 
+          title="Thymia Technical Assessment"
+          description="Gamified version of the 2-back task, which measures working memory, with Cypress end-to-end testing."
+          gitLink="https://github.com/DevonGifford/nGame--TechnicalAssignment"
+          liveLink="https://n-game-technical-assignment.vercel.app/"
+          listItems={["NextJS","TypeScript", "Jest", "Cypress"]} 
+        />
+
+        <ProjectCard 
+          title="FlipDish Technical Assessment"
+          description="Frontend Technical Assessment: Simple web app to handle API fetch and present JSON data as a restaurant menu"
+          gitLink="https://github.com/DevonGifford/Menu--TechnicalAssignment"
+          liveLink="https://menu-technical-assignment.vercel.app/"
+          listItems={["API","Vite","TypeScript","Tailwind","Vitest"]} 
+        />
+        
+        <ProjectCard 
+          title="InCard Technical Assessment"
+          description="Frontend Technical Assessment: React/NextJS app that handles authentication with Server Side & Client Side Rendering"
+          gitLink="https://github.com/DevonGifford/InCard---TechnicalAssignment"
+          liveLink="https://incard-technical-assaignment-devon-gifford.vercel.app/"
+          listItems={["SSR","NextJS","TypeScript","Auth"]} 
+        />
+
+        <ProjectCard 
+          title="ClearScore Technical Assessment"
+          description="An idea board that allows a user to create new ideas, edit existing ideas or delete them. This app uses local and session storage combined"
+          gitLink="https://github.com/DevonGifford/ClearScore--TechnicalAssignment"
+          liveLink="https://idea-board-murex.vercel.app/"
+          listItems={["Vite","TypeScript","Vitest","LocalStorage"]} 
+        />
+
 
         {/* PROJECT 1  */}
         <ProjectCard 
@@ -35,56 +67,81 @@ const SmallProjects = () => {
         />
 
 
-        {/* PROJECT 3 */}
-        <ProjectCard 
-          title="Web Scrapers"
-          description="Built movie info & hacker news scrapers with Beautiful Soup library. Extracted valuable data efficiently"
-          gitLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
-          liveLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
-          listItems={["Python","BeautifulSoup4","Requests"]} 
-        />
-
-
-        {/* PROJECT 4 */}
-        <ProjectCard 
-          title="Twitter Quote Generator"
-          description="Utilized API for fetching and tweeting inspiring quotes. Upgraded from 2D array to dynamic API integration."
-          gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
-          liveLink="https://devon-quote-generator.netlify.app/"
-          listItems={["JavaScript","API's","HTML","CSS"]} 
-        />
-
-
-        {/* PROJECT 5 */}
-        <ProjectCard 
-          title="Animated NavBar"
-          description="Interactive & responsive website with UI design focus. Utilized CSS @keyframes for animations and maintained code efficiency."
-          gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
-          liveLink="https://devon-animated-navigation-bar.netlify.app/"
-          listItems={["JavaScript","HTML","CSS", "keyframes"]} 
-        />
-
-
-        {/* PROJECT 6 */}
-        <ProjectCard 
-          title="Whatsapp chatbot"
-          description="Chatbot enthusiast building various bots (general, WhatsApp, Telegram) using Python with pywhatkit, wechaty, and typing libraries"
-          gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
-          liveLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
-          listItems={["Python","pywhatkit","wechaty", "typing"]} 
-        />
 
         
 
         {
           showMore && (
             <>
-            
-            {/* PROJECT 7 */}
+            {/* PROJECT 3 */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.9, delay: 0.1}}
+            >
+            <ProjectCard 
+              title="Web Scrapers"
+              description="Built movie info & hacker news scrapers with Beautiful Soup library. Extracted valuable data efficiently"
+              gitLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
+              liveLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
+              listItems={["Python","BeautifulSoup4","Requests"]} 
+            />
+            </motion.div>
+    
+    
+            {/* PROJECT 4 */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.9, delay: 0.2}}
+            >
+            <ProjectCard 
+              title="Twitter Quote Generator"
+              description="Utilized API for fetching and tweeting inspiring quotes. Upgraded from 2D array to dynamic API integration."
+              gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+              liveLink="https://devon-quote-generator.netlify.app/"
+              listItems={["JavaScript","API's","HTML","CSS"]} 
+            />
+            </motion.div>
+    
+    
+            {/* PROJECT 5 */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.9, delay: 0.3}}
+            >
+            <ProjectCard 
+              title="Animated NavBar"
+              description="Interactive & responsive website with UI design focus. Utilized CSS @keyframes for animations and maintained code efficiency."
+              gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+              liveLink="https://devon-animated-navigation-bar.netlify.app/"
+              listItems={["JavaScript","HTML","CSS", "keyframes"]} 
+            />
+            </motion.div>
+    
+    
+            {/* PROJECT 6 */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.9, delay: 0.4}}
+            >
+            <ProjectCard 
+              title="Whatsapp chatbot"
+              description="Chatbot enthusiast building various bots (general, WhatsApp, Telegram) using Python with pywhatkit, wechaty, and typing libraries"
+              gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+              liveLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
+              listItems={["Python","pywhatkit","wechaty", "typing"]} 
+            />
+            </motion.div>
+            
+            {/* PROJECT 7 */}
+            
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.9, delay: 0.5}}
             >
               <ProjectCard 
                 title="Custom Countdwon"
@@ -115,7 +172,7 @@ const SmallProjects = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.9, delay: 0.9}}
+              transition={{ duration: 0.9, delay: 0.7}}
             >
               <ProjectCard 
                 title="Always-On-Top App"
@@ -130,7 +187,7 @@ const SmallProjects = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.9, delay: 1.2}}
+              transition={{ duration: 0.9, delay: 0.8}}
             >
               <ProjectCard 
                 title="Calculator"
@@ -146,7 +203,7 @@ const SmallProjects = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.9, delay: 1.5}}
+              transition={{ duration: 0.9, delay: 0.9}}
             >
                 <ProjectCard 
                   title="Bookmark Keeper"
@@ -161,7 +218,7 @@ const SmallProjects = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.9, delay: 1.8}}
+              transition={{ duration: 0.9, delay: 1.0}}
             >
                 <ProjectCard 
                   title="Math Sprint Game"

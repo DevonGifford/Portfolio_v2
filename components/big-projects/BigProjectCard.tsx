@@ -12,7 +12,7 @@ type Props = {
   title:string;
   description:string;
   gitLink:string;
-  youtubeLink:string;
+  youtubeLink?:string;
   liveLink:string;
   techStackList:string[];
   imageUrl: string;

@@ -18,7 +18,7 @@ const TeamLead = () => {
           Locale/Team Lead - English Variant Locales
         </h3>
         <span className='text-sm mt-1 font-medium text-textGreen flex'>
-          @ Cognizant
+          @ Cognizant / Apple
           &ensp; 
           <BsApple />
         </span>

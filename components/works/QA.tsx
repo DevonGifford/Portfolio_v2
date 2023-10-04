@@ -16,7 +16,7 @@ const QA = () => {
       <h3 className='flex gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row'>
         QA/QE Analyst
         <span className='text-sm mt-1 font-medium text-textGreen flex'>
-          @ Cognizant
+          @ Cognizant / Apple
           &ensp; 
           <BsApple />
         </span>

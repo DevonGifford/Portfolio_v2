@@ -82,7 +82,7 @@ const Banner = () => {
       </motion.p>
         
       {/* Button */}
-      <a href="#Experiences">
+      <a href="https://github.com/DevonGifford?tab=repositories" target='_blank'>
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
