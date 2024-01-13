@@ -46,7 +46,7 @@ const Freelance = () => {
 
         <BulletPoint
           headningText="E-commerce Functionality"
-          contentText="Setting up and configuring e-commerce functionality for guesthouses, including payment gateways integration and product catalog creation."
+          contentText="Setting up and configuring e-commerce functionality for guesthouses, including payment gateways integration and product catalogue creation."
         />
 
         <BulletPoint
