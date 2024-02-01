@@ -6,7 +6,7 @@ import BigProjectCardReversed from "./BigProjectCard-reversed";
 const BigProjects: React.FC = () => {
   //-------------------------------------------------------------
   const DevotionImage = {
-    src: "/assets/images/ProjectPictures/Devotion.png",
+    src: "/assets/images/ProjectPictures/big-images/Devotion.png",
     alt: "Image-Description",
     width: 500,
     height: 300,
@@ -16,7 +16,7 @@ const BigProjects: React.FC = () => {
 
   //-------------------------------------------------------------
   const spotifyImageProps = {
-    src: "/assets/images/ProjectPictures/SpotifyClone.webp",
+    src: "/assets/images/ProjectPictures/big-images/SpotifyClone.webp",
     alt: "Image-Description",
     width: 500,
     height: 300,
@@ -26,7 +26,7 @@ const BigProjects: React.FC = () => {
 
   //-------------------------------------------------------------
   const devreadyImage = {
-    src: "/assets/images/ProjectPictures/DevReady.png",
+    src: "/assets/images/ProjectPictures/big-images/DevReady.png",
     alt: "Image-Description",
     width: 500,
     height: 300,
@@ -36,7 +36,7 @@ const BigProjects: React.FC = () => {
 
   //-------------------------------------------------------------
   const incardImage = {
-    src: "/assets/images/ProjectPictures/InCard.png",
+    src: "/assets/images/ProjectPictures/big-images/InCard.png",
     alt: "Image-Description",
     width: 500,
     height: 300,
@@ -52,7 +52,7 @@ const BigProjects: React.FC = () => {
     height: 300,
   };
   const flatematefinderImageSmall =
-    "/assets/images/ProjectPictures/small-images/flatmate_small.png";
+    "/assets/images/ProjectPictures/big-images/small-images/flatmate_small.png";
   //-------------------------------------------------------------
 
   return (

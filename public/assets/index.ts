@@ -1,8 +1,5 @@
 import logo from "./images/LogoBig.png";
-import profileImg from "./images/Devon.jpg";
 import profileImgCircle from "./images/Devon_circle.png";
-
-import SpotifyClone from "./images/ProjectPictures/SpotifyClone.webp";
 
 import JavaScriptL from "./images/Skills/JavaScriptL.png";
 import TypeScript from "./images/Skills/TypeScript.png";
@@ -43,7 +40,5 @@ export {
   Tailwind,
   Vite,
   logo,
-  profileImg,
   profileImgCircle,
-  SpotifyClone,
 };
