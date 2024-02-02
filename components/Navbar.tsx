@@ -127,7 +127,7 @@ const Navbar = () => {
                         </Link>
                     </ul>
                     {/* RESUME BUTTON */}
-                    <a href="/assets/DevonCV.pdf" target="_blank">
+                    <a href="/assets/DevonGifford-FullstackDeveloper-2024.pdf" target="_blank">
                         <motion.button
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
@@ -268,7 +268,7 @@ const Navbar = () => {
                                 </ul>
                                 {/* RESUME BUTTON */}
                                 <a 
-                                  href="/assets/DevonCV.pdf" 
+                                  href="/assets/DevonGifford-FullstackDeveloper-2024.pdf" 
                                   target="_blank"
                                   className="pt-8"
                                 >
