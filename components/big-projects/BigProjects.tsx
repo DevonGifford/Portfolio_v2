@@ -52,7 +52,7 @@ const BigProjects: React.FC = () => {
     height: 300,
   };
   const flatematefinderImageSmall =
-    "/assets/images/ProjectPictures/big-images/small-images/flatmate_small.png";
+    "/assets/images/ProjectPictures/small-images/flatmate_small.png";
   //-------------------------------------------------------------
 
   return (
