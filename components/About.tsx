@@ -3,8 +3,6 @@ import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import {
   profileImgCircle,
-  CSS,
-  HTML,
   ReactL,
   Next,
   Redux,
@@ -12,7 +10,6 @@ import {
   Express,
   PostgreSQL,
   MongoDB,
-  GraphQL,
   JavaScriptL,
   TypeScript,
   Python,
@@ -51,32 +48,38 @@ const About = () => {
                 <div className=" mdl:hidden absolute top-0 left-0 w-24 h-24 sm:w-32 sm:h-32 sml:w-40 sml:h-40 md:w-48 md:h-48 bg-textGreen/20 rounded-full hover:bg-transparent duration-300 "></div>
               </div>
             </div>
-
             <p>
-              Hello! I&apos;m Devon Gifford, a{" "}
-              <span className="text-textGreen">full stack developer</span>{" "}
-              driven by a passion for continuous learning and problem-solving.
-              With a solid background in front-end and back-end development, I
-              specialize in crafting user-friendly and responsive web
-              applications using <span className="text-textGreen">React</span>{" "}
-              and its ecosystem.
-              <br /> <br />
-              My journey into web development began during my time as a
-              freelancer, creating websites for marketing clients in South
-              Africa. Since then, I&apos;ve had the opportunity to work in QA
-              for a major <span className="text-textGreen">FAANG</span> company
-              in Europe, where I discovered my true passion for problem-solving.
+              Hello! I&apos;m a{" "}
+              <span className="text-textGreen">fullstack developer</span> with a
+              strong focus on modern frontend technologies. I specialize in
+              crafting sleek, user-friendly web and mobile applications using{" "}
+              <span className="text-textGreen">React & TypeScript</span>.
               <br />
               <br />
-              Combining my technical skills, creativity, and a keen eye for
-              detail, I strive to deliver{" "}
-              <span className="text-textGreen">innovative solutions</span> that
-              meet client needs and exceed expectations. I am excited to
-              contribute my expertise to collaborative projects and continue
-              expanding my knowledge in this{" "}
-              <span className="text-textGreen">ever-evolving</span> field.
+              With years of experience freelancing and working at various{" "}
+              <span className="text-textGreen">startups</span>, I&apos;ve honed
+              my skills in creating{" "}
+              <span className="text-textGreen">responsive </span> UI/UX designs
+              with an emphasis on{" "}
+              <span className="text-textGreen">accessibility</span>.
               <br />
-              Let&apos;s create something amazing together!
+              Recently, I had the incredible opportunity to join a leading{" "}
+              <span className="text-textGreen">FAANG</span> company as a Quality
+              Engineer, and later{" "}
+              <span className="text-textGreen">promoted</span> to Team Lead.
+              <br />I immersed myself in big-tech best practices, with a
+              specific focus on E2E & integration{" "}
+              <span className="text-textGreen">testing</span>.
+              <br />
+              <br />
+              While the learning experience was invaluable, I&apos;m now
+              actively <span className="text-textGreen">transitioning</span> my
+              career back into web development.
+              <br />
+              <br />
+              {/* I&apos;m committed to delivering{" "}
+              <span className="text-textGreen">reliable clean code.</span>
+              <br /> */}
             </p>
           </div>
         </div>
@@ -89,7 +92,7 @@ const About = () => {
             <Image
               className="z-30 rounded-full absolute w-52 h-52 lgl:w-80 lgl:h-80 fill object-cover border-2 border-textGreen"
               src={profileImgCircle}
-              alt="profilepicture"
+              alt="Devon Giford - Profile picture"
             />
 
             {/* background-blur-effect */}
@@ -128,28 +131,10 @@ const About = () => {
             {/* Python Logo */}
             <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
               <Image
-                className="rounded-full w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
+                className="rounded-full w-12 max-sml:w-7 hover:contrast-150 hover:animate-pulse"
                 src={Python}
                 alt="Python"
                 title="Python"
-              />
-            </li>
-            {/* HTML Logo */}
-            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
-              <Image
-                className="rounded-full w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
-                src={HTML}
-                alt="HTML5"
-                title="HTML5"
-              />
-            </li>
-            {/* CSS */}
-            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
-              <Image
-                className="rounded-full w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
-                src={CSS}
-                alt="CSS3"
-                title="CSS3"
               />
             </li>
           </ul>
@@ -157,19 +142,10 @@ const About = () => {
             {/* React Logo */}
             <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
               <Image
-                className="rounded-full w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
+                className="rounded-full w-12 max-sml:w-7 hover:contrast-150 hover:animate-pulse"
                 src={ReactL}
                 alt="React"
                 title="React"
-              />
-            </li>
-            {/* Vite */}
-            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
-              <Image
-                className=" w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
-                src={Vite}
-                alt="Vite"
-                title="Vite"
               />
             </li>
             {/* Next */}
@@ -181,6 +157,24 @@ const About = () => {
                 title="NextJS"
               />
             </li>
+            {/* Vite */}
+            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
+              <Image
+                className=" w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
+                src={Vite}
+                alt="Vite"
+                title="Vite"
+              />
+            </li>
+            {/* Tailwind */}
+            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
+              <Image
+                className=" w-14 max-sml:w-8 hover:contrast-150 hover:animate-pulse"
+                src={Tailwind}
+                alt="Tailwind"
+                title="Tailwind"
+              />
+            </li>
             {/* Redux */}
             <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
               <Image
@@ -190,6 +184,27 @@ const About = () => {
                 title="Redux"
               />
             </li>
+          </ul>
+          <ul className="flex flex-row flex-wrap gap-4 ml-3 mt-5 justify-center">
+            {/* Jest */}
+            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
+              <Image
+                className=" w-9 max-sml:w-5 hover:contrast-150 hover:animate-pulse"
+                src={Jest}
+                alt="Jest"
+                title="Jest"
+              />
+            </li>
+            {/* PlayWright */}
+            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
+              <Image
+                className=" w-14 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
+                src={Playwrite}
+                alt="PlayWrite"
+                title="PlayWrite"
+              />
+            </li>
+
             {/* NodeJS */}
             <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
               <Image
@@ -208,8 +223,6 @@ const About = () => {
                 title="ExpressJS"
               />
             </li>
-          </ul>
-          <ul className="flex flex-row flex-wrap gap-4 ml-3 mt-5 justify-center">
             {/* PostgreSQL */}
             <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
               <Image
@@ -228,15 +241,6 @@ const About = () => {
                 title="MongoDB"
               />
             </li>
-            {/* GraphQL */}
-            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
-              <Image
-                className=" w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
-                src={GraphQL}
-                alt="GraphQL"
-                title="GraphQL"
-              />
-            </li>
             {/* Docker */}
             <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
               <Image
@@ -244,33 +248,6 @@ const About = () => {
                 src={Docker}
                 alt="Docker"
                 title="Docker"
-              />
-            </li>
-            {/* Jest */}
-            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
-              <Image
-                className=" w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
-                src={Jest}
-                alt="Jest"
-                title="Jest"
-              />
-            </li>
-            {/* PlayWright */}
-            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
-              <Image
-                className=" w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
-                src={Playwrite}
-                alt="PlayWrite"
-                title="PlayWrite"
-              />
-            </li>
-            {/* Tailwind */}
-            <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
-              <Image
-                className=" w-11 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
-                src={Tailwind}
-                alt="Tailwind"
-                title="Tailwind"
               />
             </li>
           </ul>
@@ -282,4 +259,4 @@ const About = () => {
 
 export default About;
 
-//I need to do something about the photo being warped in mobile view
+//🎯 I need to do something about the photo being warped in mobile view
