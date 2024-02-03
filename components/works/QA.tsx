@@ -1,83 +1,75 @@
-import React from 'react'
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 import { BsApple } from "react-icons/bs";
-import BulletPoint from './BulletPoint';
-
+import BulletPoint from "./BulletPoint";
 
 const QA = () => {
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 0.2, delay: 0.1}}
-    className='w-full'    
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.2, delay: 0.1 }}
+      className="w-full"
     >
       {/* JOB TITLE & COMPANY */}
-      <h3 className='flex gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row'>
-        QA/QE Analyst
-        <span className='text-sm mt-1 font-medium text-textGreen flex'>
-          @ Cognizant / Apple
-          &ensp; 
+      <h3 className="flex gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row">
+        Quality Engineer
+        <span className="text-sm mt-1 font-medium text-textGreen flex">
+          @ Cognizant / Apple &ensp;
           <BsApple />
         </span>
       </h3>
-      
+
       {/* Working Dates */}
-      <p className='pt-3'>September 2021 - December 2022</p>
+      <p className="pt-3">September 2021 - Jan 2023</p>
 
       {/* INTRODUCTION */}
-      <p className='mt-3 text-base font-light flex gap-2 text-textDark'><strong>
-      Played a pivotal role in ensuring the quality and robustness of a widely utilized AI virtual assistant, integral to daily operations worldwide, through comprehensive testing methodologies
-      </strong></p>
+      <p className="mt-3 text-base font-light flex gap-2 text-textDark">
+        <strong>
+          Played a pivotal role in ensuring the quality of a widely utilized AI
+          virtual assistant through automation testing and NLP processing.
+        </strong>
+      </p>
 
       {/* Bullet Points */}
-      <ul className='mt-4 flex flex-col gap-3 text-textDark'>
-        
+      <ul className="mt-4 flex flex-col gap-3 text-textDark">
         <BulletPoint
-          headningText='Voice Recognition Testing'
-          contentText='Conducted linguistic & phonological testing of voice recognition software, collaborating with cross-functional teams, following Agile methodology to evaluate performance and provide insights for improvements.'
+          headningText="Voice Recognition Testing"
+          contentText="Conducted linguistic & phonological testing using NLP tools to optimize user experience. Utilized Python for scripting automation tasks."
         />
 
         <BulletPoint
-          headningText='Test Execution and Analysis'
-          contentText="Executed rigorous testing procedures encompassing functional, regression, and performance testing. Identified and documented defects, contributing to enhancing the software's behaviour and overall system performance"
+          headningText="Automation Testing"
+          contentText="Created & maintained test automation, and triaged results utilizing in-house NLP tools and frameworks. Implemented automation scripts using Python and Swift"
         />
 
         <BulletPoint
-          headningText='Automated & Manual QA testing'
-          contentText='Utilized tailored automation tools and frameworks for voice recognition software testing, leveraging manual techniques for meticulous scrutiny of functionality.'
+          headningText="End-to-End Testing"
+          contentText="Verified seamless integration and functionality across diverse systems and client domains."
         />
 
         <BulletPoint
-          headningText='End-to-End Testing'
-          contentText='Performed end-to-end testing to verify the seamless integration and functionality of the AI virtual assistant across various components and systems, ensuring a smooth user experience.'
+          headningText="Detailed Bug reports"
+          contentText="Identified and documented bugs, creating reports to Apple standards and communicating with cross-functional teams."
         />
 
         <BulletPoint
-          headningText='Operating Natural Language Processing Tools'
-          contentText='Proficiently operated natural language processing tools and incorporated large-scale systems to mitigate defects and optimize software performance.'
+          headningText="Version Control"
+          contentText="Utilized Git and GitHub for version control and collaborative development workflows, ensuring efficient code management and team collaboration."
         />
 
         <BulletPoint
-          headningText='Testing New Products'
-          contentText='Played a vital role in testing new products and features, participating in the entire testing lifecycle from requirement analysis to test planning, execution, and reporting, ensuring the successful launch of innovative solutions.'
+          headningText="Testing New Products"
+          contentText="Played a pivotal role in testing innovative solutions, ensuring successful launches worldwide across multiple domains."
         />
 
         <BulletPoint
-          headningText='Utilizing a range of testing methodologies and techniques, including'
-          contentText='- Root testing,  Integration testing, Regression testing, Acceptance testing , Smoke testing , Performance Testing'
+          headningText="Test Execution and Analysis"
+          contentText="Conducted various testing methodologies including root testing, integration testing, regression testing, acceptance testing, smoke testing, and performance testing."
         />
-
-        <BulletPoint
-          headningText='Automation and Functional Verification'
-          contentText='Effectively automated and verified software functionality across multiple client domains and international projects using Swift, Python, GitHub, Stack, and internal tools'
-        />
-
-
       </ul>
-
     </motion.div>
-  )
-}
+  );
+};
 
 export default QA;
