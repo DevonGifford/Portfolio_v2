@@ -15,7 +15,7 @@ import {
   Python,
   Docker,
   Jest,
-  Playwrite,
+  Playwright,
   Tailwind,
   Vite,
 } from "@/public/assets";
@@ -199,9 +199,9 @@ const About = () => {
             <li className="flex items-center gap-2 hover:-translate-y-2 transition-all duration-300">
               <Image
                 className=" w-14 max-sml:w-6 hover:contrast-150 hover:animate-pulse"
-                src={Playwrite}
-                alt="PlayWrite"
-                title="PlayWrite"
+                src={Playwright}
+                alt="PlayWright"
+                title="PlayWright"
               />
             </li>
 

@@ -13,7 +13,7 @@ import PostgreSQL from "./images/Skills/PostgreSQL.png";
 import MongoDB from "./images/Skills/MongoDB.png";
 import Docker from "./images/Skills/Docker.png";
 import Jest from "./images/Skills/Jest.png";
-import Playwrite from "./images/Skills/Playwrite.png";
+import Playwright from "./images/Skills/Playwright.png";
 import Tailwind from "./images/Skills/Tailwind.png";
 import Vite from "./images/Skills/Vite.png";
 
@@ -30,7 +30,7 @@ export {
   Python,
   Docker,
   Jest,
-  Playwrite,
+  Playwright,
   Tailwind,
   Vite,
   logo,
