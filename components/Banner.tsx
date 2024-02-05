@@ -95,7 +95,7 @@ const Banner = () => {
       >
         <a
           href="/assets/DevonGifford-FullstackDeveloper-2024.pdf"
-          target="_blank"
+          download
         >
           Download my latest CV
         </a>
