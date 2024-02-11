@@ -8,65 +8,65 @@ const BigProjects: React.FC = () => {
     /* PROJECT 1 */
   }
   //-------------------------------------------------------------
-  const imageProps1 = {
-    src: "/assets/images/ProjectPictures/Ecommerce.webp",
+  const DevotionImage = {
+    src: "/assets/images/ProjectPictures/Devotion.png",
     alt: "Image-Description",
     width: 500,
     height: 300,
   };
-  const imageUrl1 =
+  const DevotionImageSmall =
     "/assets/images/ProjectPictures/small-images/EcommerceSmall.webp";
 
   {
     /* PROJECT 2 */
   }
   //-------------------------------------------------------------
-  const imageProps2 = {
+  const spotifyImageProps = {
     src: "/assets/images/ProjectPictures/SpotifyClone.webp",
     alt: "Image-Description",
     width: 500,
     height: 300,
   };
-  const imageUrl2 =
+  const spotifyImageSmall =
     "/assets/images/ProjectPictures/small-images/SpotifyCloneSmall.webp";
 
   {
     /* PROJECT 3 */
   }
   //-------------------------------------------------------------
-  const imageProps3 = {
-    src: "/assets/images/ProjectPictures/FaceDetection.png",
+  const devreadyImage = {
+    src: "/assets/images/ProjectPictures/DevReady.png",
     alt: "Image-Description",
     width: 500,
     height: 300,
   };
-  const imageUrl3 =
+  const devreadyImageSmall =
     "/assets/images/ProjectPictures/small-images/FaceDetectionSmall.png";
 
   {
     /* PROJECT 4 - ON HOLD */
   }
   //-------------------------------------------------------------
-  const imageProps4 = {
-    src: "/assets/images/ProjectPictures/Mission-Control.jpg",
+  const incardImage = {
+    src: "/assets/images/ProjectPictures/InCard.png",
     alt: "Image-Description",
     width: 500,
     height: 300,
   };
-  const imageUrl4 =
+  const incardImageSmall =
     "/assets/images/ProjectPictures/small-images/Mission-ControlSmall.jpg";
 
   {
     /* PROJECT 5 */
   }
   //-------------------------------------------------------------
-  const imageProps5 = {
-    src: "/assets/images/ProjectPictures/Ai-toolbox.png",
+  const flatmatefinderImage = {
+    src: "/assets/images/ProjectPictures/FlatmateFinder.png",
     alt: "Image-Description",
     width: 500,
     height: 300,
   };
-  const imageUrl5 =
+  const flatematefinderImageSmall =
     "/assets/images/ProjectPictures/small-images/Ai-toolboxSmall.png";
 
   return (
@@ -76,28 +76,53 @@ const BigProjects: React.FC = () => {
     >
       <SectionTitle titleName="Capstone Projects" titleNumber="03" />
       <div>
-        {/* PROJECT 2 */}
         <BigProjectCard
-          image={imageProps5}
-          imageUrl={imageUrl5}
-          title="AI Toolbox"
-          description="A powerful repository of Language Model-based AI tools powered by OpenAI. Seamlessly access natural language processing, sentiment analysis, and text generation from one webpage. Embrace AI with effortless integration, revolutionize data processing, and unlock deeper insights. Stripe integration ensures seamless payment handling"
-          gitLink="https://github.com/DevonGifford/LLM-AI-Toolbox/tree/main"
-          liveLink="https://ai-toolbox-devongifford.vercel.app/"
+          image={flatmatefinderImage}
+          imageUrl={flatematefinderImageSmall}
+          title="Flatmate Finder"
+          description="A real world personal project designed to streamline the search for a flatmate. Through a simple form, applicants submit their details, allowing existing tenants to review them in a Tinder style swipe interface"
+          gitLink="https://github.com/DevonGifford/FlatmateFinder"
+          liveLink="https://flatmate-finder.vercel.app/"
           youtubeLink="https://github.com/DevonGifford"
-          techStackList={[
-            "NextJs",
-            "Open Ai",
-            "Prisma",
-            "Stripe",
-            "TypeScript",
-          ]}
+          techStackList={["Vite", "TypeScript", "ShadCN", "Firebase", "Vitest"]}
         />
 
-        {/* PROJECT 2 */}
         <BigProjectCardReversed
-          image={imageProps2}
-          imageUrl={imageUrl2}
+          image={devreadyImage}
+          imageUrl={devreadyImageSmall}
+          title="Dev Ready"
+          description="An open source fullstack initiative, inspired by ZTM, designed to create an engaging interactive quiz platform for students. The project aims to empower learning through gamification and dynamic features."
+          gitLink="https://github.com/DevonGifford/Fullstack-Spotify-Clone"
+          liveLink="https://devon-fullstack-spotify-clone.vercel.app/"
+          youtubeLink="https://github.com/DevonGifford"
+          techStackList={["Next14", "TypeScript", "Tailwind", "Jest", "PlayWright"]}
+        />
+
+        <BigProjectCard
+          image={incardImage}
+          imageUrl={incardImageSmall}
+          title="InCard Tech Test"
+          description="Frontend Technical Assessment for inCard, tasked with crafting a user friendly authentication system.  This project incorporates both SSR & CSR pages, replicating inCard's current authentication styling."
+          gitLink="https://github.com/DevonGifford/FaceDetectionApp-BackEnd"
+          liveLink="https://devon-facedetection-app.onrender.com/"
+          youtubeLink="https://github.com/DevonGifford"
+          techStackList={["Next13", "TypeScript", "Zod", "NextAuth", "Jest"]}
+        />
+
+        <BigProjectCardReversed
+          image={DevotionImage}
+          imageUrl={DevotionImageSmall}
+          title="E-commerce Website"
+          description="Emulating Notion.io with real-time databases and recursive components, Devotion serves as both a proof of concept and a learning experience. It mirrors Notion's features and pushes the boundaries of cloud-based note-taking."
+          gitLink="https://github.com/DevonGifford/Ecommerce_Showcase"
+          liveLink="https://bulk-basics.netlify.app/"
+          youtubeLink="https://github.com/DevonGifford"
+          techStackList={["Next14", "Convex", "Zustand", "TypeScript", "Clerk"]}
+        />
+
+        <BigProjectCard
+          image={spotifyImageProps}
+          imageUrl={spotifyImageSmall}
           title="Spotify Clone"
           description="Fullstack Spotify clone with core functionality like music streaming, song uploads & premium upgrades powered by Stripe. A comprehensive music experience awaits users. Explore the code and features to witness the passion and expertise behind its creation."
           gitLink="https://github.com/DevonGifford/Fullstack-Spotify-Clone"
@@ -105,42 +130,6 @@ const BigProjects: React.FC = () => {
           youtubeLink="https://github.com/DevonGifford"
           techStackList={["PostgreSQL", "Supabase", "TypeScript", "Tailwind"]}
         />
-
-        {/* PROJECT 3 */}
-        <BigProjectCard
-          image={imageProps3}
-          imageUrl={imageUrl3}
-          title="Face detection app"
-          description="Fullstack web app utilizing Clarifai's deep learning AI to detect and locate human faces in images. Built entirely by me, including database, frontend, and backend. PERN stack + Clarifai + Tachyons + tsParticles. Seamless user experience for image upload, face detection, and tracking."
-          gitLink="https://github.com/DevonGifford/FaceDetectionApp-BackEnd"
-          liveLink="https://devon-facedetection-app.onrender.com/"
-          youtubeLink="https://github.com/DevonGifford"
-          techStackList={["React", "ExpressJS", "NodeJS", "PostgreSQL"]}
-        />
-
-        {/* PROJECT 1 */}
-        <BigProjectCardReversed
-          image={imageProps1}
-          imageUrl={imageUrl1}
-          title="E-commerce Website"
-          description="Fullstack Ecommerce project exploring diverse tech: TypeScript, Redux, GraphQL, & PWA. Emphasis on business logic, integration, and learning. Minimalistic design, focus on development. Showcasing my journey of honing skills and expertise through tech integration."
-          gitLink="https://github.com/DevonGifford/Ecommerce_Showcase"
-          liveLink="https://bulk-basics.netlify.app/"
-          youtubeLink="https://github.com/DevonGifford"
-          techStackList={["Vite", "Firebase", "Redux", "Styled Components"]}
-        />
-        {/* PROJECT 4 */}
-        {/* <BigProjectCardReversed 
-          image={imageProps4}
-          imageUrl={imageUrl4}
-          title="NASA Mission Control"
-          description="This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress.
-          This will be a simple sentance that describes what the goal of this project is, as well as mentioning anything noteworthy.  Please remember this is a work in progress"
-          gitLink="https://github.com/DevonGifford"
-          liveLink="https://github.com/DevonGifford"
-          youtubeLink="https://github.com/DevonGifford"
-          techStackList={["test","test for Real","NodeJS","TypeScript"]} 
-        /> */}
       </div>
     </div>
   );
