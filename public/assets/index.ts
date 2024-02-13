@@ -2,9 +2,6 @@ import logo from "./images/LogoBig.png";
 import profileImg from "./images/Devon.jpg";
 import profileImgCircle from "./images/Devon_circle.png";
 
-import FaceDetection from "./images/ProjectPictures/FaceDetection.png";
-import Ecommerce from "./images/ProjectPictures/Ecommerce.webp";
-import MissionControl from "./images/ProjectPictures/Mission-Control.jpg";
 import SpotifyClone from "./images/ProjectPictures/SpotifyClone.webp";
 
 import JavaScriptL from "./images/Skills/JavaScriptL.png";
@@ -48,8 +45,5 @@ export {
   logo,
   profileImg,
   profileImgCircle,
-  FaceDetection,
-  Ecommerce,
-  MissionControl,
   SpotifyClone,
 };

@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import SectionTitle from "../SectionTitle";
 import BigProjectCard from "./BigProjectCard";
 import BigProjectCardReversed from "./BigProjectCard-reversed";
 
 const BigProjects: React.FC = () => {
-  {
-    /* PROJECT 1 */
-  }
   //-------------------------------------------------------------
   const DevotionImage = {
     src: "/assets/images/ProjectPictures/Devotion.png",
@@ -15,11 +12,8 @@ const BigProjects: React.FC = () => {
     height: 300,
   };
   const DevotionImageSmall =
-    "/assets/images/ProjectPictures/small-images/EcommerceSmall.webp";
+    "/assets/images/ProjectPictures/small-images/devotion_small.png";
 
-  {
-    /* PROJECT 2 */
-  }
   //-------------------------------------------------------------
   const spotifyImageProps = {
     src: "/assets/images/ProjectPictures/SpotifyClone.webp",
@@ -28,11 +22,8 @@ const BigProjects: React.FC = () => {
     height: 300,
   };
   const spotifyImageSmall =
-    "/assets/images/ProjectPictures/small-images/SpotifyCloneSmall.webp";
+    "/assets/images/ProjectPictures/small-images/spotify_small.webp";
 
-  {
-    /* PROJECT 3 */
-  }
   //-------------------------------------------------------------
   const devreadyImage = {
     src: "/assets/images/ProjectPictures/DevReady.png",
@@ -41,11 +32,8 @@ const BigProjects: React.FC = () => {
     height: 300,
   };
   const devreadyImageSmall =
-    "/assets/images/ProjectPictures/small-images/FaceDetectionSmall.png";
+    "/assets/images/ProjectPictures/small-images/devready_small.png";
 
-  {
-    /* PROJECT 4 - ON HOLD */
-  }
   //-------------------------------------------------------------
   const incardImage = {
     src: "/assets/images/ProjectPictures/InCard.png",
@@ -54,11 +42,8 @@ const BigProjects: React.FC = () => {
     height: 300,
   };
   const incardImageSmall =
-    "/assets/images/ProjectPictures/small-images/Mission-ControlSmall.jpg";
+    "/assets/images/ProjectPictures/small-images/incard_small.png";
 
-  {
-    /* PROJECT 5 */
-  }
   //-------------------------------------------------------------
   const flatmatefinderImage = {
     src: "/assets/images/ProjectPictures/FlatmateFinder.png",
@@ -67,7 +52,8 @@ const BigProjects: React.FC = () => {
     height: 300,
   };
   const flatematefinderImageSmall =
-    "/assets/images/ProjectPictures/small-images/Ai-toolboxSmall.png";
+    "/assets/images/ProjectPictures/small-images/flatmate_small.png";
+  //-------------------------------------------------------------
 
   return (
     <div
@@ -95,7 +81,13 @@ const BigProjects: React.FC = () => {
           gitLink="https://github.com/DevonGifford/Fullstack-Spotify-Clone"
           liveLink="https://devon-fullstack-spotify-clone.vercel.app/"
           youtubeLink="https://github.com/DevonGifford"
-          techStackList={["Next14", "TypeScript", "Tailwind", "Jest", "PlayWright"]}
+          techStackList={[
+            "Next14",
+            "TypeScript",
+            "Tailwind",
+            "Jest",
+            "PlayWright",
+          ]}
         />
 
         <BigProjectCard
@@ -112,7 +104,7 @@ const BigProjects: React.FC = () => {
         <BigProjectCardReversed
           image={DevotionImage}
           imageUrl={DevotionImageSmall}
-          title="E-commerce Website"
+          title="Devotion"
           description="Emulating Notion.io with real-time databases and recursive components, Devotion serves as both a proof of concept and a learning experience. It mirrors Notion's features and pushes the boundaries of cloud-based note-taking."
           gitLink="https://github.com/DevonGifford/Ecommerce_Showcase"
           liveLink="https://bulk-basics.netlify.app/"

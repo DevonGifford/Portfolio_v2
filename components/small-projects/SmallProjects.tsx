@@ -62,7 +62,6 @@ const SmallProjects = () => {
 
         {showMore && (
           <>
-            {/* PROJECT 3 */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -77,7 +76,6 @@ const SmallProjects = () => {
               />
             </motion.div>
 
-            {/* PROJECT 4 */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -92,7 +90,6 @@ const SmallProjects = () => {
               />
             </motion.div>
 
-            {/* PROJECT 5 */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -107,7 +104,6 @@ const SmallProjects = () => {
               />
             </motion.div>
 
-            {/* PROJECT 6 */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -121,8 +117,6 @@ const SmallProjects = () => {
                 listItems={["React", "Node", "Express", "API"]}
               />
             </motion.div>
-
-            {/* PROJECT 7 */}
 
             <motion.div
               initial={{ opacity: 0 }}
@@ -138,7 +132,6 @@ const SmallProjects = () => {
               />
             </motion.div>
 
-            {/* PROJECT 8 🎯*/}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -153,7 +146,6 @@ const SmallProjects = () => {
               />
             </motion.div>
 
-            {/* PROJECT 9 */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -168,7 +160,6 @@ const SmallProjects = () => {
               />
             </motion.div>
 
-            {/* PROJECT 10 🎯 */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -183,7 +174,6 @@ const SmallProjects = () => {
               />
             </motion.div>
 
-            {/* PROJECT 11 🎯*/}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -198,7 +188,6 @@ const SmallProjects = () => {
               />
             </motion.div>
 
-            {/* PROJECT 12 🎯*/}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
