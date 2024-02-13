@@ -88,19 +88,19 @@ const Banner = () => {
       </motion.p>
 
       {/* Button */}
-      <a
-        href="/assets/DevonGifford-FullstackDeveloper-2024.pdf"
-        target="_blank"
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 2.5 }}
+        className="w-40 h-10 text-xs sml:w-52 sml:h-14 sml:text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
       >
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 2.5 }}
-          className="w-40 h-10 text-xs sml:w-52 sml:h-14 sml:text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
+        <a
+          href="/assets/DevonGifford-FullstackDeveloper-2024.pdf"
+          target="_blank"
         >
           Download my latest CV
-        </motion.button>
-      </a>
+        </a>
+      </motion.button>
     </section>
   );
 };
