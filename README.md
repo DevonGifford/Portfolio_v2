@@ -38,9 +38,9 @@
 ### 🚀 About This Project 
 ---
 
-Inspired by Brittany Chiang's captivating portfolio website, I embarked on a journey to recreate her design using my preferred tech stack. Initially daunted by the fact hers was built with Gatsby, I opted for Next.js and saw it as an opportunity for growth.
+Inspired by Brittany Chiang's captivating portfolio website, I embarked on a journey to recreate her design using my preferred tech stack.  Initially challenged by the fact that Brittany's stack was built with Gatsby, while I was opting for Next.js - I saw this as an opportunity for growth.
 
-Not only did I replicate the design, but I also added my own innovative ideas and enhancements.
+Not only did I successfully replicate the design, but I also added my own innovative ideas and enhancements.
 
 <br/>
 
@@ -135,7 +135,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ---
 
 <p align='center'>
-Copyright 2023 - Devon Gifford
+Copyright 2024 - Devon Gifford
 </p>
 <p align='center'>
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
