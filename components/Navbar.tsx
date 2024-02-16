@@ -2,9 +2,7 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
 import { logo } from "@/public/assets";
-
 import { MdOutlineClose } from "react-icons/md";
 import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
@@ -49,7 +47,7 @@ const Navbar = () => {
         >
           <a className="hover:animate-spin" href="#home">
             <Image
-              className="w-12 pt-2 rounded-full sml:w-16 hover:animate-spin"
+              className="w-12 mt-2 rounded-full sml:w-16 hover:animate-spin"
               src={logo}
               alt="logo"
             />

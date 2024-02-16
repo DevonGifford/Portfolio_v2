@@ -65,15 +65,14 @@ const Banner = () => {
         className="text-sm sml:text-base text-textDark font-medium"
       >
         {" "}
-        Born in South Africa, holding British citizenship, and currently based
-        in Madrid, Spain, my expertise and passion lies in full-stack web
+        Born in South Africa, holding British citizenship and currently based
+        in Madrid, Spain.  My expertise and passion are in fullstack web
         development. <br />
         Leveraging my background in Marketing and Project Management,
         complemented by experience in Software Testing at a major <em>
           FAANG
         </em>{" "}
-        company, my approach brings a unique perspective to deliver high-quality
-        web solutions.
+        company, my approach brings a unique perspective to deliver reliable and clean code.
         <br />
         <br />
         <em>Fully committed to the philosophy of life-long learning.</em> <br />
@@ -96,7 +95,7 @@ const Banner = () => {
       >
         <a
           href="/assets/DevonGifford-FullstackDeveloper-2024.pdf"
-          target="_blank"
+          download
         >
           Download my latest CV
         </a>

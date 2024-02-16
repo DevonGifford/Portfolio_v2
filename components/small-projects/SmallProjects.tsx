@@ -14,8 +14,24 @@ const SmallProjects = () => {
       </div>
       <div className="flex flex-wrap items-center justify-center gap-6 mt-10 lgl:px-10">
         <ProjectCard
-          title="Thymia Technical Assessment"
-          description="Gamified version of the 2-back task, which measures working memory, with Cypress end-to-end testing."
+          title="FlipDish"
+          description="Frontend Technical Assessment: Handle API fetch and present JSON data as a restaurant menu, with some sneaky catches."
+          gitLink="https://github.com/DevonGifford/Menu--TechnicalAssignment"
+          liveLink="https://menu-technical-assignment.vercel.app/"
+          listItems={["API", "Vite", "TypeScript", "Tailwind", "Vitest"]}
+        />
+
+        <ProjectCard
+          title="NextLane"
+          description="Backend Technical Assessment:  My solution for implementing a client-side caching layer, using JavaScript as requested."
+          gitLink="https://github.com/DevonGifford/NextLane"
+          liveLink="https://github.com/DevonGifford/NextLane"
+          listItems={["Backend", "tl-cache", "JavaScript", "typing"]}
+        />
+
+        <ProjectCard
+          title="Thymia"
+          description="Frontend Technical Assessment: Gamified version of the 2-back memory task, with a little unique and challenging twist."
           gitLink="https://github.com/DevonGifford/nGame--TechnicalAssignment"
           liveLink="https://n-game-technical-assignment.vercel.app/"
           listItems={["NextJS", "TypeScript", "Jest", "Cypress"]}
@@ -23,38 +39,23 @@ const SmallProjects = () => {
 
         <ProjectCard
           title="BulkBasics"
-          description="A fullstack e-commerce platform emphasizing business logic and functionality for seamless user experience."
+          description="A fullstack e-commerce platform focusing on business logic and functionality, integrating various technologies."
           gitLink="https://github.com/DevonGifford/BulkBasics"
           liveLink="https://bulk-basics.netlify.app/"
-          listItems={["Vite", "TypeScript", "Stripe", "GraphQL"]}
-        />
-        <ProjectCard
-          title="NextLane"
-          description="This repository serves as the solution for the backend developer technical assessment to implement a client-side caching layer using JavaScript."
-          gitLink="https://github.com/DevonGifford/NextLane"
-          liveLink="https://github.com/DevonGifford/NextLane"
-          listItems={["Backend", "tl-cache", "JavaScript", "typing"]}
-        />
-
-        <ProjectCard
-          title="FlipDish Technical Assessment"
-          description="Frontend Technical Assessment: Simple web app to handle API fetch and present JSON data as a restaurant menu"
-          gitLink="https://github.com/DevonGifford/Menu--TechnicalAssignment"
-          liveLink="https://menu-technical-assignment.vercel.app/"
-          listItems={["API", "Vite", "TypeScript", "Tailwind", "Vitest"]}
+          listItems={["Vite", "TypeScript", "Stripe", "Redux"]}
         />
 
         <ProjectCard
           title="Modern Restful API"
-          description="Utilized API for fetching and tweeting inspiring quotes. Upgraded from 2D array to dynamic API integration."
+          description="Simple and efficient way to handle HTTP requests and interact with a MongoDB database, following modern and best practices."
           gitLink="https://github.com/DevonGifford/modern-restful-API"
           liveLink="https://github.com/DevonGifford/modern-restful-API"
-          listItems={["TypeScript", "Express", "MongoDB", "NodeJs"]}
+          listItems={["TypeScript", "Express", "MongoDB"]}
         />
 
         <ProjectCard
           title="Classic Pong"
-          description="Classic Pong: Relive retro gaming with this browser-based implementation. Engaging gameplay, responsive design, and realistic ball physics"
+          description="Relive retro gaming with this browser-based implementation, featuring realistic ball physics and built with vanilla tooling."
           gitLink="https://github.com/DevonGifford/Single-Player-Pong-Game"
           liveLink="https://devon-pong-game.netlify.app/"
           listItems={["JavaScript", "HTML", "CSS", "Netlify"]}
@@ -68,9 +69,9 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 0.1 }}
             >
               <ProjectCard
-                title="ClearScore Technical Assessment"
-                description="An idea board that allows a user to create new ideas, edit existing ideas or delete them. This app uses local and session storage combined"
-                gitLink="https://github.com/DevonGifford/ClearScore--TechnicalAssignment"
+                title="ClearScore"
+                description="Mock Technical Assessment: Tasked with creating an idea board with CRUD functionality, persistent state with local and session storage"
+                gitLink="https://github.com/DevonGifford/ClearScore"
                 liveLink="https://idea-board-murex.vercel.app/"
                 listItems={["Vite", "TypeScript", "Vitest", "LocalStorage"]}
               />
@@ -83,7 +84,7 @@ const SmallProjects = () => {
             >
               <ProjectCard
                 title="Ai Toolbox"
-                description="Introducing a suite of Language Model-based AI tools powered by OpenAI, offered as a SaaS solution. Revolutionize your business with advanced AI capabilities"
+                description="A suite of Language Model-based AI tools powered by OpenAI, offered as a SaaS solution. Revolutionize your business with advanced AI capabilities"
                 gitLink="https://github.com/DevonGifford/my_Python/tree/main/Mini-Projects"
                 liveLink="https://ai-toolbox-five.vercel.app/"
                 listItems={["Next", "Stripe", "OpenAI", "Clerk"]}
@@ -96,11 +97,11 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 0.3 }}
             >
               <ProjectCard
-                title="Animated NavBar"
-                description="Interactive & responsive website with UI design focus. Utilized CSS @keyframes for animations and maintained code efficiency."
-                gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
-                liveLink="https://devon-animated-navigation-bar.netlify.app/"
-                listItems={["JavaScript", "HTML", "CSS", "keyframes"]}
+                title="node-express-mvc-api"
+                description="A learning repository covering a range of concepts including JWT's, MongoDB integration, APIs, web servers and user auth"
+                gitLink="https://github.com/DevonGifford/node-express-mvc-api"
+                liveLink="https://github.com/DevonGifford/node-express-mvc-api"
+                listItems={["Node", "Express", "MongoDB", "JavaScript"]}
               />
             </motion.div>
 
@@ -110,8 +111,8 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 0.4 }}
             >
               <ProjectCard
-                title="Fullstack FaceDetection App"
-                description="A Fullstack PERN app - sign up and upload and image to detect one or multiple human faces."
+                title="FaceDetection App"
+                description="A Fullstack PERN app - sign up and upload and image to detect one or multiple human faces, built with the help of ZTM."
                 gitLink="https://github.com/DevonGifford/AI-Toolbox"
                 liveLink="https://devon-facedetection-app.onrender.com/"
                 listItems={["React", "Node", "Express", "API"]}
@@ -124,11 +125,11 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 0.5 }}
             >
               <ProjectCard
-                title="node-express-mvc-api"
-                description="A learning repository covering foundational to advanced concepts including JWT, MongoDB integration, APIs, web server setup, and user authentication"
-                gitLink="https://github.com/DevonGifford/node-express-mvc-api"
-                liveLink="https://github.com/DevonGifford/node-express-mvc-api"
-                listItems={["Node", "Express", "MongoDB", "JavaScript"]}
+                title="Animated NavBar"
+                description="Interactive & responsive website with UI design focus. Utilized CSS keyframes for animations and code efficiency."
+                gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
+                liveLink="https://devon-animated-navigation-bar.netlify.app/"
+                listItems={["JavaScript", "HTML", "CSS", "keyframes"]}
               />
             </motion.div>
 
@@ -139,7 +140,7 @@ const SmallProjects = () => {
             >
               <ProjectCard
                 title="Video Player"
-                description="Created a JavaScript video player with essential controls: play, pause, volume, mute, playback speed, and fullscreen. Excited for future possibilities"
+                description="JavaScript video player featuring essential controls, such as; play, pause, volume, mute, playback speed and fullscreen."
                 gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
                 liveLink="https://devon-javascript-videoplayer.netlify.app/"
                 listItems={["PlayBack Controls", "JavaScript", "Netlify"]}
@@ -166,11 +167,11 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 0.8 }}
             >
               <ProjectCard
-                title="Calculator"
-                description="A personal victory over past challenges. Simple yet powerful, offering potential for future enhancements and personalized themes"
+                title="Math Sprint Game"
+                description="Interactive quiz web app testing the users basic math skills. Initial research into building my capstone DevReady application."
                 gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
-                liveLink="https://devon-javascript-calculator.netlify.app/"
-                listItems={["JavaScript", "HTML", "CSS"]}
+                liveLink="https://devon-math-sprint-game.netlify.app/"
+                listItems={["JavaScript", "HTML", "CSS", "Netlify"]}
               />
             </motion.div>
 
@@ -181,10 +182,10 @@ const SmallProjects = () => {
             >
               <ProjectCard
                 title="Bookmark Keeper"
-                description="Simple website for saving bookmarks. Explored dynamic rendering, local storage, and form validation"
+                description="A very simple website for saving bookmarks. A learning project exploring dynamic rendering, local storage and vanilla form validation"
                 gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
                 liveLink="https://devon-bookmark-app.netlify.app/"
-                listItems={["JavaScript", "HTML", "CSS"]}
+                listItems={["JavaScript", "HTML", "CSS", "Netlify"]}
               />
             </motion.div>
 
@@ -194,11 +195,11 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 1.0 }}
             >
               <ProjectCard
-                title="Math Sprint Game"
-                description="TInteractive web app testing math skills. Unique page management approach for better organization. Aspiring to create advanced games for technical interview preparation"
+                title="Calculator"
+                description="A personal victory, overcoming a fear instilled from highschool Java class. Simple web based calculator app built with vanilla tooling"
                 gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
-                liveLink="https://devon-math-sprint-game.netlify.app/"
-                listItems={["JavaScript", "HTML", "CSS"]}
+                liveLink="https://devon-javascript-calculator.netlify.app/"
+                listItems={["JavaScript", "HTML", "CSS", "Netlify"]}
               />
             </motion.div>
           </>
