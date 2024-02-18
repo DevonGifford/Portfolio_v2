@@ -46,7 +46,6 @@ const ProjectCard: React.FC<Props> = ({
 
   return (
     <div>
-      {/* PROJECT Container.... */}
       <div className="max-w-containerSmall mx-auto flex flex-col items-center justify-between gap-28 mt-10">
         {/* MEDIA QUEREY: LARGE SCREENS */}
         <div className="hidden flex-col mdl:flex sml:flex-row gap-6 ml-16">

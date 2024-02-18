@@ -92,7 +92,7 @@ const About = () => {
             <Image
               className="z-30 rounded-full absolute w-52 h-52 lgl:w-80 lgl:h-80 fill object-cover border-2 border-textGreen"
               src={profileImgCircle}
-              alt="Devon Giford - Profile picture"
+              alt="Devon Gifford - Profile picture"
             />
 
             {/* background-blur-effect */}
@@ -106,7 +106,7 @@ const About = () => {
         {/* Skill Logo's */}
         <div className="row-start-3 col-span-full pt-5">
           <p className="pb-5 font-codeFont text-textDark font-bold text-center text-sm lg:text-base">
-            The Technologies I am most profficient & passionate about:
+            The Technologies I am most proficient & passionate about:
           </p>
 
           <ul className="flex flex-row flex-wrap gap-4 ml-3 mt-1 justify-center">
@@ -258,5 +258,3 @@ const About = () => {
 };
 
 export default About;
-
-//🎯 I need to do something about the photo being warped in mobile view
