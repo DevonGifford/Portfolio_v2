@@ -49,37 +49,28 @@ const About = () => {
               </div>
             </div>
             <p>
-              Hello! I&apos;m a{" "}
-              <span className="text-textGreen">fullstack developer</span> with a
-              strong focus on modern frontend technologies. I specialize in
-              crafting sleek, user-friendly web and mobile applications using{" "}
-              <span className="text-textGreen">React & TypeScript</span>.
+              Hello there, I&apos;m a{" "}
+              <span className="text-textGreen">fullstack developer</span>.
+              Originally from South Africa, holding British citizenship and now
+              currently based in Madrid, Spain.
+              <br />
+              <br />I have 5 years of experience in the tech industry, including
+              stints at various start-ups. I specialize in developing responsive
+              and accessible web applications using{" "}
+              <span className="text-textGreen">JavaScript & React</span>.
               <br />
               <br />
-              With years of experience freelancing and working at various{" "}
-              <span className="text-textGreen">startups</span>, I&apos;ve honed
-              my skills in creating{" "}
-              <span className="text-textGreen">responsive </span> UI/UX designs
-              with an emphasis on{" "}
-              <span className="text-textGreen">accessibility</span>.
-              <br />
-              Recently, I had the incredible opportunity to join a leading{" "}
-              <span className="text-textGreen">FAANG</span> company as a Quality
-              Engineer, and later{" "}
-              <span className="text-textGreen">promoted</span> to Team Lead.
-              <br />I immersed myself in big-tech best practices, with a
-              specific focus on E2E & integration{" "}
-              <span className="text-textGreen">testing</span>.
+              Recently, I had the incredible opportunity to join a{" "}
+              <span className="text-textGreen">leading FAANG</span> company as a
+              Quality Engineer, and later promoted to Team Lead. I immersed
+              myself in big-tech best practices, with a specific focus on E2E &
+              integration testing.
               <br />
               <br />
-              While the learning experience was invaluable, I&apos;m now
-              actively <span className="text-textGreen">transitioning</span> my
+              Currently <span className="text-textGreen">transitioning</span> my
               career back into web development.
               <br />
               <br />
-              {/* I&apos;m committed to delivering{" "}
-              <span className="text-textGreen">reliable clean code.</span>
-              <br /> */}
             </p>
           </div>
         </div>
@@ -252,6 +243,7 @@ const About = () => {
             </li>
           </ul>
         </div>
+        {/* //TODO Create new skills section   */}
       </div>
     </section>
   );
