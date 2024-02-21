@@ -7,7 +7,6 @@ import {
   Next,
   Redux,
   JavaScriptL,
-  MongoDB,
   TypeScript,
   Python,
   Docker,

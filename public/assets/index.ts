@@ -7,9 +7,6 @@ import ReactL from "./images/Skills/React.png";
 import Next from "./images/Skills/Next.png";
 import Redux from "./images/Skills/Redux.png";
 import NodeJS from "./images/Skills/NodeJS.png";
-import Express from "./images/Skills/Express.png";
-import PostgreSQL from "./images/Skills/PostgreSQL.png";
-import MongoDB from "./images/Skills/MongoDB.png";
 import Docker from "./images/Skills/Docker.png";
 import Jest from "./images/Skills/Jest.png";
 import Playwright from "./images/Skills/Playwright.png";
@@ -24,9 +21,6 @@ export {
   Next,
   Redux,
   NodeJS,
-  Express,
-  PostgreSQL,
-  MongoDB,
   JavaScriptL,
   TypeScript,
   Python,
