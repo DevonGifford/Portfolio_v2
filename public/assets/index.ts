@@ -1,6 +1,5 @@
 import logo from "./images/LogoBig.png";
 import profileImgCircle from "./images/Devon_circle.png";
-
 import JavaScriptL from "./images/Skills/JavaScriptL.png";
 import TypeScript from "./images/Skills/TypeScript.png";
 import Python from "./images/Skills/python.png";
@@ -16,6 +15,9 @@ import Jest from "./images/Skills/Jest.png";
 import Playwright from "./images/Skills/Playwright.png";
 import Tailwind from "./images/Skills/Tailwind.png";
 import Vite from "./images/Skills/Vite.png";
+import Remix from "./images/Skills/Remix.png";
+import Neovim from "./images/Skills/Neovim.png";
+import Electron from "./images/Skills/Electron.png";
 
 export {
   ReactL,
@@ -35,4 +37,7 @@ export {
   Vite,
   logo,
   profileImgCircle,
+  Remix,
+  Neovim,
+  Electron,
 };
