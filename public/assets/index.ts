@@ -2,7 +2,7 @@ import logo from "./images/LogoBig.png";
 import profileImgCircle from "./images/Devon_circle.png";
 import JavaScriptL from "./images/Skills/JavaScriptL.png";
 import TypeScript from "./images/Skills/TypeScript.png";
-import Python from "./images/Skills/python.png";
+import Python from "./images/Skills/Python.png";
 import ReactL from "./images/Skills/React.png";
 import Next from "./images/Skills/Next.png";
 import Redux from "./images/Skills/Redux.png";
