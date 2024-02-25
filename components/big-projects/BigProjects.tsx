@@ -46,7 +46,7 @@ const BigProjects: React.FC = () => {
 
   //-------------------------------------------------------------
   const flatmatefinderImage = {
-    src: "/assets/images/ProjectPictures/FlatmateFinder.png",
+    src: "/assets/images/ProjectPictures/big-images/FlatmateFinder.png",
     alt: "Image-Description",
     width: 500,
     height: 300,

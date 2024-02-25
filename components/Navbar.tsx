@@ -99,7 +99,7 @@ const Navbar = () => {
                 Experience
               </motion.li>
             </Link>
-            {/* PROJECTS */}
+            {/* Projects */}
             <Link
               href="#Projects"
               onClick={handleScroll}
@@ -236,7 +236,7 @@ const Navbar = () => {
                       Experience
                     </motion.li>
                   </Link>
-                  {/* PROJECTS */}
+                  {/* projects */}
                   <Link
                     href="#Projects"
                     onClick={handleScroll}

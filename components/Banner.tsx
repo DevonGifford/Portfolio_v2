@@ -58,33 +58,33 @@ const Banner = () => {
       </motion.h1>
 
       {/* Introductory Text */}
-      <motion.p
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2.4 }}
-        className="text-sm sml:text-base text-textDark font-medium"
+        className="flex flex-col gap-1.5 text-sm sml:text-base text-textDark font-medium"
       >
-        {" "}
-        Born in South Africa, holding British citizenship and currently based
-        in Madrid, Spain.  My expertise and passion are in fullstack web
-        development. <br />
-        Leveraging my background in Marketing and Project Management,
-        complemented by experience in Software Testing at a major <em>
-          FAANG
-        </em>{" "}
-        company, my approach brings a unique perspective to deliver reliable and clean code.
-        <br />
-        <br />
-        <em>Fully committed to the philosophy of life-long learning.</em> <br />
-        <br />
-        <a href="#about" onClick={handleScroll}>
+        <div>
+          {" "}
+          Self taught software engineer with a strong focus on frontend
+          development, I specialize in crafting web and mobile applications
+          using React & TypeScript.
+        </div>
+        <div>
+          Leveraging my background in Marketing and experience in Software
+          Testing at a renowned
+          <em> FAANG </em>
+          company, my approach brings a unique perspective that prioritizes clean and reliable code.
+        </div>
+        <div className="mt-2 italic">Fully committed to the philosophy of life-long learning.</div>
+        <a href="#Projects" onClick={handleScroll} className="mt-2">
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
-            Learn More
+            Capstone Projects
             {/* Animated underline bar */}
             <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
           </span>
         </a>
-      </motion.p>
+      </motion.div>
 
       {/* Button */}
       <motion.button
@@ -93,10 +93,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 2.5 }}
         className="w-40 h-10 text-xs sml:w-52 sml:h-14 sml:text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
       >
-        <a
-          href="/assets/DevonGifford-FullstackDeveloper-2024.pdf"
-          download
-        >
+        <a href="/assets/DevonGifford-FullstackDeveloper-2024.pdf" download>
           Download my latest CV
         </a>
       </motion.button>
