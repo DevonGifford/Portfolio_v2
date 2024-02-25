@@ -26,7 +26,7 @@ const TeamLead = () => {
       {/* INTRODUCTION */}
       <p className="mt-3 text-base font-light flex gap-2 text-textDark">
         <strong>
-          Promoted to a taem lead position, along with and ontop of my
+          Promoted to a team lead position, along with and on top of my
           Engineering responsibilities. My role involved actively supporting
           managers and overseeing the operations of multiple teams.
         </strong>

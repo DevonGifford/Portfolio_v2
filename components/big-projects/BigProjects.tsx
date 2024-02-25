@@ -116,7 +116,7 @@ const BigProjects: React.FC = () => {
           image={spotifyImageProps}
           imageUrl={spotifyImageSmall}
           title="Spotify Clone"
-          description="Fullstack Spotify clone with core functionality like music streaming, song uploads & premium upgrades powered by Stripe. A comprehensive music experience awaits users. Explore the code and features to witness the passion and expertise behind its creation."
+          description="Fullstack Spotify clone with core functionality like music streaming, song uploads & premium upgrades powered by Stripe. A comprehensive music experience aimed to  emulate Spotify styles."
           gitLink="https://github.com/DevonGifford/Fullstack-Spotify-Clone"
           liveLink="https://devon-fullstack-spotify-clone.vercel.app/"
           youtubeLink="https://github.com/DevonGifford"

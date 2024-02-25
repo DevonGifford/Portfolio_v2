@@ -56,7 +56,7 @@ const About = () => {
               <br />
               <br />I have <span className="text-textGreen">5 years </span> of
               experience in the tech industry, including stints at various
-              start-ups. I specialize in developing responsive and accessible
+              startups. I specialize in developing responsive and accessible
               web applications using{" "}
               <span className="text-textGreen">JavaScript & React</span>.
               <br />
@@ -70,7 +70,7 @@ const About = () => {
               <br />
               <br />
               <em>
-                Currently transitioning my career back into web development.
+                Currently, I am transitioning my career back into web development.
               </em>
               <br />
               <br />

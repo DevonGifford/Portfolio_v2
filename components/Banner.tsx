@@ -67,7 +67,7 @@ const Banner = () => {
         <div>
           {" "}
           Self taught software engineer with a strong focus on frontend
-          development, I specialize in crafting web and mobile applications
+          development. I specialize in crafting web and mobile applications
           using React & TypeScript.
         </div>
         <div>
@@ -76,7 +76,7 @@ const Banner = () => {
           <em> FAANG </em>
           company, my approach brings a unique perspective that prioritizes clean and reliable code.
         </div>
-        <div className="mt-2 italic">Fully committed to the philosophy of life-long learning.</div>
+        <div className="mt-2 italic">Fully committed to the philosophy of lifelong learning.</div>
         <a href="#Projects" onClick={handleScroll} className="mt-2">
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
             Capstone Projects

@@ -13,8 +13,8 @@ const Contact = () => {
         Let&apos;s get in touch
       </h2>
       <p className="max-w-[600px] text-center text-textDark">
-        My inbox is always open and looking for new opportunities. <br />{" "}
-        Whether you have a question or just want to say hi, I&apos;ll try my
+        My inbox is always open and looking for new opportunities <br />{" "}
+        Whether you have a question or just want to say hi, I&apos;ll do my
         best to get back to you!
       </p>
       <a href="mailto:devongifford@outloook.com">
