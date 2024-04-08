@@ -27,19 +27,6 @@ const ProjectCard: React.FC<Props> = ({
   techStackList,
   imageUrl,
 }) => {
-  // const overlayStyle = {
-  //   position: 'relative',
-  //   '::after': {
-  //     content: '""',
-  //     position: 'absolute',
-  //     top: 0,
-  //     right: 0,
-  //     bottom: 0,
-  //     left: 0,
-  //     backgroundColor: 'rgba(192, 77, 16, 0.884)',
-  //   },
-  // };
-
   const divStyle = {
     backgroundImage: `url(${imageUrl})`,
   };
@@ -47,7 +34,7 @@ const ProjectCard: React.FC<Props> = ({
   return (
     <div>
       <div className="max-w-containerSmall mx-auto flex flex-col items-center justify-between gap-28 mt-10">
-        {/* MEDIA QUEREY: LARGE SCREENS */}
+        {/* MEDIA QUERY: LARGE SCREENS */}
         <div className="hidden flex-col mdl:flex sml:flex-row gap-6 ml-16">
           {/* Image-div*/}
           <a
@@ -60,6 +47,7 @@ const ProjectCard: React.FC<Props> = ({
               <Image
                 {...image}
                 className="w-full h-full object-contain rounded-lg"
+                alt=""
               />
 
               {/* Green overlay */}
@@ -115,7 +103,7 @@ const ProjectCard: React.FC<Props> = ({
           </div>
         </div>
 
-        {/* MEDIA QUEREY: MOBILE SCREENS */}
+        {/* MEDIA QUERY: MOBILE SCREENS */}
         <div
           className="hover:shadow-xl shadow-inner bg-no-repeat bg-cover flex-col rounded-lg mx-4 mdl:hidden"
           style={divStyle}
@@ -142,9 +130,8 @@ const ProjectCard: React.FC<Props> = ({
               ))}
             </ul>
 
-            {/* Links to showcase project  🎯TO-DO */}
+            {/* Links to showcase project  */}
             <div className="text-2xl flex gap-4 pb-10 items-end text-right">
-              {/* GitHub */}
               <a
                 className="hover:text-textGreen duration-300"
                 href={gitLink}
@@ -152,7 +139,6 @@ const ProjectCard: React.FC<Props> = ({
               >
                 <RiGithubLine />
               </a>
-              {/* YouTube */}
               <a
                 className="hover:text-textGreen duration-300"
                 href={youtubeLink}
@@ -160,7 +146,6 @@ const ProjectCard: React.FC<Props> = ({
               >
                 <SlSocialYoutube />
               </a>
-              {/* LiveDemo */}
               <a
                 className="hover:text-textGreen duration-300"
                 href={youtubeLink}

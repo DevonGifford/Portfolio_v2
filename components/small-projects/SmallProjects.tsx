@@ -15,10 +15,10 @@ const SmallProjects = () => {
       <div className="flex flex-wrap items-center justify-center gap-6 mt-10 lgl:px-10">
         <ProjectCard
           title="FlipDish"
-          description="Frontend Technical Assessment: Handle API fetch and present JSON data as a restaurant menu, with some sneaky catches."
+          description="Frontend Technical Assessment: Implement server-side data fetching to present JSON data as a restaurant menu, including some sneaky twists."
           gitLink="https://github.com/DevonGifford/Menu--TechnicalAssignment"
           liveLink="https://menu-technical-assignment.vercel.app/"
-          listItems={["API", "Vite", "TypeScript", "Tailwind", "Vitest"]}
+          listItems={["API", "NextJs", "TypeScript", "Vitest"]}
         />
 
         <ProjectCard
@@ -26,15 +26,31 @@ const SmallProjects = () => {
           description="Backend Technical Assessment:  My solution for implementing a client-side caching layer, using JavaScript as requested."
           gitLink="https://github.com/DevonGifford/NextLane"
           liveLink="https://github.com/DevonGifford/NextLane"
-          listItems={["Backend", "tl-cache", "JavaScript", "typing"]}
+          listItems={["Backend", "ttl-cache", "JavaScript"]}
         />
 
         <ProjectCard
-          title="Thymia"
-          description="Frontend Technical Assessment: Gamified version of the 2-back memory task, with a little unique and challenging twist."
-          gitLink="https://github.com/DevonGifford/nGame--TechnicalAssignment"
-          liveLink="https://n-game-technical-assignment.vercel.app/"
-          listItems={["NextJS", "TypeScript", "Jest", "Cypress"]}
+          title="InCard"
+          description="Frontend Technical Assessment: Develop a web application that demonstrates authentication functionality using JWT tokens"
+          gitLink="https://github.com/DevonGifford/InCard"
+          liveLink="https://incard-technical-assaignment-devon-gifford.vercel.app/"
+          listItems={["NextJS", "TypeScript", "Jest", "NextAuth"]}
+        />
+
+        <ProjectCard
+          title="Restful API"
+          description="Simple and efficient way to handle HTTP requests and interact with a MongoDB database, following modern and best practices."
+          gitLink="https://github.com/DevonGifford/modern-restful-API"
+          liveLink="https://github.com/DevonGifford/modern-restful-API"
+          listItems={["TypeScript", "Express", "MongoDB"]}
+        />
+
+        <ProjectCard
+          title="Devotion"
+          description="A fullstack web application designed to replicate the seamless functionality of Notion, utilizing real-time database & recursive components"
+          gitLink="https://github.com/DevonGifford/Devotion"
+          liveLink="https://devotion-portfolioproject.vercel.app/"
+          listItems={["NextJs", "TypeScript", "Convex", "Zustand"]}
         />
 
         <ProjectCard
@@ -45,22 +61,6 @@ const SmallProjects = () => {
           listItems={["Vite", "TypeScript", "Stripe", "Redux"]}
         />
 
-        <ProjectCard
-          title="Modern Restful API"
-          description="Simple and efficient way to handle HTTP requests and interact with a MongoDB database, following modern and best practices."
-          gitLink="https://github.com/DevonGifford/modern-restful-API"
-          liveLink="https://github.com/DevonGifford/modern-restful-API"
-          listItems={["TypeScript", "Express", "MongoDB"]}
-        />
-
-        <ProjectCard
-          title="Classic Pong"
-          description="Relive retro gaming with this browser-based implementation, featuring realistic ball physics and built with vanilla tooling."
-          gitLink="https://github.com/DevonGifford/Single-Player-Pong-Game"
-          liveLink="https://devon-pong-game.netlify.app/"
-          listItems={["JavaScript", "HTML", "CSS", "Netlify"]}
-        />
-
         {showMore && (
           <>
             <motion.div
@@ -69,11 +69,11 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 0.1 }}
             >
               <ProjectCard
-                title="ClearScore"
-                description="Mock Technical Assessment: Tasked with creating an idea board with CRUD functionality, persistent state with local and session storage"
-                gitLink="https://github.com/DevonGifford/ClearScore"
-                liveLink="https://idea-board-murex.vercel.app/"
-                listItems={["Vite", "TypeScript", "Vitest", "LocalStorage"]}
+                title="Classic Pong"
+                description="Relive retro gaming with this browser-based implementation, featuring realistic ball physics and built with vanilla tooling."
+                gitLink="https://github.com/DevonGifford/Single-Player-Pong-Game"
+                liveLink="https://devon-pong-game.netlify.app/"
+                listItems={["JavaScript", "HTML", "CSS", "Netlify"]}
               />
             </motion.div>
 
@@ -139,11 +139,11 @@ const SmallProjects = () => {
               transition={{ duration: 0.9, delay: 0.6 }}
             >
               <ProjectCard
-                title="Video Player"
-                description="JavaScript video player featuring essential controls, such as; play, pause, volume, mute, playback speed and fullscreen."
-                gitLink="https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects"
-                liveLink="https://devon-javascript-videoplayer.netlify.app/"
-                listItems={["PlayBack Controls", "JavaScript", "Netlify"]}
+                title="Spotify Clone"
+                description="A comprehensive Spotify clone that replicates the core functionality, including file upload and authentication"
+                gitLink="https://github.com/DevonGifford/Spotify-Clone"
+                liveLink="https://devon-fullstack-spotify-clone.vercel.app/"
+                listItems={["Stripe", "SupaBase", "PostgreSQL"]}
               />
             </motion.div>
 
