@@ -4,29 +4,8 @@ import BigProjectCard from "./BigProjectCard";
 import BigProjectCardReversed from "./BigProjectCard-reversed";
 
 const BigProjects: React.FC = () => {
-  //-------------------------------------------------------------
-  const DevotionImage = {
-    src: "/assets/images/ProjectPictures/big-images/Devotion.png",
-    alt: "Image-Description",
-    width: 500,
-    height: 300,
-  };
-  const DevotionImageSmall =
-    "/assets/images/ProjectPictures/small-images/devotion_small.png";
-
-  //-------------------------------------------------------------
-  const spotifyImageProps = {
-    src: "/assets/images/ProjectPictures/big-images/SpotifyClone.webp",
-    alt: "Image-Description",
-    width: 500,
-    height: 300,
-  };
-  const spotifyImageSmall =
-    "/assets/images/ProjectPictures/small-images/spotify_small.webp";
-
-  //-------------------------------------------------------------
   const devreadyImage = {
-    src: "/assets/images/ProjectPictures/big-images/DevReady.png",
+    src: "/assets/images/ProjectPictures/big-images/DevReady_big.png",
     alt: "Image-Description",
     width: 500,
     height: 300,
@@ -35,24 +14,34 @@ const BigProjects: React.FC = () => {
     "/assets/images/ProjectPictures/small-images/devready_small.png";
 
   //-------------------------------------------------------------
-  const incardImage = {
-    src: "/assets/images/ProjectPictures/big-images/InCard.png",
-    alt: "Image-Description",
-    width: 500,
-    height: 300,
-  };
-  const incardImageSmall =
-    "/assets/images/ProjectPictures/small-images/incard_small.png";
-
-  //-------------------------------------------------------------
   const flatmatefinderImage = {
-    src: "/assets/images/ProjectPictures/big-images/FlatmateFinder.png",
+    src: "/assets/images/ProjectPictures/big-images/FlatmateFinder_big.png",
     alt: "Image-Description",
     width: 500,
     height: 300,
   };
   const flatematefinderImageSmall =
     "/assets/images/ProjectPictures/small-images/flatmate_small.png";
+
+  //-------------------------------------------------------------
+  const thymiaImage = {
+    src: "/assets/images/ProjectPictures/big-images/Thymia_big.png",
+    alt: "Image-Description",
+    width: 500,
+    height: 300,
+  };
+  const thymiaImageSmall =
+    "/assets/images/ProjectPictures/small-images/thymia_small.png";
+
+  //-------------------------------------------------------------
+  const clearscoreImage = {
+    src: "/assets/images/ProjectPictures/big-images/ClearScore_big.png",
+    alt: "Image-Description",
+    width: 500,
+    height: 300,
+  };
+  const clearscoreImageSmall =
+    "/assets/images/ProjectPictures/small-images/clearscore_small.png";
   //-------------------------------------------------------------
 
   return (
@@ -60,7 +49,7 @@ const BigProjects: React.FC = () => {
       id="Projects"
       className="max-w-containerSmall mx-auto min-h-fit py-10  lgl:py-32 flex flex-col gap-8"
     >
-      <SectionTitle titleName="Capstone Projects" titleNumber="03" />
+      <SectionTitle titleName="Portfolio Projects" titleNumber="03" />
       <div>
         <BigProjectCard
           image={flatmatefinderImage}
@@ -71,6 +60,34 @@ const BigProjects: React.FC = () => {
           liveLink="https://flatmate-finder.vercel.app/"
           youtubeLink="https://github.com/DevonGifford"
           techStackList={["Vite", "TypeScript", "ShadCN", "Firebase", "Vitest"]}
+        />
+
+        <BigProjectCardReversed
+          image={clearscoreImage}
+          imageUrl={clearscoreImageSmall}
+          title="ClearScore Ideaboard"
+          description="A time-constrained frontend assessment for ClearScore. Developed within 6 to 8 hours, it utilizes modern technologies like Tailwind CSS and ShadCN UI Library for rapid development. Prioritized simplicity, accessibility, and thorough testing."
+          gitLink="https://github.com/DevonGifford/ClearScore"
+          liveLink="https://idea-board-murex.vercel.app/"
+          youtubeLink="https://idea-board-murex.vercel.app/"
+          techStackList={["PostgreSQL", "Supabase", "TypeScript", "Tailwind"]}
+        />
+
+        <BigProjectCard
+          image={thymiaImage}
+          imageUrl={thymiaImageSmall}
+          title="Thymia 2-back game"
+          description="A gamified version of the 2-back task, a cognitive test designed to measure working memory. Users are presented with a sequence of letters and must determine if the current letter matches the one presented two trials before."
+          gitLink="https://github.com/DevonGifford/Thymia"
+          liveLink="https://n-game-technical-assignment.vercel.app/"
+          youtubeLink="https://n-game-technical-assignment.vercel.app/"
+          techStackList={[
+            "Next14",
+            "Event-Logger",
+            "Tailwind",
+            "TypeScript",
+            "Jest",
+          ]}
         />
 
         <BigProjectCardReversed
@@ -88,39 +105,6 @@ const BigProjects: React.FC = () => {
             "Jest",
             "PlayWright",
           ]}
-        />
-
-        <BigProjectCard
-          image={incardImage}
-          imageUrl={incardImageSmall}
-          title="InCard Tech Test"
-          description="Frontend Technical Assessment for inCard, tasked with crafting a user friendly authentication system.  This project incorporates both SSR & CSR pages, replicating inCard's current authentication styling."
-          gitLink="https://github.com/DevonGifford/InCard"
-          liveLink="https://incard-technical-assaignment-devon-gifford.vercel.app/"
-          youtubeLink="https://incard-technical-assaignment-devon-gifford.vercel.app/"
-          techStackList={["Next13", "TypeScript", "Zod", "NextAuth", "Jest"]}
-        />
-
-        <BigProjectCardReversed
-          image={DevotionImage}
-          imageUrl={DevotionImageSmall}
-          title="Devotion"
-          description="Emulating Notion.io with real-time databases and recursive components, Devotion serves as both a proof of concept and a learning experience. It mirrors Notion's features and pushes the boundaries of cloud-based note-taking."
-          gitLink="https://github.com/DevonGifford/Devotion"
-          liveLink="https://devotion-portfolioproject.vercel.app/"
-          youtubeLink="https://devotion-portfolioproject.vercel.app/"
-          techStackList={["Next14", "Convex", "Zustand", "TypeScript", "Clerk"]}
-        />
-
-        <BigProjectCard
-          image={spotifyImageProps}
-          imageUrl={spotifyImageSmall}
-          title="Spotify Clone"
-          description="Fullstack Spotify clone with core functionality like music streaming, song uploads & premium upgrades powered by Stripe. A comprehensive music experience aimed to  emulate Spotify styles."
-          gitLink="https://github.com/DevonGifford/Fullstack-Spotify-Clone"
-          liveLink="https://devon-fullstack-spotify-clone.vercel.app/"
-          youtubeLink="https://github.com/DevonGifford"
-          techStackList={["PostgreSQL", "Supabase", "TypeScript", "Tailwind"]}
         />
       </div>
     </div>

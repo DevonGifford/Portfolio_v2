@@ -48,6 +48,7 @@ const ProjectCardReversed: React.FC<Props> = ({
               <Image
                 {...image}
                 className="w-full h-full object-contain rounded-lg"
+                alt=""
               />
 
               {/* Green overlay */}
