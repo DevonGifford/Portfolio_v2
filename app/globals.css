@@ -1,0 +1,31 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-montserrat); /* fallback to bodyFont */
+}
+
+body {
+  background-color: #0a192f; /* bodyColor */
+  color: #ccd6f6; /* textLight */
+}
+
+/* Active link highlight */
+.active {
+  color: #64ffda;
+}
+
+/* Hide scrollbar utility */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
