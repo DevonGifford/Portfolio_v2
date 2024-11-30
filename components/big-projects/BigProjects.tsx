@@ -1,7 +1,9 @@
+"use client";
+
 import React from "react";
 import SectionTitle from "../SectionTitle";
 import BigProjectCard from "./BigProjectCard";
-import BigProjectCardReversed from "./BigProjectCard-reversed";
+import BigProjectCardReversed from "./BigProjectCardReversed";
 
 const BigProjects: React.FC = () => {
   const devreadyImage = {
@@ -10,8 +12,7 @@ const BigProjects: React.FC = () => {
     width: 500,
     height: 300,
   };
-  const devreadyImageSmall =
-    "/assets/images/ProjectPictures/small-images/devready_small.png";
+  const devreadyImageSmall = "/assets/images/ProjectPictures/small-images/devready_small.png";
 
   //-------------------------------------------------------------
   const flatmatefinderImage = {
@@ -30,8 +31,7 @@ const BigProjects: React.FC = () => {
     width: 500,
     height: 300,
   };
-  const thymiaImageSmall =
-    "/assets/images/ProjectPictures/small-images/thymia_small.png";
+  const thymiaImageSmall = "/assets/images/ProjectPictures/small-images/thymia_small.png";
 
   //-------------------------------------------------------------
   const clearscoreImage = {
@@ -40,14 +40,13 @@ const BigProjects: React.FC = () => {
     width: 500,
     height: 300,
   };
-  const clearscoreImageSmall =
-    "/assets/images/ProjectPictures/small-images/clearscore_small.png";
+  const clearscoreImageSmall = "/assets/images/ProjectPictures/small-images/clearscore_small.png";
   //-------------------------------------------------------------
 
   return (
     <div
       id="Projects"
-      className="max-w-containerSmall mx-auto min-h-fit py-10  lgl:py-32 flex flex-col gap-8"
+      className="mx-auto flex min-h-fit max-w-containerSmall flex-col gap-8 py-10 lgl:py-32"
     >
       <SectionTitle titleName="Portfolio Projects" titleNumber="03" />
       <div>
@@ -81,13 +80,7 @@ const BigProjects: React.FC = () => {
           gitLink="https://github.com/DevonGifford/Thymia"
           liveLink="https://n-game-technical-assignment.vercel.app/"
           youtubeLink="https://n-game-technical-assignment.vercel.app/"
-          techStackList={[
-            "Next14",
-            "Event-Logger",
-            "Tailwind",
-            "TypeScript",
-            "Jest",
-          ]}
+          techStackList={["Next14", "Event-Logger", "Tailwind", "TypeScript", "Jest"]}
         />
 
         <BigProjectCardReversed
@@ -98,13 +91,7 @@ const BigProjects: React.FC = () => {
           gitLink="https://github.com/DevonGifford/DevReady"
           liveLink="https://ztm-ready-portfolio-project.vercel.app/"
           youtubeLink="https://ztm-ready-portfolio-project.vercel.app/"
-          techStackList={[
-            "Next14",
-            "TypeScript",
-            "Tailwind",
-            "Jest",
-            "PlayWright",
-          ]}
+          techStackList={["Next14", "TypeScript", "Tailwind", "Jest", "PlayWright"]}
         />
       </div>
     </div>

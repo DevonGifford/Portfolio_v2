@@ -11,22 +11,19 @@ const Freelance = () => {
       className="w-full"
     >
       {/* JOB TITLE & COMPANY */}
-      <div className="flex flex-wrap gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row">
+      <div className="flex flex-col flex-wrap gap-1 font-titleFont text-xl font-medium sml:flex-row">
         <h3>Wordpress Developer</h3>
-        <span className="text-base mt-1 font-medium text-textGreen flex">
-          @ Freelance
-        </span>
+        <span className="mt-1 flex text-base font-medium text-textGreen">@ Freelance</span>
       </div>
 
       {/* Working Dates */}
       <p className="pt-3">2015 - January 2019</p>
 
       {/* INTRODUCTION */}
-      <p className="mt-3 text-base font-light flex gap-2 text-textDark">
+      <p className="mt-3 flex gap-2 text-base font-light text-textDark">
         <strong>
-          As a frontend-focused web developer specializing in WordPress, Ive
-          crafted responsive, user-friendly websites through adept theme
-          customization and plugin integration.
+          As a frontend-focused web developer specializing in WordPress, Ive crafted responsive,
+          user-friendly websites through adept theme customization and plugin integration.
           <br />
           Some of my key accomplishments in this role include:
         </strong>

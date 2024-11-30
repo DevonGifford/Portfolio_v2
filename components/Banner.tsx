@@ -1,28 +1,13 @@
-import { motion } from "framer-motion";
-import Typewriter, { Options } from "typewriter-effect";
+"use client";
+
+import { motion } from "framer-motion"; // I assume you meant framer-motion, not "motion/react"
+import React from "react";
 
 const Banner = () => {
-  const options: Options = {
-    strings: [
-      "    ",
-      "Full-Stack Developer",
-      "Quality Engineer",
-      "React Specialist",
-      "Python Enthusiast",
-      "Next.js Developer",
-      "Web Developer",
-      "ex-FAANG",
-      "Future Senior Dev",
-      "Aspiring Principal Engineer",
-    ],
-    autoStart: true,
-    loop: true,
-  };
-
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
+    const targetId = href.replace(/.*#/, "");
     const elem = document.getElementById(targetId);
     elem?.scrollIntoView({
       behavior: "smooth",
@@ -32,11 +17,11 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="max-w-contentContainer min-h-screen h-full mx-auto mdl:py-12 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4 justify-center"
+      className="mx-auto flex h-full min-h-screen max-w-contentContainer flex-col justify-center gap-4 mdl:px-10 mdl:py-12 lgl:gap-8 xl:px-4"
     >
       {/* Hello World Heading */}
       <motion.h3
-        className="text-xs md:text-lg font-codeFont tracking-wide text-textGreen"
+        className="font-codeFont text-xs tracking-wide text-textGreen md:text-lg"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2 }}
@@ -44,16 +29,16 @@ const Banner = () => {
         Hello World, my name is
       </motion.h3>
 
-      {/* Name heading & Auto-Typing Array heading*/}
+      {/* Name heading & Auto-Typing Array heading */}
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2.2 }}
-        className="text-3xl md:text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
+        className="flex flex-col font-titleFont text-3xl font-semibold md:text-4xl lgl:text-6xl"
       >
         Devon Gifford.{" "}
-        <span className="text-lg md:text-2xl lg:text-3xl text-textDark mt-2 lgl:mt-4">
-          <Typewriter options={options} />
+        <span className="mt-2 text-lg text-textDark md:text-2xl lg:text-3xl lgl:mt-4">
+          INSERT TYPEWRITER EFFECT HERE LATER
         </span>
       </motion.h1>
 
@@ -62,26 +47,23 @@ const Banner = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2.4 }}
-        className="flex flex-col gap-1.5 text-sm sml:text-base text-textDark font-medium"
+        className="flex flex-col gap-1.5 text-sm font-medium text-textDark sml:text-base"
       >
         <div>
-          {" "}
-          Self taught software engineer with a strong focus on frontend
-          development. I specialize in crafting web and mobile applications
-          using React & TypeScript.
+          Self taught software engineer with a strong focus on frontend development. I specialize in
+          crafting web and mobile applications using React & TypeScript.
         </div>
         <div>
-          Leveraging my background in Marketing and experience in Software
-          Testing at a renowned
-          <em> FAANG </em>
-          company, my approach brings a unique perspective that prioritizes clean and reliable code.
+          Leveraging my background in Marketing and experience in Software Testing at a renowned{" "}
+          <em>FAANG</em> company, my approach brings a unique perspective that prioritizes clean and
+          reliable code.
         </div>
         <div className="mt-2 italic">Fully committed to the philosophy of lifelong learning.</div>
         <a href="#Projects" onClick={handleScroll} className="mt-2">
-          <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
+          <span className="group relative inline-flex h-7 cursor-pointer overflow-x-hidden text-textGreen">
             Capstone Projects
             {/* Animated underline bar */}
-            <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
+            <span className="absolute bottom-1 left-0 h-[1px] w-full translate-x-[110%] bg-textGreen transition-transform duration-500 group-hover:translate-x-0"></span>
           </span>
         </a>
       </motion.div>
@@ -91,7 +73,7 @@ const Banner = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2.5 }}
-        className="w-40 h-10 text-xs sml:w-52 sml:h-14 sml:text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
+        className="h-10 w-40 rounded-md border border-textGreen font-titleFont text-xs tracking-wide text-textGreen duration-300 hover:bg-hoverColor sml:h-14 sml:w-52 sml:text-sm"
       >
         <a href="/assets/DevonGifford-FullstackDeveloper-2024.pdf" download>
           Download my latest CV

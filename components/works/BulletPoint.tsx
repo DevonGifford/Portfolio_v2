@@ -1,29 +1,25 @@
-import React from 'react'
+import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 
 interface Props {
-  headningText: string,
-  contentText: string
+  headningText: string;
+  contentText: string;
 }
 
 const BulletPoint = ({ headningText, contentText }: Props) => {
   return (
-    <li className='text-base gap-2'>
-
+    <li className="gap-2 text-base">
       {/* HEADING SECTION */}
-      <div className='text-textGreen flex flex-row'> 
+      <div className="flex flex-row text-textGreen">
         <BsArrowRightShort />
         &ensp;
-        <span className='leading-tight'>
-          {headningText}: 
-        </span>
-      </div> 
-
+        <span className="leading-tight">{headningText}:</span>
+      </div>
 
       {/* CONTENT */}
       <em>{contentText}</em>
     </li>
-  )
-}
+  );
+};
 
-export default BulletPoint
+export default BulletPoint;

@@ -12,9 +12,9 @@ const QA = () => {
       className="w-full"
     >
       {/* JOB TITLE & COMPANY */}
-      <h3 className="flex gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row">
+      <h3 className="flex flex-col gap-1 font-titleFont text-xl font-medium sml:flex-row">
         Quality Engineer
-        <span className="text-sm mt-1 font-medium text-textGreen flex">
+        <span className="mt-1 flex text-sm font-medium text-textGreen">
           @ Cognizant / Apple &ensp;
           <BsApple />
         </span>
@@ -24,10 +24,10 @@ const QA = () => {
       <p className="pt-3">September 2021 - Jan 2023</p>
 
       {/* INTRODUCTION */}
-      <p className="mt-3 text-base font-light flex gap-2 text-textDark">
+      <p className="mt-3 flex gap-2 text-base font-light text-textDark">
         <strong>
-          Played a pivotal role in ensuring the quality of a widely utilized AI
-          virtual assistant through automation testing and NLP processing.
+          Played a pivotal role in ensuring the quality of a widely utilized AI virtual assistant
+          through automation testing and NLP processing.
         </strong>
       </p>
 

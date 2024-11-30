@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import TeamLead from "./works/TeamLead";
@@ -56,22 +58,22 @@ const Experience = () => {
   return (
     <section
       id="Experience"
-      className="max-w-containerSmall min-h-screen mx-auto py-96 lgl:py-32 flex flex-col gap-5 justify-center"
+      className="mx-auto flex min-h-screen max-w-containerSmall flex-col justify-center gap-5 py-96 lgl:py-32"
     >
       <SectionTitle titleName="Where I have worked" titleNumber="02" />
       {/* CONTAINER DIV */}
-      <div className="w-full h-fit mt-5 flex flex-col sml:flex-row gap-4 ">
+      <div className="mt-5 flex h-fit w-full flex-col gap-4 sml:flex-row">
         {/*  SIDE BAR */}
-        <div className="flex w-[fit-content] h-[fit-content] sml:flex-col ">
-          <ul className="flex whitespace-nowrap max-sml:w-6/12 max-sml:overflow-x-scroll max-sml:no-scrollbar sml:h-auto sml:flex-col">
+        <div className="flex h-[fit-content] w-[fit-content] sml:flex-col">
+          <ul className="max-sml:no-scrollbar flex whitespace-nowrap max-sml:w-6/12 max-sml:overflow-x-scroll sml:h-auto sml:flex-col">
             {/* TeamLead */}
             <li
               onClick={handleTeamLead}
               className={`${
                 workTeamLead
                   ? "border-l-textGreen text-textGreen"
-                  : "border-l-hoverColor : text-textDark"
-              } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
+                  : ": border-l-hoverColor text-textDark"
+              } cursor-pointer border-l-2 border-l-textGreen bg-transparent px-8 py-3 text-xs font-medium text-textDark duration-300 hover:bg-[#112240] md:text-sm`}
             >
               Cognizant
               <br />
@@ -82,10 +84,8 @@ const Experience = () => {
             <li
               onClick={handleQA}
               className={`${
-                workQA
-                  ? "border-l-textGreen text-textGreen"
-                  : "border-l-hoverColor : text-textDark"
-              } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
+                workQA ? "border-l-textGreen text-textGreen" : ": border-l-hoverColor text-textDark"
+              } cursor-pointer border-l-2 border-l-textGreen bg-transparent px-8 py-3 text-xs font-medium text-textDark duration-300 hover:bg-[#112240] md:text-sm`}
             >
               Cognizant
             </li>
@@ -96,8 +96,8 @@ const Experience = () => {
               className={`${
                 workInternship
                   ? "border-l-textGreen text-textGreen"
-                  : "border-l-hoverColor : text-textDark"
-              } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
+                  : ": border-l-hoverColor text-textDark"
+              } cursor-pointer border-l-2 border-l-textGreen bg-transparent px-8 py-3 text-xs font-medium text-textDark duration-300 hover:bg-[#112240] md:text-sm`}
             >
               Mashauri Limited
               <br />
@@ -110,8 +110,8 @@ const Experience = () => {
               className={`${
                 workStartUp
                   ? "border-l-textGreen text-textGreen"
-                  : "border-l-hoverColor : text-textDark"
-              } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
+                  : ": border-l-hoverColor text-textDark"
+              } cursor-pointer border-l-2 border-l-textGreen bg-transparent px-8 py-3 text-xs font-medium text-textDark duration-300 hover:bg-[#112240] md:text-sm`}
             >
               Out-of-the-Cube
               <br />
@@ -124,8 +124,8 @@ const Experience = () => {
               className={`${
                 workFreelance
                   ? "border-l-textGreen text-textGreen"
-                  : "border-l-hoverColor : text-textDark"
-              } border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-xs cursor-pointer duration-300 px-8 font-medium md:text-sm `}
+                  : ": border-l-hoverColor text-textDark"
+              } cursor-pointer border-l-2 border-l-textGreen bg-transparent px-8 py-3 text-xs font-medium text-textDark duration-300 hover:bg-[#112240] md:text-sm`}
             >
               Freelance
             </li>
