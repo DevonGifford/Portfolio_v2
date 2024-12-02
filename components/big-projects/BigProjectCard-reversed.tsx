@@ -5,8 +5,7 @@ import { RiGithubLine } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
 import { SlSocialYoutube } from "react-icons/sl";
 
-import { ImageProps } from "next/image";
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 
 type Props = {
   image: ImageProps;
@@ -44,6 +43,7 @@ const ProjectCardReversed: React.FC<Props> = ({
             className="group relative h-full w-full justify-center align-middle sml:w-1/2"
             href={liveLink}
             target="_blank"
+            rel="noreferrer"
           >
             <div>
               {/* Actual Image */}
@@ -73,15 +73,30 @@ const ProjectCardReversed: React.FC<Props> = ({
             {/* Links to showcase project  🎯TO-DO */}
             <div className="flex gap-4 text-2xl">
               {/* GitHub */}
-              <a className="duration-300 hover:text-textGreen" href={gitLink} target="_blank">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href={gitLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <RiGithubLine />
               </a>
               {/* YouTube */}
-              <a className="duration-300 hover:text-textGreen" href={youtubeLink} target="_blank">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href={youtubeLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <SlSocialYoutube />
               </a>
               {/* LiveDemo */}
-              <a className="duration-300 hover:text-textGreen" href={liveLink} target="_blank">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href={liveLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FiExternalLink />
               </a>
             </div>
@@ -115,15 +130,30 @@ const ProjectCardReversed: React.FC<Props> = ({
             {/* Links to showcase project  🎯TO-DO */}
             <div className="flex items-end gap-4 pb-10 text-right text-2xl">
               {/* GitHub */}
-              <a className="duration-300 hover:text-textGreen" href={gitLink} target="_blank">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href={gitLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <RiGithubLine />
               </a>
               {/* YouTube */}
-              <a className="duration-300 hover:text-textGreen" href={youtubeLink} target="_blank">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href={youtubeLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <SlSocialYoutube />
               </a>
               {/* LiveDemo */}
-              <a className="duration-300 hover:text-textGreen" href={youtubeLink} target="_blank">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href={youtubeLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FiExternalLink />
               </a>
             </div>
