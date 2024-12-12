@@ -15,6 +15,15 @@ const config: Config = {
       containerxs: "768px",
     },
     extend: {
+      keyframes: {
+        blink: {
+          "0%, 100%": { opacity: "0" },
+          "50%": { opacity: "1" },
+        },
+      },
+      animation: {
+        blink: "blink 1s step-end infinite",
+      },
       screens: {
         xs: "320px",
         sm: "375px",

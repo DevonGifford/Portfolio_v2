@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Typewriter from "../common/TypeWriter";
 
 const fadeIn = (delay: number) => ({
   initial: { opacity: 0 },
@@ -36,8 +37,19 @@ const Banner: React.FC = () => {
       >
         Devon Gifford.
         <span className="mt-2 text-lg text-textDark md:text-2xl lg:text-3xl lgl:mt-4">
-          {/* TODO: Replace this with dynamic effect later */}
-          <span aria-hidden="true">INSERT TYPEWRITER EFFECT HERE LATER</span>
+          <Typewriter
+            words={[
+              "Full-Stack Developer",
+              "React Specialist",
+              "Python Enthusiast",
+              "Next.js Developer",
+              "Web Developer",
+              "ex-FAANG",
+              "Senior Developer",
+              "Aspiring Principal Engineer",
+              "Quality Engineer",
+            ]}
+          />
         </span>
       </motion.h1>
 
