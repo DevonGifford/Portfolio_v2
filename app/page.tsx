@@ -1,16 +1,14 @@
-import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import LeftSide from "@/components/layout/LeftSide";
-// import Navbar from "@/components/layout/Navbar";
-import RightSide from "@/components/layout/RightSide";
-import About from "@/components/sections/About";
 import Banner from "@/components/sections/Banner";
-import Contact from "@/components/sections/Contact";
+import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
-import BigProjects from "@/components/sections/projects/big-projects/BigProjects";
-import SmallProjects from "@/components/sections/projects/small-projects/SmallProjects";
+import Contact from "@/components/sections/Contact";
+import Footer from "@/components/layout/Footer";
+import RightSide from "@/components/layout/RightSide";
 
 import type { Metadata } from "next";
+import Projects from "@/components/sections/Projects";
 
 export const metadata: Metadata = {
   title: "Devon Gifford",
@@ -32,8 +30,7 @@ export default function HomePage() {
           <Banner />
           <About />
           <Experience />
-          <BigProjects />
-          <SmallProjects />
+          <Projects />
           <Contact />
           <Footer />
         </div>
