@@ -1,11 +1,11 @@
-<!-- :ogo -->
+<!-- Logo -->
 <p align='center'>
     <img src="public/assets/PortfolioDemoLogo.png" alt="Demo" title="DemoImage" width="150" height="150">
 </p>
 
 <!-- Introduction Text -->
 <div align="center">
-    <h1>
+    <h3>
         <span>
             My Portfolio Website 
         </span>
@@ -15,13 +15,7 @@
                 https://devongifford.vercel.app/
             </span>
         </a>
-    </h1>
-    <h6>
-        built with <a href="https://nextjs.org">Next.js</a> &
-        hosted by <a href="https://vercel.com/">Vercel</a> <br>
-        other technologies used in this project include:
-    </h6>
-
+    </h3>
 </div>
 
 <!-- Tech Used in this Project -->
@@ -31,45 +25,37 @@
     </a>
 </p>
 
----
+<br/>
+<br/>
 
 ### 🚀 About This Project
 
 ---
 
-Inspired by Brittany Chiang's captivating portfolio website, I embarked on a journey to recreate her design using my preferred tech stack. Initially challenged by the fact that Brittany's stack was built with Gatsby, while I was opting for Next.js - I saw this as an opportunity for growth.
+This portfolio was inspired by the [v4 version of Brittany Chiang’s site](https://v4.brittanychiang.com/), which remains a standout in developer portfolio design. While her original was built with **Gatsby**, I approached the rebuild using a modern stack — **Next.js**, **TypeScript**, and **Tailwind CSS** — tailored to my own preferences.
 
-Not only did I successfully replicate the design, but I also added my own innovative ideas and enhancements.
+Along the way, I introduced a number of refinements, both in implementation and user experience, while staying true to the spirit of the original design. The project has recently been upgraded to **Next.js 15** and **React 19**.
 
 <br/>
 
----
-
-### 🙏 Credit & Note on Forking
+### 🙏 Acknowledgements
 
 ---
 
-While I built this website from scratch, it's important to acknowledge Brittany Chiang as the source of inspiration. All credit for the original design and concept goes to her.
-<br>
-You are welcome to fork this repo. However, please ensure proper attribution by linking back to the original source.
-<br>
+While I built this project from the ground up, it's important to credit [Brittany Chiang](https://brittanychiang.com) as the source of inspiration. All design credit for the original concept goes to her. You're welcome to fork or adapt this project — just please include proper attribution to Brittany.
 
-- Website - https://brittanychiang.com/
-- GitHub - https://github.com/bchiang7/v4
-<h6> You could also give me a star if you like this project 😉⭐ </h6>
-<br>
-<br>
+> If you found this repo useful, a ⭐ is always appreciated!
 
----
+<br/>
 
-### MIT LICENSE
+### 📄 License
 
 ---
 
 <details>
-<summary>click here to expand: </summary>
+<summary>MIT License (Click to Expand)</summary>
 
----
+<br/>
 
 <p align='center'>
 Copyright 2025 - Devon Gifford
