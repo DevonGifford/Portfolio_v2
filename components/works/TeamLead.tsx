@@ -9,12 +9,12 @@ const TeamLead = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.2, delay: 0.1 }}
-      className="w-full min-h-fit"
+      className="min-h-fit w-full"
     >
       {/* JOB TITLE & COMPANY */}
-      <div className="flex flex-wrap gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row">
+      <div className="flex flex-col flex-wrap gap-1 font-titleFont text-xl font-medium sml:flex-row">
         <h3>Team Lead</h3>
-        <span className="text-sm mt-1 font-medium text-textGreen flex">
+        <span className="mt-1 flex text-sm font-medium text-textGreen">
           @ Cognizant / Apple &ensp;
           <BsApple />
         </span>
@@ -24,11 +24,11 @@ const TeamLead = () => {
       <p className="pt-3">June 2022 - Jan 2023</p>
 
       {/* INTRODUCTION */}
-      <p className="mt-3 text-base font-light flex gap-2 text-textDark">
+      <p className="mt-3 flex gap-2 text-base font-light text-textDark">
         <strong>
-          Promoted to a team lead position, along with and on top of my
-          Engineering responsibilities. My role involved actively supporting
-          managers and overseeing the operations of multiple teams.
+          Promoted to a team lead position, along with and on top of my Engineering
+          responsibilities. My role involved actively supporting managers and overseeing the
+          operations of multiple teams.
         </strong>
       </p>
 

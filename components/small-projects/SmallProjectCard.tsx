@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { RiGithubLine } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
@@ -10,24 +12,18 @@ interface Props {
   listItems: string[];
 }
 
-const ProjectCard = ({
-  title,
-  description,
-  gitLink,
-  liveLink,
-  listItems,
-}: Props) => {
+const ProjectCard = ({ title, description, gitLink, liveLink, listItems }: Props) => {
   return (
-    <div className="w-full max-w-[320px] min-w-[280px] h-72 rounded-lg bg-[#112240] p-6 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group">
+    <div className="group flex h-72 w-full min-w-[280px] max-w-[320px] flex-col justify-center gap-6 rounded-lg bg-[#112240] p-6 transition-transform duration-300 hover:-translate-y-2">
       {/* Icon-Links */}
-      <div className="flex justify-between items-center">
+      <div className="flex items-center justify-between">
         {/* GITHUB LINK */}
-        <a href={gitLink} target="_blank">
+        <a href={gitLink} target="_blank" rel="noreferrer">
           <RiGithubLine className="text-2xl hover:text-textGreen" />
         </a>
 
         {/* LIVE LINK */}
-        <a href={liveLink} target="_blank">
+        <a href={liveLink} target="_blank" rel="noreferrer">
           <FiExternalLink className="text-2xl hover:text-textGreen" />
         </a>
       </div>
@@ -35,18 +31,18 @@ const ProjectCard = ({
       {/* Text Portion  */}
       <div>
         {/* TITLE */}
-        <a href={liveLink} target="_blank">
-          <h2 className="text-xl font-titleFont font-semibold tracking-wide group-hover:text-textGreen">
+        <a href={liveLink} target="_blank" rel="noreferrer">
+          <h2 className="font-titleFont text-xl font-semibold tracking-wide group-hover:text-textGreen">
             {title}
           </h2>
         </a>
 
         {/* DESCRIPTION */}
-        <p className="text-sm mt-3">{description}</p>
+        <p className="mt-3 text-sm">{description}</p>
       </div>
 
       {/* TECH STACK */}
-      <ul className="text-xs mdl:text-sm text-textDark flex items-center gap-2 justify-between flex-wrap">
+      <ul className="flex flex-wrap items-center justify-between gap-2 text-xs text-textDark mdl:text-sm">
         {listItems.map((item, i) => (
           <li className="hover:text-textGreen" key={i}>
             {item}

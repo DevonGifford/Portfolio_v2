@@ -11,22 +11,20 @@ const StartUp = () => {
       className="w-full"
     >
       {/* JOB TITLE & COMPANY */}
-      <div className="flex flex-wrap gap-1 font-medium text-xl font-titleFont flex-col sml:flex-row">
+      <div className="flex flex-col flex-wrap gap-1 font-titleFont text-xl font-medium sml:flex-row">
         <h3>Jr Frontend Developer | StartUp</h3>
-        <span className="text-sm mt-1 font-medium text-textGreen flex">
-          @ Out-of-the-Cube
-        </span>
+        <span className="mt-1 flex text-sm font-medium text-textGreen">@ Out-of-the-Cube</span>
       </div>
 
       {/* Working Dates */}
       <p className="pt-3">January 2019 - June 2019</p>
 
       {/* INTRODUCTION */}
-      <p className="mt-3 text-base font-light flex gap-2 text-textDark">
+      <p className="mt-3 flex gap-2 text-base font-light text-textDark">
         <strong>
-          In my role supporting the growth of an art auction start-up, I
-          utilized HTML/CSS, JavaScript/jQuery, and a content management system
-          (CMS) to enhance the websites functionality and user experience.
+          In my role supporting the growth of an art auction start-up, I utilized HTML/CSS,
+          JavaScript/jQuery, and a content management system (CMS) to enhance the websites
+          functionality and user experience.
         </strong>
       </p>
 

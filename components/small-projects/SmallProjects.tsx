@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import ProjectCard from "./SmallProjectCard";
 import { motion } from "framer-motion";
@@ -6,13 +8,13 @@ const SmallProjects = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="max-w-contentContainer mx-auto px-4 py-24">
-      <div className="w-full flex flex-col items-center">
-        <h2 className="text-2xl sml:text-3xl font-titleFont font-semibold">
+    <div className="mx-auto max-w-contentContainer px-4 py-24">
+      <div className="flex w-full flex-col items-center">
+        <h2 className="font-titleFont text-2xl font-semibold sml:text-3xl">
           Other Noteworthy Projects
         </h2>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-6 mt-10 lgl:px-10">
+      <div className="mt-10 flex flex-wrap items-center justify-center gap-6 lgl:px-10">
         <ProjectCard
           title="FlipDish"
           description="Frontend Technical Assessment: Implement server-side data fetching to present JSON data as a restaurant menu, including some sneaky twists."
@@ -209,14 +211,14 @@ const SmallProjects = () => {
         {showMore ? (
           <button
             onClick={() => setShowMore(false)}
-            className="w-36 h-12 rounded-md text-textGreen Text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+            className="Text-[13px] h-12 w-36 rounded-md border border-textGreen text-textGreen duration-300 hover:bg-hoverColor"
           >
             Show Less
           </button>
         ) : (
           <button
             onClick={() => setShowMore(true)}
-            className="w-36 h-12 rounded-md text-textGreen Text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+            className="Text-[13px] h-12 w-36 rounded-md border border-textGreen text-textGreen duration-300 hover:bg-hoverColor"
           >
             Show More
           </button>

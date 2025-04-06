@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
@@ -6,7 +8,7 @@ import { motion } from "framer-motion";
 
 const LeftSide = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-end gap-4 text-textLight">
+    <div className="flex h-full w-full flex-col items-center justify-end gap-4 text-textLight">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -14,25 +16,25 @@ const LeftSide = () => {
         className="flex flex-col gap-4"
       >
         {/* Github Icon */}
-        <a href="https://github.com/DevonGifford" target="_blank">
-          <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
+        <a href="https://github.com/DevonGifford" target="_blank" rel="noreferrer">
+          <span className="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-hoverColor text-xl transition-all duration-300 hover:-translate-y-2 hover:text-textGreen">
             <SiGithub />
           </span>
         </a>
         {/* LinkedIn Icon */}
-        <a href="https://www.linkedin.com/in/dbgifford/" target="_blank">
-          <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
+        <a href="https://www.linkedin.com/in/dbgifford/" target="_blank" rel="noreferrer">
+          <span className="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-hoverColor text-xl transition-all duration-300 hover:-translate-y-2 hover:text-textGreen">
             <BsLinkedin />
           </span>
         </a>
         {/* Twitter Icon */}
-        <a href="https://twitter.com/devon_the_dev" target="_blank">
-          <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
+        <a href="https://twitter.com/devon_the_dev" target="_blank" rel="noreferrer">
+          <span className="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-hoverColor text-xl transition-all duration-300 hover:-translate-y-2 hover:text-textGreen">
             <TiSocialTwitter />
           </span>
         </a>
       </motion.div>
-      <div className="w-[2px] h-32 bg-textDark"></div>
+      <div className="h-32 w-[2px] bg-textDark"></div>
     </div>
   );
 };
