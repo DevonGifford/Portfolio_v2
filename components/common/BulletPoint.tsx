@@ -9,14 +9,11 @@ interface Props {
 const BulletPoint = ({ headningText, contentText }: Props) => {
   return (
     <li className="gap-2 text-base">
-      {/* HEADING SECTION */}
       <div className="flex flex-row text-textGreen">
-        <BsArrowRightShort />
-        &ensp;
+        <BsArrowRightShort /> &ensp;
         <span className="leading-tight">{headningText}:</span>
       </div>
 
-      {/* CONTENT */}
       <em>{contentText}</em>
     </li>
   );

@@ -4,7 +4,7 @@ import React from "react";
 import { RiGithubLine } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
 
-interface Props {
+interface MiniProjectCardProps {
   title: string;
   description: string;
   gitLink: string;
@@ -12,7 +12,13 @@ interface Props {
   listItems: string[];
 }
 
-const ProjectCard = ({ title, description, gitLink, liveLink, listItems }: Props) => {
+const MiniProjectCard = ({
+  title,
+  description,
+  gitLink,
+  liveLink,
+  listItems,
+}: MiniProjectCardProps) => {
   return (
     <div className="group flex h-72 w-full min-w-[280px] max-w-[320px] flex-col justify-center gap-6 rounded-lg bg-[#112240] p-6 transition-transform duration-300 hover:-translate-y-2">
       {/* Icon-Links */}
@@ -53,6 +59,4 @@ const ProjectCard = ({ title, description, gitLink, liveLink, listItems }: Props
   );
 };
 
-export default ProjectCard;
-
-//NEED TO FIX THE LINK FOR GITHUB ON THE SMALL PROJECTS - EVERYTHING GOES TO LIVE DEMO
+export default MiniProjectCard;

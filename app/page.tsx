@@ -1,17 +1,15 @@
+import Header from "@/components/layout/Header";
+import LeftSide from "@/components/layout/LeftSide";
+import Banner from "@/components/sections/Banner";
+import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
+import Contact from "@/components/sections/Contact";
+import Footer from "@/components/layout/Footer";
+import RightSide from "@/components/layout/RightSide";
+
 import type { Metadata } from "next";
+import Projects from "@/components/sections/Projects";
 
-import Navbar from "@/components/Navbar";
-import LeftSide from "@/components/LeftSide";
-import RightSide from "@/components/RightSide";
-import Banner from "@/components/Banner";
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import SmallProjects from "@/components/small-projects/SmallProjects";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import BigProjects from "@/components/big-projects/BigProjects";
-
-// ✅ SEO & <head> replacement
 export const metadata: Metadata = {
   title: "Devon Gifford",
   description: "Full-stack developer portfolio showcasing projects and experience.",
@@ -23,7 +21,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <main className="h-screen w-full overflow-x-hidden overflow-y-scroll bg-bodyColor font-bodyFont text-textLight scrollbar-thin scrollbar-track-textDark/5 scrollbar-thumb-textDark/70">
-      <Navbar />
+      <Header />
       <div className="h-[88vh] w-full items-center justify-between gap-10 lg:flex">
         <div className="fixed bottom-0 left-0 hidden h-full w-32 xl:inline-flex">
           <LeftSide />
@@ -32,8 +30,7 @@ export default function HomePage() {
           <Banner />
           <About />
           <Experience />
-          <BigProjects />
-          <SmallProjects />
+          <Projects />
           <Contact />
           <Footer />
         </div>
