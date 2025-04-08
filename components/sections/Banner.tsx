@@ -79,7 +79,7 @@ const Banner: React.FC = () => {
       {/* CV Download 'Button' */}
       <motion.div {...fadeIn(2.5)}>
         <a
-          href="/assets/DevonGifford-FullstackDeveloper-2024.pdf"
+          href="/assets/DevonGifford-FullstackDeveloper-2025.pdf"
           download
           className="inline-flex h-10 w-40 items-center justify-center rounded-md border border-textGreen font-titleFont text-xs tracking-wide text-textGreen duration-300 hover:bg-hoverColor sml:h-14 sml:w-52 sml:text-sm"
         >

@@ -6,7 +6,7 @@ import ExperienceEntry from "./experiences/ExperienceEntry";
 import jobEntries, { JobTabKey } from "./experiences/jobEntries";
 
 const Experience = () => {
-  const [activeTab, setActiveTab] = useState<JobTabKey>("teamLead");
+  const [activeTab, setActiveTab] = useState<JobTabKey>("tuvLead");
   const activeEntry = jobEntries.find((entry) => entry.key === activeTab)!;
 
   return (

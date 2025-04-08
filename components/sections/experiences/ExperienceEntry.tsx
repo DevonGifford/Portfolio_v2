@@ -34,7 +34,7 @@ const ExperienceEntry = ({
       {/* JOB TITLE & COMPANY */}
       <div className="flex flex-col flex-wrap gap-0.5 font-titleFont text-xl font-medium sml:flex-row">
         <h3>{title}</h3>
-        <span className="mt-1 flex items-center gap-2 text-sm font-medium text-textGreen">
+        <span className="ml-4 mt-1 flex items-center gap-2 text-sm font-medium text-textGreen">
           @ {company}
           {companyIcon}
         </span>

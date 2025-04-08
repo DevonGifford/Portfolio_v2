@@ -1,7 +1,14 @@
 import { ReactNode } from "react";
-import { BsApple } from "react-icons/bs";
+// import { BsApple } from "react-icons/bs";
 
-export type JobTabKey = "teamLead" | "qa" | "internship" | "startup" | "freelance";
+export type JobTabKey =
+  | "tuvLead"
+  | "tuvFullstack"
+  | "appleTeamlead"
+  | "appleQA"
+  | "mashStartup"
+  | "cubeStartup"
+  | "freelance";
 
 export type JobEntry = {
   key: JobTabKey;
@@ -22,99 +29,168 @@ export type JobEntry = {
 
 const jobEntries: JobEntry[] = [
   {
-    key: "teamLead",
-    label: "Cognizant",
+    key: "tuvLead",
+    label: "TÜV Rheinland",
+    sub: "Lead Frontend Developer",
+    componentProps: {
+      title: "Lead Frontend Developer",
+      company: "TÜV Rheinland",
+      dates: "Jan 2025 - Present",
+      intro:
+        "Leading the frontend strategy and architecture for multiple projects at TÜV Rheinland, with a focus on headless CMS integration, team scaling, and optimizing user interfaces for scalability and performance.",
+      bullets: [
+        {
+          heading: "Headless CMS Integration",
+          content:
+            "Orchestrated the transition to a headless CMS using RESTful and GraphQL API's, enabling flexible content delivery and seamless integration with Next.js and React applications.",
+        },
+        {
+          heading: "Team Leadership & Scaling",
+          content:
+            "Managed and scaled a frontend team of 10+ engineers, implementing Agile processes, conducting sprint planning, and mentoring developers to improve velocity and code quality.",
+        },
+        {
+          heading: "CI/CD and DevOps Leadership",
+          content:
+            "Led the integration of CI/CD pipelines using GitLab-CI and Docker, automating deployments to Azure Kubernetees Services & ensuring reliable delivery of features and bug fixes.",
+        },
+        {
+          heading: "UI/UX Enhancements & Performance Optimization",
+          content:
+            "Worked closely with UX/UI teams to ensure design consistency and implement performance optimizations (lazy loading, code splitting) for a faster, more responsive application.",
+        },
+        {
+          heading: "Cloud Infrastructure and API Management",
+          content:
+            "Oversaw the integration of cloud-based infrastructure (AWS, Lambda) and API management, enabling real-time data fetching and improved content rendering with minimal latency.",
+        },
+      ],
+    },
+  },
+
+  {
+    key: "tuvFullstack",
+    label: "TÜV Rheinland",
+    sub: "Sr Fullstack Developer",
+    componentProps: {
+      title: "Senior Fullstack Developer",
+      company: "TÜV Rheinland",
+      dates: "June 2024 - Jan 2025",
+      intro:
+        "Drove the development of scalable, modern frontend and backend systems at TÜV Rheinland, enhancing architecture with cutting-edge technologies and ensuring long-term maintainability.",
+      bullets: [
+        {
+          heading: "Component Library Development",
+          content:
+            "Designed and developed a scalable component library using React, TypeScript, and Storybook, enabling reusability and reducing time to market across multiple teams.",
+        },
+        {
+          heading: "Tech Stack Optimization",
+          content:
+            "Optimized frontend performance by integrating modern frameworks (Next.js, TypeScript) and tools (Vite, Webpack) to improve build times and overall application efficiency.",
+        },
+        {
+          heading: "Cross-Functional Collaboration",
+          content:
+            "Collaborated closely with backend, UX, and QA teams to ensure seamless integration of APIs and automated testing pipelines (Jest, Cypress) for robust, scalable solutions.",
+        },
+        {
+          heading: "Code Quality and Maintainability",
+          content:
+            "Established and enforced best practices for code quality and maintainability, implementing ESLint, Prettier, and TypeScript for type safety and consistency across the codebase.",
+        },
+        {
+          heading: "Mentorship and Team Guidance",
+          content:
+            "Mentored junior developers, conducting regular code reviews and knowledge-sharing sessions to elevate team standards and foster a collaborative learning environment.",
+        },
+      ],
+    },
+  },
+  {
+    key: "appleTeamlead",
+    label: "Apple",
     sub: "Team-lead",
     componentProps: {
       title: "Team Lead",
-      company: "Cognizant / Apple",
+      company: "Apple (Cognizant)",
       // companyIcon: <BsApple />,
       dates: "June 2022 - Jan 2023",
       intro:
-        "Promoted to a team lead position, along with and on top of my Engineering responsibilities. My role involved actively supporting managers and overseeing the operations of multiple teams.",
+        "Promoted to Team Lead, managing multiple teams while continuing engineering duties. Focused on supporting managers, streamlining workflows, and guiding teams to meet project goals.",
       bullets: [
         {
-          heading: "Assisting and supporting managers",
+          heading: "Strategic Manager Support",
           content:
-            "Collaborating closely with managers to provide seamless assistance and support in their day-to-day responsibilities, ensuring efficient workflow and effective team coordination.",
+            "Collaborated closely with senior management to optimize daily operations, proactively addressing bottlenecks and ensuring seamless team coordination for mission-critical projects.",
         },
         {
-          heading: "Coordinating and reviewing tasks",
+          heading: "Cross-Team Task Coordination & Delivery",
           content:
-            "Taking charge of task coordination and reviewing processes across multiple teams, ensuring that high quality standards were met while adhering to deadlines. This involved meticulous monitoring of progress and providing guidance to team members to ensure successful project completion.",
+            "Coordinated complex tasks across multiple teams, ensuring timely, high-quality delivery of milestones while adhering to Apple’s strategic goals and standards.",
         },
         {
-          heading: "Providing clear instructions and guidance",
+          heading: "Team Leadership & Performance Optimization",
           content:
-            "Offering comprehensive instructions and guidance to the team, effectively communicating new tasks, objectives, and performance expectations. This ensured that team members had the necessary direction and resources to accomplish their roles effectively.",
+            "Provided dynamic leadership and mentorship to engineers, delivering regular performance feedback, and fostering a culture of continuous improvement and high accountability.",
         },
         {
-          heading: "Reporting progress to management",
+          heading: "Executive Reporting & Decision-Making",
           content:
-            "Regularly updating management on project progress, highlighting achievements, addressing challenges, and reporting any issues encountered. This facilitated informed decision-making and proactive problem-solving.",
+            "Delivered detailed progress reports to upper management, highlighting risks, achievements, and mitigation strategies, enabling data-driven decision-making at the executive level.",
         },
         {
-          heading: "Facilitating onboarding and performance feedback",
+          heading: "Onboarding & Talent Development",
           content:
-            "Assisting in the smooth onboarding process for new team members, ensuring a seamless transition and supporting their integration into the team. Additionally, providing constructive performance feedback to both management and team members, recognizing accomplishments and identifying areas for improvement.",
+            "Facilitated the onboarding of new team members, while providing constructive feedback and professional development opportunities to support team performance & engagement.",
         },
       ],
     },
   },
   {
-    key: "qa",
-    label: "Cognizant",
+    key: "appleQA",
+    label: "Apple",
     sub: "QA Engineer",
     componentProps: {
       title: "Quality Engineer",
-      company: "Cognizant / Apple",
+      company: "Apple (Cognizant)",
       // companyIcon: <BsApple />,
       dates: "September 2021 - Jan 2023",
       intro:
-        "Played a pivotal role in ensuring the quality of a widely utilized AI virtual assistant through automation testing and NLP processing.",
+        "Full-time in a high-security, lockdown environment at Apple, I worked on a widely recognized AI virtual assistant, implementing advanced automation testing and NLP processing to optimize performance and scalability.",
       bullets: [
         {
-          heading: "Voice Recognition Testing",
+          heading: "Automation Engineering",
           content:
-            "Conducted linguistic & phonological testing using NLP tools to optimize user experience. Utilized Python for scripting automation tasks.",
+            "Designed and maintained automation frameworks in Python and Swift, optimizing NLP workflows for millions of users and ensuring scalable test automation.",
         },
         {
-          heading: "Automation Testing",
+          heading: "System Validation",
           content:
-            "Created & maintained test automation, and triaged results utilizing in-house NLP tools and frameworks. Implemented automation scripts using Python and Swift",
+            "Led end-to-end testing, validating AI integration across cloud-based services, edge devices, and third-party APIs while maintaining high availability and fault tolerance.",
         },
         {
-          heading: "End-to-End Testing",
+          heading: "Defect Management",
           content:
-            "Verified seamless integration and functionality across diverse systems and client domains.",
+            "Identified, triaged, and documented critical bugs, collaborating with cross-functional teams to resolve issues and enhance platform stability & user experience at scale.",
         },
         {
-          heading: "Detailed Bug reports",
+          heading: "Version Control & CI/CD",
           content:
-            "Identified and documented bugs, creating reports to Apple standards and communicating with cross-functional teams.",
+            "Managed complex Git & GitHub workflows in multi-CI/CD pipeline environment, enabling agile development cycles, ensuring rapid and reliable deployments, and version control practices",
         },
         {
-          heading: "Version Control",
+          heading: "Product Lifecycle Testing",
           content:
-            "Utilized Git and GitHub for version control and collaborative development workflows, ensuring efficient code management and team collaboration.",
-        },
-        {
-          heading: "Testing New Products",
-          content:
-            "Played a pivotal role in testing innovative solutions, ensuring successful launches worldwide across multiple domains.",
-        },
-        {
-          heading: "Test Execution and Analysis",
-          content:
-            "Conducted various testing methodologies including root testing, integration testing, regression testing, acceptance testing, smoke testing, and performance testing.",
+            "Led testing efforts for AI products, employing methodologies like unit, integration, smoke, pent, regression, and performance testing to ensure seamless production deployment.",
         },
       ],
     },
   },
   {
-    key: "internship",
+    key: "mashStartup",
     label: "Mashauri Limited",
-    sub: "FE Developer",
+    sub: "Frontend Developer",
     componentProps: {
       title: "Frontend Developer",
       company: "Mashauri Limited",
@@ -123,42 +199,32 @@ const jobEntries: JobEntry[] = [
         "As a Frontend Developer at Mashauri Limited, I contributed to the UI/UX design support for an EdTech startup, designing wireframes and developing landing pages and user forms using JavaScript and React.",
       bullets: [
         {
-          heading: "Website Maintenance and Assistance",
+          heading: "Database Migration & Optimization",
           content:
-            "Actively participated in maintaining and updating the company's website to ensure a seamless user experience and up-to-date content. Conducted general bug fixes to improve website functionality.",
+            "Managed the migration of legacy databases to more efficient, scalable PostgreSQL solutions, ensuring data integrity and optimizing queries for performance across the platform.",
         },
         {
-          heading: "Student Technical Support",
+          heading: "Content Management & Site Administration",
           content:
-            "Provided timely technical support to students, assisting them in navigating the platform and resolving any technical issues they encountered.",
+            "Managed content updates and integrations on WordPress and Drupal, ensuring SEO optimization and efficient content workflows for smooth platform operation.",
         },
         {
-          heading: "Lead Generation with Web Scraping",
+          heading: "Frontend Development & UI Optimization",
           content:
-            "Utilized Python with Beautiful Soup for web scraping to identify potential sales leads, contributing to company growth and revenue generation.",
+            "Developed responsive, dynamic user interfaces using React and JavaScript, ensuring a seamless experience for students and educators across web and mobile platforms.",
         },
         {
-          heading: "Database Management",
+          heading: "Cross-Functional Collaboration & Problem Solving",
           content:
-            "Assisted in managing and maintaining student and client databases, ensuring data integrity and efficient storage with PostgreSQL.",
-        },
-        {
-          heading: "Automated Email Landing Pages",
-          content:
-            "Designed and implemented email marketing landing pages to enhance customer engagement and drive conversions.",
-        },
-        {
-          heading: "Convention Assistance",
-          content:
-            "Participated in organizing and supporting Mashauri’s presence at the IE Business School convention, promoting the platform and engaging with potential users.",
+            "Collaborated with backend and design teams to troubleshoot and resolve issues related to CMS, frontend, and database integrations, ensuring timely delivery of new features.",
         },
       ],
     },
   },
   {
-    key: "startup",
+    key: "cubeStartup",
     label: "Out-of-the-Cube",
-    sub: "JR FE Developer",
+    sub: "Jr Frontend Developer",
     componentProps: {
       title: "Jr Frontend Developer",
       company: "Out-of-the-Cube",
@@ -169,12 +235,12 @@ const jobEntries: JobEntry[] = [
         {
           heading: "HTML/CSS and JavaScript",
           content:
-            "Utilizing HTML/CSS designs and JavaScript/jQuery, I specialized in crafting dynamic and visually appealing portfolio websites for individual artists. This bespoke approach ensured each artist's unique style and artworks were effectively showcased.",
+            "Developed dynamic, visually appealing portfolio websites for artists, showcasing their unique style and artwork using HTML, CSS, and JavaScript/jQuery.",
         },
         {
           heading: "Content Management with WordPress",
           content:
-            "Managed website content using WordPress, integrating new pages, articles, and multimedia seamlessly. Utilized the Theme Editor for impactful styling changes, ensuring a cohesive user experience.",
+            "Managed and integrated new pages, articles, and multimedia using WordPress, ensuring a seamless user experience with customized styling through the Theme Editor.",
         },
         {
           heading: "Website UI/UX Enhancements",
@@ -184,7 +250,7 @@ const jobEntries: JobEntry[] = [
         {
           heading: "Product Management Support",
           content:
-            "Played a role in product management by adding new products to the website and maintaining accurate inventory records. Converted an Excel database to a PostgreSQL database to streamline data management processes.",
+            "Assisted in product management, adding new products and converting an Excel database to PostgreSQL to streamline data management processes.",
         },
       ],
     },
@@ -192,47 +258,33 @@ const jobEntries: JobEntry[] = [
   {
     key: "freelance",
     label: "Freelance",
+    sub: "Wordpress Developer",
     componentProps: {
       title: "WordPress Developer",
       company: "Freelance",
       dates: "2015 - January 2019",
       intro:
-        "As a frontend-focused web developer specializing in WordPress, Ive crafted responsive, user-friendly websites through adept theme customization and plugin integration. Some of my key accomplishments in this role include:",
+        "As a freelance WordPress developer, I specialized in crafting responsive, user-friendly websites for small to medium-sized enterprises (SMEs) in the hospitality industry, focusing on theme customization, plugin integration, and tailored solutions. Key accomplishments include:",
       bullets: [
         {
-          heading: "Customization and Feature Implementation",
+          heading: "Customization & Feature Implementation",
           content:
-            "Tailoring themes, integrating plugins, and implementing requested features to optimize website performance and meet client needs.",
+            "Tailored themes and integrated plugins to optimize site performance, ensuring responsive design for seamless navigation across devices.",
         },
         {
-          heading: "Responsive Design",
+          heading: "E-commerce Integration",
           content:
-            "Ensuring seamless navigation and accessibility across devices by adhering to responsive design principles.",
+            "Set up e-commerce functionality, including payment gateways and product catalog management.",
         },
         {
-          heading: "E-commerce Functionality",
+          heading: "Branding & Design Alignment",
           content:
-            "Setting up and configuring e-commerce functionality for guesthouses, including payment gateways integration and product catalogue creation.",
+            "Customized themes to align with clients' branding, ensuring a cohesive and visually appealing web presence.",
         },
         {
-          heading: "Maintenance and Support",
+          heading: "Project Management & Ongoing Maintenance",
           content:
-            "Conducting regular updates, bug fixes, and backups to ensure website integrity and security. Additionally, providing ongoing client support and training on website management.",
-        },
-        {
-          heading: "Branding and Design Alignment",
-          content:
-            "Customizing themes to align with clients' branding guidelines and design preferences for a visually cohesive online presence.",
-        },
-        {
-          heading: "Performance Optimization",
-          content:
-            "Offering expert advice and implementing industry best practices to enhance website performance, loading speed, and overall user experience.",
-        },
-        {
-          heading: "Project Management",
-          content:
-            "Successfully managing multiple projects simultaneously, setting and meeting deadlines, and maintaining open communication with clients throughout the process.",
+            "Managed multiple projects, meeting deadlines while providing regular updates, bug fixes, and client training on website management.",
         },
       ],
     },
