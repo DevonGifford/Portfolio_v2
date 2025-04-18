@@ -18,7 +18,7 @@ const Experience = () => {
 
       <div className="mt-5 flex h-fit w-full flex-col gap-4 sml:flex-row">
         {/* Sidebar */}
-        <div className="flex h-[fit-content] w-[fit-content] sml:flex-col">
+        <div className="flex h-fit w-fit sml:flex-col">
           <ul className="max-sml:no-scrollbar flex whitespace-nowrap max-sml:w-6/12 max-sml:overflow-x-scroll sml:h-auto sml:flex-col">
             {jobEntries.map(({ key, label, sub }) => (
               <li
