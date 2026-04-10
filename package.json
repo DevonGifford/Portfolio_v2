@@ -38,7 +38,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-unicorn": "^62.0.0",
     "globals": "^16.5.0",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.16",
     "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.18",
