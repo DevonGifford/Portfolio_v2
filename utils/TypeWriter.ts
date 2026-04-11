@@ -48,7 +48,7 @@ export const useTypewriter = ({
     );
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, deleting]);
+  }, [subIndex, index, deleting, words, loop, typingSpeed, deletingSpeed, pauseTime]);
 
   useEffect(() => {
     setText(words[index]?.substring(0, subIndex));

@@ -6,6 +6,7 @@ import importPlugin from "eslint-plugin-import";
 import eslintConfigPrettier from "eslint-config-prettier";
 import pluginPromise from "eslint-plugin-promise";
 import pluginReact from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
@@ -34,10 +35,14 @@ export default [
   pluginReact.configs.flat["jsx-runtime"], // ? https://github.com/jsx-eslint/eslint-plugin-react
   eslintConfigPrettier, // ? https://github.com/prettier/eslint-config-prettier
   {
+    plugins: {
+      "react-hooks": reactHooks,
+    },
     rules: {
       "no-unused-vars": "off",
       "react/react-in-jsx-scope": "off",
-      "react-hooks/exhaustive-deps": "off",
+      "react-hooks/exhaustive-deps": "error",
+      "react-hooks/rules-of-hooks": "error",
       "react/display-name": "off",
       "react/prop-types": "off",
       "newline-before-return": "error",
@@ -45,14 +50,11 @@ export default [
       "@typescript-eslint/no-unused-expressions": "off",
       "import/no-unresolved": "off",
       "import/no-named-as-default": "off",
-      // ! TO COMPILE SHADCN EXAMPLES, PLEASE REMOVE AS NEEDED
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-empty-object-type": "off",
-      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/no-empty-object-type": "error",
+      "@typescript-eslint/ban-ts-comment": "error",
       "react/no-unescaped-entities": "off",
-      "react/no-unknown-property": "off",
-      "tailwindcss/no-unnecessary-arbitrary-value": "off",
-      "tailwindcss/classnames-order": "off",
+      "react/no-unknown-property": "error",
       "import/named": "off",
       "import/no-named-as-default-member": "off",
     },
@@ -70,8 +72,7 @@ export default [
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs["core-web-vitals"].rules,
       "@next/next/no-img-element": "off",
-      // ! TO COMPILE SHADCN EXAMPLES, PLEASE REMOVE AS NEEDED
-      "@next/next/no-html-link-for-pages": "off",
+      "@next/next/no-html-link-for-pages": "error",
     },
   },
   {

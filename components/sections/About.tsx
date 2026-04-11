@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import {
   profileImgCircle,
   ReactL,
@@ -29,7 +29,7 @@ const SkillIcon = ({
   title,
   className = "w-12 max-md:w-6 rounded-full",
 }: {
-  src: any;
+  src: StaticImageData;
   alt: string;
   title: string;
   className?: string;
