@@ -46,8 +46,11 @@ export default [
       "react/display-name": "off",
       "react/prop-types": "off",
       "newline-before-return": "error",
-      "@typescript-eslint/no-unused-vars": "off",
-      "@typescript-eslint/no-unused-expressions": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_", caughtErrorsIgnorePattern: "^_" },
+      ],
+      "@typescript-eslint/no-unused-expressions": "error",
       "import/no-unresolved": "off",
       "import/no-named-as-default": "off",
       "@typescript-eslint/no-explicit-any": "error",

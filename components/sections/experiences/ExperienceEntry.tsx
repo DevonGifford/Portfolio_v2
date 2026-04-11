@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import BulletPoint from "@/components/common/BulletPoint";
 
@@ -16,14 +15,14 @@ type ExperienceEntryProps = {
   }[];
 };
 
-const ExperienceEntry = ({
+export default function ExperienceEntry({
   title,
   company,
   companyIcon,
   dates,
   intro,
   bullets,
-}: ExperienceEntryProps) => {
+}: ExperienceEntryProps) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -58,6 +57,4 @@ const ExperienceEntry = ({
       </div>
     </motion.div>
   );
-};
-
-export default ExperienceEntry;
+}

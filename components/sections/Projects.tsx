@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import SectionTitle from "../common/SectionTitle";
 import capstoneEntries from "./projects/capstone-projects/capstoneEntries";
 import CapstoneCard from "./projects/capstone-projects/CapstoneCard";
 import miniProjectsEntries, { MiniProjectEntry } from "./projects/mini-projects/miniProjectEntries";
 import MiniCard from "./projects/mini-projects/MiniCard";
 
-const Projects = () => {
+export default function Projects() {
   const [showMore, setShowMore] = useState(false); // For toggling "Show More" in Mini Projects
 
   return (
@@ -58,6 +58,4 @@ const Projects = () => {
       </div>
     </section>
   );
-};
-
-export default Projects;
+}

@@ -1,13 +1,11 @@
 "use client";
 
-import React from "react";
-
 interface Props {
   titleNumber: string;
   titleName: string;
 }
 
-const SectionTitle = ({ titleName, titleNumber }: Props) => {
+export default function SectionTitle({ titleName, titleNumber }: Props) {
   return (
     <div>
       <h2 className="pt-50 flex items-center font-titleFont text-2xl font-semibold">
@@ -17,6 +15,4 @@ const SectionTitle = ({ titleName, titleNumber }: Props) => {
       </h2>
     </div>
   );
-};
-
-export default SectionTitle;
+}

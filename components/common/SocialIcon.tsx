@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 interface SocialIconProps {
   href: string;
   children: React.ReactNode;
@@ -9,12 +7,12 @@ interface SocialIconProps {
   externalClassName?: string;
 }
 
-const SocialIcon: React.FC<SocialIconProps> = ({
+export default function SocialIcon({
   href,
   children,
   hoverColor = "hover:text-textGreen",
   externalClassName = "",
-}) => {
+}: SocialIconProps) {
   return (
     <a href={href} target="_blank" rel="noreferrer">
       <span
@@ -24,6 +22,4 @@ const SocialIcon: React.FC<SocialIconProps> = ({
       </span>
     </a>
   );
-};
-
-export default SocialIcon;
+}

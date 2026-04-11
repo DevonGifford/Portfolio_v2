@@ -1,13 +1,12 @@
 "use client";
 
-import React from "react";
 import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { TiSocialTwitter } from "react-icons/ti";
 import { motion } from "framer-motion";
 import SocialIcon from "../common/SocialIcon";
 
-const LeftSide = () => {
+export default function LeftSide() {
   return (
     <div className="flex h-full w-full flex-col items-center justify-end gap-4 text-textLight">
       <motion.div
@@ -38,6 +37,4 @@ const LeftSide = () => {
       <div className="h-32 w-[2px] bg-textDark"></div>
     </div>
   );
-};
-
-export default LeftSide;
+}

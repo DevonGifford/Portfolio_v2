@@ -1,6 +1,6 @@
 "use client";
 
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { motion } from "framer-motion";
 import { MdOutlineClose } from "react-icons/md";
 import SocialIconList from "../common/SocialIconList";
@@ -10,7 +10,7 @@ type Props = {
   onClose: () => void;
 };
 
-const MobileMenu = forwardRef<HTMLDivElement, Props>(({ onClose }, ref) => {
+const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClose }, ref) {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     onClose();
@@ -94,7 +94,5 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(({ onClose }, ref) => {
     </div>
   );
 });
-
-MobileMenu.displayName = "MobileMenu";
 
 export default MobileMenu;

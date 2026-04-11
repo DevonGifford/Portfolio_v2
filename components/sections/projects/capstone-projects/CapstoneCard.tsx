@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { RiGithubLine } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
@@ -23,7 +22,7 @@ interface CapstoneCardProps {
   layout?: "default" | "reversed";
 }
 
-const CapstoneCard = ({
+export default function CapstoneCard({
   title,
   description,
   image,
@@ -33,7 +32,7 @@ const CapstoneCard = ({
   liveLink,
   techStackList,
   layout = "default",
-}: CapstoneCardProps) => {
+}: CapstoneCardProps) {
   const isReversed = layout === "reversed";
 
   const divStyle = {
@@ -248,6 +247,4 @@ const CapstoneCard = ({
       </div>
     </div>
   );
-};
-
-export default CapstoneCard;
+}

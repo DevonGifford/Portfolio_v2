@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image, { type StaticImageData } from "next/image";
 import {
   profileImgCircle,
@@ -23,7 +22,7 @@ import {
 import SectionTitle from "../common/SectionTitle";
 
 // SkillIcon component
-const SkillIcon = ({
+function SkillIcon({
   src,
   alt,
   title,
@@ -33,17 +32,19 @@ const SkillIcon = ({
   alt: string;
   title: string;
   className?: string;
-}) => (
-  <li className="flex items-center transition-all duration-300 hover:-translate-y-2">
-    <Image
-      className={`${className} hover:animate-pulse hover:contrast-150`}
-      src={src}
-      alt={alt}
-      title={title}
-      loading="lazy"
-    />
-  </li>
-);
+}) {
+  return (
+    <li className="flex items-center transition-all duration-300 hover:-translate-y-2">
+      <Image
+        className={`${className} hover:animate-pulse hover:contrast-150`}
+        src={src}
+        alt={alt}
+        title={title}
+        loading="lazy"
+      />
+    </li>
+  );
+}
 
 const skillGroups = [
   {
@@ -84,7 +85,7 @@ const skillGroups = [
   },
 ];
 
-const About = () => {
+export default function About() {
   return (
     <section
       id="about"
@@ -173,6 +174,4 @@ const About = () => {
       </div>
     </section>
   );
-};
-
-export default About;
+}

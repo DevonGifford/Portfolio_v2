@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react";
-
-const Contact = () => {
+export default function Contact() {
   return (
     <section
       id="contact"
@@ -25,6 +23,4 @@ const Contact = () => {
       </a>
     </section>
   );
-};
-
-export default Contact;
+}

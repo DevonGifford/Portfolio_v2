@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
 import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { TiSocialTwitter } from "react-icons/ti";
 import SocialIcon from "../common/SocialIcon";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <div>
       <div className="inline-flex w-full items-center justify-center gap-4 xl:hidden">
@@ -55,6 +54,4 @@ const Footer = () => {
       </p>
     </div>
   );
-};
-
-export default Footer;
+}

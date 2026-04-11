@@ -1,4 +1,3 @@
-import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 
 interface Props {
@@ -6,7 +5,7 @@ interface Props {
   contentText: string;
 }
 
-const BulletPoint = ({ headningText, contentText }: Props) => {
+export default function BulletPoint({ headningText, contentText }: Props) {
   return (
     <li className="gap-2 text-base">
       <div className="flex flex-row text-textGreen">
@@ -17,6 +16,4 @@ const BulletPoint = ({ headningText, contentText }: Props) => {
       <em>{contentText}</em>
     </li>
   );
-};
-
-export default BulletPoint;
+}

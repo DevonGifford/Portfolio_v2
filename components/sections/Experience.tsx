@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import SectionTitle from "../common/SectionTitle";
 import ExperienceEntry from "./experiences/ExperienceEntry";
 import jobEntries, { JobTabKey } from "./experiences/jobEntries";
 
-const Experience = () => {
+export default function Experience() {
   const [activeTab, setActiveTab] = useState<JobTabKey>("tuvLead");
   const activeEntry = jobEntries.find((entry) => entry.key === activeTab)!;
 
@@ -49,6 +49,4 @@ const Experience = () => {
       </div>
     </section>
   );
-};
-
-export default Experience;
+}

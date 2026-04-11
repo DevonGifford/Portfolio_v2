@@ -1,14 +1,13 @@
 "use client";
 
 import { useTypewriter } from "@/utils/TypeWriter";
-import React from "react";
 
 type TypewriterProps = {
   words: string[];
   className?: string;
 };
 
-const Typewriter: React.FC<TypewriterProps> = ({ words, className = "" }) => {
+export default function Typewriter({ words, className = "" }: TypewriterProps) {
   const { text, isTyping } = useTypewriter({ words });
 
   return (
@@ -17,6 +16,4 @@ const Typewriter: React.FC<TypewriterProps> = ({ words, className = "" }) => {
       <span className={`ml-1 ${isTyping ? "animate-blink" : ""}`}>|</span>
     </span>
   );
-};
-
-export default Typewriter;
+}

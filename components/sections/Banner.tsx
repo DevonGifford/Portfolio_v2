@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import Typewriter from "../common/TypeWriter";
 
@@ -29,7 +28,7 @@ const scrollToId = (e: React.MouseEvent<HTMLAnchorElement>) => {
   elem?.scrollIntoView({ behavior: "smooth" });
 };
 
-const Banner: React.FC = () => {
+export default function Banner() {
   return (
     <section
       id="home"
@@ -88,6 +87,4 @@ const Banner: React.FC = () => {
       </motion.div>
     </section>
   );
-};
-
-export default Banner;
+}

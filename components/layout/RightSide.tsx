@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 
-const RightSide = () => {
+export default function RightSide() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -19,6 +18,4 @@ const RightSide = () => {
       <span className="inline-flex h-52 w-[2px] bg-textDark"></span>
     </motion.div>
   );
-};
-
-export default RightSide;
+}
