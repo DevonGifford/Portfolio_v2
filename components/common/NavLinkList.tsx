@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const navItems = [
   { id: "home", label: "Home" },
@@ -19,7 +20,7 @@ export default function NavLinkList({
   isMobile?: boolean;
 }) {
   return (
-    <ul className={`flex ${isMobile ? "flex-col gap-12 pt-12" : "gap-7 text-[13px]"}`}>
+    <ul className={cn("flex", isMobile ? "flex-col gap-12 pt-12" : "gap-7 text-[13px]")}>
       {navItems.map((item, i) => (
         <motion.li
           key={item.id}

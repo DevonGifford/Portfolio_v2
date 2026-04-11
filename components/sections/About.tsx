@@ -1,6 +1,7 @@
 "use client";
 
 import Image, { type StaticImageData } from "next/image";
+import { cn } from "@/lib/utils";
 import {
   profileImgCircle,
   ReactL,
@@ -36,7 +37,7 @@ function SkillIcon({
   return (
     <li className="flex items-center transition-all duration-300 hover:-translate-y-2">
       <Image
-        className={`${className} hover:animate-pulse hover:contrast-150`}
+        className={cn(className, "hover:animate-pulse hover:contrast-150")}
         src={src}
         alt={alt}
         title={title}

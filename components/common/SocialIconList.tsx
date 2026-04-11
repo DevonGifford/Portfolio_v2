@@ -4,12 +4,13 @@ import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { TiSocialTwitter } from "react-icons/ti";
 import SocialIcon from "./SocialIcon";
+import { cn } from "@/lib/utils";
 
 export default function SocialIconList({ className }: { className?: string }) {
   const baseClass = "border-zinc-700 bg-bodyColor text-zinc-200";
 
   return (
-    <div className={`flex gap-4 ${className}`}>
+    <div className={cn("flex gap-4", className)}>
       <SocialIcon href="https://github.com/DevonGifford" externalClassName={baseClass}>
         <SiGithub />
       </SocialIcon>

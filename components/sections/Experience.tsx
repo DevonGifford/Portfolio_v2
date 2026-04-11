@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 import SectionTitle from "../common/SectionTitle";
 import ExperienceEntry from "./experiences/ExperienceEntry";
 import jobEntries, { JobTabKey } from "./experiences/jobEntries";
@@ -24,11 +25,12 @@ export default function Experience() {
               <li
                 key={key}
                 onClick={() => setActiveTab(key)}
-                className={`cursor-pointer border-l-2 bg-transparent px-8 py-3 text-xs font-medium duration-300 hover:bg-[#112240] md:text-sm ${
+                className={cn(
+                  "cursor-pointer border-l-2 bg-transparent px-8 py-3 text-xs font-medium duration-300 hover:bg-[#112240] md:text-sm",
                   activeTab === key
                     ? "border-l-textGreen text-textGreen"
-                    : "border-l-hoverColor text-textDark"
-                }`}
+                    : "border-l-hoverColor text-textDark",
+                )}
               >
                 <strong>{label}</strong>
                 {sub && (
