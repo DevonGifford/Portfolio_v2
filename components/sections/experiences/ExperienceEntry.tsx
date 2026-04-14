@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import { fadeIn, DURATION } from "@/lib/motion";
 import BulletPoint from "@/components/common/BulletPoint";
 
 type ExperienceEntryProps = {
@@ -25,9 +26,7 @@ export default function ExperienceEntry({
 }: ExperienceEntryProps) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.2, delay: 0.1 }}
+      {...fadeIn({ duration: DURATION.fast, delay: 0.1 })}
       className="min-h-fit w-full"
     >
       {/* JOB TITLE & COMPANY */}

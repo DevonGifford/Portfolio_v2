@@ -1,7 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Typewriter from "../common/TypeWriter";
+import { fadeIn } from "@/lib/motion";
 
 const typewriterWords = [
   "Full-Stack Developer",
@@ -14,12 +15,6 @@ const typewriterWords = [
   "Aspiring Principal Engineer",
   "Quality Engineer",
 ];
-
-const fadeIn = (delay: number) => ({
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-  transition: { duration: 0.5, delay },
-});
 
 const scrollToId = (e: React.MouseEvent<HTMLAnchorElement>) => {
   e.preventDefault();
@@ -37,13 +32,13 @@ export default function Banner() {
       {/* Heading */}
       <motion.h3
         className="font-codeFont text-xs tracking-wide text-textGreen md:text-lg"
-        {...fadeIn(2)}
+        {...fadeIn({ delay: 2 })}
       >
         Hello World, my name is
       </motion.h3>
 
       <motion.h1
-        {...fadeIn(2.2)}
+        {...fadeIn({ delay: 2.2 })}
         className="flex flex-col font-titleFont text-3xl font-semibold md:text-4xl lgl:text-6xl"
       >
         Devon Gifford.
@@ -54,7 +49,7 @@ export default function Banner() {
 
       {/* Bio Text */}
       <motion.div
-        {...fadeIn(2.4)}
+        {...fadeIn({ delay: 2.4 })}
         className="flex flex-col gap-1.5 text-sm font-medium text-textDark sml:text-base"
       >
         <p>
@@ -76,7 +71,7 @@ export default function Banner() {
       </motion.div>
 
       {/* CV Download 'Button' */}
-      <motion.div {...fadeIn(2.5)}>
+      <motion.div {...fadeIn({ delay: 2.5 })}>
         <a
           href="/assets/DevonGifford-FullstackDeveloper-2025.pdf"
           download

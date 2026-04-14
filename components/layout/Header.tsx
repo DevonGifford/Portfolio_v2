@@ -2,7 +2,8 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import { fadeIn, slideIn } from "@/lib/motion";
 import { logo } from "@/public/assets";
 import NavLinkList from "@/components/common/NavLinkList";
 import MobileMenu from "@/components/layout/MobileMenu";
@@ -28,11 +29,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-bodyColor px-4 shadow-navbarShadow">
       <div className="mx-auto flex max-w-container items-center justify-between py-4 font-titleFont">
         {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <motion.div {...fadeIn()}>
           <a href="#home" className="hover:animate-spin">
             <Image
               src={logo}
@@ -47,9 +44,7 @@ export default function Header() {
           <NavLinkList onClick={handleScroll} />
           <a href="/assets/DevonGifford-FullstackDeveloper-2025.pdf" target="_blank">
             <motion.button
-              initial={{ y: -10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1.25 }}
+              {...slideIn({ offset: -10, delay: 1.25 })}
               className="rounded-md border border-textGreen px-4 py-2 text-[13px] text-textGreen duration-300 hover:bg-hoverColor"
             >
               Resume

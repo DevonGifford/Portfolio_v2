@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import { stagger, staggerItem } from "@/lib/motion";
 
 const navItems = [
   { id: "home", label: "Home" },
@@ -20,14 +21,14 @@ export default function NavLinkList({
   isMobile?: boolean;
 }) {
   return (
-    <ul className={cn("flex", isMobile ? "flex-col gap-12 pt-12" : "gap-7 text-[13px]")}>
-      {navItems.map((item, i) => (
-        <motion.li
-          key={item.id}
-          initial={{ [isMobile ? "x" : "y"]: 20, opacity: 0 }}
-          animate={{ [isMobile ? "x" : "y"]: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: isMobile ? 0.1 + i * 0.1 : i * 0.25 }}
-        >
+    <motion.ul
+      className={cn("flex", isMobile ? "flex-col gap-12 pt-12" : "gap-7 text-[13px]")}
+      variants={stagger(isMobile ? { each: 0.1, delayChildren: 0.1 } : { each: 0.25 })}
+      initial="hidden"
+      animate="show"
+    >
+      {navItems.map((item) => (
+        <motion.li key={item.id} variants={staggerItem(isMobile ? "x" : "y")}>
           <Link
             href={`#${item.id}`}
             onClick={onClick}
@@ -38,6 +39,6 @@ export default function NavLinkList({
           </Link>
         </motion.li>
       ))}
-    </ul>
+    </motion.ul>
   );
 }

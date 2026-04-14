@@ -1,13 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import { fadeIn, DURATION } from "@/lib/motion";
 
 export default function RightSide() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 3 }}
+      {...fadeIn({ duration: DURATION.slow, delay: 3 })}
       className="flex h-full w-full flex-col items-center justify-end gap-40 text-textLight"
     >
       <a href="mailto:devongifford@outlook.com">

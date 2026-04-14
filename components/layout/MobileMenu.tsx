@@ -1,7 +1,8 @@
 "use client";
 
 import { forwardRef } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import { fadeIn, slideIn, DURATION } from "@/lib/motion";
 import { MdOutlineClose } from "react-icons/md";
 import SocialIconList from "../common/SocialIconList";
 import NavLinkList from "../common/NavLinkList";
@@ -38,9 +39,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
       className="right-end absolute top-0 flex h-screen w-full flex-col items-end bg-black bg-opacity-50 mdl:hidden"
     >
       <motion.div
-        initial={{ x: 20, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.1 }}
+        {...slideIn({ axis: "x", duration: 0.1 })}
         className="scrollbar-hide relative flex h-full w-[80%] flex-col items-center bg-[#112240] px-4 py-16"
       >
         {/* Close Icon */}
@@ -57,13 +56,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
         {/* Resume */}
         <a href="/assets/DevonGifford-FullstackDeveloper-2025.pdf" target="_blank" className="pt-8">
           <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 0.2,
-              delay: 0.8,
-              ease: "easeIn",
-            }}
+            {...fadeIn({ duration: DURATION.fast, delay: 0.8, ease: "easeIn" })}
             className="h-10 w-32 rounded-md border border-textGreen text-[13px] text-textGreen duration-300 hover:bg-hoverColor"
           >
             Resume
@@ -71,20 +64,14 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
         </a>
 
         {/* Social Icons */}
-        <motion.div
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.2, delay: 1 }}
-        >
+        <motion.div {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1 })}>
           <SocialIconList className="pt-4" />
         </motion.div>
 
         {/* Email */}
         <motion.a
           href="mailto:devongifford@outlook.com"
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.2, delay: 1.6 }}
+          {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1.6 })}
         >
           <p className="mt-4 w-72 pl-4 text-sm tracking-widest hover:text-textGreen">
             devongifford@outlook.com
