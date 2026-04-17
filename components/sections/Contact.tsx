@@ -1,5 +1,7 @@
 "use client";
 
+import OutlineButton from "@/components/common/OutlineButton";
+
 export default function Contact() {
   return (
     <section
@@ -17,9 +19,9 @@ export default function Contact() {
         or just want to say hi, I&apos;ll do my best to get back to you!
       </p>
       <a href="mailto:devongifford@outlook.com">
-        <button className="mt-4 h-14 w-40 rounded-md border border-textGreen font-titleFont text-sm tracking-wider text-textGreen duration-300 hover:bg-hoverColor">
+        <OutlineButton className="mt-4 h-14 w-40 font-titleFont text-sm tracking-wider">
           Say Hello
-        </button>
+        </OutlineButton>
       </a>
     </section>
   );

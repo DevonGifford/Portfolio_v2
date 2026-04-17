@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import SectionTitle from "../common/SectionTitle";
+import OutlineButton from "../common/OutlineButton";
 import capstoneEntries from "./projects/capstone-projects/capstoneEntries";
 import CapstoneCard from "./projects/capstone-projects/CapstoneCard";
 import miniProjectsEntries, { MiniProjectEntry } from "./projects/mini-projects/miniProjectEntries";
@@ -40,19 +41,13 @@ export default function Projects() {
 
         <div className="mt-12 flex items-center justify-center">
           {showMore ? (
-            <button
-              onClick={() => setShowMore(false)}
-              className="Text-[13px] h-12 w-36 rounded-md border border-textGreen text-textGreen duration-300 hover:bg-hoverColor"
-            >
+            <OutlineButton onClick={() => setShowMore(false)} className="h-12 w-36">
               Show Less
-            </button>
+            </OutlineButton>
           ) : (
-            <button
-              onClick={() => setShowMore(true)}
-              className="Text-[13px] h-12 w-36 rounded-md border border-textGreen text-textGreen duration-300 hover:bg-hoverColor"
-            >
+            <OutlineButton onClick={() => setShowMore(true)} className="h-12 w-36">
               Show More
-            </button>
+            </OutlineButton>
           )}
         </div>
       </div>

@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Typewriter from "../common/TypeWriter";
 import { fadeIn } from "@/lib/motion";
 import { scrollToAnchor } from "@/lib/scroll";
+import { outlineButton } from "../common/OutlineButton";
 
 const typewriterWords = [
   "Full-Stack Developer",
@@ -69,7 +70,9 @@ export default function Banner() {
         <a
           href="/assets/DevonGifford-FullstackDeveloper-2025.pdf"
           download
-          className="inline-flex h-10 w-40 items-center justify-center rounded-md border border-textGreen font-titleFont text-xs tracking-wide text-textGreen duration-300 hover:bg-hoverColor sml:h-14 sml:w-52 sml:text-sm"
+          className={outlineButton(
+            "inline-flex h-10 w-40 items-center justify-center font-titleFont text-xs tracking-wide sml:h-14 sml:w-52 sml:text-sm",
+          )}
         >
           Download my latest CV
         </a>

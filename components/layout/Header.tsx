@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { fadeIn, slideIn } from "@/lib/motion";
 import { scrollToAnchor } from "@/lib/scroll";
+import { outlineButton } from "@/components/common/OutlineButton";
 import { logo } from "@/public/assets";
 import NavLinkList from "@/components/common/NavLinkList";
 import MobileMenu from "@/components/layout/MobileMenu";
@@ -35,7 +36,7 @@ export default function Header() {
           <a href="/assets/DevonGifford-FullstackDeveloper-2025.pdf" target="_blank">
             <motion.button
               {...slideIn({ offset: -10, delay: 1.25 })}
-              className="rounded-md border border-textGreen px-4 py-2 text-[13px] text-textGreen duration-300 hover:bg-hoverColor"
+              className={outlineButton("px-4 py-2 text-[13px]")}
             >
               Resume
             </motion.button>
