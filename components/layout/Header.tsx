@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 import { fadeIn, slideIn } from "@/lib/motion";
+import { scrollToAnchor } from "@/lib/scroll";
 import { logo } from "@/public/assets";
 import NavLinkList from "@/components/common/NavLinkList";
 import MobileMenu from "@/components/layout/MobileMenu";
@@ -11,19 +12,6 @@ import MobileMenu from "@/components/layout/MobileMenu";
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    setShowMenu(false);
-
-    const href = e.currentTarget.href;
-    const id = href.split("#")[1];
-    const elem = document.getElementById(id);
-    elem?.scrollIntoView({ behavior: "smooth" });
-
-    document.querySelectorAll(".nav-link").forEach((link) => link.classList.remove("active"));
-    e.currentTarget.classList.add("active");
-  };
 
   return (
     <header className="sticky top-0 z-50 w-full bg-bodyColor px-4 shadow-navbarShadow">
@@ -41,7 +29,9 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-7 mdl:inline-flex">
-          <NavLinkList onClick={handleScroll} />
+          <NavLinkList
+            onClick={(e) => scrollToAnchor(e, { setActive: true, onNavigate: () => setShowMenu(false) })}
+          />
           <a href="/assets/DevonGifford-FullstackDeveloper-2025.pdf" target="_blank">
             <motion.button
               {...slideIn({ offset: -10, delay: 1.25 })}

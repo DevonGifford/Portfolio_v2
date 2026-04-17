@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import Typewriter from "../common/TypeWriter";
 import { fadeIn } from "@/lib/motion";
+import { scrollToAnchor } from "@/lib/scroll";
 
 const typewriterWords = [
   "Full-Stack Developer",
@@ -15,13 +16,6 @@ const typewriterWords = [
   "Aspiring Principal Engineer",
   "Quality Engineer",
 ];
-
-const scrollToId = (e: React.MouseEvent<HTMLAnchorElement>) => {
-  e.preventDefault();
-  const id = e.currentTarget.href.split("#")[1];
-  const elem = document.getElementById(id);
-  elem?.scrollIntoView({ behavior: "smooth" });
-};
 
 export default function Banner() {
   return (
@@ -62,7 +56,7 @@ export default function Banner() {
           reliable code.
         </p>
         <p className="mt-2 italic">Fully committed to the philosophy of lifelong learning.</p>
-        <a href="#Projects" onClick={scrollToId} className="mt-2">
+        <a href="#Projects" onClick={scrollToAnchor} className="mt-2">
           <span className="group relative inline-flex h-7 cursor-pointer overflow-x-hidden text-textGreen">
             Capstone Projects
             <span className="absolute bottom-1 left-0 h-px w-full translate-x-[110%] bg-textGreen transition-transform duration-500 group-hover:translate-x-0" />

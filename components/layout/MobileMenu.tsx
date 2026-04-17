@@ -3,6 +3,7 @@
 import { forwardRef } from "react";
 import { motion } from "motion/react";
 import { fadeIn, slideIn, DURATION } from "@/lib/motion";
+import { scrollToAnchor } from "@/lib/scroll";
 import { MdOutlineClose } from "react-icons/md";
 import SocialIconList from "../common/SocialIconList";
 import NavLinkList from "../common/NavLinkList";
@@ -12,16 +13,6 @@ type Props = {
 };
 
 const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClose }, ref) {
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    onClose();
-    const id = e.currentTarget.href.split("#")[1];
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
-    document.querySelectorAll(".nav-link").forEach((link) => link.classList.remove("active"));
-    e.currentTarget.classList.add("active");
-  };
-
   return (
     <div
       ref={ref}
@@ -50,7 +41,10 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
 
         {/* Nav Items */}
         <div className="flex w-[80%] flex-col items-center gap-8 text-center text-base">
-          <NavLinkList onClick={handleScroll} isMobile />
+          <NavLinkList
+            onClick={(e) => scrollToAnchor(e, { setActive: true, onNavigate: onClose })}
+            isMobile
+          />
         </div>
 
         {/* Resume */}
