@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import ExternalLink from "@/components/common/ExternalLink";
 
 interface SocialIconProps {
   href: string;
@@ -16,7 +17,7 @@ export default function SocialIcon({
   externalClassName = "",
 }: SocialIconProps) {
   return (
-    <a href={href} target="_blank" rel="noreferrer">
+    <ExternalLink href={href}>
       <span
         className={cn(
           "inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-xl transition-all duration-300 hover:-translate-y-2",
@@ -26,6 +27,6 @@ export default function SocialIcon({
       >
         {children}
       </span>
-    </a>
+    </ExternalLink>
   );
 }

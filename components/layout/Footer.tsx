@@ -4,6 +4,7 @@ import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { TiSocialTwitter } from "react-icons/ti";
 import SocialIcon from "../common/SocialIcon";
+import ExternalLink from "../common/ExternalLink";
 
 export default function Footer() {
   return (
@@ -32,25 +33,15 @@ export default function Footer() {
       </div>
       <p className="justify-center py-3 text-center text-xs">
         Built from scratch by{" "}
-        <a
-          href="https://www.linkedin.com/in/dbgifford/"
-          target="_blank"
-          className="text-textGreen"
-          rel="noreferrer"
-        >
+        <ExternalLink href="https://www.linkedin.com/in/dbgifford/" className="text-textGreen">
           Devon Gifford
-        </a>
+        </ExternalLink>
         <br />
         Inspired by{" "}
-        <a
-          href="https://brittanychiang.com/"
-          target="_blank"
-          className="text-textGreen"
-          rel="noreferrer"
-        >
+        <ExternalLink href="https://brittanychiang.com/" className="text-textGreen">
           {" "}
           Brittany Chiang
-        </a>
+        </ExternalLink>
       </p>
     </div>
   );

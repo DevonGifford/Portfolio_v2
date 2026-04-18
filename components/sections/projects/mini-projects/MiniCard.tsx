@@ -2,6 +2,7 @@
 
 import { RiGithubLine } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
+import ExternalLink from "@/components/common/ExternalLink";
 
 interface MiniProjectCardProps {
   title: string;
@@ -23,24 +24,24 @@ export default function MiniProjectCard({
       {/* Icon-Links */}
       <div className="flex items-center justify-between">
         {/* GITHUB LINK */}
-        <a href={gitLink} target="_blank" rel="noreferrer">
+        <ExternalLink href={gitLink}>
           <RiGithubLine className="text-2xl hover:text-textGreen" />
-        </a>
+        </ExternalLink>
 
         {/* LIVE LINK */}
-        <a href={liveLink} target="_blank" rel="noreferrer">
+        <ExternalLink href={liveLink}>
           <FiExternalLink className="text-2xl hover:text-textGreen" />
-        </a>
+        </ExternalLink>
       </div>
 
       {/* Text Portion  */}
       <div>
         {/* TITLE */}
-        <a href={liveLink} target="_blank" rel="noreferrer">
+        <ExternalLink href={liveLink}>
           <h2 className="font-titleFont text-xl font-semibold tracking-wide group-hover:text-textGreen">
             {title}
           </h2>
-        </a>
+        </ExternalLink>
 
         {/* DESCRIPTION */}
         <p className="mt-3 text-sm">{description}</p>

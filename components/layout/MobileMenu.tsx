@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { fadeIn, slideIn, DURATION } from "@/lib/motion";
 import { scrollToAnchor } from "@/lib/scroll";
 import { outlineButton } from "../common/OutlineButton";
+import ExternalLink from "../common/ExternalLink";
 import { MdOutlineClose } from "react-icons/md";
 import SocialIconList from "../common/SocialIconList";
 import NavLinkList from "../common/NavLinkList";
@@ -49,14 +50,14 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
         </div>
 
         {/* Resume */}
-        <a href="/assets/DevonGifford-FullstackDeveloper-2025.pdf" target="_blank" className="pt-8">
+        <ExternalLink href="/assets/DevonGifford-FullstackDeveloper-2025.pdf" className="pt-8">
           <motion.button
             {...fadeIn({ duration: DURATION.fast, delay: 0.8, ease: "easeIn" })}
             className={outlineButton("h-10 w-32 text-[13px]")}
           >
             Resume
           </motion.button>
-        </a>
+        </ExternalLink>
 
         {/* Social Icons */}
         <motion.div {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1 })}>

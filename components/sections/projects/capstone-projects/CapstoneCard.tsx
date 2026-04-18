@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import { RiGithubLine } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
 import { SlSocialYoutube } from "react-icons/sl";
+import ExternalLink from "@/components/common/ExternalLink";
 
 interface CapstoneCardProps {
   title: string;
@@ -46,12 +47,9 @@ export default function CapstoneCard({
         {isReversed ? (
           <div className="mr-10 hidden flex-col gap-2 sml:flex-row-reverse mdl:flex">
             {/* Image-div */}
-            <a
+            <ExternalLink
               className="group relative h-full w-full justify-center align-middle sml:w-1/2"
-              href={liveLink}
-              target="_blank"
-              rel="noreferrer"
-            >
+              href={liveLink}            >
               <div>
                 {/* Actual Image */}
                 <Image
@@ -63,7 +61,7 @@ export default function CapstoneCard({
                 {/* Green overlay */}
                 <div className="absolute left-0 top-0 h-full w-full rounded-lg bg-imageOverlay/50 duration-300 group-hover:bg-transparent md:inline-block"></div>
               </div>
-            </a>
+            </ExternalLink>
 
             {/* Text-div */}
             <div className="z-10 flex w-full flex-col gap-6 sml:w-1/2 sml:justify-between md:-mr-20">
@@ -86,44 +84,32 @@ export default function CapstoneCard({
 
               {/* Links to showcase project */}
               <div className="flex gap-4 text-2xl">
-                <a
+                <ExternalLink
                   className="duration-300 hover:text-textGreen"
-                  href={gitLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                  href={gitLink}                >
                   <RiGithubLine />
-                </a>
+                </ExternalLink>
                 {youtubeLink && (
-                  <a
+                  <ExternalLink
                     className="duration-300 hover:text-textGreen"
-                    href={youtubeLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                    href={youtubeLink}                  >
                     <SlSocialYoutube />
-                  </a>
+                  </ExternalLink>
                 )}
-                <a
+                <ExternalLink
                   className="duration-300 hover:text-textGreen"
-                  href={liveLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                  href={liveLink}                >
                   <FiExternalLink />
-                </a>
+                </ExternalLink>
               </div>
             </div>
           </div>
         ) : (
           <div className="ml-16 hidden flex-col gap-6 sml:flex-row mdl:flex">
             {/* Image-div */}
-            <a
+            <ExternalLink
               className="group relative h-full w-full justify-center align-middle sml:w-1/2"
-              href={liveLink}
-              target="_blank"
-              rel="noreferrer"
-            >
+              href={liveLink}            >
               <div>
                 {/* Actual Image */}
                 <Image
@@ -135,7 +121,7 @@ export default function CapstoneCard({
                 {/* Green overlay */}
                 <div className="absolute left-0 top-0 h-full w-full rounded-lg bg-imageOverlay/50 duration-300 group-hover:bg-transparent md:inline-block"></div>
               </div>
-            </a>
+            </ExternalLink>
 
             {/* Text-div */}
             <div className="z-10 flex w-full flex-col items-end gap-6 text-right sml:w-1/2 sml:justify-between md:-ml-16">
@@ -158,32 +144,23 @@ export default function CapstoneCard({
 
               {/* Links to showcase project */}
               <div className="flex gap-4 text-2xl">
-                <a
+                <ExternalLink
                   className="duration-300 hover:text-textGreen"
-                  href={gitLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                  href={gitLink}                >
                   <RiGithubLine />
-                </a>
+                </ExternalLink>
                 {youtubeLink && (
-                  <a
+                  <ExternalLink
                     className="duration-300 hover:text-textGreen"
-                    href={youtubeLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                    href={youtubeLink}                  >
                     <SlSocialYoutube />
-                  </a>
+                  </ExternalLink>
                 )}
-                <a
+                <ExternalLink
                   className="duration-300 hover:text-textGreen"
-                  href={liveLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                  href={liveLink}                >
                   <FiExternalLink />
-                </a>
+                </ExternalLink>
               </div>
             </div>
           </div>
@@ -215,32 +192,23 @@ export default function CapstoneCard({
 
             {/* Links to showcase project */}
             <div className="flex items-end gap-4 pb-10 text-right text-2xl">
-              <a
+              <ExternalLink
                 className="duration-300 hover:text-textGreen"
-                href={gitLink}
-                target="_blank"
-                rel="noreferrer"
-              >
+                href={gitLink}              >
                 <RiGithubLine />
-              </a>
+              </ExternalLink>
               {youtubeLink && (
-                <a
+                <ExternalLink
                   className="duration-300 hover:text-textGreen"
-                  href={youtubeLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                  href={youtubeLink}                >
                   <SlSocialYoutube />
-                </a>
+                </ExternalLink>
               )}
-              <a
+              <ExternalLink
                 className="duration-300 hover:text-textGreen"
-                href={liveLink}
-                target="_blank"
-                rel="noreferrer"
-              >
+                href={liveLink}              >
                 <FiExternalLink />
-              </a>
+              </ExternalLink>
             </div>
           </div>
         </div>
