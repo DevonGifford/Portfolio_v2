@@ -93,7 +93,7 @@ export default function About() {
       className="mx-auto flex h-screen max-w-containerSmall flex-col justify-center gap-8 py-96 mdl:px-10 lgl:py-32"
     >
       <div className="flex items-center gap-10 pt-20 sml:pt-5">
-        <SectionTitle titleNumber="0.1" titleName="About me" />
+        <SectionTitle titleNumber="01" titleName="About me" />
       </div>
 
       {/* CONTENT CONTAINER - GRID */}

@@ -12,7 +12,7 @@ export default function Experience() {
 
   return (
     <section
-      id="Experience"
+      id="experience"
       className="mx-auto flex min-h-screen max-w-containerSmall flex-col justify-center gap-5 py-96 lgl:py-32"
     >
       <SectionTitle titleName="Where I have worked" titleNumber="02" />

@@ -1,6 +1,7 @@
 "use client";
 
 import OutlineButton from "@/components/common/OutlineButton";
+import SectionTitle from "../common/SectionTitle";
 import { siteConfig } from "@/site.config";
 
 export default function Contact() {
@@ -9,9 +10,7 @@ export default function Contact() {
       id="contact"
       className="cl:py-32 mx-auto flex h-full max-w-contentContainer flex-col items-center justify-center gap-6 py-10"
     >
-      <p className="flex items-center font-codeFont text-lg font-semibold tracking-wide text-textGreen">
-        04. What&apos;s Next?
-      </p>
+      <SectionTitle titleNumber="04" titleName="What's Next?" centered />
       <h2 className="font-titleFont text-2xl font-semibold sm:text-3xl lgl:text-4xl">
         Let&apos;s get in touch
       </h2>

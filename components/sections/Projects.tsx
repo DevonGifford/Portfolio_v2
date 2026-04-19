@@ -12,7 +12,7 @@ export default function Projects() {
   const [showMore, setShowMore] = useState(false); // For toggling "Show More" in Mini Projects
 
   return (
-    <section id="Projects">
+    <section id="projects">
       <div className="mx-auto flex min-h-fit max-w-containerSmall flex-col gap-8 py-10 lgl:py-32">
         {/* Section for Capstone Projects */}
         <SectionTitle titleName="Capstone Projects" titleNumber="03" />

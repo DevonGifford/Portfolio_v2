@@ -8,8 +8,8 @@ import { stagger, staggerItem } from "@/lib/motion";
 const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About", index: "01." },
-  { id: "Experience", label: "Experience", index: "02." },
-  { id: "Projects", label: "Projects", index: "03." },
+  { id: "experience", label: "Experience", index: "02." },
+  { id: "projects", label: "Projects", index: "03." },
   { id: "contact", label: "Contact", index: "04." },
 ];
 
