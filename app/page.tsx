@@ -7,16 +7,7 @@ import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
 import RightSide from "@/components/layout/RightSide";
 
-import type { Metadata } from "next";
 import Projects from "@/components/sections/Projects";
-
-export const metadata: Metadata = {
-  title: "Devon Gifford",
-  description: "Full-stack developer portfolio showcasing projects and experience.",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
 
 export default function HomePage() {
   return (

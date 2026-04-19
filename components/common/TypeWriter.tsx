@@ -4,7 +4,7 @@ import { useTypewriter } from "@/utils/TypeWriter";
 import { cn } from "@/lib/utils";
 
 type TypewriterProps = {
-  words: string[];
+  words: readonly string[];
   className?: string;
 };
 

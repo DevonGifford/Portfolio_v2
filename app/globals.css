@@ -30,6 +30,7 @@
   --color-textLight: #ccd6f6;
   --color-textDark: #8892b0;
   --color-hoverColor: rgba(100, 255, 218, 0.1);
+  --color-cardColor: #112240;
 
   @keyframes blink {
     0%,

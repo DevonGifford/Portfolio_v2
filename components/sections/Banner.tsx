@@ -5,18 +5,7 @@ import Typewriter from "../common/TypeWriter";
 import { fadeIn } from "@/lib/motion";
 import { scrollToAnchor } from "@/lib/scroll";
 import { outlineButton } from "../common/OutlineButton";
-
-const typewriterWords = [
-  "Full-Stack Developer",
-  "React Specialist",
-  "Python Enthusiast",
-  "Next.js Developer",
-  "Web Developer",
-  "ex-FAANG",
-  "Senior Developer",
-  "Aspiring Principal Engineer",
-  "Quality Engineer",
-];
+import { siteConfig } from "@/site.config";
 
 export default function Banner() {
   return (
@@ -36,9 +25,9 @@ export default function Banner() {
         {...fadeIn({ delay: 2.2 })}
         className="flex flex-col font-titleFont text-3xl font-semibold md:text-4xl lgl:text-6xl"
       >
-        Devon Gifford.
+        {siteConfig.name}.
         <span className="mt-2 text-lg text-textDark md:text-2xl lg:text-3xl lgl:mt-4">
-          <Typewriter words={typewriterWords} />
+          <Typewriter words={siteConfig.taglines} />
         </span>
       </motion.h1>
 
@@ -68,7 +57,7 @@ export default function Banner() {
       {/* CV Download 'Button' */}
       <motion.div {...fadeIn({ delay: 2.5 })}>
         <a
-          href="/assets/DevonGifford-FullstackDeveloper-2025.pdf"
+          href={siteConfig.resumePath}
           download
           className={outlineButton(
             "inline-flex h-10 w-40 items-center justify-center font-titleFont text-xs tracking-wide sml:h-14 sml:w-52 sml:text-sm",

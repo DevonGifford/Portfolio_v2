@@ -2,12 +2,14 @@ import React from "react";
 import { inter, firaCode, montserrat } from "./fonts";
 import type { Metadata } from "next";
 import MotionProvider from "@/components/providers/MotionProvider";
+import { siteConfig } from "@/site.config";
 
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Devon Gifford – Portfolio",
-  description: "Full-stack developer. Quality engineer. React enjoyer.",
+  title: siteConfig.seo.title,
+  description: siteConfig.seo.description,
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

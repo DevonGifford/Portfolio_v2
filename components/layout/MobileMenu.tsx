@@ -7,8 +7,9 @@ import { scrollToAnchor } from "@/lib/scroll";
 import { outlineButton } from "../common/OutlineButton";
 import ExternalLink from "../common/ExternalLink";
 import { MdOutlineClose } from "react-icons/md";
-import SocialIconList from "../common/SocialIconList";
+import SocialLinks from "../common/SocialLinks";
 import NavLinkList from "../common/NavLinkList";
+import { siteConfig } from "@/site.config";
 
 type Props = {
   onClose: () => void;
@@ -33,7 +34,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
     >
       <motion.div
         {...slideIn({ axis: "x", duration: 0.1 })}
-        className="scrollbar-hide relative flex h-full w-[80%] flex-col items-center bg-[#112240] px-4 py-16"
+        className="scrollbar-hide relative flex h-full w-[80%] flex-col items-center bg-cardColor px-4 py-16"
       >
         {/* Close Icon */}
         <MdOutlineClose
@@ -50,7 +51,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
         </div>
 
         {/* Resume */}
-        <ExternalLink href="/assets/DevonGifford-FullstackDeveloper-2025.pdf" className="pt-8">
+        <ExternalLink href={siteConfig.resumePath} className="pt-8">
           <motion.button
             {...fadeIn({ duration: DURATION.fast, delay: 0.8, ease: "easeIn" })}
             className={outlineButton("h-10 w-32 text-[13px]")}
@@ -61,16 +62,18 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
 
         {/* Social Icons */}
         <motion.div {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1 })}>
-          <SocialIconList className="pt-4" />
+          <div className="flex gap-4 pt-4">
+            <SocialLinks iconClassName="border-zinc-700 bg-bodyColor text-zinc-200" />
+          </div>
         </motion.div>
 
         {/* Email */}
         <motion.a
-          href="mailto:devongifford@outlook.com"
+          href={`mailto:${siteConfig.email}`}
           {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1.6 })}
         >
           <p className="mt-4 w-72 pl-4 text-sm tracking-widest hover:text-textGreen">
-            devongifford@outlook.com
+            {siteConfig.email}
           </p>
         </motion.a>
       </motion.div>

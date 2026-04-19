@@ -20,7 +20,7 @@ export default function MiniProjectCard({
   listItems,
 }: MiniProjectCardProps) {
   return (
-    <div className="group flex h-72 w-full min-w-[280px] max-w-[320px] flex-col justify-center gap-6 rounded-lg bg-[#112240] p-6 transition-transform duration-300 hover:-translate-y-2">
+    <div className="group flex h-72 w-full min-w-[280px] max-w-[320px] flex-col justify-center gap-6 rounded-lg bg-cardColor p-6 transition-transform duration-300 hover:-translate-y-2">
       {/* Icon-Links */}
       <div className="flex items-center justify-between">
         {/* GITHUB LINK */}

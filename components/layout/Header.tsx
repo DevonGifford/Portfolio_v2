@@ -7,6 +7,7 @@ import { fadeIn, slideIn } from "@/lib/motion";
 import { scrollToAnchor } from "@/lib/scroll";
 import { outlineButton } from "@/components/common/OutlineButton";
 import ExternalLink from "@/components/common/ExternalLink";
+import { siteConfig } from "@/site.config";
 import { logo } from "@/public/assets";
 import NavLinkList from "@/components/common/NavLinkList";
 import MobileMenu from "@/components/layout/MobileMenu";
@@ -34,7 +35,7 @@ export default function Header() {
           <NavLinkList
             onClick={(e) => scrollToAnchor(e, { setActive: true, onNavigate: () => setShowMenu(false) })}
           />
-          <ExternalLink href="/assets/DevonGifford-FullstackDeveloper-2025.pdf">
+          <ExternalLink href={siteConfig.resumePath}>
             <motion.button
               {...slideIn({ offset: -10, delay: 1.25 })}
               className={outlineButton("px-4 py-2 text-[13px]")}

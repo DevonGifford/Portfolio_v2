@@ -26,7 +26,7 @@ export default function Experience() {
                 key={key}
                 onClick={() => setActiveTab(key)}
                 className={cn(
-                  "cursor-pointer border-l-2 bg-transparent px-8 py-3 text-xs font-medium duration-300 hover:bg-[#112240] md:text-sm",
+                  "cursor-pointer border-l-2 bg-transparent px-8 py-3 text-xs font-medium duration-300 hover:bg-cardColor md:text-sm",
                   activeTab === key
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark",

@@ -7,7 +7,7 @@ export const useTypewriter = ({
   deletingSpeed = 50,
   pauseTime = 2000,
 }: {
-  words: string[];
+  words: readonly string[];
   loop?: boolean;
   typingSpeed?: number;
   deletingSpeed?: number;

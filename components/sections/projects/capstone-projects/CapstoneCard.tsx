@@ -71,7 +71,7 @@ export default function CapstoneCard({
               <h3 className="text-2xl font-bold hover:text-textGreen">{title}</h3>
 
               {/* Description block */}
-              <p className="rounded-md bg-[#112240] px-5 py-5 text-sm md:text-base">
+              <p className="rounded-md bg-cardColor px-5 py-5 text-sm md:text-base">
                 {description}
               </p>
 
@@ -131,7 +131,7 @@ export default function CapstoneCard({
               <h3 className="text-2xl font-bold hover:text-textGreen">{title}</h3>
 
               {/* Description block */}
-              <p className="rounded-md bg-[#112240] p-2 text-sm md:p-6 md:text-base">
+              <p className="rounded-md bg-cardColor p-2 text-sm md:p-6 md:text-base">
                 {description}
               </p>
 
