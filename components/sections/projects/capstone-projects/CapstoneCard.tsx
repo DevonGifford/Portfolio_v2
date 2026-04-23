@@ -98,8 +98,8 @@ export default function CapstoneCard({
               !isReversed && "justify-between",
             )}
           >
-            {techStackList.map((item, i) => (
-              <li key={i}>{item}</li>
+            {techStackList.map((item) => (
+              <li key={item}>{item}</li>
             ))}
           </ul>
 
@@ -121,8 +121,8 @@ export default function CapstoneCard({
           <h3 className="font-titleFont text-2xl font-bold hover:text-textGreen">{title}</h3>
           <p className="text-sm text-textLight sml:text-base">{description}</p>
           <ul className="flex flex-wrap gap-x-4 gap-y-1 font-codeFont text-xs tracking-wide text-textGreen">
-            {techStackList.map((item, i) => (
-              <li key={i}>{item}</li>
+            {techStackList.map((item) => (
+              <li key={item}>{item}</li>
             ))}
           </ul>
           {links}

@@ -49,8 +49,8 @@ export default function MiniProjectCard({
 
       {/* TECH STACK */}
       <ul className="flex flex-wrap items-center justify-between gap-2 text-xs text-textDark mdl:text-sm">
-        {listItems.map((item, i) => (
-          <li className="hover:text-textGreen" key={i}>
+        {listItems.map((item) => (
+          <li className="hover:text-textGreen" key={item}>
             {item}
           </li>
         ))}

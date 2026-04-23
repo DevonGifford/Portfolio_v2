@@ -49,8 +49,8 @@ export default function ExperienceEntry({
       {/* Bullet Points */}
       <div className="min-h-fit">
         <ul className="mt-4 flex flex-col gap-3 text-textDark">
-          {bullets.map(({ heading, content }, i) => (
-            <BulletPoint key={i} headningText={heading} contentText={content} />
+          {bullets.map(({ heading, content }) => (
+            <BulletPoint key={heading} headingText={heading} contentText={content} />
           ))}
         </ul>
       </div>
