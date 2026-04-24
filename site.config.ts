@@ -34,7 +34,7 @@ export const siteConfig = {
     title: "Devon Gifford – Portfolio",
     description: "Full-stack developer. Quality engineer. React enjoyer.",
     ogImage: "",
-    url: "",
+    url: "https://devongifford.vercel.app",
   },
 
 } as const;
