@@ -15,6 +15,7 @@ import MobileMenu from "@/components/layout/MobileMenu";
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-bodyColor px-4 shadow-navbarShadow">
@@ -46,17 +47,30 @@ export default function Header() {
         </nav>
 
         {/* Mobile Hamburger */}
-        <div
+        <button
+          ref={hamburgerRef}
+          type="button"
           onClick={() => setShowMenu(true)}
+          aria-label="Open menu"
+          aria-expanded={showMenu}
+          aria-controls="mobile-menu"
           className="group flex h-5 w-6 cursor-pointer flex-col items-center justify-between overflow-hidden text-4xl text-textGreen mdl:hidden"
         >
           <span className="inline-flex h-[2px] w-full bg-textGreen transition-all duration-300 ease-in-out group-hover:translate-x-2" />
           <span className="inline-flex h-[2px] w-full bg-textGreen transition-all duration-300 ease-in-out" />
           <span className="inline-flex h-[2px] w-full bg-textGreen transition-all duration-300 ease-in-out group-hover:translate-x-3" />
-        </div>
+        </button>
 
         {/* Mobile Menu */}
-        {showMenu && <MobileMenu ref={menuRef} onClose={() => setShowMenu(false)} />}
+        {showMenu && (
+          <MobileMenu
+            ref={menuRef}
+            onClose={() => {
+              setShowMenu(false);
+              hamburgerRef.current?.focus();
+            }}
+          />
+        )}
       </div>
     </header>
   );

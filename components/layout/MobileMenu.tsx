@@ -1,6 +1,6 @@
 "use client";
 
-import { forwardRef } from "react";
+import { forwardRef, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { fadeIn, slideIn, DURATION } from "@/lib/motion";
 import { scrollToAnchor } from "@/lib/scroll";
@@ -16,6 +16,48 @@ type Props = {
 };
 
 const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClose }, ref) {
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const panel = panelRef.current;
+    if (!panel) return;
+
+    const getFocusable = () =>
+      Array.from(
+        panel.querySelectorAll<HTMLElement>('a[href], button, [tabindex]:not([tabindex="-1"])'),
+      );
+
+    getFocusable()[0]?.focus();
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose();
+
+        return;
+      }
+
+      if (e.key !== "Tab") return;
+
+      const focusable = getFocusable();
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [onClose]);
+
   return (
     <div
       ref={ref}
@@ -33,14 +75,23 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
       className="right-end absolute top-0 flex h-screen w-full flex-col items-end bg-black bg-opacity-50 mdl:hidden"
     >
       <motion.div
+        ref={panelRef}
+        id="mobile-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation menu"
         {...slideIn({ axis: "x", duration: 0.1 })}
         className="scrollbar-hide relative flex h-full w-[80%] flex-col items-center bg-cardColor px-4 py-16"
       >
         {/* Close Icon */}
-        <MdOutlineClose
+        <button
+          type="button"
           onClick={onClose}
+          aria-label="Close menu"
           className="absolute right-4 top-4 cursor-pointer text-3xl text-textGreen hover:text-textGreen/80"
-        />
+        >
+          <MdOutlineClose />
+        </button>
 
         {/* Nav Items */}
         <div className="flex w-[80%] flex-col items-center gap-8 text-center text-base">
