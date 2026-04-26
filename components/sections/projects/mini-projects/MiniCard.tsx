@@ -24,12 +24,12 @@ export default function MiniProjectCard({
       {/* Icon-Links */}
       <div className="flex items-center justify-between">
         {/* GITHUB LINK */}
-        <ExternalLink href={gitLink}>
+        <ExternalLink href={gitLink} aria-label={`${title} source code`}>
           <RiGithubLine className="text-2xl hover:text-textGreen" />
         </ExternalLink>
 
         {/* LIVE LINK */}
-        <ExternalLink href={liveLink}>
+        <ExternalLink href={liveLink} aria-label={`${title} live site`}>
           <FiExternalLink className="text-2xl hover:text-textGreen" />
         </ExternalLink>
       </div>

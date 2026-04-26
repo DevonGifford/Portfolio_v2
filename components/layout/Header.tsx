@@ -22,7 +22,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-container items-center justify-between py-4 font-titleFont">
         {/* Logo */}
         <motion.div {...fadeIn()}>
-          <a href="#home" className="hover:animate-spin">
+          <a href="#home" className="hover:animate-spin" aria-label="Home">
             <Image
               src={logo}
               alt="logo"

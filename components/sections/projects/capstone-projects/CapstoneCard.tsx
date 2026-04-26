@@ -39,15 +39,27 @@ export default function CapstoneCard({
 
   const links = (
     <div className="flex gap-4 text-2xl">
-      <ExternalLink className="duration-300 hover:text-textGreen" href={gitLink}>
+      <ExternalLink
+        className="duration-300 hover:text-textGreen"
+        href={gitLink}
+        aria-label={`${title} source code`}
+      >
         <RiGithubLine />
       </ExternalLink>
       {youtubeLink && (
-        <ExternalLink className="duration-300 hover:text-textGreen" href={youtubeLink}>
+        <ExternalLink
+          className="duration-300 hover:text-textGreen"
+          href={youtubeLink}
+          aria-label={`${title} demo video`}
+        >
           <SlSocialYoutube />
         </ExternalLink>
       )}
-      <ExternalLink className="duration-300 hover:text-textGreen" href={liveLink}>
+      <ExternalLink
+        className="duration-300 hover:text-textGreen"
+        href={liveLink}
+        aria-label={`${title} live site`}
+      >
         <FiExternalLink />
       </ExternalLink>
     </div>
