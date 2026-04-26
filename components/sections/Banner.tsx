@@ -16,13 +16,13 @@ export default function Banner() {
       {/* Heading */}
       <motion.h3
         className="font-codeFont text-xs tracking-wide text-textGreen md:text-lg"
-        {...fadeIn({ delay: 2 })}
+        {...fadeIn({ delay: 1 })}
       >
         Hello World, my name is
       </motion.h3>
 
       <motion.h1
-        {...fadeIn({ delay: 2.2 })}
+        {...fadeIn({ delay: 1.1 })}
         className="flex flex-col font-titleFont text-3xl font-semibold md:text-4xl lgl:text-6xl"
       >
         {siteConfig.name}.
@@ -33,7 +33,7 @@ export default function Banner() {
 
       {/* Bio Text */}
       <motion.div
-        {...fadeIn({ delay: 2.4 })}
+        {...fadeIn({ delay: 1.2 })}
         className="flex flex-col gap-1.5 text-sm font-medium text-textDark sml:text-base"
       >
         <p>
@@ -55,7 +55,7 @@ export default function Banner() {
       </motion.div>
 
       {/* CV Download 'Button' */}
-      <motion.div {...fadeIn({ delay: 2.5 })}>
+      <motion.div {...fadeIn({ delay: 1.3 })}>
         <a
           href={siteConfig.resumePath}
           download

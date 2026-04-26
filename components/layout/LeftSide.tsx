@@ -8,7 +8,7 @@ export default function LeftSide() {
   return (
     <div className="flex h-full w-full flex-col items-center justify-end gap-4 text-textLight">
       <motion.div
-        {...fadeIn({ duration: DURATION.slow, delay: 3 })}
+        {...fadeIn({ duration: DURATION.slow, delay: 1.5 })}
         className="flex flex-col gap-4"
       >
         <SocialLinks iconClassName="bg-hoverColor text-textLight" />

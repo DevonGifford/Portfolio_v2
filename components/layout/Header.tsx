@@ -38,7 +38,7 @@ export default function Header() {
           />
           <ExternalLink href={siteConfig.resumePath}>
             <motion.button
-              {...slideIn({ offset: -10, delay: 1.25 })}
+              {...slideIn({ offset: -10, delay: 0.6 })}
               className={outlineButton("px-4 py-2 text-[13px]")}
             >
               Resume

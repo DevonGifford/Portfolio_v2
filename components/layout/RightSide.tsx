@@ -7,7 +7,7 @@ import { siteConfig } from "@/site.config";
 export default function RightSide() {
   return (
     <motion.div
-      {...fadeIn({ duration: DURATION.slow, delay: 3 })}
+      {...fadeIn({ duration: DURATION.slow, delay: 1.5 })}
       className="flex h-full w-full flex-col items-center justify-end gap-40 text-textLight"
     >
       <a href={`mailto:${siteConfig.email}`}>
