@@ -1,7 +1,8 @@
 import { type ComponentProps } from "react";
 import { cn } from "@/lib/utils";
 
-const base = "rounded-md border border-textGreen text-textGreen duration-300 hover:bg-hoverColor";
+const base =
+  "inline-flex min-h-11 items-center justify-center rounded-md border border-textGreen text-textGreen duration-300 hover:bg-hoverColor";
 
 /** Shared class for the green outlined button/link look — usable on any element. */
 export const outlineButton = (className?: string) => cn(base, className);
