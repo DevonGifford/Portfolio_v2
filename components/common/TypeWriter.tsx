@@ -1,6 +1,6 @@
 "use client";
 
-import { useTypewriter } from "@/utils/TypeWriter";
+import { useTypewriter } from "@/lib/useTypewriter";
 import { cn } from "@/lib/utils";
 
 type TypewriterProps = {
