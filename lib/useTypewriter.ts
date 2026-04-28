@@ -1,5 +1,16 @@
 import { useEffect, useState } from "react";
 
+/**
+ * Creates typewriter-style animated text from a list of words.
+ *
+ * @param options - Typewriter animation options.
+ * @param options.words - Words to type through in order.
+ * @param options.loop - Whether the animation restarts after the final word.
+ * @param options.typingSpeed - Delay between typed characters in milliseconds.
+ * @param options.deletingSpeed - Delay between deleted characters in milliseconds.
+ * @param options.pauseTime - Delay after a word is typed before deletion starts, in milliseconds.
+ * @returns The current text and whether the hook is actively typing.
+ */
 export const useTypewriter = ({
   words,
   loop = true,

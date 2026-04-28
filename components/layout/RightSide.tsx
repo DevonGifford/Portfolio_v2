@@ -8,14 +8,14 @@ export default function RightSide() {
   return (
     <motion.div
       {...fadeIn({ duration: DURATION.slow, delay: 1.5 })}
-      className="flex h-full w-full flex-col items-center justify-end gap-40 text-textLight"
+      className="text-textLight flex h-full w-full flex-col items-center justify-end gap-40"
     >
       <a href={`mailto:${siteConfig.email}`}>
-        <p className="w-62 rotate-90 cursor-pointer text-sm tracking-widest transition-all duration-300 hover:-translate-y-2 hover:text-textGreen">
+        <p className="hover:text-textGreen w-62 rotate-90 cursor-pointer text-sm tracking-widest transition-all duration-300 hover:-translate-y-2">
           {siteConfig.email}
         </p>
       </a>
-      <span className="inline-flex h-52 w-[2px] bg-textDark"></span>
+      <span className="bg-textDark inline-flex h-52 w-[2px]"></span>
     </motion.div>
   );
 }

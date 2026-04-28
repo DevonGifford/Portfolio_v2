@@ -20,17 +20,17 @@ export default function MiniProjectCard({
   listItems,
 }: MiniProjectCardProps) {
   return (
-    <div className="group flex h-72 w-full min-w-[280px] max-w-[320px] flex-col justify-center gap-6 rounded-lg bg-cardColor p-6 transition-transform duration-300 hover:-translate-y-2">
+    <div className="group bg-cardColor flex h-72 w-full max-w-[320px] min-w-[280px] flex-col justify-center gap-6 rounded-lg p-6 transition-transform duration-300 hover:-translate-y-2">
       {/* Icon-Links */}
       <div className="flex items-center justify-between">
         {/* GITHUB LINK */}
         <ExternalLink href={gitLink} aria-label={`${title} source code`}>
-          <RiGithubLine className="text-2xl hover:text-textGreen" />
+          <RiGithubLine className="hover:text-textGreen text-2xl" />
         </ExternalLink>
 
         {/* LIVE LINK */}
         <ExternalLink href={liveLink} aria-label={`${title} live site`}>
-          <FiExternalLink className="text-2xl hover:text-textGreen" />
+          <FiExternalLink className="hover:text-textGreen text-2xl" />
         </ExternalLink>
       </div>
 
@@ -38,7 +38,7 @@ export default function MiniProjectCard({
       <div>
         {/* TITLE */}
         <ExternalLink href={liveLink}>
-          <h2 className="font-titleFont text-xl font-semibold tracking-wide group-hover:text-textGreen">
+          <h2 className="font-titleFont group-hover:text-textGreen text-xl font-semibold tracking-wide">
             {title}
           </h2>
         </ExternalLink>
@@ -48,7 +48,7 @@ export default function MiniProjectCard({
       </div>
 
       {/* TECH STACK */}
-      <ul className="flex flex-wrap items-center justify-between gap-2 text-xs text-textDark mdl:text-sm">
+      <ul className="text-textDark mdl:text-sm flex flex-wrap items-center justify-between gap-2 text-xs">
         {listItems.map((item) => (
           <li className="hover:text-textGreen" key={item}>
             {item}

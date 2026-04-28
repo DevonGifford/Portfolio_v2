@@ -36,5 +36,4 @@ export const siteConfig = {
     ogImage: "",
     url: "https://devongifford.vercel.app",
   },
-
 } as const;

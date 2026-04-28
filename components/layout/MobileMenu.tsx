@@ -24,7 +24,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
 
     const getFocusable = () =>
       Array.from(
-        panel.querySelectorAll<HTMLElement>('a[href], button, [tabindex]:not([tabindex="-1"])'),
+        panel.querySelectorAll<HTMLElement>('a[href], button, [tabindex]:not([tabindex="-1"])')
       );
 
     getFocusable()[0]?.focus();
@@ -72,7 +72,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
           onClose();
         }
       }}
-      className="right-end absolute top-0 flex h-screen w-full flex-col items-end bg-black bg-opacity-50 mdl:hidden"
+      className="right-end bg-opacity-50 mdl:hidden absolute top-0 flex h-screen w-full flex-col items-end bg-black"
     >
       <motion.div
         ref={panelRef}
@@ -81,14 +81,14 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
         aria-modal="true"
         aria-label="Navigation menu"
         {...slideIn({ axis: "x", duration: 0.1 })}
-        className="scrollbar-hide relative flex h-full w-[80%] flex-col items-center bg-cardColor px-4 py-16"
+        className="scrollbar-hide bg-cardColor relative flex h-full w-[80%] flex-col items-center px-4 py-16"
       >
         {/* Close Icon */}
         <button
           type="button"
           onClick={onClose}
           aria-label="Close menu"
-          className="absolute right-4 top-4 cursor-pointer text-3xl text-textGreen hover:text-textGreen/80"
+          className="text-textGreen hover:text-textGreen/80 absolute top-4 right-4 cursor-pointer text-3xl"
         >
           <MdOutlineClose />
         </button>
@@ -123,7 +123,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
           href={`mailto:${siteConfig.email}`}
           {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1.6 })}
         >
-          <p className="mt-4 w-72 pl-4 text-sm tracking-widest hover:text-textGreen">
+          <p className="hover:text-textGreen mt-4 w-72 pl-4 text-sm tracking-widest">
             {siteConfig.email}
           </p>
         </motion.a>

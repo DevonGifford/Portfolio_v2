@@ -17,23 +17,25 @@ export default function Header() {
   const hamburgerRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-bodyColor px-4 shadow-navbarShadow">
-      <div className="mx-auto flex max-w-container items-center justify-between py-4 font-titleFont">
+    <header className="bg-bodyColor shadow-navbarShadow sticky top-0 z-50 w-full px-4">
+      <div className="max-w-container font-titleFont mx-auto flex items-center justify-between py-4">
         {/* Logo */}
         <motion.div {...fadeIn()}>
           <a href="#home" className="hover:animate-spin" aria-label="Home">
             <Image
               src={logo}
               alt="logo"
-              className="mt-2 w-10 rounded-full hover:animate-spin sml:w-12"
+              className="sml:w-12 mt-2 w-10 rounded-full hover:animate-spin"
             />
           </a>
         </motion.div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-7 mdl:inline-flex">
+        <nav className="mdl:inline-flex hidden items-center gap-7">
           <NavLinkList
-            onClick={(e) => scrollToAnchor(e, { setActive: true, onNavigate: () => setShowMenu(false) })}
+            onClick={(e) =>
+              scrollToAnchor(e, { setActive: true, onNavigate: () => setShowMenu(false) })
+            }
           />
           <motion.a
             href={siteConfig.resumePath}
@@ -54,11 +56,11 @@ export default function Header() {
           aria-label="Open menu"
           aria-expanded={showMenu}
           aria-controls="mobile-menu"
-          className="group flex h-5 w-6 cursor-pointer flex-col items-center justify-between overflow-hidden text-4xl text-textGreen mdl:hidden"
+          className="group text-textGreen mdl:hidden flex h-5 w-6 cursor-pointer flex-col items-center justify-between overflow-hidden text-4xl"
         >
-          <span className="inline-flex h-[2px] w-full bg-textGreen transition-all duration-300 ease-in-out group-hover:translate-x-2" />
-          <span className="inline-flex h-[2px] w-full bg-textGreen transition-all duration-300 ease-in-out" />
-          <span className="inline-flex h-[2px] w-full bg-textGreen transition-all duration-300 ease-in-out group-hover:translate-x-3" />
+          <span className="bg-textGreen inline-flex h-[2px] w-full transition-all duration-300 ease-in-out group-hover:translate-x-2" />
+          <span className="bg-textGreen inline-flex h-[2px] w-full transition-all duration-300 ease-in-out" />
+          <span className="bg-textGreen inline-flex h-[2px] w-full transition-all duration-300 ease-in-out group-hover:translate-x-3" />
         </button>
 
         {/* Mobile Menu */}

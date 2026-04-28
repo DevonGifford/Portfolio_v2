@@ -13,6 +13,14 @@ const navItems = [
   { id: "contact", label: "Contact", index: "04." },
 ];
 
+/**
+ * Renders animated navigation links for desktop or mobile layouts.
+ *
+ * @param props - Navigation list options.
+ * @param props.onClick - Handler called when a navigation link is clicked.
+ * @param props.isMobile - Whether to render the mobile layout and animation direction.
+ * @returns An animated navigation link list.
+ */
 export default function NavLinkList({
   onClick,
   isMobile = false,
@@ -32,7 +40,7 @@ export default function NavLinkList({
           <Link
             href={`#${item.id}`}
             onClick={onClick}
-            className="nav-link flex cursor-pointer items-center gap-1 font-medium text-textDark duration-300 hover:text-textGreen"
+            className="nav-link text-textDark hover:text-textGreen flex cursor-pointer items-center gap-1 font-medium duration-300"
           >
             {item.index && <span className="text-textGreen">{item.index}</span>}
             {item.label}

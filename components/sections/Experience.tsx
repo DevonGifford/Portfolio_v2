@@ -13,23 +13,23 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="mx-auto flex min-h-screen max-w-containerSmall flex-col justify-center gap-5 py-96 lgl:py-32"
+      className="max-w-containerSmall lgl:py-32 mx-auto flex min-h-screen flex-col justify-center gap-5 py-96"
     >
       <SectionTitle titleName="Where I have worked" titleNumber="02" />
 
-      <div className="mt-5 flex h-fit w-full flex-col gap-4 sml:flex-row">
+      <div className="sml:flex-row mt-5 flex h-fit w-full flex-col gap-4">
         {/* Sidebar */}
-        <div className="flex h-fit w-fit sml:flex-col">
-          <ul className="max-sml:no-scrollbar flex whitespace-nowrap max-sml:w-6/12 max-sml:overflow-x-scroll sml:h-auto sml:flex-col">
+        <div className="sml:flex-col flex h-fit w-fit">
+          <ul className="max-sml:no-scrollbar max-sml:w-6/12 max-sml:overflow-x-scroll sml:h-auto sml:flex-col flex whitespace-nowrap">
             {jobEntries.map(({ key, label, sub }) => (
               <li
                 key={key}
                 onClick={() => setActiveTab(key)}
                 className={cn(
-                  "cursor-pointer border-l-2 bg-transparent px-8 py-3 text-xs font-medium duration-300 hover:bg-cardColor md:text-sm",
+                  "hover:bg-cardColor cursor-pointer border-l-2 bg-transparent px-8 py-3 text-xs font-medium duration-300 md:text-sm",
                   activeTab === key
                     ? "border-l-textGreen text-textGreen"
-                    : "border-l-hoverColor text-textDark",
+                    : "border-l-hoverColor text-textDark"
                 )}
               >
                 <strong>{label}</strong>

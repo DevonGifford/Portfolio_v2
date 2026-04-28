@@ -10,7 +10,7 @@ export function smoothScrollToSection(id: string) {
  */
 export function scrollToAnchor(
   e: React.MouseEvent<HTMLAnchorElement>,
-  opts?: { setActive?: boolean; onNavigate?: () => void },
+  opts?: { setActive?: boolean; onNavigate?: () => void }
 ) {
   e.preventDefault();
   smoothScrollToSection(e.currentTarget.href.split("#")[1]);

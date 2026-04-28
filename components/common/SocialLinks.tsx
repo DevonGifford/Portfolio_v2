@@ -10,7 +10,12 @@ const socials = {
   twitter: { Icon: TiSocialTwitter, label: "Twitter / X" },
 } as const;
 
-/** Social icons driven by `siteConfig.social`. The caller owns the flex container. */
+/**
+ * Renders social icons from the site config.
+ *
+ * @param props - Social link options.
+ * @returns Social link icons.
+ */
 export default function SocialLinks({ iconClassName }: { iconClassName?: string }) {
   return (
     <>

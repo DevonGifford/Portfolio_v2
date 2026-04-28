@@ -11,11 +11,10 @@ export default function Banner() {
   return (
     <section
       id="home"
-      className="mx-auto flex h-full min-h-screen max-w-contentContainer flex-col justify-center gap-4 mdl:px-10 mdl:py-10 lgl:gap-6 xl:px-4"
+      className="max-w-contentContainer mdl:px-10 mdl:py-10 lgl:gap-6 mx-auto flex h-full min-h-screen flex-col justify-center gap-4 xl:px-4"
     >
-      {/* Heading */}
       <motion.h3
-        className="font-codeFont text-xs tracking-wide text-textGreen md:text-lg"
+        className="font-codeFont text-textGreen text-xs tracking-wide md:text-lg"
         {...fadeIn({ delay: 1 })}
       >
         Hello World, my name is
@@ -23,18 +22,17 @@ export default function Banner() {
 
       <motion.h1
         {...fadeIn({ delay: 1.1 })}
-        className="flex flex-col font-titleFont text-3xl font-semibold md:text-4xl lgl:text-6xl"
+        className="font-titleFont lgl:text-6xl flex flex-col text-3xl font-semibold md:text-4xl"
       >
         {siteConfig.name}.
-        <span className="mt-2 text-lg text-textDark md:text-2xl lg:text-3xl lgl:mt-4">
+        <span className="text-textDark lgl:mt-4 mt-2 text-lg md:text-2xl lg:text-3xl">
           <Typewriter words={siteConfig.taglines} />
         </span>
       </motion.h1>
 
-      {/* Bio Text */}
       <motion.div
         {...fadeIn({ delay: 1.2 })}
-        className="flex flex-col gap-1.5 text-sm font-medium text-textDark sml:text-base"
+        className="text-textDark sml:text-base flex flex-col gap-1.5 text-sm font-medium"
       >
         <p>
           Self taught software engineer with a strong focus on frontend development. I specialize in
@@ -47,9 +45,9 @@ export default function Banner() {
         </p>
         <p className="mt-2 italic">Fully committed to the philosophy of lifelong learning.</p>
         <a href="#projects" onClick={scrollToAnchor} className="mt-2">
-          <span className="group relative inline-flex h-7 cursor-pointer overflow-x-hidden text-textGreen">
+          <span className="group text-textGreen relative inline-flex h-7 cursor-pointer overflow-x-hidden">
             Capstone Projects
-            <span className="absolute bottom-1 left-0 h-px w-full translate-x-[110%] bg-textGreen transition-transform duration-500 group-hover:translate-x-0" />
+            <span className="bg-textGreen absolute bottom-1 left-0 h-px w-full translate-x-[110%] transition-transform duration-500 group-hover:translate-x-0" />
           </span>
         </a>
       </motion.div>
@@ -60,7 +58,7 @@ export default function Banner() {
           href={siteConfig.resumePath}
           download
           className={outlineButton(
-            "inline-flex h-10 w-40 items-center justify-center font-titleFont text-xs tracking-wide sml:h-14 sml:w-52 sml:text-sm",
+            "font-titleFont sml:h-14 sml:w-52 sml:text-sm inline-flex h-10 w-40 items-center justify-center text-xs tracking-wide"
           )}
         >
           Download my latest CV

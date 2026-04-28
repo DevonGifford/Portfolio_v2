@@ -13,7 +13,7 @@ export default function Projects() {
 
   return (
     <section id="projects">
-      <div className="mx-auto flex min-h-fit max-w-containerSmall flex-col gap-8 py-10 lgl:py-32">
+      <div className="max-w-containerSmall lgl:py-32 mx-auto flex min-h-fit flex-col gap-8 py-10">
         {/* Section for Capstone Projects */}
         <SectionTitle titleName="Capstone Projects" titleNumber="03" />
         <div className="ml-auto flex w-full flex-col justify-items-end gap-14">
@@ -24,14 +24,14 @@ export default function Projects() {
       </div>
 
       {/* Section for Mini Projects */}
-      <div className="mx-auto max-w-contentContainer px-4 py-12 pb-24">
+      <div className="max-w-contentContainer mx-auto px-4 py-12 pb-24">
         <div className="flex w-full flex-col items-center">
-          <h2 className="font-titleFont text-2xl font-semibold sml:text-3xl">
+          <h2 className="font-titleFont sml:text-3xl text-2xl font-semibold">
             Other Noteworthy Projects
           </h2>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-6 lgl:px-10">
+        <div className="lgl:px-10 mt-10 flex flex-wrap items-center justify-center gap-6">
           {miniProjectsEntries
             .slice(0, showMore ? undefined : 6)
             .map((project: MiniProjectEntry) => (

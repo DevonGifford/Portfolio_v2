@@ -11,6 +11,12 @@ interface SocialIconProps {
   externalClassName?: string;
 }
 
+/**
+ * Renders a themed social link icon.
+ *
+ * @param props - Social icon options.
+ * @returns An external social link icon.
+ */
 export default function SocialIcon({
   href,
   children,
@@ -24,7 +30,7 @@ export default function SocialIcon({
         className={cn(
           "inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-xl transition-all duration-300 hover:-translate-y-2",
           hoverColor,
-          externalClassName,
+          externalClassName
         )}
       >
         {children}

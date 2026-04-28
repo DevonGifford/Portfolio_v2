@@ -1,8 +1,10 @@
 import { type ComponentProps } from "react";
 
 /**
- * Anchor that opens in a new tab with safe `rel` defaults (`noopener
- * noreferrer`). All `<a>` props pass through; `target`/`rel` are overridable.
+ * Renders an external anchor with safe new-tab defaults.
+ *
+ * @param props - Anchor element props.
+ * @returns An anchor element.
  */
 export default function ExternalLink({
   target = "_blank",
