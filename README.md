@@ -1,17 +1,19 @@
 <div align="center">
   <!-- cover logo -->
   <p align='center'>
-    <img src="public/assets/Portfolio-Demo-Logo.webp" alt="Demo" title="DemoImage" width="150" height="150">
+    <img src="public/assets/Portfolio-Demo-Logo.webp" alt="Demo" title="DemoImage" height="250">
   </p>
-
-  <!-- Tech Used in this Project -->
+  <!-- sub headline -->
+  <h2>
+     My current portfolio website.
+  </h2>
+  <!-- tech used in this project -->
   <p align='center'>
     <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=react,ts,tailwind,vitest,nextjs,vercel,github" />
+        <img src="https://skillicons.dev/icons?i=ts,react,tailwind,vitest,nextjs,vercel,github" />
     </a>
   </p>
-
-  <!-- Demo Link -->
+  <!-- demo link -->
   <h5>
       <a href='https://devongifford.vercel.app/', target='_blank'>
           live demo ↗
@@ -21,7 +23,7 @@
 
 <br>
 
-### About This Project 🚀
+### About This Project
 
 ---
 
@@ -29,15 +31,16 @@ This portfolio was inspired by the [v4 version](https://v4.brittanychiang.com/) 
 
 The implementation has been modernized throughout, with content separated from components and validated with **Zod** at build time. **Motion** handles animation, while **Vitest** covers a few focused sanity suites, with performance and accessibility tuned to 100 Lighthouse scores across the board.
 
-> Fork it freely - the [quickstart guide](QUICKSTART.md) covers the main customization points in _5 minutes_ or less.
-> If you found this repo useful, a ⭐ is always appreciated!
-> <br/>
-
 <br/>
 <br/>
 
-### Acknowledgements 🙏
+### Acknowledgements
 
 ---
 
 Built from the ground up, with design inspiration from [Brittany Chiang](https://brittanychiang.com). Full credit for the original design concept goes to her. The [MIT License](LICENSE) covers this code, not the original design concept.
+
+> [!TIP]
+> **Want to steal this? Go for it.** <br/>
+> The [quickstart guide](QUICKSTART.md) will get you forking, customizing and deploying in about 5 minutes. <br/> <br/>
+> _If you found it useful, a ⭐ is always appreciated._ <br/>
