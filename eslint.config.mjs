@@ -78,7 +78,15 @@ export default [
       "@next/next/no-html-link-for-pages": "error",
     },
   },
+  // Tests run under Vitest's globals (`globals: true` in vitest.config.mts), so
+  // `describe`/`it`/`expect`/`vi` are ambient rather than imported.
   {
-    ignores: [".next/*"],
+    files: ["tests/**/*.{ts,tsx}"],
+    languageOptions: {
+      globals: { ...globals.vitest },
+    },
+  },
+  {
+    ignores: [".next/*", "coverage/*"],
   },
 ];

@@ -46,7 +46,7 @@ function SkillIcon({
   );
 }
 
-const skillGroups = [
+export const skillGroups = [
   {
     title: "Hard Skills",
     skills: [
