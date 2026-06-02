@@ -78,6 +78,28 @@ export default [
       "@next/next/no-html-link-for-pages": "error",
     },
   },
+  // The content seam: `content/` holds raw, unparsed data. Only `lib/content/`
+  // may read it; everything else consumes the validated exports. Scoping the
+  // rule to app/ and components/ exempts lib/content itself and the tests,
+  // which need the raw data to assert the parser rejects it.
+  {
+    files: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: ["@/content", "@/content/*"],
+              message:
+                "Import validated content from `@/lib/content` — `content/` is raw, unparsed data.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+
   // Tests run under Vitest's globals (`globals: true` in vitest.config.mts), so
   // `describe`/`it`/`expect`/`vi` are ambient rather than imported.
   {

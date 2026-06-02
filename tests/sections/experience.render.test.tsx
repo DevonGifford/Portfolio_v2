@@ -2,7 +2,7 @@ import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import Experience from "@/components/sections/Experience";
-import jobEntries from "@/components/sections/experiences/jobEntries";
+import { experience } from "@/lib/content";
 
 /**
  * Sidebar tabs, in data order.
@@ -21,11 +21,11 @@ function tabs() {
  */
 describe("Experience section", () => {
   it("renders a sidebar tab for every job entry", () => {
-    render(<Experience />);
+    render(<Experience experience={experience} />);
 
-    expect(tabs()).toHaveLength(jobEntries.length);
+    expect(tabs()).toHaveLength(experience.length);
 
-    jobEntries.forEach((entry, index) => {
+    experience.forEach((entry, index) => {
       expect(tabs()[index]).toHaveTextContent(entry.label);
 
       if (entry.sub) expect(tabs()[index]).toHaveTextContent(entry.sub);
@@ -33,8 +33,8 @@ describe("Experience section", () => {
   });
 
   it("renders the first entry's details by default", () => {
-    render(<Experience />);
-    const first = jobEntries[0].componentProps;
+    render(<Experience experience={experience} />);
+    const first = experience[0].componentProps;
 
     expect(screen.getByText(first.dates)).toBeInTheDocument();
     expect(screen.getByText(first.intro)).toBeInTheDocument();
@@ -46,9 +46,9 @@ describe("Experience section", () => {
 
   it("swaps the details when another tab is clicked", async () => {
     const user = userEvent.setup();
-    render(<Experience />);
+    render(<Experience experience={experience} />);
 
-    const target = jobEntries.at(-1)!;
+    const target = experience.at(-1)!;
     await user.click(tabs().at(-1)!);
 
     expect(screen.getByText(target.componentProps.dates)).toBeInTheDocument();
@@ -57,9 +57,9 @@ describe("Experience section", () => {
 
   it("renders every bullet of every entry when its tab is selected", async () => {
     const user = userEvent.setup();
-    render(<Experience />);
+    render(<Experience experience={experience} />);
 
-    for (const [index, entry] of jobEntries.entries()) {
+    for (const [index, entry] of experience.entries()) {
       await user.click(tabs()[index]);
 
       for (const bullet of entry.componentProps.bullets) {

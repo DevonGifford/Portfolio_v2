@@ -1,6 +1,21 @@
-import { ReactNode } from "react";
-// import { BsApple } from "react-icons/bs";
+/**
+ * Work history, newest first.
+ *
+ * Edit this file to change what the Experience section says. Shape is enforced
+ * two ways: `satisfies` checks it here in the editor, and `lib/content/index.ts`
+ * parses it at build time.
+ */
 
+// import { BsApple } from "react-icons/bs";
+import type { JobEntry } from "@/lib/content/schema";
+
+/**
+ * The `key` of every entry below.
+ *
+ * Declared by hand rather than derived so a typo in a `key` is a compile error,
+ * and so `Experience.tsx` can type its default tab. Add a key here when you add
+ * an entry.
+ */
 export type JobTabKey =
   | "tuvLead"
   | "tuvFullstack"
@@ -10,24 +25,10 @@ export type JobTabKey =
   | "cubeStartup"
   | "freelance";
 
-export type JobEntry = {
-  key: JobTabKey;
-  label: string;
-  sub?: string;
-  componentProps: {
-    title: string;
-    company: string;
-    companyIcon?: ReactNode;
-    dates: string;
-    intro: string;
-    bullets: {
-      heading: string;
-      content: string;
-    }[];
-  };
-};
+/** The shape this file declares — `key` narrowed to the union above. */
+export type JobEntries = (JobEntry & { key: JobTabKey })[];
 
-const jobEntries: JobEntry[] = [
+export const experience = [
   {
     key: "tuvLead",
     label: "TÜV Rheinland",
@@ -289,6 +290,4 @@ const jobEntries: JobEntry[] = [
       ],
     },
   },
-];
-
-export default jobEntries;
+] satisfies JobEntries;

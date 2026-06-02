@@ -2,7 +2,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 import { skillGroups } from "@/components/sections/About";
-import jobEntries from "@/components/sections/experiences/jobEntries";
+import { experience } from "@/lib/content";
 import capstoneEntries from "@/components/sections/projects/capstone-projects/capstoneEntries";
 import miniProjectsEntries from "@/components/sections/projects/mini-projects/miniProjectEntries";
 import { siteConfig } from "@/site.config";
@@ -19,14 +19,14 @@ function isHttpUrl(value: string) {
 
 describe("content is not accidentally empty", () => {
   it("has job entries, capstone projects, mini projects and skills", () => {
-    expect(jobEntries.length).toBeGreaterThan(0);
+    expect(experience.length).toBeGreaterThan(0);
     expect(capstoneEntries.length).toBeGreaterThan(0);
     expect(miniProjectsEntries.length).toBeGreaterThan(0);
     expect(skillGroups.length).toBeGreaterThan(0);
   });
 
   it("gives every job entry a title, company, dates, intro and at least one bullet", () => {
-    for (const { key, componentProps } of jobEntries) {
+    for (const { key, componentProps } of experience) {
       expect(componentProps.title, key).not.toBe("");
       expect(componentProps.company, key).not.toBe("");
       expect(componentProps.dates, key).not.toBe("");
@@ -38,7 +38,7 @@ describe("content is not accidentally empty", () => {
 
 describe("entries are uniquely identifiable", () => {
   it("has unique job entry keys", () => {
-    const keys = jobEntries.map((entry) => entry.key);
+    const keys = experience.map((entry) => entry.key);
 
     expect(new Set(keys).size).toBe(keys.length);
   });

@@ -9,6 +9,8 @@ import RightSide from "@/components/layout/RightSide";
 
 import Projects from "@/components/sections/Projects";
 
+import { experience } from "@/lib/content";
+
 export default function HomePage() {
   return (
     <main className="bg-bodyColor font-bodyFont text-textLight scrollbar-track-textDark/5 scrollbar-thumb-textDark/70 h-screen w-full scrollbar-thin overflow-x-hidden overflow-y-scroll">
@@ -20,7 +22,7 @@ export default function HomePage() {
         <div className="mx-auto h-[88vh] w-full p-4">
           <Banner />
           <About />
-          <Experience />
+          <Experience experience={experience} />
           <Projects />
           <Contact />
           <Footer />

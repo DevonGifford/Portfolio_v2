@@ -4,11 +4,15 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import SectionTitle from "../common/SectionTitle";
 import ExperienceEntry from "./experiences/ExperienceEntry";
-import jobEntries, { JobTabKey } from "./experiences/jobEntries";
+import type { JobEntries, JobTabKey } from "@/lib/content";
 
-export default function Experience() {
+/**
+ * @param props.experience - Parsed work history, supplied by the server page so
+ *   the content layer (and zod with it) never enters the client bundle.
+ */
+export default function Experience({ experience }: { experience: JobEntries }) {
   const [activeTab, setActiveTab] = useState<JobTabKey>("tuvLead");
-  const activeEntry = jobEntries.find((entry) => entry.key === activeTab)!;
+  const activeEntry = experience.find((entry) => entry.key === activeTab)!;
 
   return (
     <section
@@ -21,7 +25,7 @@ export default function Experience() {
         {/* Sidebar */}
         <div className="sml:flex-col flex h-fit w-fit">
           <ul className="max-sml:no-scrollbar max-sml:w-6/12 max-sml:overflow-x-scroll sml:h-auto sml:flex-col flex whitespace-nowrap">
-            {jobEntries.map(({ key, label, sub }) => (
+            {experience.map(({ key, label, sub }) => (
               <li
                 key={key}
                 onClick={() => setActiveTab(key)}
