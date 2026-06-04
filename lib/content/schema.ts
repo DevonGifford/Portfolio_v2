@@ -88,4 +88,100 @@ export type JobEntry = z.infer<typeof jobEntrySchema>;
 /** The full work history, newest first. */
 export const experienceSchema = z.array(jobEntrySchema).min(1, "needs at least one entry");
 
+/* -------------------------------------------------------------------------- */
+/*                                  Projects                                   */
+/* -------------------------------------------------------------------------- */
+
+/** Which side the screenshot sits on. Alternate them down the page. */
+export const projectLayoutSchema = z.enum(["default", "reversed"]);
+
+/** A featured project, rendered as a large card with a screenshot. */
+export const capstoneEntrySchema = z.object({
+  /** Project name. Doubles as the React key, so it must be unique. */
+  title: text,
+  /** One-paragraph pitch shown over the screenshot. */
+  description: text,
+  /** The desktop screenshot. */
+  image: z.object({
+    /** Statically imported image. */
+    src: staticImage,
+    /** Alt text. Describe the screenshot, not the project. */
+    alt: text,
+    /** Intrinsic width in pixels. */
+    width: z.number().int().positive(),
+    /** Intrinsic height in pixels. */
+    height: z.number().int().positive(),
+  }),
+  /** Public path to the smaller image used as the mobile background. */
+  imageUrl: text,
+  /** Repository URL. */
+  gitLink: httpUrl,
+  /** Optional demo video URL. */
+  youtubeLink: httpUrl.optional(),
+  /** Deployed site URL. */
+  liveLink: httpUrl,
+  /** Technologies listed under the card. */
+  techStackList: z.array(text).min(1),
+  /** Defaults to `"default"` at the render site when omitted. */
+  layout: projectLayoutSchema.optional(),
+});
+
+/** A smaller project, rendered as a compact card with no screenshot. */
+export const miniProjectEntrySchema = z.object({
+  /** Project name. Doubles as the React key, so it must be unique. */
+  title: text,
+  /** Two-or-three-sentence summary. */
+  description: text,
+  /** Repository URL. */
+  gitLink: httpUrl,
+  /** Deployed site URL. */
+  liveLink: httpUrl,
+  /** Technologies listed under the card. */
+  listItems: z.array(text).min(1),
+});
+
+export type ProjectLayout = z.infer<typeof projectLayoutSchema>;
+export type CapstoneEntry = z.infer<typeof capstoneEntrySchema>;
+export type MiniProjectEntry = z.infer<typeof miniProjectEntrySchema>;
+
+/** Featured projects, in display order. */
+export const capstoneProjectsSchema = z
+  .array(capstoneEntrySchema)
+  .min(1, "needs at least one project");
+
+/** Smaller projects, in display order. */
+export const miniProjectsSchema = z
+  .array(miniProjectEntrySchema)
+  .min(1, "needs at least one project");
+
+/* -------------------------------------------------------------------------- */
+/*                                   Skills                                    */
+/* -------------------------------------------------------------------------- */
+
+/** One technology icon. */
+export const skillSchema = z.object({
+  /** Statically imported logo. */
+  src: staticImage,
+  /** Alt text — the technology name. */
+  alt: text,
+  /** Tooltip text, shown on hover. */
+  title: text,
+  /** Optional per-icon sizing override, when a logo's aspect ratio needs it. */
+  className: text.optional(),
+});
+
+/** A titled row of skill icons. */
+export const skillGroupSchema = z.object({
+  /** Heading above the row, e.g. "Hard Skills". Doubles as the React key. */
+  title: text,
+  /** The icons in this row, in display order. */
+  skills: z.array(skillSchema).min(1),
+});
+
+export type Skill = z.infer<typeof skillSchema>;
+export type SkillGroup = z.infer<typeof skillGroupSchema>;
+
+/** All skill groups, in display order. */
+export const skillGroupsSchema = z.array(skillGroupSchema).min(1, "needs at least one group");
+
 export { httpUrl, text };

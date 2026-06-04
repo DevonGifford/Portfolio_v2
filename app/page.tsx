@@ -9,7 +9,7 @@ import RightSide from "@/components/layout/RightSide";
 
 import Projects from "@/components/sections/Projects";
 
-import { experience } from "@/lib/content";
+import { capstoneProjects, experience, miniProjects, skillGroups } from "@/lib/content";
 
 export default function HomePage() {
   return (
@@ -21,9 +21,9 @@ export default function HomePage() {
         </div>
         <div className="mx-auto h-[88vh] w-full p-4">
           <Banner />
-          <About />
+          <About skillGroups={skillGroups} />
           <Experience experience={experience} />
-          <Projects />
+          <Projects capstoneProjects={capstoneProjects} miniProjects={miniProjects} />
           <Contact />
           <Footer />
         </div>

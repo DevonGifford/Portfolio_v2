@@ -1,10 +1,7 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
 
-import { skillGroups } from "@/components/sections/About";
-import { experience } from "@/lib/content";
-import capstoneEntries from "@/components/sections/projects/capstone-projects/capstoneEntries";
-import miniProjectsEntries from "@/components/sections/projects/mini-projects/miniProjectEntries";
+import { capstoneProjects, experience, miniProjects, skillGroups } from "@/lib/content";
 import { siteConfig } from "@/site.config";
 
 /** Source-agnostic guards: these hold whatever the content happens to say. */
@@ -20,8 +17,8 @@ function isHttpUrl(value: string) {
 describe("content is not accidentally empty", () => {
   it("has job entries, capstone projects, mini projects and skills", () => {
     expect(experience.length).toBeGreaterThan(0);
-    expect(capstoneEntries.length).toBeGreaterThan(0);
-    expect(miniProjectsEntries.length).toBeGreaterThan(0);
+    expect(capstoneProjects.length).toBeGreaterThan(0);
+    expect(miniProjects.length).toBeGreaterThan(0);
     expect(skillGroups.length).toBeGreaterThan(0);
   });
 
@@ -44,8 +41,8 @@ describe("entries are uniquely identifiable", () => {
   });
 
   it("has unique capstone and mini project titles", () => {
-    const capstoneTitles = capstoneEntries.map((project) => project.title);
-    const miniTitles = miniProjectsEntries.map((project) => project.title);
+    const capstoneTitles = capstoneProjects.map((project) => project.title);
+    const miniTitles = miniProjects.map((project) => project.title);
 
     expect(new Set(capstoneTitles).size).toBe(capstoneTitles.length);
     expect(new Set(miniTitles).size).toBe(miniTitles.length);
@@ -54,14 +51,14 @@ describe("entries are uniquely identifiable", () => {
 
 describe("every external link is a valid http(s) URL", () => {
   it("covers capstone repo and live links", () => {
-    for (const project of capstoneEntries) {
+    for (const project of capstoneProjects) {
       expect(isHttpUrl(project.gitLink), `${project.title} gitLink`).toBe(true);
       expect(isHttpUrl(project.liveLink), `${project.title} liveLink`).toBe(true);
     }
   });
 
   it("covers mini project repo and live links", () => {
-    for (const project of miniProjectsEntries) {
+    for (const project of miniProjects) {
       expect(isHttpUrl(project.gitLink), `${project.title} gitLink`).toBe(true);
       expect(isHttpUrl(project.liveLink), `${project.title} liveLink`).toBe(true);
     }

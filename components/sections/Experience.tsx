@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import SectionTitle from "../common/SectionTitle";
-import ExperienceEntry from "./experiences/ExperienceEntry";
+import ExperienceEntry from "./ExperienceEntry";
 import type { JobEntries, JobTabKey } from "@/lib/content";
 
 /**

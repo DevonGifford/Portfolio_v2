@@ -1,7 +1,14 @@
 import { z } from "zod";
 
 import { assertUnique, parseContent } from "@/lib/content/parseContent";
-import { experienceSchema, jobEntrySchema } from "@/lib/content/schema";
+import {
+  capstoneProjectsSchema,
+  experienceSchema,
+  jobEntrySchema,
+  miniProjectsSchema,
+  skillGroupsSchema,
+  skillSchema,
+} from "@/lib/content/schema";
 
 /** A valid entry to mutate per-case, so each test states only what it breaks. */
 function validEntry() {
@@ -104,5 +111,40 @@ describe("the real content parses", () => {
 
     expect(() => experienceSchema.parse(experience)).not.toThrow();
     expect(experience.every((entry) => jobEntrySchema.safeParse(entry).success)).toBe(true);
+  });
+
+  it("validates every entry in content/projects.ts", async () => {
+    const { capstoneProjects, miniProjects } = await import("@/content/projects");
+
+    expect(() => capstoneProjectsSchema.parse(capstoneProjects)).not.toThrow();
+    expect(() => miniProjectsSchema.parse(miniProjects)).not.toThrow();
+  });
+
+  it("validates every group in content/skills.ts", async () => {
+    const { skillGroups } = await import("@/content/skills");
+
+    expect(() => skillGroupsSchema.parse(skillGroups)).not.toThrow();
+  });
+});
+
+describe("the image guard", () => {
+  it("rejects a string path where a static import is required", () => {
+    expect(
+      skillSchema.safeParse({ src: "/assets/react.png", alt: "React", title: "React" }).success
+    ).toBe(false);
+  });
+
+  it("accepts a StaticImageData-shaped object", () => {
+    const src = { src: "/assets/react.png", width: 100, height: 100 };
+
+    expect(skillSchema.safeParse({ src, alt: "React", title: "React" }).success).toBe(true);
+  });
+
+  it("says what a bad image should have been", () => {
+    expect(() =>
+      parseContent("skills", skillGroupsSchema, [
+        { title: "Hard Skills", skills: [{ src: "/nope.png", alt: "A", title: "A" }] },
+      ])
+    ).toThrow(/must be a static image import/);
   });
 });

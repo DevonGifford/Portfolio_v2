@@ -1,10 +1,11 @@
 import { render, screen } from "@testing-library/react";
 
-import About, { skillGroups } from "@/components/sections/About";
+import About from "@/components/sections/About";
+import { skillGroups } from "@/lib/content";
 
 describe("About section", () => {
   it("renders every skill group heading", () => {
-    render(<About />);
+    render(<About skillGroups={skillGroups} />);
 
     for (const group of skillGroups) {
       expect(screen.getByText(`${group.title}:`)).toBeInTheDocument();
@@ -12,7 +13,7 @@ describe("About section", () => {
   });
 
   it("renders an icon for every skill", () => {
-    render(<About />);
+    render(<About skillGroups={skillGroups} />);
 
     for (const group of skillGroups) {
       for (const skill of group.skills) {
@@ -22,7 +23,7 @@ describe("About section", () => {
   });
 
   it("renders no more icons than the data declares", () => {
-    render(<About />);
+    render(<About skillGroups={skillGroups} />);
 
     const skillCount = skillGroups.reduce((total, group) => total + group.skills.length, 0);
     const icons = screen.getAllByRole("listitem");
@@ -31,7 +32,7 @@ describe("About section", () => {
   });
 
   it("renders the profile image with descriptive alt text", () => {
-    render(<About />);
+    render(<About skillGroups={skillGroups} />);
 
     const profiles = screen
       .getAllByRole("img")

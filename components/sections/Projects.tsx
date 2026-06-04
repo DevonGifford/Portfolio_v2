@@ -3,12 +3,21 @@
 import { useState } from "react";
 import SectionTitle from "../common/SectionTitle";
 import OutlineButton from "../common/OutlineButton";
-import capstoneEntries from "./projects/capstone-projects/capstoneEntries";
-import CapstoneCard from "./projects/capstone-projects/CapstoneCard";
-import miniProjectsEntries, { MiniProjectEntry } from "./projects/mini-projects/miniProjectEntries";
-import MiniCard from "./projects/mini-projects/MiniCard";
+import CapstoneCard from "./CapstoneCard";
+import MiniCard from "./MiniCard";
+import type { CapstoneEntry, MiniProjectEntry } from "@/lib/content";
 
-export default function Projects() {
+/**
+ * @param props.capstoneProjects - Parsed featured projects.
+ * @param props.miniProjects - Parsed smaller projects.
+ */
+export default function Projects({
+  capstoneProjects,
+  miniProjects,
+}: {
+  capstoneProjects: CapstoneEntry[];
+  miniProjects: MiniProjectEntry[];
+}) {
   const [showMore, setShowMore] = useState(false); // For toggling "Show More" in Mini Projects
 
   return (
@@ -17,7 +26,7 @@ export default function Projects() {
         {/* Section for Capstone Projects */}
         <SectionTitle titleName="Capstone Projects" titleNumber="03" />
         <div className="ml-auto flex w-full flex-col justify-items-end gap-14">
-          {capstoneEntries.map((project) => (
+          {capstoneProjects.map((project) => (
             <CapstoneCard key={project.title} {...project} />
           ))}
         </div>
@@ -32,11 +41,9 @@ export default function Projects() {
         </div>
 
         <div className="lgl:px-10 mt-10 flex flex-wrap items-center justify-center gap-6">
-          {miniProjectsEntries
-            .slice(0, showMore ? undefined : 6)
-            .map((project: MiniProjectEntry) => (
-              <MiniCard key={project.title} {...project} />
-            ))}
+          {miniProjects.slice(0, showMore ? undefined : 6).map((project: MiniProjectEntry) => (
+            <MiniCard key={project.title} {...project} />
+          ))}
         </div>
 
         <div className="mt-12 flex items-center justify-center">
