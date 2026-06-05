@@ -37,4 +37,6 @@ next-env.d.ts
 zSecret.md
 CLAUDE.md
 
+# Private planning notes stay local; the forker-facing guide is tracked.
 docs/*
+!docs/QUICKSTART.md

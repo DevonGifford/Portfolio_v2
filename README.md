@@ -34,7 +34,17 @@
 
 This portfolio was inspired by the [v4 version of Brittany Chiang’s site](https://v4.brittanychiang.com/), which remains a standout in developer portfolio design. While her original was built with **Gatsby**, I approached the rebuild using a modern stack — **Next.js**, **TypeScript**, and **Tailwind CSS** — tailored to my own preferences.
 
-Along the way, I introduced a number of refinements, both in implementation and user experience, while staying true to the spirit of the original design. The project has recently been upgraded to **Next.js 15** and **React 19**.
+Along the way, I introduced a number of refinements, both in implementation and user experience, while staying true to the spirit of the original design. The project has recently been upgraded to **Next.js 16** and **React 19**.
+
+<br/>
+
+### 🛠️ Make it yours
+
+---
+
+Fork it, change two files, deploy. Your identity lives in `site.config.ts` and your content in `content/` — you should never need to open a component.
+
+**→ [Quickstart guide](docs/QUICKSTART.md)**
 
 <br/>
 
