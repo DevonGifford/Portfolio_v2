@@ -9,7 +9,15 @@ import RightSide from "@/components/layout/RightSide";
 
 import Projects from "@/components/sections/Projects";
 
-import { capstoneProjects, experience, miniProjects, skillGroups } from "@/lib/content";
+import {
+  about,
+  banner,
+  capstoneProjects,
+  contact,
+  experience,
+  miniProjects,
+  skillGroups,
+} from "@/lib/content";
 
 export default function HomePage() {
   return (
@@ -20,11 +28,11 @@ export default function HomePage() {
           <LeftSide />
         </div>
         <div className="mx-auto h-[88vh] w-full p-4">
-          <Banner />
-          <About skillGroups={skillGroups} />
+          <Banner banner={banner} />
+          <About about={about} skillGroups={skillGroups} />
           <Experience experience={experience} />
           <Projects capstoneProjects={capstoneProjects} miniProjects={miniProjects} />
-          <Contact />
+          <Contact contact={contact} />
           <Footer />
         </div>
         <div className="fixed right-0 bottom-0 hidden h-full w-32 xl:inline-flex">

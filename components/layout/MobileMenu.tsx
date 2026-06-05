@@ -107,7 +107,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
             {...fadeIn({ duration: DURATION.fast, delay: 0.8, ease: "easeIn" })}
             className={outlineButton("h-10 w-32 text-[13px]")}
           >
-            Resume
+            {siteConfig.labels.resume}
           </motion.button>
         </ExternalLink>
 

@@ -44,7 +44,7 @@ export default function Header() {
             {...slideIn({ offset: -10, delay: 0.6 })}
             className={outlineButton("px-4 py-2 text-[13px]")}
           >
-            Resume
+            {siteConfig.labels.resume}
           </motion.a>
         </nav>
 

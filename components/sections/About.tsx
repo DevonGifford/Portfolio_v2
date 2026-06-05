@@ -1,10 +1,12 @@
 "use client";
 
+import { Fragment } from "react";
 import Image, { type StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
 import { profileImgCircle } from "@/public/assets";
 import SectionTitle from "../common/SectionTitle";
-import type { SkillGroup } from "@/lib/content";
+import RichText from "../common/RichText";
+import type { About as AboutContent, SkillGroup } from "@/lib/content";
 
 function SkillIcon({
   src,
@@ -33,14 +35,24 @@ function SkillIcon({
 /**
  * @param props.skillGroups - Parsed technology icons.
  */
-export default function About({ skillGroups }: { skillGroups: SkillGroup[] }) {
+/**
+ * @param props.about - Parsed bio copy.
+ * @param props.skillGroups - Parsed technology icons.
+ */
+export default function About({
+  about,
+  skillGroups,
+}: {
+  about: AboutContent;
+  skillGroups: SkillGroup[];
+}) {
   return (
     <section
       id="about"
       className="max-w-containerSmall mdl:px-10 lgl:py-32 mx-auto flex h-screen flex-col justify-center gap-8 py-96"
     >
       <div className="sml:pt-5 flex items-center gap-10 pt-20">
-        <SectionTitle titleNumber="01" titleName="About me" />
+        <SectionTitle titleNumber={about.title.number} titleName={about.title.name} />
       </div>
 
       {/* CONTENT CONTAINER - GRID */}
@@ -59,24 +71,14 @@ export default function About({ skillGroups }: { skillGroups: SkillGroup[] }) {
               </div>
             </div>
             <p>
-              Hello there, I&apos;m a <span className="text-textGreen">fullstack developer</span>.
-              Originally from South Africa, holding British citizenship and now currently based in
-              Madrid, Spain.
-              <br />
-              <br />I have <span className="text-textGreen">7+ years </span> of experience in the
-              tech industry, including stints at various startups. I specialize in developing
-              responsive and accessible web applications using{" "}
-              <span className="text-textGreen">JavaScript & React</span>.
-              <br />
-              <br />
-              Recently, I had the incredible opportunity to join a{" "}
-              <span className="text-textGreen">leading FAANG</span> company as a Quality Engineer,
-              and later advanced to the role of Team Lead. Immersing myself in big-tech best
-              practices, with a specific focus on{" "}
-              <span className="text-textGreen">E2E & integration testing.</span>
-              <br />
-              <br />
-              <em>Currently leading a team and project rewriting a large-scale legacy system.</em>
+              {about.paragraphs.map((paragraph, index) => (
+                <Fragment key={index}>
+                  <RichText paragraph={paragraph} />
+                  <br />
+                  <br />
+                </Fragment>
+              ))}
+              <em>{about.closing}</em>
               <br />
               <br />
             </p>
@@ -89,7 +91,7 @@ export default function About({ skillGroups }: { skillGroups: SkillGroup[] }) {
             <Image
               className="fill border-textGreen lgl:h-80 lgl:w-80 absolute z-30 h-52 w-52 rounded-full border-2 object-cover"
               src={profileImgCircle}
-              alt="Devon Gifford - Profile picture"
+              alt={about.portraitAlt}
             />
             <div className="bg-textGreen/20 mdl:inline-block lgl:h-80 lgl:w-80 absolute top-0 left-0 z-30 hidden h-52 w-52 rounded-full duration-300 group-hover:bg-transparent" />
             <div className="border-textGreen mdl:inline-block lgl:h-80 lgl:w-80 absolute top-6 left-6 z-10 hidden h-52 w-52 rounded-full border-2 transition-transform duration-100 group-hover:-translate-x-6 group-hover:-translate-y-6" />

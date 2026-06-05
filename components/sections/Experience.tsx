@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import SectionTitle from "../common/SectionTitle";
 import ExperienceEntry from "./ExperienceEntry";
 import type { JobEntries, JobTabKey } from "@/lib/content";
+import { siteConfig } from "@/site.config";
 
 /**
  * @param props.experience - Parsed work history, supplied by the server page so
@@ -19,7 +20,7 @@ export default function Experience({ experience }: { experience: JobEntries }) {
       id="experience"
       className="max-w-containerSmall lgl:py-32 mx-auto flex min-h-screen flex-col justify-center gap-5 py-96"
     >
-      <SectionTitle titleName="Where I have worked" titleNumber="02" />
+      <SectionTitle titleName={siteConfig.labels.experienceHeading} titleNumber="02" />
 
       <div className="sml:flex-row mt-5 flex h-fit w-full flex-col gap-4">
         {/* Sidebar */}

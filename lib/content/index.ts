@@ -15,15 +15,23 @@
  * boundary when its schema lands.
  */
 
+import { about as rawAbout } from "@/content/about";
+import { banner as rawBanner } from "@/content/banner";
+import { contact as rawContact } from "@/content/contact";
 import { experience as rawExperience, type JobEntries } from "@/content/experience";
 import { capstoneProjects as rawCapstone, miniProjects as rawMini } from "@/content/projects";
 import { skillGroups as rawSkillGroups } from "@/content/skills";
+import { siteConfig } from "@/site.config";
 
 import { assertUnique, parseContent } from "./parseContent";
 import {
+  aboutSchema,
+  bannerSchema,
   capstoneProjectsSchema,
+  contactSchema,
   experienceSchema,
   miniProjectsSchema,
+  siteConfigSchema,
   skillGroupsSchema,
 } from "./schema";
 
@@ -50,18 +58,42 @@ export const miniProjects = parseContent("projects (mini)", miniProjectsSchema, 
 /** Technology icons shown in the About section. */
 export const skillGroups = parseContent("skills", skillGroupsSchema, rawSkillGroups);
 
+/** Hero copy. */
+export const banner = parseContent("banner", bannerSchema, rawBanner);
+
+/** About-section prose. */
+export const about = parseContent("about", aboutSchema, rawAbout);
+
+/** Contact-section copy. */
+export const contact = parseContent("contact", contactSchema, rawContact);
+
+/**
+ * Validates `site.config.ts` for its side effect only.
+ *
+ * The parsed copy is discarded: client components import `@/site.config`
+ * directly so they never pull zod into the browser bundle, and discarding the
+ * copy keeps its `as const` literal types intact for them.
+ */
+parseContent("site.config.ts", siteConfigSchema, siteConfig);
+
 assertUnique("experience", experience, "key");
 assertUnique("projects (capstone)", capstoneProjects, "title");
 assertUnique("projects (mini)", miniProjects, "title");
 assertUnique("skills", skillGroups, "title");
 
 export type {
+  About,
+  Banner,
   CapstoneEntry,
+  Contact,
   JobBullet,
   JobEntry,
   MiniProjectEntry,
+  Paragraph,
   ProjectLayout,
+  SiteConfig,
   Skill,
   SkillGroup,
+  TextSegment,
 } from "./schema";
 export type { JobEntries, JobTabKey } from "@/content/experience";

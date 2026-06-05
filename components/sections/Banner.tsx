@@ -6,8 +6,13 @@ import { fadeIn } from "@/lib/motion";
 import { scrollToAnchor } from "@/lib/scroll";
 import { outlineButton } from "../common/OutlineButton";
 import { siteConfig } from "@/site.config";
+import RichText from "../common/RichText";
+import type { Banner as BannerContent } from "@/lib/content";
 
-export default function Banner() {
+/**
+ * @param props.banner - Parsed hero copy.
+ */
+export default function Banner({ banner }: { banner: BannerContent }) {
   return (
     <section
       id="home"
@@ -17,7 +22,7 @@ export default function Banner() {
         className="font-codeFont text-textGreen text-xs tracking-wide md:text-lg"
         {...fadeIn({ delay: 1 })}
       >
-        Hello World, my name is
+        {banner.greeting}
       </motion.h3>
 
       <motion.h1
@@ -34,19 +39,15 @@ export default function Banner() {
         {...fadeIn({ delay: 1.2 })}
         className="text-textDark sml:text-base flex flex-col gap-1.5 text-sm font-medium"
       >
-        <p>
-          Self taught software engineer with a strong focus on frontend development. I specialize in
-          crafting web and mobile applications using React & TypeScript.
-        </p>
-        <p>
-          Leveraging my background in Marketing and experience in Software Testing at a renowned{" "}
-          <em>FAANG</em> company, my approach brings a unique perspective that prioritizes clean and
-          reliable code.
-        </p>
-        <p className="mt-2 italic">Fully committed to the philosophy of lifelong learning.</p>
-        <a href="#projects" onClick={scrollToAnchor} className="mt-2">
+        {banner.paragraphs.map((paragraph, index) => (
+          <p key={index}>
+            <RichText paragraph={paragraph} />
+          </p>
+        ))}
+        <p className="mt-2 italic">{banner.closing}</p>
+        <a href={banner.cta.href} onClick={scrollToAnchor} className="mt-2">
           <span className="group text-textGreen relative inline-flex h-7 cursor-pointer overflow-x-hidden">
-            Capstone Projects
+            {banner.cta.label}
             <span className="bg-textGreen absolute bottom-1 left-0 h-px w-full translate-x-[110%] transition-transform duration-500 group-hover:translate-x-0" />
           </span>
         </a>
@@ -61,7 +62,7 @@ export default function Banner() {
             "font-titleFont sml:h-14 sml:w-52 sml:text-sm inline-flex h-10 w-40 items-center justify-center text-xs tracking-wide"
           )}
         >
-          Download my latest CV
+          {banner.resumeLabel}
         </a>
       </motion.div>
     </section>

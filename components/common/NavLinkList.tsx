@@ -4,14 +4,10 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { stagger, staggerItem } from "@/lib/motion";
+import { siteConfig } from "@/site.config";
 
-const navItems = [
-  { id: "home", label: "Home" },
-  { id: "about", label: "About", index: "01." },
-  { id: "experience", label: "Experience", index: "02." },
-  { id: "projects", label: "Projects", index: "03." },
-  { id: "contact", label: "Contact", index: "04." },
-];
+/** `as const` gives each entry its own literal type; widen to one shape. */
+const navItems: readonly { id: string; label: string; index?: string }[] = siteConfig.nav;
 
 /**
  * Renders animated navigation links for desktop or mobile layouts.

@@ -10,20 +10,22 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.seo.url),
   title: siteConfig.seo.title,
   description: siteConfig.seo.description,
-  icons: { icon: "/favicon.ico" },
-  alternates: { canonical: "/" },
+  icons: { icon: siteConfig.seo.favicon },
+  alternates: { canonical: siteConfig.seo.canonical },
   openGraph: {
     type: "website",
     url: siteConfig.seo.url,
     siteName: siteConfig.name,
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
-    locale: "en_US",
+    locale: siteConfig.seo.locale,
+    ...(siteConfig.seo.ogImage && { images: [{ url: siteConfig.seo.ogImage }] }),
   },
   twitter: {
-    card: "summary",
+    card: siteConfig.seo.ogImage ? "summary_large_image" : "summary",
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
+    ...(siteConfig.seo.ogImage && { images: [siteConfig.seo.ogImage] }),
   },
 };
 
@@ -39,7 +41,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="en" className={`${inter.variable} ${firaCode.variable} ${montserrat.variable}`}>
+    <html
+      lang={siteConfig.seo.lang}
+      className={`${inter.variable} ${firaCode.variable} ${montserrat.variable}`}
+    >
       <body>
         <script
           type="application/ld+json"

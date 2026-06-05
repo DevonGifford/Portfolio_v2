@@ -11,15 +11,15 @@ export default function Footer() {
         <SocialLinks iconClassName="bg-bodyColor text-zinc-200 border-zinc-700" />
       </div>
       <p className="justify-center py-3 text-center text-xs">
-        Built from scratch by{" "}
+        {siteConfig.footer.builtBy}{" "}
         <ExternalLink href={siteConfig.social.linkedin} className="text-textGreen">
-          Devon Gifford
+          {siteConfig.name}
         </ExternalLink>
         <br />
-        Inspired by{" "}
-        <ExternalLink href="https://brittanychiang.com/" className="text-textGreen">
+        {siteConfig.footer.inspiredBy}{" "}
+        <ExternalLink href={siteConfig.footer.credit.href} className="text-textGreen">
           {" "}
-          Brittany Chiang
+          {siteConfig.footer.credit.name}
         </ExternalLink>
       </p>
     </div>

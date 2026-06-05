@@ -6,6 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { SlSocialYoutube } from "react-icons/sl";
 import ExternalLink from "@/components/common/ExternalLink";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/site.config";
 
 interface CapstoneCardProps {
   title: string;
@@ -92,7 +93,9 @@ export default function CapstoneCard({
             isReversed ? "md:-mr-20" : "items-end text-right md:-ml-16"
           )}
         >
-          <p className="font-titleFont text-textGreen text-sm tracking-wide">Featured Project</p>
+          <p className="font-titleFont text-textGreen text-sm tracking-wide">
+            {siteConfig.labels.featuredProject}
+          </p>
           <h3 className="hover:text-textGreen text-2xl font-bold">{title}</h3>
 
           <p
@@ -129,7 +132,9 @@ export default function CapstoneCard({
 
         {/* Content */}
         <div className="relative z-10 flex flex-col gap-3 p-5">
-          <p className="font-titleFont text-textGreen text-sm tracking-wide">Featured Project</p>
+          <p className="font-titleFont text-textGreen text-sm tracking-wide">
+            {siteConfig.labels.featuredProject}
+          </p>
           <h3 className="font-titleFont hover:text-textGreen text-2xl font-bold">{title}</h3>
           <p className="text-textLight sml:text-base text-sm">{description}</p>
           <ul className="font-codeFont text-textGreen flex flex-wrap gap-x-4 gap-y-1 text-xs tracking-wide">
