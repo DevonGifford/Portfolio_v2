@@ -27,18 +27,19 @@
 
 ---
 
-This portfolio was inspired by the [v4 version](https://v4.brittanychiang.com/) of Brittany Chiang’s site, which remains a standout in developer portfolio design. While her original was built with **Gatsby**, I approached the rebuild using a more modern stack - **React v19**, **Next.js v16**, **TypeScript v6** & **Tailwind v4**.
+This portfolio was inspired by the [v4 version](https://v4.brittanychiang.com/) of Brittany Chiang’s site. While her original was built with **Gatsby**, I approached the rebuild using a more modern stack - **React v19**, **Next.js v16**, **TypeScript v6** & **Tailwind v4**.
 
-The implementation has been modernized throughout, with content separated from components and validated with **Zod** at build time. **Motion** handles animation, while **Vitest** covers a few focused sanity suites, with performance and accessibility tuned to 100 Lighthouse scores across the board.
+_The content has also been separated from components and validated with **Zod** at build time. **Motion** handles animation, while **Vitest** covers a few focused sanity suites, with performance and accessibility tuned to 100 Lighthouse scores across the board._
 
-<br/>
 <br/>
 
 ### Acknowledgements
 
 ---
 
-Built from the ground up, with design inspiration from [Brittany Chiang](https://brittanychiang.com). Full credit for the original design concept goes to her. The [MIT License](LICENSE) covers this code, not the original design concept.
+Built from scratch, with design inspiration from [Brittany Chiang](https://brittanychiang.com). Full credit for the original design concept goes to her. The [MIT License](LICENSE) covers this code, not the original design concept.
+
+<br/>
 
 > [!TIP]
 > **Want to steal this? Go for it.** <br/>
