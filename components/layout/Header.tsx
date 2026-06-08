@@ -24,7 +24,7 @@ export default function Header() {
           <a href="#home" className="hover:animate-spin" aria-label="Home">
             <Image
               src={logo}
-              alt="logo"
+              alt={`${siteConfig.name} logo`}
               className="sml:w-12 mt-2 w-10 rounded-full hover:animate-spin"
             />
           </a>

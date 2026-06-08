@@ -56,6 +56,7 @@ describe("About content", () => {
     render(<About about={about} skillGroups={skillGroups} />);
 
     expect(screen.getByText(about.closing)).toBeInTheDocument();
-    expect(screen.getByAltText(about.portraitAlt)).toBeInTheDocument();
+    // Two portraits render — one for mobile, one for desktop — sharing the alt.
+    expect(screen.getAllByAltText(about.portraitAlt).length).toBeGreaterThan(0);
   });
 });

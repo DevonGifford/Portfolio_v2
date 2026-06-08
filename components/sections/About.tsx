@@ -65,7 +65,7 @@ export default function About({
                 <Image
                   className="border-textGreen sml:w-40 mdl:hidden top-0 left-0 w-24 rounded-full border-2 sm:w-32 md:w-48"
                   src={profileImgCircle}
-                  alt="profilepicture"
+                  alt={about.portraitAlt}
                 />
                 <div className="bg-textGreen/20 sml:h-40 sml:w-40 mdl:hidden absolute top-0 left-0 h-24 w-24 rounded-full duration-300 hover:bg-transparent sm:h-32 sm:w-32 md:h-48 md:w-48" />
               </div>

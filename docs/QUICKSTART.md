@@ -36,14 +36,17 @@ component to change words, something is in the wrong place; open an issue.
 Open **`site.config.ts`** and change the obvious things: `name`, `role`, `taglines`, `email`,
 `social`, and `seo`.
 
-Two files to swap while you're there:
+Three files to swap while you're there:
 
 - **Your CV** — drop a PDF in `public/assets/` and point `resumePath` at it.
-- **Your photo** — replace `public/assets/images/Devon_circle.png`.
+- **Your photo** — replace `public/assets/images/Devon_circle.png` (keep the filename, or update
+  the import in `public/assets/index.ts`).
+- **Your logo** — replace `public/assets/images/LogoBig.png`. It is the only asset with no config
+  entry; its alt text is generated from `siteConfig.name`.
 
 > **Socials:** every key in `social` needs a matching icon in
-> `components/common/SocialLinks.tsx`. Adding a key without an icon will break the page at runtime.
-> That file is 10 lines — copy an existing entry.
+> `components/common/SocialLinks.tsx`. Adding a key without a matching icon is a **compile error**,
+> so `npm run typecheck` will tell you exactly which one is missing — copy an existing entry.
 
 ---
 

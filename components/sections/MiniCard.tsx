@@ -3,14 +3,10 @@
 import { RiGithubLine } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
 import ExternalLink from "@/components/common/ExternalLink";
+import type { MiniProjectEntry } from "@/lib/content";
 
-interface MiniProjectCardProps {
-  title: string;
-  description: string;
-  gitLink: string;
-  liveLink: string;
-  listItems: string[];
-}
+/** Props are the parsed content entry, spread by `Projects`. */
+type MiniProjectCardProps = MiniProjectEntry;
 
 export default function MiniProjectCard({
   title,

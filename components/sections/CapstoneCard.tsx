@@ -1,29 +1,16 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { RiGithubLine } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
 import { SlSocialYoutube } from "react-icons/sl";
 import ExternalLink from "@/components/common/ExternalLink";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/site.config";
+import type { CapstoneEntry } from "@/lib/content";
 
-interface CapstoneCardProps {
-  title: string;
-  description: string;
-  image: {
-    src: StaticImageData;
-    alt: string;
-    width: number;
-    height: number;
-  };
-  imageUrl: string;
-  gitLink: string;
-  youtubeLink?: string;
-  liveLink: string;
-  techStackList: string[];
-  layout?: "default" | "reversed";
-}
+/** Props are the parsed content entry, spread by `Projects`. */
+type CapstoneCardProps = CapstoneEntry;
 
 export default function CapstoneCard({
   title,
