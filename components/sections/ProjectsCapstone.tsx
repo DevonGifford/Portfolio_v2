@@ -10,9 +10,9 @@ import { siteConfig } from "@/site.config";
 import type { CapstoneEntry } from "@/lib/content";
 
 /** Props are the parsed content entry, spread by `Projects`. */
-type CapstoneCardProps = CapstoneEntry;
+type ProjectsCapstoneProps = CapstoneEntry;
 
-export default function CapstoneCard({
+export default function ProjectsCapstone({
   title,
   description,
   image,
@@ -22,7 +22,7 @@ export default function CapstoneCard({
   liveLink,
   techStackList,
   layout = "default",
-}: CapstoneCardProps) {
+}: ProjectsCapstoneProps) {
   const isReversed = layout === "reversed";
 
   const links = (

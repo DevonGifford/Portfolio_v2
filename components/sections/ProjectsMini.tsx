@@ -6,15 +6,15 @@ import ExternalLink from "@/components/common/ExternalLink";
 import type { MiniProjectEntry } from "@/lib/content";
 
 /** Props are the parsed content entry, spread by `Projects`. */
-type MiniProjectCardProps = MiniProjectEntry;
+type ProjectsMiniProps = MiniProjectEntry;
 
-export default function MiniProjectCard({
+export default function ProjectsMini({
   title,
   description,
   gitLink,
   liveLink,
   listItems,
-}: MiniProjectCardProps) {
+}: ProjectsMiniProps) {
   return (
     <div className="group bg-cardColor flex h-72 w-full max-w-[320px] min-w-[280px] flex-col justify-center gap-6 rounded-lg p-6 transition-transform duration-300 hover:-translate-y-2">
       {/* Icon-Links */}

@@ -3,8 +3,8 @@
 import { useState } from "react";
 import SectionTitle from "../common/SectionTitle";
 import OutlineButton from "../common/OutlineButton";
-import CapstoneCard from "./CapstoneCard";
-import MiniCard from "./MiniCard";
+import ProjectsCapstone from "./ProjectsCapstone";
+import ProjectsMini from "./ProjectsMini";
 import type { CapstoneEntry, MiniProjectEntry } from "@/lib/content";
 import { siteConfig } from "@/site.config";
 
@@ -28,7 +28,7 @@ export default function Projects({
         <SectionTitle titleName={siteConfig.labels.capstoneHeading} titleNumber="03" />
         <div className="ml-auto flex w-full flex-col justify-items-end gap-14">
           {capstoneProjects.map((project) => (
-            <CapstoneCard key={project.title} {...project} />
+            <ProjectsCapstone key={project.title} {...project} />
           ))}
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function Projects({
           {miniProjects
             .slice(0, showMore ? undefined : siteConfig.miniProjectPreviewCount)
             .map((project: MiniProjectEntry) => (
-              <MiniCard key={project.title} {...project} />
+              <ProjectsMini key={project.title} {...project} />
             ))}
         </div>
 
