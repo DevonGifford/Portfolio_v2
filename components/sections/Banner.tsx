@@ -7,12 +7,12 @@ import { scrollToAnchor } from "@/lib/scroll";
 import { outlineButton } from "../common/OutlineButton";
 import { siteConfig } from "@/site.config";
 import RichText from "../common/RichText";
-import type { Banner as BannerContent } from "@/lib/content";
+import type { Banner as BannerCopy } from "@/lib/content";
 
 /**
- * @param props.banner - Parsed hero copy.
+ * @param props.copy - Parsed hero copy.
  */
-export default function Banner({ banner }: { banner: BannerContent }) {
+export default function Banner({ copy }: { copy: BannerCopy }) {
   return (
     <section
       id="home"
@@ -22,7 +22,7 @@ export default function Banner({ banner }: { banner: BannerContent }) {
         className="font-codeFont text-textGreen text-xs tracking-wide md:text-lg"
         {...fadeIn({ delay: 1 })}
       >
-        {banner.greeting}
+        {copy.greeting}
       </motion.h3>
 
       <motion.h1
@@ -39,15 +39,15 @@ export default function Banner({ banner }: { banner: BannerContent }) {
         {...fadeIn({ delay: 1.2 })}
         className="text-textDark sml:text-base flex flex-col gap-1.5 text-sm font-medium"
       >
-        {banner.paragraphs.map((paragraph, index) => (
+        {copy.paragraphs.map((paragraph, index) => (
           <p key={index}>
             <RichText paragraph={paragraph} />
           </p>
         ))}
-        <p className="mt-2 italic">{banner.closing}</p>
-        <a href={banner.cta.href} onClick={scrollToAnchor} className="mt-2">
+        <p className="mt-2 italic">{copy.closing}</p>
+        <a href={copy.cta.href} onClick={scrollToAnchor} className="mt-2">
           <span className="group text-textGreen relative inline-flex h-7 cursor-pointer overflow-x-hidden">
-            {banner.cta.label}
+            {copy.cta.label}
             <span className="bg-textGreen absolute bottom-1 left-0 h-px w-full translate-x-[110%] transition-transform duration-500 group-hover:translate-x-0" />
           </span>
         </a>
@@ -62,7 +62,7 @@ export default function Banner({ banner }: { banner: BannerContent }) {
             "font-titleFont sml:h-14 sml:w-52 sml:text-sm inline-flex h-10 w-40 items-center justify-center text-xs tracking-wide"
           )}
         >
-          {banner.resumeLabel}
+          {copy.resumeLabel}
         </a>
       </motion.div>
     </section>

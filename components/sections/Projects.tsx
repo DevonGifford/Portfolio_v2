@@ -9,15 +9,15 @@ import type { CapstoneEntry, MiniProjectEntry } from "@/lib/content";
 import { siteConfig } from "@/site.config";
 
 /**
- * @param props.capstoneProjects - Parsed featured projects.
- * @param props.miniProjects - Parsed smaller projects.
+ * @param props.capstone - Parsed featured projects.
+ * @param props.mini - Parsed smaller projects.
  */
 export default function Projects({
-  capstoneProjects,
-  miniProjects,
+  capstone,
+  mini,
 }: {
-  capstoneProjects: CapstoneEntry[];
-  miniProjects: MiniProjectEntry[];
+  capstone: CapstoneEntry[];
+  mini: MiniProjectEntry[];
 }) {
   const [showMore, setShowMore] = useState(false); // For toggling "Show More" in Mini Projects
 
@@ -27,7 +27,7 @@ export default function Projects({
         {/* Section for Capstone Projects */}
         <SectionTitle titleName={siteConfig.labels.capstoneHeading} titleNumber="03" />
         <div className="ml-auto flex w-full flex-col justify-items-end gap-14">
-          {capstoneProjects.map((project) => (
+          {capstone.map((project) => (
             <ProjectsCapstone key={project.title} {...project} />
           ))}
         </div>
@@ -42,7 +42,7 @@ export default function Projects({
         </div>
 
         <div className="lgl:px-10 mt-10 flex flex-wrap items-center justify-center gap-6">
-          {miniProjects
+          {mini
             .slice(0, showMore ? undefined : siteConfig.miniProjectPreviewCount)
             .map((project: MiniProjectEntry) => (
               <ProjectsMini key={project.title} {...project} />

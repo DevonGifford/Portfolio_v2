@@ -6,13 +6,13 @@ import { siteConfig } from "@/site.config";
 
 describe("Contact section", () => {
   it("points its call to action at the configured email address", () => {
-    render(<Contact contact={contact} />);
+    render(<Contact copy={contact} />);
 
     expect(screen.getByRole("link")).toHaveAttribute("href", `mailto:${siteConfig.email}`);
   });
 
   it("renders a heading", () => {
-    render(<Contact contact={contact} />);
+    render(<Contact copy={contact} />);
 
     expect(screen.getAllByRole("heading").length).toBeGreaterThan(0);
   });
@@ -20,7 +20,7 @@ describe("Contact section", () => {
 
 describe("Contact content", () => {
   it("renders every prose segment", () => {
-    const { container } = render(<Contact contact={contact} />);
+    const { container } = render(<Contact copy={contact} />);
     const rendered = container.textContent ?? "";
 
     for (const paragraph of contact.paragraphs) {
@@ -29,7 +29,7 @@ describe("Contact content", () => {
   });
 
   it("renders the heading and CTA label", () => {
-    render(<Contact contact={contact} />);
+    render(<Contact copy={contact} />);
 
     expect(screen.getByText(contact.heading)).toBeInTheDocument();
     expect(screen.getByText(contact.ctaLabel)).toBeInTheDocument();

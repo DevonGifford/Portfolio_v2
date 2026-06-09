@@ -5,7 +5,7 @@ import { about, skillGroups } from "@/lib/content";
 
 describe("About section", () => {
   it("renders every skill group heading", () => {
-    render(<About about={about} skillGroups={skillGroups} />);
+    render(<About copy={about} skills={skillGroups} />);
 
     for (const group of skillGroups) {
       expect(screen.getByText(`${group.title}:`)).toBeInTheDocument();
@@ -13,7 +13,7 @@ describe("About section", () => {
   });
 
   it("renders an icon for every skill", () => {
-    render(<About about={about} skillGroups={skillGroups} />);
+    render(<About copy={about} skills={skillGroups} />);
 
     for (const group of skillGroups) {
       for (const skill of group.skills) {
@@ -23,7 +23,7 @@ describe("About section", () => {
   });
 
   it("renders no more icons than the data declares", () => {
-    render(<About about={about} skillGroups={skillGroups} />);
+    render(<About copy={about} skills={skillGroups} />);
 
     const skillCount = skillGroups.reduce((total, group) => total + group.skills.length, 0);
     const icons = screen.getAllByRole("listitem");
@@ -32,7 +32,7 @@ describe("About section", () => {
   });
 
   it("renders the profile image with descriptive alt text", () => {
-    render(<About about={about} skillGroups={skillGroups} />);
+    render(<About copy={about} skills={skillGroups} />);
 
     const profiles = screen
       .getAllByRole("img")
@@ -44,7 +44,7 @@ describe("About section", () => {
 
 describe("About content", () => {
   it("renders every prose segment", () => {
-    const { container } = render(<About about={about} skillGroups={skillGroups} />);
+    const { container } = render(<About copy={about} skills={skillGroups} />);
     const rendered = container.textContent ?? "";
 
     for (const paragraph of about.paragraphs) {
@@ -53,7 +53,7 @@ describe("About content", () => {
   });
 
   it("renders the closing line and the portrait alt text", () => {
-    render(<About about={about} skillGroups={skillGroups} />);
+    render(<About copy={about} skills={skillGroups} />);
 
     expect(screen.getByText(about.closing)).toBeInTheDocument();
     // Two portraits render — one for mobile, one for desktop — sharing the alt.

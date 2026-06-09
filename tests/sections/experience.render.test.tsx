@@ -21,7 +21,7 @@ function tabs() {
  */
 describe("Experience section", () => {
   it("renders a sidebar tab for every job entry", () => {
-    render(<Experience experience={experience} />);
+    render(<Experience jobs={experience} />);
 
     expect(tabs()).toHaveLength(experience.length);
 
@@ -33,7 +33,7 @@ describe("Experience section", () => {
   });
 
   it("renders the first entry's details by default", () => {
-    render(<Experience experience={experience} />);
+    render(<Experience jobs={experience} />);
     const first = experience[0].componentProps;
 
     expect(screen.getByText(first.dates)).toBeInTheDocument();
@@ -46,7 +46,7 @@ describe("Experience section", () => {
 
   it("swaps the details when another tab is clicked", async () => {
     const user = userEvent.setup();
-    render(<Experience experience={experience} />);
+    render(<Experience jobs={experience} />);
 
     const target = experience.at(-1)!;
     await user.click(tabs().at(-1)!);
@@ -57,7 +57,7 @@ describe("Experience section", () => {
 
   it("renders every bullet of every entry when its tab is selected", async () => {
     const user = userEvent.setup();
-    render(<Experience experience={experience} />);
+    render(<Experience jobs={experience} />);
 
     for (const [index, entry] of experience.entries()) {
       await user.click(tabs()[index]);

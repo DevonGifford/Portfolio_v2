@@ -28,11 +28,11 @@ export default function HomePage() {
           <LeftSide />
         </div>
         <div className="mx-auto h-[88vh] w-full p-4">
-          <Banner banner={banner} />
-          <About about={about} skillGroups={skillGroups} />
-          <Experience experience={experience} />
-          <Projects capstoneProjects={capstoneProjects} miniProjects={miniProjects} />
-          <Contact contact={contact} />
+          <Banner copy={banner} />
+          <About copy={about} skills={skillGroups} />
+          <Experience jobs={experience} />
+          <Projects capstone={capstoneProjects} mini={miniProjects} />
+          <Contact copy={contact} />
           <Footer />
         </div>
         <div className="fixed right-0 bottom-0 hidden h-full w-32 xl:inline-flex">

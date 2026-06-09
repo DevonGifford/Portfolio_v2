@@ -9,7 +9,7 @@ const PREVIEW_COUNT = 6;
 
 describe("Projects section", () => {
   it("renders every capstone project", () => {
-    render(<Projects capstoneProjects={capstoneProjects} miniProjects={miniProjects} />);
+    render(<Projects capstone={capstoneProjects} mini={miniProjects} />);
 
     for (const project of capstoneProjects) {
       expect(screen.getAllByText(project.title).length).toBeGreaterThan(0);
@@ -18,7 +18,7 @@ describe("Projects section", () => {
   });
 
   it("links every capstone project to its repo and live site", () => {
-    render(<Projects capstoneProjects={capstoneProjects} miniProjects={miniProjects} />);
+    render(<Projects capstone={capstoneProjects} mini={miniProjects} />);
     const hrefs = screen.getAllByRole("link").map((link) => link.getAttribute("href"));
 
     for (const project of capstoneProjects) {
@@ -28,7 +28,7 @@ describe("Projects section", () => {
   });
 
   it("renders every capstone tech stack entry", () => {
-    render(<Projects capstoneProjects={capstoneProjects} miniProjects={miniProjects} />);
+    render(<Projects capstone={capstoneProjects} mini={miniProjects} />);
 
     for (const project of capstoneProjects) {
       for (const tech of project.techStackList) {
@@ -38,7 +38,7 @@ describe("Projects section", () => {
   });
 
   it("shows only the first few mini projects until Show More", () => {
-    render(<Projects capstoneProjects={capstoneProjects} miniProjects={miniProjects} />);
+    render(<Projects capstone={capstoneProjects} mini={miniProjects} />);
 
     for (const project of miniProjects.slice(0, PREVIEW_COUNT)) {
       expect(screen.getAllByText(project.title).length).toBeGreaterThan(0);
@@ -51,7 +51,7 @@ describe("Projects section", () => {
 
   it("reveals every remaining mini project on Show More, and hides them again", async () => {
     const user = userEvent.setup();
-    render(<Projects capstoneProjects={capstoneProjects} miniProjects={miniProjects} />);
+    render(<Projects capstone={capstoneProjects} mini={miniProjects} />);
 
     await user.click(screen.getByRole("button", { name: /show more/i }));
 

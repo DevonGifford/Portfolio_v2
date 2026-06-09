@@ -6,13 +6,13 @@ import { siteConfig } from "@/site.config";
 
 describe("Banner section", () => {
   it("renders the configured name", () => {
-    render(<Banner banner={banner} />);
+    render(<Banner copy={banner} />);
 
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(siteConfig.name);
   });
 
   it("offers the CV as a download from the configured path", () => {
-    render(<Banner banner={banner} />);
+    render(<Banner copy={banner} />);
 
     const cv = screen
       .getAllByRole("link")
@@ -23,7 +23,7 @@ describe("Banner section", () => {
   });
 
   it("links its call to action at an on-page section", () => {
-    render(<Banner banner={banner} />);
+    render(<Banner copy={banner} />);
 
     const anchors = screen
       .getAllByRole("link")
@@ -36,7 +36,7 @@ describe("Banner section", () => {
 
 describe("Banner content", () => {
   it("renders every prose segment", () => {
-    const { container } = render(<Banner banner={banner} />);
+    const { container } = render(<Banner copy={banner} />);
     const rendered = container.textContent ?? "";
 
     for (const paragraph of banner.paragraphs) {
@@ -45,7 +45,7 @@ describe("Banner content", () => {
   });
 
   it("renders the greeting, closing line and both labels", () => {
-    render(<Banner banner={banner} />);
+    render(<Banner copy={banner} />);
 
     expect(screen.getByText(banner.greeting)).toBeInTheDocument();
     expect(screen.getByText(banner.closing)).toBeInTheDocument();
