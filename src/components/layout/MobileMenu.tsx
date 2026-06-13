@@ -71,7 +71,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
           onClose();
         }
       }}
-      className="mdl:hidden absolute top-0 flex h-screen w-full flex-col items-end bg-black/50"
+      className="mdl:hidden fixed inset-0 flex flex-col items-end bg-black/50"
     >
       <motion.div
         ref={panelRef}

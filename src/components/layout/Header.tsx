@@ -67,7 +67,7 @@ export default function Header() {
             ref={menuRef}
             onClose={() => {
               setShowMenu(false);
-              hamburgerRef.current?.focus();
+              hamburgerRef.current?.focus({ preventScroll: true });
             }}
           />
         )}
