@@ -6,7 +6,7 @@ import { siteConfig } from "@/content/site.config";
 
 export default function Footer() {
   return (
-    <div>
+    <footer>
       <div className="inline-flex w-full items-center justify-center gap-4 xl:hidden">
         <SocialLinks iconClassName="bg-bodyColor text-zinc-200 border-zinc-700" />
       </div>
@@ -22,6 +22,6 @@ export default function Footer() {
           {siteConfig.footer.credit.name}
         </ExternalLink>
       </p>
-    </div>
+    </footer>
   );
 }
