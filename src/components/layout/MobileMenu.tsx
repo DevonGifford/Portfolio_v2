@@ -103,7 +103,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
           target="_blank"
           rel="noopener noreferrer"
           {...fadeIn({ duration: DURATION.fast, delay: 0.8, ease: "easeIn" })}
-          className={outlineButton("h-10 w-32 pt-8 text-[13px]")}
+          className={outlineButton("mt-8 h-10 w-32 text-[13px]")}
         >
           {siteConfig.labels.resume}
         </motion.a>
