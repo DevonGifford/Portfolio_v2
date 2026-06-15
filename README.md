@@ -36,7 +36,7 @@ This portfolio was inspired by the [v4 version of Brittany Chiang’s site](http
 
 The implementation has been modernized throughout, with content separated from components and validated with **Zod** at build time. **Motion** handles animation, while **Vitest** covers a few focused sanity suites, with performance and accessibility tuned to 100 Lighthouse scores across the board.
 
-> Fork it freely - the [quickstart guide](docs/QUICKSTART.md) covers the main customization points in _5 minutes_ or less.
+> Fork it freely - the [quickstart guide](QUICKSTART.md) covers the main customization points in _5 minutes_ or less.
 > <br/>
 
 ### Acknowledgements 🙏
