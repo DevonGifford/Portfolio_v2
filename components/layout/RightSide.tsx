@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { fadeIn, DURATION } from "@/lib/motion";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 export default function RightSide() {
   return (

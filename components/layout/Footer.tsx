@@ -2,7 +2,7 @@
 
 import SocialLinks from "../common/SocialLinks";
 import ExternalLink from "../common/ExternalLink";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 export default function Footer() {
   return (

@@ -6,7 +6,7 @@ import OutlineButton from "../common/OutlineButton";
 import ProjectsCapstone from "./ProjectsCapstone";
 import ProjectsMini from "./ProjectsMini";
 import type { CapstoneEntry, MiniProjectEntry } from "@/lib/content";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 /**
  * @param props.capstone - Parsed featured projects.

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { stagger, staggerItem } from "@/lib/motion";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 /** `as const` gives each entry its own literal type; widen to one shape. */
 const navItems: readonly { id: string; label: string; index?: string }[] = siteConfig.nav;

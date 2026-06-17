@@ -5,7 +5,7 @@ import Typewriter from "../common/TypeWriter";
 import { fadeIn } from "@/lib/motion";
 import { scrollToAnchor } from "@/lib/scroll";
 import { outlineButton } from "../common/OutlineButton";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 import RichText from "../common/RichText";
 import type { Banner as BannerCopy } from "@/lib/content";
 

@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
 
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 /**
  * Tailwind v4 has no JS config, so `app/globals.css` is the only place a colour

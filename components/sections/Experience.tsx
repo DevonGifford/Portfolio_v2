@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import SectionTitle from "../common/SectionTitle";
 import ExperienceEntry from "./ExperienceEntry";
 import type { JobEntries, JobTabKey } from "@/lib/content";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 /**
  * @param props.jobs - Parsed work history, supplied by the server page so the

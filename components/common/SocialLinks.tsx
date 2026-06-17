@@ -2,7 +2,7 @@ import type { IconType } from "react-icons";
 import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { TiSocialTwitter } from "react-icons/ti";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 import SocialIcon from "./SocialIcon";
 
 /**

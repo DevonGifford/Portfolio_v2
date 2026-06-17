@@ -2,7 +2,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 import { capstoneProjects, experience, miniProjects, skillGroups } from "@/lib/content";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 /** Source-agnostic guards: these hold whatever the content happens to say. */
 

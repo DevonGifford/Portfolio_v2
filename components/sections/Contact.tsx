@@ -2,7 +2,7 @@
 
 import { outlineButton } from "@/components/common/OutlineButton";
 import SectionTitle from "../common/SectionTitle";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 import RichText from "../common/RichText";
 import type { Contact as ContactCopy } from "@/lib/content";
 import { Fragment } from "react";

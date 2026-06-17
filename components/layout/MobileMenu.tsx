@@ -9,7 +9,7 @@ import ExternalLink from "../common/ExternalLink";
 import { MdOutlineClose } from "react-icons/md";
 import SocialLinks from "../common/SocialLinks";
 import NavLinkList from "../common/NavLinkList";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 type Props = {
   onClose: () => void;

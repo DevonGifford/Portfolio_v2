@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 
 import NavLinkList from "@/components/common/NavLinkList";
 import SocialLinks from "@/components/common/SocialLinks";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 /** Section ids the nav is expected to reach; also the anchor targets in `app/page.tsx`. */
 const SECTION_IDS = ["home", "about", "experience", "projects", "contact"];

@@ -21,7 +21,7 @@ import { contact as rawContact } from "@/content/contact";
 import { experience as rawExperience, type JobEntries } from "@/content/experience";
 import { capstoneProjects as rawCapstone, miniProjects as rawMini } from "@/content/projects";
 import { skillGroups as rawSkillGroups } from "@/content/skills";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 import { assertUnique, parseContent } from "./parseContent";
 import {

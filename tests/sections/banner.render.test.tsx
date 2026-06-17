@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 
 import Banner from "@/components/sections/Banner";
 import { banner } from "@/lib/content";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 describe("Banner section", () => {
   it("renders the configured name", () => {

@@ -2,7 +2,7 @@ import React from "react";
 import { inter, firaCode, montserrat } from "./fonts";
 import type { Metadata } from "next";
 import MotionProvider from "@/components/providers/MotionProvider";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 import "./globals.css";
 

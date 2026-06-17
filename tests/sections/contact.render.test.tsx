@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 
 import Contact from "@/components/sections/Contact";
 import { contact } from "@/lib/content";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 
 describe("Contact section", () => {
   it("points its call to action at the configured email address", () => {

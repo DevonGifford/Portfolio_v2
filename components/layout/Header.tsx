@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 import { fadeIn, slideIn } from "@/lib/motion";
 import { scrollToAnchor } from "@/lib/scroll";
 import { outlineButton } from "@/components/common/OutlineButton";
-import { siteConfig } from "@/site.config";
+import { siteConfig } from "@/content/site.config";
 import { logo } from "@/public/assets";
 import NavLinkList from "@/components/common/NavLinkList";
 import MobileMenu from "@/components/layout/MobileMenu";

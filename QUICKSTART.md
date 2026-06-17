@@ -13,7 +13,7 @@ npm run dev          # localhost:3000
 
 ---
 
-## 1. Config — `site.config.ts`
+## 1. Config — `content/site.config.ts`
 
 One file: name, role, taglines, email, socials, resume path, SEO, nav links and button labels.
 
