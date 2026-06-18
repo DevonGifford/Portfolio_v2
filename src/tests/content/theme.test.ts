@@ -9,7 +9,7 @@ import { siteConfig } from "@/content/site.config";
  * which is a duplication — this test is what stops the two drifting apart.
  */
 describe("siteConfig.theme mirrors the Tailwind tokens", () => {
-  const css = readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
+  const css = readFileSync(path.join(process.cwd(), "src", "app", "globals.css"), "utf8");
 
   /** Reads a custom property out of the `@theme` block. */
   function token(name: string) {

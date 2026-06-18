@@ -17,7 +17,7 @@ npm run dev          # localhost:3000
 
 One file: name, role, taglines, email, socials, resume path, SEO, nav links and button labels.
 
-> Adding a key to `social` needs a matching icon in `components/common/SocialLinks.tsx`. Leave it
+> Adding a key to `social` needs a matching icon in `src/components/common/SocialLinks.tsx`. Leave it
 > out and `npm run typecheck` tells you which one is missing.
 
 ---

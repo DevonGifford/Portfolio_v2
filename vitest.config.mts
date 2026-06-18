@@ -37,13 +37,20 @@ const nextStaticImages: Plugin = {
 export default defineConfig({
   plugins: [react(), nextStaticImages],
   resolve: {
-    alias: { "@": root },
+    // Array form, longest prefix first: `content/` and `public/` live outside
+    // `src/`, and Vite's object form matches in insertion order rather than by
+    // specificity, so `@/public/x` would otherwise resolve against `@`.
+    alias: [
+      { find: /^@\/public\//, replacement: `${root}/public/` },
+      { find: /^@\/content\//, replacement: `${root}/content/` },
+      { find: /^@\//, replacement: `${root}/src/` },
+    ],
   },
   test: {
     environment: "jsdom",
     globals: true,
     css: false,
-    setupFiles: ["./tests/setup.ts"],
-    include: ["tests/**/*.test.{ts,tsx}"],
+    setupFiles: ["./src/tests/setup.ts"],
+    include: ["src/tests/**/*.test.{ts,tsx}"],
   },
 });

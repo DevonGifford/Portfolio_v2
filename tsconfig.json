@@ -21,7 +21,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"],
+      "@/content/*": ["./content/*"],
+      "@/public/*": ["./public/*"]
     }
   },
   "include": [

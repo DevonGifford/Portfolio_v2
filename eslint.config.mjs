@@ -92,7 +92,7 @@ export default [
   // semantics, so excluding the directory outright would make the negation
   // below unreachable.
   {
-    files: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+    files: ["src/app/**/*.{ts,tsx}", "src/components/**/*.{ts,tsx}"],
     rules: {
       "no-restricted-imports": [
         "error",
@@ -112,7 +112,7 @@ export default [
   // Tests run under Vitest's globals (`globals: true` in vitest.config.mts), so
   // `describe`/`it`/`expect`/`vi` are ambient rather than imported.
   {
-    files: ["tests/**/*.{ts,tsx}"],
+    files: ["src/tests/**/*.{ts,tsx}"],
     languageOptions: {
       globals: { ...globals.vitest },
     },
