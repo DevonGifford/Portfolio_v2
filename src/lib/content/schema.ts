@@ -343,16 +343,6 @@ export const siteConfigSchema = z.object({
     /** Who to credit. */
     credit: z.object({ name: text, href: httpUrl }),
   }),
-  theme: z.object({
-    /**
-     * Card background.
-     *
-     * Tailwind v4 has no JS config, so the value that actually renders is
-     * `--color-cardColor` in `app/globals.css`. This mirrors it for reference
-     * only; `tests/content/theme.test.ts` asserts the two agree.
-     */
-    cardColor: z.string().regex(/^#[0-9a-f]{6}$/i, "must be a six-digit hex colour"),
-  }),
   /** Opt-in effects. Each is consumed by the release that adds it. */
   features: z.object({
     /** Cursor-following background glow. */
