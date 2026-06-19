@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils/cn";
 import SectionTitle from "../common/SectionTitle";
 import ExperienceEntry from "./ExperienceEntry";
 import type { JobEntries, JobTabKey } from "@/lib/content";

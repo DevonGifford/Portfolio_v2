@@ -5,7 +5,7 @@ import { RiGithubLine } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
 import { SlSocialYoutube } from "react-icons/sl";
 import ExternalLink from "@/components/common/ExternalLink";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils/cn";
 import { siteConfig } from "@/content/site.config";
 import type { CapstoneEntry } from "@/lib/content";
 

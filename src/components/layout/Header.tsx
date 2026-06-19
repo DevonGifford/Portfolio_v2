@@ -3,8 +3,8 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
-import { fadeIn, slideIn } from "@/lib/motion";
-import { scrollToAnchor } from "@/lib/scroll";
+import { fadeIn, slideIn } from "@/lib/animation/motion";
+import { scrollToAnchor } from "@/lib/utils/scroll";
 import { outlineButton } from "@/components/common/OutlineButton";
 import { siteConfig } from "@/content/site.config";
 import { logo } from "@/public/assets";

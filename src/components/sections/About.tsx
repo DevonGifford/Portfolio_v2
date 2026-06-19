@@ -2,7 +2,7 @@
 
 import { Fragment } from "react";
 import Image, { type StaticImageData } from "next/image";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils/cn";
 import { profileImgCircle } from "@/public/assets";
 import SectionTitle from "../common/SectionTitle";
 import RichText from "../common/RichText";

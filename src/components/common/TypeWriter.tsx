@@ -1,7 +1,7 @@
 "use client";
 
-import { useTypewriter } from "@/lib/useTypewriter";
-import { cn } from "@/lib/utils";
+import { useTypewriter } from "@/lib/animation/useTypewriter";
+import { cn } from "@/lib/utils/cn";
 
 type TypewriterProps = {
   /** Words to rotate through in the typewriter animation. */

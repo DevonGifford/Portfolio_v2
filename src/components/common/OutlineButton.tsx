@@ -1,5 +1,5 @@
 import { type ComponentProps } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils/cn";
 
 const base =
   "inline-flex min-h-11 items-center justify-center rounded-md border border-textGreen text-textGreen duration-300 hover:bg-hoverColor";

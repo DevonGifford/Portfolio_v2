@@ -2,8 +2,8 @@
 
 import { forwardRef, useEffect, useRef } from "react";
 import { motion } from "motion/react";
-import { fadeIn, slideIn, DURATION } from "@/lib/motion";
-import { scrollToAnchor } from "@/lib/scroll";
+import { fadeIn, slideIn, DURATION } from "@/lib/animation/motion";
+import { scrollToAnchor } from "@/lib/utils/scroll";
 import { outlineButton } from "../common/OutlineButton";
 import ExternalLink from "../common/ExternalLink";
 import { MdOutlineClose } from "react-icons/md";

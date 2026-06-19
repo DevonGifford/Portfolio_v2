@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { fadeIn, DURATION } from "@/lib/motion";
+import { fadeIn, DURATION } from "@/lib/animation/motion";
 import SocialLinks from "../common/SocialLinks";
 
 export default function LeftSide() {

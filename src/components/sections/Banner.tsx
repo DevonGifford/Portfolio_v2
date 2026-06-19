@@ -2,8 +2,8 @@
 
 import { motion } from "motion/react";
 import Typewriter from "../common/TypeWriter";
-import { fadeIn } from "@/lib/motion";
-import { scrollToAnchor } from "@/lib/scroll";
+import { fadeIn } from "@/lib/animation/motion";
+import { scrollToAnchor } from "@/lib/utils/scroll";
 import { outlineButton } from "../common/OutlineButton";
 import { siteConfig } from "@/content/site.config";
 import RichText from "../common/RichText";

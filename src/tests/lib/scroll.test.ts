@@ -1,4 +1,4 @@
-import { scrollToAnchor, smoothScrollToSection } from "@/lib/scroll";
+import { scrollToAnchor, smoothScrollToSection } from "@/lib/utils/scroll";
 
 /** Minimal stand-in for the anchor click event `scrollToAnchor` receives. */
 function anchorEvent(href: string) {
