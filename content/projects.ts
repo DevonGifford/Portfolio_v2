@@ -14,10 +14,26 @@ import type { CapstoneEntry, MiniProjectEntry } from "@/lib/content/schema";
 import flatmateFinderBig from "@/public/assets/images/ProjectPictures/big-images/FlatmateFinder_big.png";
 import clearScoreBig from "@/public/assets/images/ProjectPictures/big-images/ClearScore_big.png";
 import thymiaBig from "@/public/assets/images/ProjectPictures/big-images/Thymia_big.png";
-import devReadyBig from "@/public/assets/images/ProjectPictures/big-images/DevReady_big.png";
+import selfOsBig from "@/public/assets/images/ProjectPictures/big-images/SelfOS_big.webp";
 
 /** Featured projects — large cards with a screenshot. */
 export const capstoneProjects = [
+  {
+    title: "SelfOS",
+    description:
+      "Work in progress. SelfOS is a personal data system for tracking training, nutrition, habits, measurements, and eventually health data from your devices. A shared Go API and PostgreSQL backend keep everything in one place and under your control.",
+    image: {
+      src: selfOsBig,
+      alt: "SelfOS personal data system project image",
+      width: 500,
+      height: 300,
+    },
+    imageUrl: "/assets/images/ProjectPictures/small-images/selfos_small.webp",
+    gitLink: "https://github.com/DevonGifford/SelfOS",
+    liveLink: "https://selfos-mu.vercel.app/",
+    techStackList: ["React", "TypeScript", "Vite", "Go", "PostgreSQL"],
+    layout: "reversed",
+  },
   {
     title: "Flatmate Finder",
     description:
@@ -67,23 +83,6 @@ export const capstoneProjects = [
     // youtubeLink: "https://n-game-technical-assignment.vercel.app/",
     techStackList: ["Next14", "Event-Logger", "Tailwind", "TypeScript", "Jest"],
     layout: "default",
-  },
-  {
-    title: "Dev Ready",
-    description:
-      "An open source fullstack initiative, inspired by ZTM, designed to create an engaging interactive quiz platform for students. The project aims to empower learning through gamification and dynamic features.",
-    image: {
-      src: devReadyBig,
-      alt: "Dev Ready Project Image",
-      width: 500,
-      height: 300,
-    },
-    imageUrl: "/assets/images/ProjectPictures/small-images/devready_small.png", // Use string path here
-    gitLink: "https://github.com/DevonGifford/DevReady",
-    liveLink: "https://ztm-ready-portfolio-project.vercel.app/",
-    // youtubeLink: "https://ztm-ready-portfolio-project.vercel.app/",
-    techStackList: ["Next14", "TypeScript", "Tailwind", "Jest", "PlayWright"],
-    layout: "reversed",
   },
 ] satisfies CapstoneEntry[];
 
@@ -196,7 +195,7 @@ export const miniProjects = [
   {
     title: "Math Sprint Game",
     description:
-      "Interactive quiz web app testing the user's basic math skills. Initial research into building my capstone DevReady application.",
+      "Interactive quiz web app testing the user's basic math skills. An early exploration of interactive learning experiences.",
     gitLink: "https://github.com/DevonGifford/my_JavaScript/tree/main/JavaScript_Projects",
     liveLink: "https://devon-math-sprint-game.netlify.app/",
     listItems: ["JavaScript", "HTML", "CSS", "Netlify"],
