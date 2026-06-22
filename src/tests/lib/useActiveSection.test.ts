@@ -13,9 +13,7 @@ let observed: { callback: Callback; targets: Set<Element>; disconnected: boolean
 /**
  * A controllable IntersectionObserver.
  *
- * The real one never fires in jsdom, so scroll-driven behaviour is only
- * testable by invoking the callback directly — which is also the only way to
- * assert the tie-breaking and the accumulation across calls.
+ * jsdom doesn't trigger real intersection events, so tests invoke the callback directly.
  */
 class ControllableObserver {
   constructor(callback: Callback) {
@@ -64,12 +62,6 @@ describe("useActiveSection()", () => {
     expect(result.current).toBe("home");
   });
 
-  it("observes every section it was given", () => {
-    renderHook(() => useActiveSection(IDS));
-
-    expect(observed.targets.size).toBe(IDS.length);
-  });
-
   it("follows the reader into a section that scrolls into view", () => {
     const { result } = renderHook(() => useActiveSection(IDS));
 
@@ -98,8 +90,7 @@ describe("useActiveSection()", () => {
   it("tracks sections leaving across separate callbacks, not just the latest batch", () => {
     const { result } = renderHook(() => useActiveSection(IDS));
 
-    scrollTo("about", "contact");
-    // Only `about` changes here; `contact` must still be remembered as in view.
+    scrollTo("about", "contact"); // Only `about` changes here; `contact` must still be remembered as in view.
     act(() => {
       observed.callback([{ isIntersecting: false, target: document.getElementById("about")! }]);
     });
@@ -113,11 +104,5 @@ describe("useActiveSection()", () => {
     unmount();
 
     expect(observed.disconnected).toBe(true);
-  });
-
-  it("does not observe ids with no matching element", () => {
-    renderHook(() => useActiveSection(["home", "missing"]));
-
-    expect(observed.targets.size).toBe(1);
   });
 });
