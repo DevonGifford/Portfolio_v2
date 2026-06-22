@@ -38,9 +38,9 @@ export const useTypewriter = ({
 
     if (subIndex === words[index]?.length + 1 && !deleting) {
       setIsTyping(false);
-      setTimeout(() => setDeleting(true), pauseTime);
+      const pause = setTimeout(() => setDeleting(true), pauseTime);
 
-      return;
+      return () => clearTimeout(pause);
     }
 
     if (subIndex === 0 && deleting) {
