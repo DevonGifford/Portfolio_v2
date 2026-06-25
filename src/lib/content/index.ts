@@ -1,20 +1,3 @@
-/**
- * The single place `content/` is read and validated.
- *
- * Components import from here, never from `content/` directly — everything this
- * module exports has already been parsed. Parsing happens at module scope, so
- * bad content throws during `next dev`, `next build` and the test run rather
- * than rendering something broken.
- *
- * Only `app/page.tsx` (a server component) imports this module; sections receive
- * the parsed data as props. That keeps zod out of the client bundle, where it
- * would cost ~64 kB gzipped to re-download a validation library whose work
- * already finished at build time.
- *
- * `site.config.ts` is still imported directly by components; it joins this
- * boundary when its schema lands.
- */
-
 import { about as rawAbout } from "@/content/about";
 import { banner as rawBanner } from "@/content/banner";
 import { contact as rawContact } from "@/content/contact";
@@ -36,46 +19,32 @@ import {
 } from "./schema";
 
 /**
- * Work history, newest first.
+ * The single place `content/` is read and validated.
  *
- * The parse returns the schema's inferred type, where `key` is a plain string.
- * `content/experience.ts` has already been checked against the narrower
- * `JobEntries` — including its `JobTabKey` union — so restoring that type here
- * asserts nothing the compiler has not seen.
+ * Components import from `@/lib/content`, never `content/` directly
+ * Everything exported here has already been checked. Validation happens at import time, so
+ * broken content fails `next dev`/`next build`/the test run immediately, instead of reaching a real user.
  */
-export const experience = parseContent("experience", experienceSchema, rawExperience) as JobEntries;
 
-/** Featured projects — large cards with a screenshot. */
+export const experience = parseContent("experience", experienceSchema, rawExperience) as JobEntries;
 export const capstoneProjects = parseContent(
   "projects (capstone)",
   capstoneProjectsSchema,
   rawCapstone
 );
-
-/** Smaller projects — compact cards. */
 export const miniProjects = parseContent("projects (mini)", miniProjectsSchema, rawMini);
-
-/** Technology icons shown in the About section. */
 export const skillGroups = parseContent("skills", skillGroupsSchema, rawSkillGroups);
-
-/** Hero copy. */
 export const banner = parseContent("banner", bannerSchema, rawBanner);
-
-/** About-section prose. */
 export const about = parseContent("about", aboutSchema, rawAbout);
-
-/** Contact-section copy. */
 export const contact = parseContent("contact", contactSchema, rawContact);
 
 /**
- * Validates `site.config.ts` for its side effect only.
+ * Validates `site.config.ts`, discarding the result.
  *
- * The parsed copy is discarded: client components import `@/site.config`
- * directly so they never pull zod into the browser bundle, and discarding the
- * copy keeps its `as const` literal types intact for them.
+ * Components import `siteConfig` directly instead, so client bundles skip zod
+ * (~64 kB) and keep the file's `as const` literal types intact.
  */
 parseContent("site.config.ts", siteConfigSchema, siteConfig);
-
 assertUnique("experience", experience, "key");
 assertUnique("projects (capstone)", capstoneProjects, "title");
 assertUnique("projects (mini)", miniProjects, "title");
