@@ -1,3 +1,11 @@
+/**
+ * Loads, validates, and exports application content.
+ *
+ * This is the main content entry point.
+ * Components import from `@/lib/content`, never from `content/` directly.
+ * Add new content exports here so they are validated before use.
+ */
+
 import { about as rawAbout } from "@/content/about";
 import { banner as rawBanner } from "@/content/banner";
 import { contact as rawContact } from "@/content/contact";
@@ -19,13 +27,11 @@ import {
 } from "./schema";
 
 /**
- * The single place `content/` is read and validated.
+ * Validates and parses each `content/` module before export.
  *
- * Components import from `@/lib/content`, never `content/` directly
- * Everything exported here has already been checked. Validation happens at import time, so
- * broken content fails `next dev`/`next build`/the test run immediately, instead of reaching a real user.
+ * This makes invalid content fail fast during development, builds, or tests
+ * rather than surfacing later in the UI.
  */
-
 export const experience = parseContent("experience", experienceSchema, rawExperience) as JobEntries;
 export const capstoneProjects = parseContent(
   "projects (capstone)",

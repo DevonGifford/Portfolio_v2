@@ -1,14 +1,8 @@
 /**
- * The content boundary.
+ * Hand-rolled formatting for readable Zod content errors.
  *
- * Everything under `content/` is plain, unvalidated data. It passes through here
- * exactly once, in `lib/content/index.ts`, and components only ever see the
- * result. A failure throws at module scope, which fails `next dev`, `next build`
- * and the test run alike — invalid content cannot reach production.
- *
- * Zod's own `z.prettifyError` is close, but it can only say "index 2". A person
- * editing content needs to hear "entry 'appleQA'", so the issues are walked by
- * hand and named from the data itself.
+ * `z.prettifyError` reports generic paths like `index 2`; this replaces them
+ * with clearer labels such as `experience entry "appleQA" has an invalid "componentProps.dates"`.
  */
 
 import type { ZodType, z } from "zod";
@@ -16,7 +10,11 @@ import type { ZodType, z } from "zod";
 /** Fields consulted, in order, to name the entry an issue belongs to. */
 const NAME_KEYS = ["key", "id", "title", "name", "company"] as const;
 
-/** Reads a nested value by path, returning `undefined` rather than throwing. */
+/**
+ * Safely reads a nested value from an object using a property path.
+ *
+ * @returns The value at the path, or `undefined` if the path cannot be resolved.
+ */
 function valueAt(root: unknown, path: readonly PropertyKey[]): unknown {
   let node = root;
 
@@ -29,7 +27,12 @@ function valueAt(root: unknown, path: readonly PropertyKey[]): unknown {
   return node;
 }
 
-/** `[2, "componentProps", "dates"]` -> ` entry "appleQA"`, or `""` for a non-list. */
+/**
+ * Builds a readable label for an array entry.
+ *
+ * @returns The first matching value from `NAME_KEYS`, the entry index as a fallback, or `""` for a non-list.
+ * @example `[2, "componentProps", "dates"]` -> ` entry "appleQA"`
+ */
 function describeEntry(root: unknown, path: readonly PropertyKey[]): string {
   const index = path[0];
 
@@ -48,7 +51,12 @@ function describeEntry(root: unknown, path: readonly PropertyKey[]): string {
   return ` entry #${index}`;
 }
 
-/** `[2, "componentProps", "bullets", 0, "heading"]` -> `componentProps.bullets.0.heading`. */
+/**
+ * Converts a Zod issue path into a readable field path.
+ *
+ * @returns The field path without the leading array index, if present.
+ * @example `[2, "componentProps", "bullets", 0, "heading"]` -> `componentProps.bullets.0.heading`.
+ */
 function describeField(path: readonly PropertyKey[]): string {
   const fields = typeof path[0] === "number" ? path.slice(1) : path;
 
@@ -83,16 +91,13 @@ export function parseContent<T extends ZodType>(
       : `  - ${where} has an invalid "${field}": ${issue.message}`;
   });
 
-  // Leading newlines and the quoted section name keep this legible in Next's
-  // build log, and greppable in CI.
+  // Leading newlines keep this legible in Next's build log and greppable in CI.
   throw new Error(`\n\nInvalid content in "${section}":\n${problems.join("\n")}\n`);
 }
 
 /**
- * Throws if two entries share a value for `field`.
- *
- * Uniqueness is what React keys and the Experience tab state rely on, and it is
- * the one invariant a schema cannot express per-entry.
+ * Throws if two entries share a value for `field` — the one check a schema
+ * can't express per-entry, and what React keys and the Experience tabs rely on.
  *
  * @param section - Name shown in the error, e.g. `"experience"`.
  * @param items - The parsed entries.
