@@ -18,7 +18,7 @@ const Contact = () => {
         My inbox is always open and looking for new opportunities <br /> Whether you have a question
         or just want to say hi, I&apos;ll do my best to get back to you!
       </p>
-      <a href="mailto:devongifford@outloook.com">
+      <a href="mailto:devongifford@outlook.com">
         <button className="mt-4 h-14 w-40 rounded-md border border-textGreen font-titleFont text-sm tracking-wider text-textGreen duration-300 hover:bg-hoverColor">
           Say Hello
         </button>

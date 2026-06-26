@@ -71,7 +71,7 @@ const Banner: React.FC = () => {
         <a href="#Projects" onClick={scrollToId} className="mt-2">
           <span className="group relative inline-flex h-7 cursor-pointer overflow-x-hidden text-textGreen">
             Capstone Projects
-            <span className="absolute bottom-1 left-0 h-[1px] w-full translate-x-[110%] bg-textGreen transition-transform duration-500 group-hover:translate-x-0" />
+            <span className="absolute bottom-1 left-0 h-px w-full translate-x-[110%] bg-textGreen transition-transform duration-500 group-hover:translate-x-0" />
           </span>
         </a>
       </motion.div>
