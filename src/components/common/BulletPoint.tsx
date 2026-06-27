@@ -13,9 +13,9 @@ interface Props {
  */
 export default function BulletPoint({ headingText, contentText }: Props) {
   return (
-    <li className="gap-2 text-base">
-      <div className="text-textGreen flex flex-row">
-        <BsArrowRightShort /> &ensp;
+    <li className="text-base">
+      <div className="text-textGreen flex flex-row gap-x-2">
+        <BsArrowRightShort />
         <span className="leading-tight">{headingText}:</span>
       </div>
 
