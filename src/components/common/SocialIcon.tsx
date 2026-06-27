@@ -1,11 +1,12 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
 import ExternalLink from "@/components/common/ExternalLink";
 
 interface SocialIconProps {
   href: string;
-  children: React.ReactNode;
+  children: ReactNode;
   label: string;
   hoverColor?: string;
   externalClassName?: string;

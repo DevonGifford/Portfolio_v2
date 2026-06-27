@@ -26,7 +26,7 @@ export default function SectionTitle({ titleName, titleNumber, centered = false 
       >
         <span className="text-textGreen mr-2 text-lg">{titleNumber}.</span> {titleName}
         {!centered && (
-          <span className="lgl:w-72 ml-7 hidden h-[0.5px] bg-gray-700 md:inline-flex md:w-60" />
+          <span className="lgl:w-72 bg-textDark ml-7 hidden h-[0.5px] md:inline-flex md:w-60" />
         )}
       </h2>
     </div>
