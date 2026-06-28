@@ -5,15 +5,16 @@ import { cn } from "@/lib/utils/cn";
 interface Props {
   titleNumber: string;
   titleName: string;
-  /** Center the title and drop the trailing rule (e.g. the Contact CTA). */
   centered?: boolean;
 }
 
 /**
  * Renders the shared themed heading used across page sections.
  *
- * @param props - Section title options.
- * @returns A section title heading.
+ * @param props.titleNumber - Two-digit index shown before the name, e.g. "01".
+ * @param props.titleName - The heading text.
+ * @param props.centered - Center the title and drop the trailing rule (e.g. the Contact CTA).
+ * @returns An `<h2>` heading, optionally followed by a decorative rule.
  */
 export default function SectionTitle({ titleName, titleNumber, centered = false }: Props) {
   return (
