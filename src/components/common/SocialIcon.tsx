@@ -15,8 +15,12 @@ interface SocialIconProps {
 /**
  * Renders a themed social link icon.
  *
- * @param props - Social icon options.
- * @returns An external social link icon.
+ * @param props.href - Destination URL, opened in a new tab.
+ * @param props.children - The icon glyph to render inside the link.
+ * @param props.label - Accessible name; the icon itself has no visible text.
+ * @param props.hoverColor - Tailwind class applied on hover, e.g. "hover:text-textGreen".
+ * @param props.externalClassName - Extra classes merged onto the icon's wrapper span.
+ * @returns An icon wrapped in an external link.
  */
 export default function SocialIcon({
   href,

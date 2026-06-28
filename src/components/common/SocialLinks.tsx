@@ -21,8 +21,8 @@ const socials: Record<keyof typeof siteConfig.social, { Icon: IconType; label: s
 /**
  * Renders social icons from the site config.
  *
- * @param props - Social link options.
- * @returns Social link icons.
+ * @param props.iconClassName - Extra classes applied to each icon.
+ * @returns One `SocialIcon` per entry in `siteConfig.social`.
  */
 export default function SocialLinks({ iconClassName }: { iconClassName?: string }) {
   return (
