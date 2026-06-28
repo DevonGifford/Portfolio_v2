@@ -8,8 +8,9 @@ interface Props {
 /**
  * Renders a styled bullet point with a heading and body text.
  *
- * @param props - Bullet point content.
- * @returns A bullet point list item.
+ * @param props.headingText - Bold lead-in shown before the colon.
+ * @param props.contentText - The achievement or detail text.
+ * @returns A list item, for use inside a `<ul>`/`<ol>`.
  */
 export default function BulletPoint({ headingText, contentText }: Props) {
   return (

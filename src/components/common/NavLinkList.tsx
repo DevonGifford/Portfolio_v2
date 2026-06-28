@@ -16,10 +16,9 @@ const sectionIds = navItems.map((item) => item.id);
 /**
  * Renders animated navigation links for desktop or mobile layouts.
  *
- * @param props - Navigation list options.
  * @param props.onClick - Handler called when a navigation link is clicked.
  * @param props.isMobile - Whether to render the mobile layout and animation direction.
- * @returns An animated navigation link list.
+ * @returns A `<ul>` of animated, scroll-aware nav links.
  */
 export default function NavLinkList({
   onClick,
