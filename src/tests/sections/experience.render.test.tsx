@@ -1,4 +1,4 @@
-import { render, screen, within } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import Experience from "@/components/sections/Experience";
@@ -7,12 +7,12 @@ import { experience } from "@/lib/content";
 /**
  * Sidebar tabs, in data order.
  *
- * Indexed rather than queried by label: two entries legitimately share a label
+ * Queried by role rather than by label: two entries legitimately share a label
  * (the same employer, two roles), and the labels also appear as company names
  * in the entry body.
  */
 function tabs() {
-  return within(screen.getAllByRole("list")[0]).getAllByRole("listitem");
+  return screen.getAllByRole("tab");
 }
 
 /**
@@ -66,5 +66,81 @@ describe("Experience section", () => {
         expect(screen.getByText(`${bullet.heading}:`)).toBeInTheDocument();
       }
     }
+  });
+});
+
+/**
+ * The tabs were previously bare `<li onClick>` elements: clickable in jsdom, but
+ * unreachable for anyone not using a mouse. These assert the ARIA tab contract
+ * that replaced them.
+ */
+describe("Experience keyboard access", () => {
+  it("exposes the sidebar as a labelled tablist", () => {
+    render(<Experience jobs={experience} />);
+
+    expect(screen.getByRole("tablist")).toHaveAccessibleName();
+    expect(tabs()).toHaveLength(experience.length);
+  });
+
+  it("marks only the open tab as selected", () => {
+    render(<Experience jobs={experience} />);
+
+    const selected = tabs().filter((tab) => tab.getAttribute("aria-selected") === "true");
+
+    expect(selected).toHaveLength(1);
+    expect(selected[0]).toHaveTextContent(experience[0].label);
+  });
+
+  it("puts a single tab stop on the tablist so Tab does not walk every entry", () => {
+    render(<Experience jobs={experience} />);
+
+    const reachable = tabs().filter((tab) => tab.getAttribute("tabindex") === "0");
+
+    expect(reachable).toHaveLength(1);
+  });
+
+  it("moves to the next entry on ArrowDown and takes focus with it", async () => {
+    const user = userEvent.setup();
+    render(<Experience jobs={experience} />);
+
+    await user.tab();
+    await user.keyboard("{ArrowDown}");
+
+    expect(tabs()[1]).toHaveFocus();
+    expect(tabs()[1]).toHaveAttribute("aria-selected", "true");
+    expect(screen.getByText(experience[1].componentProps.intro)).toBeInTheDocument();
+  });
+
+  it("wraps from the first entry to the last on ArrowUp", async () => {
+    const user = userEvent.setup();
+    render(<Experience jobs={experience} />);
+
+    await user.tab();
+    await user.keyboard("{ArrowUp}");
+
+    expect(tabs().at(-1)).toHaveFocus();
+    expect(screen.getByText(experience.at(-1)!.componentProps.intro)).toBeInTheDocument();
+  });
+
+  it("jumps to the last entry on End and back to the first on Home", async () => {
+    const user = userEvent.setup();
+    render(<Experience jobs={experience} />);
+
+    await user.tab();
+    await user.keyboard("{End}");
+    expect(screen.getByText(experience.at(-1)!.componentProps.intro)).toBeInTheDocument();
+
+    await user.keyboard("{Home}");
+    expect(screen.getByText(experience[0].componentProps.intro)).toBeInTheDocument();
+  });
+
+  it("links the open tab to the panel describing it", () => {
+    render(<Experience jobs={experience} />);
+
+    const panel = screen.getByRole("tabpanel");
+    const openTab = tabs().find((tab) => tab.getAttribute("aria-selected") === "true");
+
+    expect(panel).toHaveAttribute("aria-labelledby", openTab!.id);
+    expect(openTab).toHaveAttribute("aria-controls", panel.id);
   });
 });
