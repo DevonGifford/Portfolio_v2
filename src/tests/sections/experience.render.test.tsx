@@ -144,3 +144,29 @@ describe("Experience keyboard access", () => {
     expect(openTab).toHaveAttribute("aria-controls", panel.id);
   });
 });
+
+/**
+ * The default tab used to be the hardcoded key `"tuvLead"`, resolved with a
+ * non-null assertion. That was safe only while that entry happened to sit first
+ * in content/experience.ts — reordering or renaming it left the section with an
+ * undefined entry and threw on render.
+ */
+describe("Experience default entry", () => {
+  it("opens on whichever entry the content lists first", () => {
+    const reordered = [...experience].reverse();
+    render(<Experience jobs={reordered} />);
+
+    expect(screen.getByText(reordered[0].componentProps.intro)).toBeInTheDocument();
+    expect(tabs()[0]).toHaveAttribute("aria-selected", "true");
+  });
+
+  it("renders a subset that omits the previously hardcoded default", () => {
+    const withoutFirst = experience.slice(1);
+
+    expect(withoutFirst.some((entry) => entry.key === "tuvLead")).toBe(false);
+
+    render(<Experience jobs={withoutFirst} />);
+
+    expect(screen.getByText(withoutFirst[0].componentProps.intro)).toBeInTheDocument();
+  });
+});

@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { cn } from "@/lib/utils/cn";
 import SectionTitle from "../common/SectionTitle";
 import ExperienceEntry from "./ExperienceEntry";
-import type { JobEntries, JobTabKey } from "@/lib/content";
+import type { JobEntries } from "@/lib/content";
 import { siteConfig } from "@/content/site.config";
 
 /**
@@ -12,8 +12,11 @@ import { siteConfig } from "@/content/site.config";
  *   content layer (and zod with it) never enters the client bundle.
  */
 export default function Experience({ jobs }: { jobs: JobEntries }) {
-  const [activeTab, setActiveTab] = useState<JobTabKey>("tuvLead");
-  const activeEntry = jobs.find((entry) => entry.key === activeTab)!;
+  // Defaults to the first entry rather than a hardcoded key, so reordering
+  // content/experience.ts cannot leave the section pointing at nothing. The
+  // content schema guarantees at least one entry.
+  const [activeTab, setActiveTab] = useState(jobs[0].key);
+  const activeEntry = jobs.find((entry) => entry.key === activeTab) ?? jobs[0];
   const tablistRef = useRef<HTMLDivElement>(null);
 
   /**
