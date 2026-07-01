@@ -61,15 +61,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
     <div
       ref={ref}
       onClick={(e) => {
-        if (
-          ref &&
-          typeof ref === "object" &&
-          "current" in ref &&
-          ref.current instanceof HTMLElement &&
-          e.target === ref.current
-        ) {
-          onClose();
-        }
+        if (e.target === e.currentTarget) onClose();
       }}
       className="mdl:hidden fixed inset-0 flex flex-col items-end bg-black/50"
     >

@@ -18,7 +18,6 @@ export default function Footer() {
         <br />
         {siteConfig.footer.inspiredBy}{" "}
         <ExternalLink href={siteConfig.footer.credit.href} className="text-textGreen">
-          {" "}
           {siteConfig.footer.credit.name}
         </ExternalLink>
       </p>

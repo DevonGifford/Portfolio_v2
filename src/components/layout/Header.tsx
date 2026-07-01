@@ -21,7 +21,7 @@ export default function Header() {
       <div className="max-w-container font-titleFont mx-auto flex items-center justify-between py-4">
         {/* Logo */}
         <motion.div {...fadeIn()}>
-          <a href="#home" className="hover:animate-spin" aria-label="Home">
+          <a href="#home" aria-label="Home">
             <Image
               src={logo}
               alt={`${siteConfig.name} logo`}
