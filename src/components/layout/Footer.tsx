@@ -4,6 +4,11 @@ import SocialLinks from "../common/SocialLinks";
 import ExternalLink from "../common/ExternalLink";
 import { siteConfig } from "@/content/site.config";
 
+/**
+ * Renders the site footer: social icons (mobile only) and attribution text.
+ *
+ * @returns The site footer.
+ */
 export default function Footer() {
   return (
     <footer>

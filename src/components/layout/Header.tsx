@@ -11,6 +11,12 @@ import { logo } from "@/public/assets";
 import NavLinkList from "@/components/common/NavLinkList";
 import MobileMenu from "@/components/layout/MobileMenu";
 
+/**
+ * Renders the sticky site header: logo, desktop nav, resume link, and the
+ * mobile menu toggle.
+ *
+ * @returns The site header.
+ */
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);

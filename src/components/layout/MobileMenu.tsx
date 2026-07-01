@@ -14,6 +14,14 @@ type Props = {
   onClose: () => void;
 };
 
+/**
+ * Renders the mobile navigation drawer: backdrop, nav links, resume link,
+ * social icons, and email — with focus trapping and Escape-to-close.
+ *
+ * @param props.onClose - Called when the menu should close (Escape, backdrop
+ *   click, close button, or a nav link navigating away).
+ * @returns The mobile menu overlay; the forwarded ref attaches to the backdrop.
+ */
 const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClose }, ref) {
   const panelRef = useRef<HTMLDivElement>(null);
 
