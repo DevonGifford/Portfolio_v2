@@ -15,7 +15,7 @@ export default function RightSide() {
           {siteConfig.email}
         </p>
       </a>
-      <span className="bg-textDark inline-flex h-52 w-[2px]"></span>
+      <div className="bg-textDark h-52 w-[2px]"></div>
     </motion.div>
   );
 }
