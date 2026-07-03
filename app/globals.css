@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --container-*: initial;
@@ -30,12 +30,14 @@
   --color-textLight: #ccd6f6;
   --color-textDark: #8892b0;
   --color-hoverColor: rgba(100, 255, 218, 0.1);
+  --color-cardColor: #112240;
 
   @keyframes blink {
     0%,
     100% {
       opacity: 0;
     }
+
     50% {
       opacity: 1;
     }
@@ -46,9 +48,6 @@
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
   looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
 */
 @layer base {
   *,
@@ -64,6 +63,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -72,20 +72,21 @@
   /* Global Styles */
   html {
     scroll-behavior: smooth;
-    font-family: var(--font-montserrat); /* fallback to bodyFont */
+    font-family: var(--font-montserrat);
+    /* fallback to bodyFont */
   }
 
   body {
-    background-color: #0a192f; /* bodyColor */
-    color: #ccd6f6; /* textLight */
+    background-color: #0a192f;
+    /* bodyColor */
+    color: #ccd6f6;
+    /* textLight */
   }
 
   /* Active link highlight */
   .active {
     color: #64ffda;
   }
-
-  /* Hide scrollbar utility */
 }
 
 @layer utilities {
@@ -93,13 +94,16 @@
   .scrollbar-thin {
     scrollbar-width: thin;
   }
+
   .scrollbar-thin::-webkit-scrollbar {
     width: 8px;
     height: 8px;
   }
+
   .scrollbar-track-textDark\/5::-webkit-scrollbar-track {
     background-color: rgba(136, 146, 176, 0.05);
   }
+
   .scrollbar-thumb-textDark\/70::-webkit-scrollbar-thumb {
     background-color: rgba(136, 146, 176, 0.7);
     border-radius: 9999px;

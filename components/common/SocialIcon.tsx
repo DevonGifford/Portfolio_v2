@@ -1,29 +1,40 @@
 "use client";
 
-import React from "react";
+import { cn } from "@/lib/utils";
+import ExternalLink from "@/components/common/ExternalLink";
 
 interface SocialIconProps {
   href: string;
   children: React.ReactNode;
+  label: string;
   hoverColor?: string;
   externalClassName?: string;
 }
 
-const SocialIcon: React.FC<SocialIconProps> = ({
+/**
+ * Renders a themed social link icon.
+ *
+ * @param props - Social icon options.
+ * @returns An external social link icon.
+ */
+export default function SocialIcon({
   href,
   children,
+  label,
   hoverColor = "hover:text-textGreen",
   externalClassName = "",
-}) => {
+}: SocialIconProps) {
   return (
-    <a href={href} target="_blank" rel="noreferrer">
+    <ExternalLink href={href} aria-label={label}>
       <span
-        className={`inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-xl transition-all duration-300 hover:-translate-y-2 ${hoverColor} ${externalClassName}`}
+        className={cn(
+          "inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-xl transition-all duration-300 hover:-translate-y-2",
+          hoverColor,
+          externalClassName
+        )}
       >
         {children}
       </span>
-    </a>
+    </ExternalLink>
   );
-};
-
-export default SocialIcon;
+}

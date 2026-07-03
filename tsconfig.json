@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -10,7 +9,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
@@ -23,12 +22,6 @@
     "paths": {
       "@/*": ["./*"]
     }
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    },
-    "require": ["tsconfig-paths/register"]
   },
   "include": [
     "next-env.d.ts",
