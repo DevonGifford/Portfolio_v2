@@ -1,25 +1,62 @@
 "use client";
 
-import React, { forwardRef } from "react";
-import { motion } from "framer-motion";
+import { forwardRef, useEffect, useRef } from "react";
+import { motion } from "motion/react";
+import { fadeIn, slideIn, DURATION } from "@/lib/motion";
+import { scrollToAnchor } from "@/lib/scroll";
+import { outlineButton } from "../common/OutlineButton";
+import ExternalLink from "../common/ExternalLink";
 import { MdOutlineClose } from "react-icons/md";
-import SocialIconList from "../common/SocialIconList";
+import SocialLinks from "../common/SocialLinks";
 import NavLinkList from "../common/NavLinkList";
+import { siteConfig } from "@/site.config";
 
 type Props = {
   onClose: () => void;
 };
 
-const MobileMenu = forwardRef<HTMLDivElement, Props>(({ onClose }, ref) => {
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    onClose();
-    const id = e.currentTarget.href.split("#")[1];
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClose }, ref) {
+  const panelRef = useRef<HTMLDivElement>(null);
 
-    document.querySelectorAll(".nav-link").forEach((link) => link.classList.remove("active"));
-    e.currentTarget.classList.add("active");
-  };
+  useEffect(() => {
+    const panel = panelRef.current;
+    if (!panel) return;
+
+    const getFocusable = () =>
+      Array.from(
+        panel.querySelectorAll<HTMLElement>('a[href], button, [tabindex]:not([tabindex="-1"])')
+      );
+
+    getFocusable()[0]?.focus();
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose();
+
+        return;
+      }
+
+      if (e.key !== "Tab") return;
+
+      const focusable = getFocusable();
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [onClose]);
 
   return (
     <div
@@ -35,66 +72,64 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(({ onClose }, ref) => {
           onClose();
         }
       }}
-      className="right-end absolute top-0 flex h-screen w-full flex-col items-end bg-black bg-opacity-50 mdl:hidden"
+      className="right-end bg-opacity-50 mdl:hidden absolute top-0 flex h-screen w-full flex-col items-end bg-black"
     >
       <motion.div
-        initial={{ x: 20, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.1 }}
-        className="scrollbar-hide relative flex h-full w-[80%] flex-col items-center bg-[#112240] px-4 py-16"
+        ref={panelRef}
+        id="mobile-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation menu"
+        {...slideIn({ axis: "x", duration: 0.1 })}
+        className="scrollbar-hide bg-cardColor relative flex h-full w-[80%] flex-col items-center px-4 py-16"
       >
         {/* Close Icon */}
-        <MdOutlineClose
+        <button
+          type="button"
           onClick={onClose}
-          className="absolute right-4 top-4 cursor-pointer text-3xl text-textGreen hover:text-textGreen/80"
-        />
+          aria-label="Close menu"
+          className="text-textGreen hover:text-textGreen/80 absolute top-4 right-4 cursor-pointer text-3xl"
+        >
+          <MdOutlineClose />
+        </button>
 
         {/* Nav Items */}
         <div className="flex w-[80%] flex-col items-center gap-8 text-center text-base">
-          <NavLinkList onClick={handleScroll} isMobile />
+          <NavLinkList
+            onClick={(e) => scrollToAnchor(e, { setActive: true, onNavigate: onClose })}
+            isMobile
+          />
         </div>
 
         {/* Resume */}
-        <a href="/assets/DevonGifford-FullstackDeveloper-2025.pdf" target="_blank" className="pt-8">
+        <ExternalLink href={siteConfig.resumePath} className="pt-8">
           <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 0.2,
-              delay: 0.8,
-              ease: "easeIn",
-            }}
-            className="h-10 w-32 rounded-md border border-textGreen text-[13px] text-textGreen duration-300 hover:bg-hoverColor"
+            {...fadeIn({ duration: DURATION.fast, delay: 0.8, ease: "easeIn" })}
+            className={outlineButton("h-10 w-32 text-[13px]")}
           >
             Resume
           </motion.button>
-        </a>
+        </ExternalLink>
 
         {/* Social Icons */}
-        <motion.div
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.2, delay: 1 }}
-        >
-          <SocialIconList className="pt-4" />
+        <motion.div {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1 })}>
+          <div className="flex gap-4 pt-4">
+            <SocialLinks iconClassName="border-zinc-700 bg-bodyColor text-zinc-200" />
+          </div>
         </motion.div>
 
         {/* Email */}
         <motion.a
-          href="mailto:devongifford@outlook.com"
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.2, delay: 1.6 }}
+          href={`mailto:${siteConfig.email}`}
+          {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1.6 })}
         >
-          <p className="mt-4 w-72 pl-4 text-sm tracking-widest hover:text-textGreen">
-            devongifford@outlook.com
+          <p className="hover:text-textGreen mt-4 w-72 pl-4 text-sm tracking-widest">
+            {siteConfig.email}
           </p>
         </motion.a>
       </motion.div>
     </div>
   );
 });
-
-MobileMenu.displayName = "MobileMenu";
 
 export default MobileMenu;

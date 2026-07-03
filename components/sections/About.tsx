@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
+import { cn } from "@/lib/utils";
 import {
   profileImgCircle,
   ReactL,
@@ -22,28 +22,29 @@ import {
 } from "@/public/assets";
 import SectionTitle from "../common/SectionTitle";
 
-// SkillIcon component
-const SkillIcon = ({
+function SkillIcon({
   src,
   alt,
   title,
   className = "w-12 max-md:w-6 rounded-full",
 }: {
-  src: any;
+  src: StaticImageData;
   alt: string;
   title: string;
   className?: string;
-}) => (
-  <li className="flex items-center transition-all duration-300 hover:-translate-y-2">
-    <Image
-      className={`${className} hover:animate-pulse hover:contrast-150`}
-      src={src}
-      alt={alt}
-      title={title}
-      loading="lazy"
-    />
-  </li>
-);
+}) {
+  return (
+    <li className="flex items-center transition-all duration-300 hover:-translate-y-2">
+      <Image
+        className={cn(className, "hover:animate-pulse hover:contrast-150")}
+        src={src}
+        alt={alt}
+        title={title}
+        loading="lazy"
+      />
+    </li>
+  );
+}
 
 const skillGroups = [
   {
@@ -56,7 +57,6 @@ const skillGroups = [
         title: "JavaScript",
         className: "rounded-full w-12 max-md:w-6",
       },
-
       { src: ReactL, alt: "React", title: "React", className: "w-14 max-md:w-7" },
       { src: Next, alt: "NextJS", title: "NextJS" },
       { src: Vite, alt: "Vite", title: "Vite", className: "w-14 max-md:w-6" },
@@ -84,29 +84,29 @@ const skillGroups = [
   },
 ];
 
-const About = () => {
+export default function About() {
   return (
     <section
       id="about"
-      className="mx-auto flex h-screen max-w-containerSmall flex-col justify-center gap-8 py-96 mdl:px-10 lgl:py-32"
+      className="max-w-containerSmall mdl:px-10 lgl:py-32 mx-auto flex h-screen flex-col justify-center gap-8 py-96"
     >
-      <div className="flex items-center gap-10 pt-20 sml:pt-5">
-        <SectionTitle titleNumber="0.1" titleName="About me" />
+      <div className="sml:pt-5 flex items-center gap-10 pt-20">
+        <SectionTitle titleNumber="01" titleName="About me" />
       </div>
 
       {/* CONTENT CONTAINER - GRID */}
       <div className="grid auto-rows-auto grid-cols-6">
         {/* Text block + mobile profile image */}
-        <div className="col-start-1 col-end-5 row-span-2 text-base font-medium text-textDark max-mdl:col-span-full">
-          <div className="text-xs sm:text-sm sml:text-base mdl:w-11/12">
+        <div className="text-textDark max-mdl:col-span-full col-start-1 col-end-5 row-span-2 text-base font-medium">
+          <div className="sml:text-base mdl:w-11/12 text-xs sm:text-sm">
             <div className="float-right py-6 pl-5">
               <div className="relative">
                 <Image
-                  className="left-0 top-0 w-24 rounded-full border-2 border-textGreen sm:w-32 sml:w-40 md:w-48 mdl:hidden"
+                  className="border-textGreen sml:w-40 mdl:hidden top-0 left-0 w-24 rounded-full border-2 sm:w-32 md:w-48"
                   src={profileImgCircle}
                   alt="profilepicture"
                 />
-                <div className="absolute left-0 top-0 h-24 w-24 rounded-full bg-textGreen/20 duration-300 hover:bg-transparent sm:h-32 sm:w-32 sml:h-40 sml:w-40 md:h-48 md:w-48 mdl:hidden" />
+                <div className="bg-textGreen/20 sml:h-40 sml:w-40 mdl:hidden absolute top-0 left-0 h-24 w-24 rounded-full duration-300 hover:bg-transparent sm:h-32 sm:w-32 md:h-48 md:w-48" />
               </div>
             </div>
             <p>
@@ -135,15 +135,15 @@ const About = () => {
         </div>
 
         {/* Profile Image Section */}
-        <div className="group relative col-start-5 col-end-7 row-start-1 row-end-3 grid place-items-center max-mdl:hidden">
-          <div className="absolute -left-6 -top-6 h-52 w-52 rounded-full lgl:h-80 lgl:w-80">
+        <div className="group max-mdl:hidden relative col-start-5 col-end-7 row-start-1 row-end-3 grid place-items-center">
+          <div className="lgl:h-80 lgl:w-80 absolute -top-6 -left-6 h-52 w-52 rounded-full">
             <Image
-              className="fill absolute z-30 h-52 w-52 rounded-full border-2 border-textGreen object-cover lgl:h-80 lgl:w-80"
+              className="fill border-textGreen lgl:h-80 lgl:w-80 absolute z-30 h-52 w-52 rounded-full border-2 object-cover"
               src={profileImgCircle}
               alt="Devon Gifford - Profile picture"
             />
-            <div className="absolute left-0 top-0 z-30 hidden h-52 w-52 rounded-full bg-textGreen/20 duration-300 group-hover:bg-transparent mdl:inline-block lgl:h-80 lgl:w-80" />
-            <div className="absolute left-6 top-6 z-10 hidden h-52 w-52 rounded-full border-2 border-textGreen transition-transform duration-100 group-hover:-translate-x-6 group-hover:-translate-y-6 mdl:inline-block lgl:h-80 lgl:w-80" />
+            <div className="bg-textGreen/20 mdl:inline-block lgl:h-80 lgl:w-80 absolute top-0 left-0 z-30 hidden h-52 w-52 rounded-full duration-300 group-hover:bg-transparent" />
+            <div className="border-textGreen mdl:inline-block lgl:h-80 lgl:w-80 absolute top-6 left-6 z-10 hidden h-52 w-52 rounded-full border-2 transition-transform duration-100 group-hover:-translate-x-6 group-hover:-translate-y-6" />
           </div>
         </div>
 
@@ -152,7 +152,7 @@ const About = () => {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
             {skillGroups.map(({ title, skills }) => (
               <div key={title}>
-                <p className="pb-5 text-center font-codeFont text-sm font-bold text-textDark lg:text-base">
+                <p className="font-codeFont text-textDark pb-5 text-center text-sm font-bold lg:text-base">
                   {title}:
                 </p>
                 <ul className="flex flex-row flex-wrap justify-center gap-5 md:gap-10">
@@ -173,6 +173,4 @@ const About = () => {
       </div>
     </section>
   );
-};
-
-export default About;
+}

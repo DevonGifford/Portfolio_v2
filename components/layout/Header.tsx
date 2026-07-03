@@ -2,7 +2,11 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import { fadeIn, slideIn } from "@/lib/motion";
+import { scrollToAnchor } from "@/lib/scroll";
+import { outlineButton } from "@/components/common/OutlineButton";
+import { siteConfig } from "@/site.config";
 import { logo } from "@/public/assets";
 import NavLinkList from "@/components/common/NavLinkList";
 import MobileMenu from "@/components/layout/MobileMenu";
@@ -10,65 +14,65 @@ import MobileMenu from "@/components/layout/MobileMenu";
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    setShowMenu(false);
-
-    const href = e.currentTarget.href;
-    const id = href.split("#")[1];
-    const elem = document.getElementById(id);
-    elem?.scrollIntoView({ behavior: "smooth" });
-
-    document.querySelectorAll(".nav-link").forEach((link) => link.classList.remove("active"));
-    e.currentTarget.classList.add("active");
-  };
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-bodyColor px-4 shadow-navbarShadow">
-      <div className="mx-auto flex max-w-container items-center justify-between py-4 font-titleFont">
+    <header className="bg-bodyColor shadow-navbarShadow sticky top-0 z-50 w-full px-4">
+      <div className="max-w-container font-titleFont mx-auto flex items-center justify-between py-4">
         {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <a href="#home" className="hover:animate-spin">
+        <motion.div {...fadeIn()}>
+          <a href="#home" className="hover:animate-spin" aria-label="Home">
             <Image
               src={logo}
               alt="logo"
-              className="mt-2 w-10 rounded-full hover:animate-spin sml:w-12"
+              className="sml:w-12 mt-2 w-10 rounded-full hover:animate-spin"
             />
           </a>
         </motion.div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-7 mdl:inline-flex">
-          <NavLinkList onClick={handleScroll} />
-          <a href="/assets/DevonGifford-FullstackDeveloper-2025.pdf" target="_blank">
-            <motion.button
-              initial={{ y: -10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1.25 }}
-              className="rounded-md border border-textGreen px-4 py-2 text-[13px] text-textGreen duration-300 hover:bg-hoverColor"
-            >
-              Resume
-            </motion.button>
-          </a>
+        <nav className="mdl:inline-flex hidden items-center gap-7">
+          <NavLinkList
+            onClick={(e) =>
+              scrollToAnchor(e, { setActive: true, onNavigate: () => setShowMenu(false) })
+            }
+          />
+          <motion.a
+            href={siteConfig.resumePath}
+            target="_blank"
+            rel="noopener noreferrer"
+            {...slideIn({ offset: -10, delay: 0.6 })}
+            className={outlineButton("px-4 py-2 text-[13px]")}
+          >
+            Resume
+          </motion.a>
         </nav>
 
         {/* Mobile Hamburger */}
-        <div
+        <button
+          ref={hamburgerRef}
+          type="button"
           onClick={() => setShowMenu(true)}
-          className="group flex h-5 w-6 cursor-pointer flex-col items-center justify-between overflow-hidden text-4xl text-textGreen mdl:hidden"
+          aria-label="Open menu"
+          aria-expanded={showMenu}
+          aria-controls="mobile-menu"
+          className="group text-textGreen mdl:hidden flex h-5 w-6 cursor-pointer flex-col items-center justify-between overflow-hidden text-4xl"
         >
-          <span className="inline-flex h-[2px] w-full bg-textGreen transition-all duration-300 ease-in-out group-hover:translate-x-2" />
-          <span className="inline-flex h-[2px] w-full bg-textGreen transition-all duration-300 ease-in-out" />
-          <span className="inline-flex h-[2px] w-full bg-textGreen transition-all duration-300 ease-in-out group-hover:translate-x-3" />
-        </div>
+          <span className="bg-textGreen inline-flex h-[2px] w-full transition-all duration-300 ease-in-out group-hover:translate-x-2" />
+          <span className="bg-textGreen inline-flex h-[2px] w-full transition-all duration-300 ease-in-out" />
+          <span className="bg-textGreen inline-flex h-[2px] w-full transition-all duration-300 ease-in-out group-hover:translate-x-3" />
+        </button>
 
         {/* Mobile Menu */}
-        {showMenu && <MobileMenu ref={menuRef} onClose={() => setShowMenu(false)} />}
+        {showMenu && (
+          <MobileMenu
+            ref={menuRef}
+            onClose={() => {
+              setShowMenu(false);
+              hamburgerRef.current?.focus();
+            }}
+          />
+        )}
       </div>
     </header>
   );
