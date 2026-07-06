@@ -14,7 +14,7 @@ export default function Contact({ copy }: { copy: ContactCopy }) {
   return (
     <section
       id="contact"
-      className="cl:py-32 max-w-contentContainer mx-auto flex h-full flex-col items-center justify-center gap-6 py-10"
+      className="lgl:py-32 max-w-contentContainer mx-auto flex h-full flex-col items-center justify-center gap-6 py-10"
     >
       <SectionTitle titleNumber={copy.title.number} titleName={copy.title.name} centered />
       <h2 className="font-titleFont lgl:text-4xl text-2xl font-semibold sm:text-3xl">

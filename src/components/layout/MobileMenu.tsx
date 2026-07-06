@@ -72,7 +72,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
           onClose();
         }
       }}
-      className="right-end bg-opacity-50 mdl:hidden absolute top-0 flex h-screen w-full flex-col items-end bg-black"
+      className="mdl:hidden absolute top-0 flex h-screen w-full flex-col items-end bg-black/50"
     >
       <motion.div
         ref={panelRef}
@@ -81,7 +81,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
         aria-modal="true"
         aria-label="Navigation menu"
         {...slideIn({ axis: "x", duration: 0.1 })}
-        className="scrollbar-hide bg-cardColor relative flex h-full w-[80%] flex-col items-center px-4 py-16"
+        className="no-scrollbar bg-cardColor relative flex h-full w-[80%] flex-col items-center px-4 py-16"
       >
         {/* Close Icon */}
         <button
