@@ -69,9 +69,28 @@ vi.mock("next/image", () => ({
   },
 }));
 
-// jsdom implements neither, and lib/scroll.ts calls both.
-window.scrollTo = vi.fn();
+// jsdom does not implement this, and lib/utils/scroll.ts calls it.
 Element.prototype.scrollIntoView = vi.fn();
+
+/**
+ * jsdom ships no IntersectionObserver, so `useActiveSection` would throw on
+ * render. This inert stub lets components mount; the hook's own suite replaces
+ * it with a controllable version via `vi.stubGlobal`.
+ */
+class InertIntersectionObserver implements IntersectionObserver {
+  readonly root = null;
+  readonly rootMargin = "";
+  readonly scrollMargin = "";
+  readonly thresholds = [];
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+  takeRecords(): IntersectionObserverEntry[] {
+    return [];
+  }
+}
+
+vi.stubGlobal("IntersectionObserver", InertIntersectionObserver);
 
 afterEach(() => {
   cleanup();

@@ -82,11 +82,6 @@
     color: #ccd6f6;
     /* textLight */
   }
-
-  /* Active link highlight */
-  .active {
-    color: #64ffda;
-  }
 }
 
 @layer utilities {

@@ -95,10 +95,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
 
         {/* Nav Items */}
         <div className="flex w-[80%] flex-col items-center gap-8 text-center text-base">
-          <NavLinkList
-            onClick={(e) => scrollToAnchor(e, { setActive: true, onNavigate: onClose })}
-            isMobile
-          />
+          <NavLinkList onClick={(e) => scrollToAnchor(e, { onNavigate: onClose })} isMobile />
         </div>
 
         {/* Resume */}

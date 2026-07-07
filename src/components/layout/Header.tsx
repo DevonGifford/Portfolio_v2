@@ -33,9 +33,7 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="mdl:inline-flex hidden items-center gap-7">
           <NavLinkList
-            onClick={(e) =>
-              scrollToAnchor(e, { setActive: true, onNavigate: () => setShowMenu(false) })
-            }
+            onClick={(e) => scrollToAnchor(e, { onNavigate: () => setShowMenu(false) })}
           />
           <motion.a
             href={siteConfig.resumePath}

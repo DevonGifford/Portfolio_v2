@@ -5,9 +5,13 @@ import { motion } from "motion/react";
 import { cn } from "@/lib/utils/cn";
 import { stagger, staggerItem } from "@/lib/animation/motion";
 import { siteConfig } from "@/content/site.config";
+import { useActiveSection } from "@/lib/utils/useActiveSection";
 
 /** `as const` gives each entry its own literal type; widen to one shape. */
 const navItems: readonly { id: string; label: string; index?: string }[] = siteConfig.nav;
+
+/** Module scope so the reference is stable across renders — the hook keys on it. */
+const sectionIds = navItems.map((item) => item.id);
 
 /**
  * Renders animated navigation links for desktop or mobile layouts.
@@ -24,6 +28,8 @@ export default function NavLinkList({
   onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
   isMobile?: boolean;
 }) {
+  const activeId = useActiveSection(sectionIds);
+
   return (
     <motion.ul
       className={cn("flex", isMobile ? "flex-col gap-12 pt-12" : "gap-7 text-[13px]")}
@@ -36,7 +42,11 @@ export default function NavLinkList({
           <Link
             href={`#${item.id}`}
             onClick={onClick}
-            className="nav-link text-textDark hover:text-textGreen flex cursor-pointer items-center gap-1 font-medium duration-300"
+            aria-current={activeId === item.id ? "location" : undefined}
+            className={cn(
+              "hover:text-textGreen flex cursor-pointer items-center gap-1 font-medium duration-300",
+              activeId === item.id ? "text-textGreen" : "text-textDark"
+            )}
           >
             {item.index && <span className="text-textGreen">{item.index}</span>}
             {item.label}
