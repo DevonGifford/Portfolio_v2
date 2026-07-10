@@ -3,7 +3,7 @@ import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { TiSocialTwitter } from "react-icons/ti";
 import { siteConfig } from "@/content/site.config";
-import SocialIcon from "./SocialIcon";
+import SocialMediaIcon from "./SocialMediaIcon";
 
 /**
  * Icon and label for each key in `siteConfig.social`.
@@ -22,7 +22,7 @@ const socials: Record<keyof typeof siteConfig.social, { Icon: IconType; label: s
  * Renders social icons from the site config.
  *
  * @param props.iconClassName - Extra classes applied to each icon.
- * @returns One `SocialIcon` per entry in `siteConfig.social`.
+ * @returns One `SocialMediaIcon` per entry in `siteConfig.social`.
  */
 export default function SocialLinks({ iconClassName }: { iconClassName?: string }) {
   return (
@@ -31,14 +31,14 @@ export default function SocialLinks({ iconClassName }: { iconClassName?: string 
         const { Icon, label } = socials[key];
 
         return (
-          <SocialIcon
+          <SocialMediaIcon
             key={key}
             href={siteConfig.social[key]}
             externalClassName={iconClassName}
             label={label}
           >
             <Icon />
-          </SocialIcon>
+          </SocialMediaIcon>
         );
       })}
     </>
