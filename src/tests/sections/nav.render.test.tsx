@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 
 import NavLinkList from "@/components/common/NavLinkList";
-import SocialLinks from "@/components/common/SocialLinks";
+import SocialMediaLinks from "@/components/common/SocialMediaLinks";
 import { siteConfig } from "@/content/site.config";
 
 /** Section ids the nav is expected to reach; also the anchor targets in `app/page.tsx`. */
@@ -17,9 +17,9 @@ describe("NavLinkList", () => {
   });
 });
 
-describe("SocialLinks", () => {
+describe("SocialMediaLinks", () => {
   it("renders one link per configured social account", () => {
-    render(<SocialLinks />);
+    render(<SocialMediaLinks />);
 
     const links = screen.getAllByRole("link");
 
@@ -27,7 +27,7 @@ describe("SocialLinks", () => {
   });
 
   it("points each link at its configured URL", () => {
-    render(<SocialLinks />);
+    render(<SocialMediaLinks />);
 
     const hrefs = screen.getAllByRole("link").map((link) => link.getAttribute("href"));
 
@@ -37,7 +37,7 @@ describe("SocialLinks", () => {
   });
 
   it("gives every link an accessible name", () => {
-    render(<SocialLinks />);
+    render(<SocialMediaLinks />);
 
     for (const link of screen.getAllByRole("link")) {
       expect(link).toHaveAccessibleName();

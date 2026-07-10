@@ -24,7 +24,7 @@ const socials: Record<keyof typeof siteConfig.social, { Icon: IconType; label: s
  * @param props.iconClassName - Extra classes applied to each icon.
  * @returns One `SocialMediaIcon` per entry in `siteConfig.social`.
  */
-export default function SocialLinks({ iconClassName }: { iconClassName?: string }) {
+export default function SocialMediaLinks({ iconClassName }: { iconClassName?: string }) {
   return (
     <>
       {(Object.keys(siteConfig.social) as (keyof typeof siteConfig.social)[]).map((key) => {

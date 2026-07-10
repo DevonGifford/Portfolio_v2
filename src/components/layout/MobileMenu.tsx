@@ -6,7 +6,7 @@ import { fadeIn, slideIn, DURATION } from "@/lib/animation/motion";
 import { scrollToAnchor } from "@/lib/utils/scroll";
 import { outlineButton } from "../common/OutlineButton";
 import { MdOutlineClose } from "react-icons/md";
-import SocialLinks from "../common/SocialLinks";
+import SocialMediaLinks from "../common/SocialMediaLinks";
 import NavLinkList from "../common/NavLinkList";
 import { siteConfig } from "@/content/site.config";
 
@@ -111,7 +111,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
         {/* Social Icons */}
         <motion.div {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1 })}>
           <div className="flex gap-4 pt-4">
-            <SocialLinks iconClassName="border-zinc-700 bg-bodyColor text-zinc-200" />
+            <SocialMediaLinks iconClassName="border-zinc-700 bg-bodyColor text-zinc-200" />
           </div>
         </motion.div>
 
