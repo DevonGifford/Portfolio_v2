@@ -8,7 +8,7 @@ import { scrollToAnchor } from "@/lib/utils/scroll";
 import { outlineButton } from "@/components/common/OutlineButton";
 import { siteConfig } from "@/content/site.config";
 import { logo } from "@/public/assets";
-import NavLinkList from "@/components/common/NavLinkList";
+import NavigationLinks from "@/components/common/NavigationLinks";
 import MobileMenu from "@/components/layout/MobileMenu";
 
 /**
@@ -38,7 +38,7 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="mdl:inline-flex hidden items-center gap-7">
-          <NavLinkList
+          <NavigationLinks
             onClick={(e) => scrollToAnchor(e, { onNavigate: () => setShowMenu(false) })}
           />
           <motion.a

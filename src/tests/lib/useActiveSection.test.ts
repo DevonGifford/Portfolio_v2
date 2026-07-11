@@ -2,7 +2,7 @@ import { act, renderHook } from "@testing-library/react";
 
 import { useActiveSection } from "@/lib/utils/useActiveSection";
 
-/** Section ids in document order, matching how `NavLinkList` passes them. */
+/** Section ids in document order, matching how `NavigationLinks` passes them. */
 const IDS = ["home", "about", "contact"] as const;
 
 type Callback = (entries: Pick<IntersectionObserverEntry, "isIntersecting" | "target">[]) => void;

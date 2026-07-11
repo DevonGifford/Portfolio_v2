@@ -1,15 +1,15 @@
 import { render, screen } from "@testing-library/react";
 
-import NavLinkList from "@/components/common/NavLinkList";
+import NavigationLinks from "@/components/common/NavigationLinks";
 import SocialMediaLinks from "@/components/common/SocialMediaLinks";
 import { siteConfig } from "@/content/site.config";
 
 /** Section ids the nav is expected to reach; also the anchor targets in `app/page.tsx`. */
 const SECTION_IDS = ["home", "about", "experience", "projects", "contact"];
 
-describe("NavLinkList", () => {
+describe("NavigationLinks", () => {
   it("renders a link per section, pointing at its anchor", () => {
-    render(<NavLinkList />);
+    render(<NavigationLinks />);
 
     const hrefs = screen.getAllByRole("link").map((link) => link.getAttribute("href"));
 
@@ -50,9 +50,9 @@ describe("SocialMediaLinks", () => {
  * `document.querySelectorAll(".nav-link")`, which hit the desktop and mobile
  * navs at once and never responded to scrolling. It is React state now.
  */
-describe("NavLinkList active state", () => {
+describe("NavigationLinks active state", () => {
   it("marks the section in view with aria-current", () => {
-    render(<NavLinkList />);
+    render(<NavigationLinks />);
 
     const current = screen.getAllByRole("link").filter((link) => link.hasAttribute("aria-current"));
 
@@ -62,13 +62,13 @@ describe("NavLinkList active state", () => {
   });
 
   it("keeps the desktop and mobile navs independent", () => {
-    const { unmount } = render(<NavLinkList />);
+    const { unmount } = render(<NavigationLinks />);
     unmount();
 
     render(
       <>
-        <NavLinkList />
-        <NavLinkList isMobile />
+        <NavigationLinks />
+        <NavigationLinks isMobile />
       </>
     );
 
@@ -80,7 +80,7 @@ describe("NavLinkList active state", () => {
   });
 
   it("does not leave the dead nav-link hook class behind", () => {
-    const { container } = render(<NavLinkList />);
+    const { container } = render(<NavigationLinks />);
 
     expect(container.querySelector(".nav-link")).toBeNull();
   });

@@ -20,7 +20,7 @@ const sectionIds = navItems.map((item) => item.id);
  * @param props.isMobile - Whether to render the mobile layout and animation direction.
  * @returns A `<ul>` of animated, scroll-aware nav links.
  */
-export default function NavLinkList({
+export default function NavigationLinks({
   onClick,
   isMobile = false,
 }: {

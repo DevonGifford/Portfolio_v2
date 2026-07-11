@@ -7,7 +7,7 @@ import { scrollToAnchor } from "@/lib/utils/scroll";
 import { outlineButton } from "../common/OutlineButton";
 import { MdOutlineClose } from "react-icons/md";
 import SocialMediaLinks from "../common/SocialMediaLinks";
-import NavLinkList from "../common/NavLinkList";
+import NavigationLinks from "../common/NavigationLinks";
 import { siteConfig } from "@/content/site.config";
 
 type Props = {
@@ -94,7 +94,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
 
         {/* Nav Items */}
         <div className="flex w-[80%] flex-col items-center gap-8 text-center text-base">
-          <NavLinkList onClick={(e) => scrollToAnchor(e, { onNavigate: onClose })} isMobile />
+          <NavigationLinks onClick={(e) => scrollToAnchor(e, { onNavigate: onClose })} isMobile />
         </div>
 
         {/* Resume */}
