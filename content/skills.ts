@@ -40,7 +40,7 @@ import {
 
 export const skillGroups = [
   {
-    title: "Hard Skills",
+    title: "Favourite Tools",
     layout: "wrap",
     skills: [
       { src: TypeScript, alt: "TypeScript", title: "TypeScript" },
