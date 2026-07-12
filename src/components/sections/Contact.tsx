@@ -3,7 +3,7 @@
 import { outlineButton } from "@/components/common/OutlineButton";
 import SectionTitle from "../common/SectionTitle";
 import { siteConfig } from "@/content/site.config";
-import RichText from "../common/RichText";
+import ParagraphText from "../common/ParagraphText";
 import type { Contact as ContactCopy } from "@/lib/content";
 import { Fragment } from "react";
 
@@ -24,7 +24,7 @@ export default function Contact({ copy }: { copy: ContactCopy }) {
         {copy.paragraphs.map((paragraph, index) => (
           <Fragment key={index}>
             {index > 0 && <br />}
-            <RichText paragraph={paragraph} />
+            <ParagraphText paragraph={paragraph} />
           </Fragment>
         ))}
       </p>
