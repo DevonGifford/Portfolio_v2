@@ -32,13 +32,6 @@ function SkillIcon({
   );
 }
 
-/**
- * @param props.skillGroups - Parsed technology icons.
- */
-/**
- * @param props.copy - Parsed bio copy.
- * @param props.skills - Parsed technology icon groups.
- */
 export default function About({ copy, skills }: { copy: AboutCopy; skills: SkillGroup[] }) {
   return (
     <section

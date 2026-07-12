@@ -7,10 +7,6 @@ import ExperienceEntry from "./ExperienceEntry";
 import type { JobEntries } from "@/lib/content";
 import { siteConfig } from "@/content/site.config";
 
-/**
- * @param props.jobs - Parsed work history, supplied by the server page so the
- *   content layer (and zod with it) never enters the client bundle.
- */
 export default function Experience({ jobs }: { jobs: JobEntries }) {
   // Defaults to the first entry rather than a hardcoded key, so reordering
   // content/experience.ts cannot leave the section pointing at nothing. The

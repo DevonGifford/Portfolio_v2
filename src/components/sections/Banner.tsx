@@ -9,9 +9,6 @@ import { siteConfig } from "@/content/site.config";
 import ParagraphText from "../common/ParagraphText";
 import type { Banner as BannerCopy } from "@/lib/content";
 
-/**
- * @param props.copy - Parsed hero copy.
- */
 export default function Banner({ copy }: { copy: BannerCopy }) {
   return (
     <section

@@ -7,9 +7,6 @@ import ParagraphText from "../common/ParagraphText";
 import type { Contact as ContactCopy } from "@/lib/content";
 import { Fragment } from "react";
 
-/**
- * @param props.copy - Parsed contact copy.
- */
 export default function Contact({ copy }: { copy: ContactCopy }) {
   return (
     <section
