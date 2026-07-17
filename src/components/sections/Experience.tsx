@@ -45,7 +45,7 @@ export default function Experience({ jobs }: { jobs: JobEntries }) {
   return (
     <section
       id="experience"
-      className="max-w-containerSmall lgl:py-32 mx-auto flex min-h-screen flex-col justify-center gap-5 py-96"
+      className="max-w-containerSmall lgl:py-32 mx-auto flex min-h-screen flex-col justify-center gap-5 py-80"
     >
       <SectionTitle titleName={siteConfig.labels.experienceHeading} titleNumber="02" />
 

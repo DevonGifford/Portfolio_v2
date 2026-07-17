@@ -12,7 +12,7 @@ function SkillIcon({
   src,
   alt,
   title,
-  className = "w-12 max-md:w-6 rounded-full",
+  className = "w-11 max-md:w-5 rounded-full",
 }: {
   src: StaticImageData;
   alt: string;
@@ -36,7 +36,7 @@ export default function About({ copy, skills }: { copy: AboutCopy; skills: Skill
   return (
     <section
       id="about"
-      className="max-w-containerSmall mdl:px-10 lgl:py-32 mx-auto flex h-screen flex-col justify-center gap-8 py-96"
+      className="max-w-containerSmall mdl:px-10 lgl:py-28 mx-auto flex h-screen flex-col justify-center gap-8 py-96"
     >
       <div className="sml:pt-5 flex items-center gap-10 pt-20">
         <SectionTitle titleNumber={copy.title.number} titleName={copy.title.name} />
@@ -87,13 +87,19 @@ export default function About({ copy, skills }: { copy: AboutCopy; skills: Skill
 
         {/* Skills Section (Hard Skills + Exploring) */}
         <div className="col-span-full row-start-3 pt-5">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-            {skills.map(({ title, skills }) => (
+          <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-10 lg:gap-x-14">
+            {skills.map(({ title, skills, layout }) => (
               <div key={title}>
                 <p className="font-codeFont text-textDark pb-5 text-center text-sm font-bold lg:text-base">
                   {title}:
                 </p>
-                <ul className="flex flex-row flex-wrap justify-center gap-5 md:gap-10">
+                <ul
+                  className={
+                    layout === "compact"
+                      ? "mx-auto flex flex-row flex-wrap justify-center gap-5 md:max-w-65 md:gap-10"
+                      : "flex flex-row flex-wrap justify-center gap-5 md:gap-10"
+                  }
+                >
                   {skills.map(({ src, alt, title, className }) => (
                     <SkillIcon
                       key={title}

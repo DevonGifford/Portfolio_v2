@@ -22,7 +22,7 @@ export default function SectionTitle({ titleName, titleNumber, centered = false 
       <h2
         className={cn(
           "font-titleFont flex items-center text-2xl font-semibold",
-          centered ? "justify-center" : "pt-50"
+          centered ? "justify-center" : "pt-40"
         )}
       >
         <span className="text-textGreen mr-2 text-lg">{titleNumber}.</span> {titleName}

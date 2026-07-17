@@ -143,7 +143,11 @@ describe("the image guard", () => {
   it("says what a bad image should have been", () => {
     expect(() =>
       parseContent("skills", skillGroupsSchema, [
-        { title: "Hard Skills", skills: [{ src: "/nope.png", alt: "A", title: "A" }] },
+        {
+          title: "Hard Skills",
+          layout: "wrap",
+          skills: [{ src: "/nope.png", alt: "A", title: "A" }],
+        },
       ])
     ).toThrow(/must be a static image import/);
   });
