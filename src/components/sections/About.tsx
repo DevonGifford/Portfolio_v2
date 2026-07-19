@@ -20,7 +20,7 @@ function SkillIcon({
   className?: string;
 }) {
   return (
-    <li className="flex items-center transition-all duration-300 hover:-translate-y-2">
+    <li className="flex items-center transition-all duration-300 hover:-translate-y-1 hover:scale-125 hover:-rotate-6 active:scale-95">
       <Image
         className={cn(className, "hover:animate-pulse hover:contrast-150")}
         src={src}
