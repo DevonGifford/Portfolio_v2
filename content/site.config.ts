@@ -34,7 +34,7 @@ export const siteConfig = {
     twitter: "https://twitter.com/devon_the_dev",
   },
 
-  resumePath: "/assets/DevonGifford-FullstackDeveloper-2025.pdf",
+  resumePath: "/assets/DevonGifford-FullstackDeveloper-2026.pdf",
 
   seo: {
     title: "Devon Gifford – Portfolio",
