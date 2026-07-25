@@ -3,7 +3,7 @@
 import { Fragment } from "react";
 import Image, { type StaticImageData } from "next/image";
 import { cn } from "@/lib/utils/cn";
-import { profileImgCircle } from "@/public/assets";
+import { profilePicture } from "@/public/assets";
 import SectionTitle from "../common/SectionTitle";
 import ParagraphText from "../common/ParagraphText";
 import type { About as AboutCopy, SkillGroup } from "@/lib/content";
@@ -51,7 +51,7 @@ export default function About({ copy, skills }: { copy: AboutCopy; skills: Skill
               <div className="relative">
                 <Image
                   className="border-textGreen sml:w-40 mdl:hidden top-0 left-0 w-24 rounded-full border-2 sm:w-32 md:w-48"
-                  src={profileImgCircle}
+                  src={profilePicture}
                   alt={copy.portraitAlt}
                 />
                 <div className="bg-textGreen/20 sml:h-40 sml:w-40 mdl:hidden absolute top-0 left-0 h-24 w-24 rounded-full duration-300 hover:bg-transparent sm:h-32 sm:w-32 md:h-48 md:w-48" />
@@ -77,7 +77,7 @@ export default function About({ copy, skills }: { copy: AboutCopy; skills: Skill
           <div className="lgl:h-80 lgl:w-80 absolute -top-6 -left-6 h-52 w-52 rounded-full">
             <Image
               className="fill border-textGreen lgl:h-80 lgl:w-80 absolute z-30 h-52 w-52 rounded-full border-2 object-cover"
-              src={profileImgCircle}
+              src={profilePicture}
               alt={copy.portraitAlt}
             />
             <div className="bg-textGreen/20 mdl:inline-block lgl:h-80 lgl:w-80 absolute top-0 left-0 z-30 hidden h-52 w-52 rounded-full duration-300 group-hover:bg-transparent" />

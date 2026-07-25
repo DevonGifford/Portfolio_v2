@@ -1,5 +1,5 @@
 import logo from "./images/LogoBig.png";
-import profileImgCircle from "./images/Devon_square.jpeg";
+import profilePicture from "./images/Devon_profilePicture.jpeg";
 import JavaScriptL from "./images/Skills/JavaScriptL.png";
 import TypeScript from "./images/Skills/TypeScript.png";
 import Python from "./images/Skills/Python.png";
@@ -41,7 +41,7 @@ export {
   Tailwind,
   Vite,
   logo,
-  profileImgCircle,
+  profilePicture,
   Remix,
   Neovim,
   Electron,
