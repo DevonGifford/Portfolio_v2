@@ -1,51 +1,79 @@
 {
   "name": "portfolio",
-  "version": "2.3.4",
+  "version": "2.4.0",
   "private": true,
+  "license": "MIT",
   "engines": {
     "node": "24.x"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "printWidth": 100,
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
-    "format": "prettier --write ."
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate:content": "vitest run tests/content",
+    "format": "prettier --write .",
+    "check": "npm run typecheck && npm run lint && npm run test && npm run build",
+    "prepare": "lefthook install"
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "motion": "^12.23.26",
-    "next": "^16.2.10",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
+    "motion": "^12.43.0",
+    "next": "^16.3.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "react-icons": "^5.5.0",
-    "tailwind-merge": "^3.6.0"
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.2",
-    "@next/eslint-plugin-next": "^16.1.0",
-    "@tailwindcss/postcss": "^4.1.18",
-    "@types/node": "^24.0.0",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.50.0",
-    "@typescript-eslint/parser": "^8.50.0",
-    "@typescript-eslint/utils": "^8.50.0",
-    "eslint": "^9.39.2",
-    "eslint-config-next": "^16.1.0",
+    "@eslint/js": "^9.39.5",
+    "@next/eslint-plugin-next": "^16.3.3",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.6",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "@typescript-eslint/eslint-plugin": "^8.68.0",
+    "@typescript-eslint/parser": "^8.68.0",
+    "@typescript-eslint/utils": "^8.68.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-unicorn": "^62.0.0",
-    "globals": "^17.7.0",
-    "postcss": "^8.5.16",
-    "prettier": "^3.7.4",
-    "prettier-plugin-tailwindcss": "^0.8.0",
-    "tailwindcss": "^4.1.18",
+    "globals": "^17.11.0",
+    "jsdom": "^30.0.1",
+    "lefthook": "^2.1.12",
+    "postcss": "^8.5.26",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.50.0"
+    "typescript-eslint": "^8.68.0",
+    "vitest": "^4.1.11"
+  },
+  "allowScripts": {
+    "unrs-resolver@1.12.2": true,
+    "lefthook@2.1.12": true
   }
 }

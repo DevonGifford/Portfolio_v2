@@ -1,0 +1,27 @@
+# Git hooks. Installed by the `prepare` script on `npm install`.
+#
+# Fast checks on commit, slow ones on push: formatting and linting only touch
+# staged files, while typecheck and the test suite run once before the push.
+# `build` is deliberately left to CI — it is the slowest step and adds nothing
+# the other two have not already caught.
+
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      glob: "*.{ts,tsx,js,mjs,cjs,json,css,md,yml,yaml}"
+      run: npx prettier --write {staged_files}
+      stage_fixed: true
+    lint:
+      glob: "*.{ts,tsx,js,mjs,cjs}"
+      run: npx eslint --max-warnings=0 {staged_files}
+
+pre-push:
+  parallel: true
+  commands:
+    typecheck:
+      run: npm run typecheck
+    content:
+      run: npm run validate:content
+    test:
+      run: npm run test

@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NEXT_TELEMETRY_DISABLED: "1"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          # Stated explicitly rather than read from a version file: setup-node
+          # does not parse mise.toml's [tools] table. Keep in step with
+          # package.json engines.node and mise.toml.
+          node-version: "24"
+          cache: npm
+
+      - run: npm ci
+
+      # Same commands as lefthook, in the same order, so the remote gate and the
+      # local gate can never drift. Tests before build: ~60x faster, and they
+      # catch a superset of the content failures a build would.
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run build
