@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { motion } from "motion/react";
 import { fadeIn, DURATION } from "@/lib/animation/motion";
 import BulletPoint from "@/components/common/BulletPoint";
@@ -7,7 +8,7 @@ import BulletPoint from "@/components/common/BulletPoint";
 type ExperienceEntryProps = {
   title: string;
   company: string;
-  companyIcon?: React.ReactNode;
+  companyIcon?: ReactNode;
   dates: string;
   intro: string;
   bullets: {

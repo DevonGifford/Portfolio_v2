@@ -8,9 +8,15 @@ import { scrollToAnchor } from "@/lib/utils/scroll";
 import { outlineButton } from "@/components/common/OutlineButton";
 import { siteConfig } from "@/content/site.config";
 import { logo } from "@/public/assets";
-import NavLinkList from "@/components/common/NavLinkList";
+import NavigationLinks from "@/components/common/NavigationLinks";
 import MobileMenu from "@/components/layout/MobileMenu";
 
+/**
+ * Renders the sticky site header: logo, desktop nav, resume link, and the
+ * mobile menu toggle.
+ *
+ * @returns The site header.
+ */
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -21,7 +27,7 @@ export default function Header() {
       <div className="max-w-container font-titleFont mx-auto flex items-center justify-between py-4">
         {/* Logo */}
         <motion.div {...fadeIn()}>
-          <a href="#home" className="hover:animate-spin" aria-label="Home">
+          <a href="#home" aria-label="Home">
             <Image
               src={logo}
               alt={`${siteConfig.name} logo`}
@@ -32,7 +38,7 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="mdl:inline-flex hidden items-center gap-7">
-          <NavLinkList
+          <NavigationLinks
             onClick={(e) => scrollToAnchor(e, { onNavigate: () => setShowMenu(false) })}
           />
           <motion.a
@@ -67,7 +73,7 @@ export default function Header() {
             ref={menuRef}
             onClose={() => {
               setShowMenu(false);
-              hamburgerRef.current?.focus();
+              hamburgerRef.current?.focus({ preventScroll: true });
             }}
           />
         )}

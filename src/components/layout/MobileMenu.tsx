@@ -5,16 +5,23 @@ import { motion } from "motion/react";
 import { fadeIn, slideIn, DURATION } from "@/lib/animation/motion";
 import { scrollToAnchor } from "@/lib/utils/scroll";
 import { outlineButton } from "../common/OutlineButton";
-import ExternalLink from "../common/ExternalLink";
 import { MdOutlineClose } from "react-icons/md";
-import SocialLinks from "../common/SocialLinks";
-import NavLinkList from "../common/NavLinkList";
+import SocialMediaLinks from "../common/SocialMediaLinks";
+import NavigationLinks from "../common/NavigationLinks";
 import { siteConfig } from "@/content/site.config";
 
 type Props = {
   onClose: () => void;
 };
 
+/**
+ * Renders the mobile navigation drawer: backdrop, nav links, resume link,
+ * social icons, and email — with focus trapping and Escape-to-close.
+ *
+ * @param props.onClose - Called when the menu should close (Escape, backdrop
+ *   click, close button, or a nav link navigating away).
+ * @returns The mobile menu overlay; the forwarded ref attaches to the backdrop.
+ */
 const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClose }, ref) {
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -62,17 +69,9 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
     <div
       ref={ref}
       onClick={(e) => {
-        if (
-          ref &&
-          typeof ref === "object" &&
-          "current" in ref &&
-          ref.current instanceof HTMLElement &&
-          e.target === ref.current
-        ) {
-          onClose();
-        }
+        if (e.target === e.currentTarget) onClose();
       }}
-      className="mdl:hidden absolute top-0 flex h-screen w-full flex-col items-end bg-black/50"
+      className="mdl:hidden fixed inset-0 flex flex-col items-end bg-black/50"
     >
       <motion.div
         ref={panelRef}
@@ -95,23 +94,24 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(function MobileMenu({ onClo
 
         {/* Nav Items */}
         <div className="flex w-[80%] flex-col items-center gap-8 text-center text-base">
-          <NavLinkList onClick={(e) => scrollToAnchor(e, { onNavigate: onClose })} isMobile />
+          <NavigationLinks onClick={(e) => scrollToAnchor(e, { onNavigate: onClose })} isMobile />
         </div>
 
         {/* Resume */}
-        <ExternalLink href={siteConfig.resumePath} className="pt-8">
-          <motion.button
-            {...fadeIn({ duration: DURATION.fast, delay: 0.8, ease: "easeIn" })}
-            className={outlineButton("h-10 w-32 text-[13px]")}
-          >
-            {siteConfig.labels.resume}
-          </motion.button>
-        </ExternalLink>
+        <motion.a
+          href={siteConfig.resumePath}
+          target="_blank"
+          rel="noopener noreferrer"
+          {...fadeIn({ duration: DURATION.fast, delay: 0.8, ease: "easeIn" })}
+          className={outlineButton("mt-8 h-10 w-32 text-[13px]")}
+        >
+          {siteConfig.labels.resume}
+        </motion.a>
 
         {/* Social Icons */}
         <motion.div {...slideIn({ axis: "x", duration: DURATION.fast, delay: 1 })}>
           <div className="flex gap-4 pt-4">
-            <SocialLinks iconClassName="border-zinc-700 bg-bodyColor text-zinc-200" />
+            <SocialMediaLinks iconClassName="border-zinc-700 bg-bodyColor text-zinc-200" />
           </div>
         </motion.div>
 

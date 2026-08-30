@@ -5,7 +5,7 @@ import Image, { type StaticImageData } from "next/image";
 import { cn } from "@/lib/utils/cn";
 import { profileImgCircle } from "@/public/assets";
 import SectionTitle from "../common/SectionTitle";
-import RichText from "../common/RichText";
+import ParagraphText from "../common/ParagraphText";
 import type { About as AboutCopy, SkillGroup } from "@/lib/content";
 
 function SkillIcon({
@@ -32,13 +32,6 @@ function SkillIcon({
   );
 }
 
-/**
- * @param props.skillGroups - Parsed technology icons.
- */
-/**
- * @param props.copy - Parsed bio copy.
- * @param props.skills - Parsed technology icon groups.
- */
 export default function About({ copy, skills }: { copy: AboutCopy; skills: SkillGroup[] }) {
   return (
     <section
@@ -67,7 +60,7 @@ export default function About({ copy, skills }: { copy: AboutCopy; skills: Skill
             <p>
               {copy.paragraphs.map((paragraph, index) => (
                 <Fragment key={index}>
-                  <RichText paragraph={paragraph} />
+                  <ParagraphText paragraph={paragraph} />
                   <br />
                   <br />
                 </Fragment>

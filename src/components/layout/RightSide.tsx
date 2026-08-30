@@ -4,6 +4,11 @@ import { motion } from "motion/react";
 import { fadeIn, DURATION } from "@/lib/animation/motion";
 import { siteConfig } from "@/content/site.config";
 
+/**
+ * Renders the fixed right-edge rail: a rotated mailto link above a decorative divider.
+ *
+ * @returns The right side rail.
+ */
 export default function RightSide() {
   return (
     <motion.div
@@ -15,7 +20,7 @@ export default function RightSide() {
           {siteConfig.email}
         </p>
       </a>
-      <span className="bg-textDark inline-flex h-52 w-[2px]"></span>
+      <div className="bg-textDark h-52 w-[2px]"></div>
     </motion.div>
   );
 }

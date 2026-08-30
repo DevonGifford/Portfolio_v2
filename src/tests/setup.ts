@@ -27,20 +27,14 @@ const MOTION_ONLY_PROPS = new Set([
 
 type MotionProps = Record<string, unknown> & { children?: ReactNode };
 
-/**
- * Renders `motion.div` and friends as their plain DOM tag.
- *
- * Every section is `"use client"` + motion, so without this the suite would be
- * testing the animation library rather than the markup. `ref` is deliberately
- * *not* stripped: React 19 passes it as an ordinary prop, and `MobileMenu`
- * attaches one to a `motion.div`.
- */
+// Removes motion-only props before rendering a plain DOM element.
 function stripMotionProps(props: MotionProps): MotionProps {
   return Object.fromEntries(
     Object.entries(props).filter(([key]) => !MOTION_ONLY_PROPS.has(key))
   ) as MotionProps;
 }
 
+// Renders `motion.div` and friends as plain HTML elements.
 vi.mock("motion/react", () => {
   const motion = new Proxy({} as Record<string, unknown>, {
     get(_target, tag) {
@@ -61,6 +55,7 @@ vi.mock("motion/react", () => {
   };
 });
 
+// Render Next Image as a normal <img>.
 vi.mock("next/image", () => ({
   default: ({ src, alt, ...props }: MotionProps & { src?: unknown; alt?: string }) => {
     const resolved = typeof src === "object" && src !== null ? (src as { src: string }).src : src;
@@ -69,14 +64,10 @@ vi.mock("next/image", () => ({
   },
 }));
 
-// jsdom does not implement this, and lib/utils/scroll.ts calls it.
+// jsdom does not implement scrollIntoView.
 Element.prototype.scrollIntoView = vi.fn();
 
-/**
- * jsdom ships no IntersectionObserver, so `useActiveSection` would throw on
- * render. This inert stub lets components mount; the hook's own suite replaces
- * it with a controllable version via `vi.stubGlobal`.
- */
+// Basic IntersectionObserver stub for component tests.
 class InertIntersectionObserver implements IntersectionObserver {
   readonly root = null;
   readonly rootMargin = "";
@@ -90,8 +81,8 @@ class InertIntersectionObserver implements IntersectionObserver {
   }
 }
 
+// useActiveSection has its own controllable observer in its test file.
 vi.stubGlobal("IntersectionObserver", InertIntersectionObserver);
-
 afterEach(() => {
   cleanup();
   vi.clearAllMocks();

@@ -4,18 +4,16 @@ import { useTypewriter } from "@/lib/animation/useTypewriter";
 import { cn } from "@/lib/utils/cn";
 
 type TypewriterProps = {
-  /** Words to rotate through in the typewriter animation. */
   words: readonly string[];
-  /** Extra classes applied to the wrapper. */
   className?: string;
 };
 
 /**
  * Renders rotating typewriter text for a list of words.
  *
- * @param props.words - Words to rotate through in the typewriter animation.
- * @param props.className - Extra classes applied to the wrapper.
- * @returns A typewriter text element.
+ * @param props.words - Words to rotate through, one at a time.
+ * @param props.className - Extra classes applied to the wrapper `<span>`.
+ * @returns Animated text with a blinking cursor.
  */
 export default function Typewriter({ words, className = "" }: TypewriterProps) {
   const { text, isTyping } = useTypewriter({ words });

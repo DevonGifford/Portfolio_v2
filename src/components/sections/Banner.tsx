@@ -6,12 +6,9 @@ import { fadeIn } from "@/lib/animation/motion";
 import { scrollToAnchor } from "@/lib/utils/scroll";
 import { outlineButton } from "../common/OutlineButton";
 import { siteConfig } from "@/content/site.config";
-import RichText from "../common/RichText";
+import ParagraphText from "../common/ParagraphText";
 import type { Banner as BannerCopy } from "@/lib/content";
 
-/**
- * @param props.copy - Parsed hero copy.
- */
 export default function Banner({ copy }: { copy: BannerCopy }) {
   return (
     <section
@@ -41,7 +38,7 @@ export default function Banner({ copy }: { copy: BannerCopy }) {
       >
         {copy.paragraphs.map((paragraph, index) => (
           <p key={index}>
-            <RichText paragraph={paragraph} />
+            <ParagraphText paragraph={paragraph} />
           </p>
         ))}
         <p className="mt-2 italic">{copy.closing}</p>

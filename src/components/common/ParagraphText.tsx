@@ -1,3 +1,5 @@
+"use client";
+
 import { Fragment } from "react";
 
 import type { Paragraph } from "@/lib/content/schema";
@@ -13,7 +15,7 @@ import type { Paragraph } from "@/lib/content/schema";
  * @returns The paragraph's inline content, unwrapped — the caller supplies the
  *   element and its classes.
  */
-export default function RichText({ paragraph }: { paragraph: Paragraph }) {
+export default function ParagraphText({ paragraph }: { paragraph: Paragraph }) {
   return (
     <>
       {paragraph.map((segment, index) => {

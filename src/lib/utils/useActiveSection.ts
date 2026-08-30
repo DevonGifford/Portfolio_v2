@@ -3,17 +3,10 @@
 import { useEffect, useState } from "react";
 
 /**
- * Tracks which section is currently in view.
+ * Tracks the currently active section based on what's in view.
  *
- * Replaces the previous approach of toggling a CSS class imperatively on click,
- * which had three problems: it queried every `.nav-link` on the page and so hit
- * the desktop and mobile navs at once, it never updated when the reader scrolled
- * rather than clicked, and React could reconcile the class away.
- *
- * The `rootMargin` collapses the viewport to a band across its middle, so a
- * section becomes active as it passes the centre of the screen rather than the
- * moment its top edge appears. `root` stays `null` (the viewport) — `<main>` is
- * the scroll container but it fills the viewport, so the two agree.
+ * Uses an IntersectionObserver with a narrow band around the middle of the
+ * viewport, so a section becomes active as it passes through the center.
  *
  * @param ids - Section ids in document order. Must be a stable reference.
  * @returns The id of the section in view, or the first id before any callback.

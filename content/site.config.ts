@@ -76,17 +76,6 @@ export const siteConfig = {
     credit: { name: "Brittany Chiang", href: "https://brittanychiang.com/" },
   },
 
-  theme: {
-    /**
-     * Card background.
-     *
-     * Tailwind v4 has no JS config, so the value that actually renders is
-     * `--color-cardColor` in `app/globals.css`. This mirrors it for reference;
-     * `tests/content/theme.test.ts` fails if the two drift apart.
-     */
-    cardColor: "#112240",
-  },
-
   /**
    * Opt-in effects, each added by a later release. They are all `false` because
    * nothing reads them yet — flipping one on today does nothing.

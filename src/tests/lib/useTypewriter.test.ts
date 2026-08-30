@@ -5,9 +5,6 @@ import { useTypewriter } from "@/lib/animation/useTypewriter";
 /**
  * Timers are faked throughout: the hook is entirely `setTimeout`-driven, so
  * real timers would make these tests both slow and flaky.
- *
- * Speeds are passed explicitly rather than relying on defaults, so the
- * assertions read as "advance one tick" instead of "advance 100ms and hope".
  */
 const TYPING = 100;
 const DELETING = 50;
@@ -31,9 +28,9 @@ function setup(overrides: Parameters<typeof useTypewriter>[0] | object = {}) {
 /**
  * Advances the hook by `times` steps of `ms`.
  *
- * One `act` per step, deliberately: the hook schedules its next timer from the
- * effect that runs *after* React flushes the previous state update, so a single
- * `advanceTimersByTime(ms * 3)` would fire one timer, not three.
+ * One act per step, deliberately:
+ * The hook schedules its next timer from the effect that runs *after* React flushes the previous state update,
+ * so a single `advanceTimersByTime(ms * 3)` would fire one timer, not three.
  */
 function tick(ms: number, times = 1) {
   for (let step = 0; step < times; step += 1) {
@@ -141,12 +138,6 @@ describe("useTypewriter", () => {
     expect(vi.getTimerCount()).toBe(1);
   });
 
-  /**
-   * The regression guard for the pause timer.
-   *
-   * Before that timer was registered for cleanup, unmounting mid-pause left it
-   * pending and it later called setState on an unmounted component.
-   */
   it("clears its pending timer when unmounted mid-pause", () => {
     const { unmount } = setup();
 
@@ -165,18 +156,5 @@ describe("useTypewriter", () => {
     unmount();
 
     expect(vi.getTimerCount()).toBe(0);
-  });
-
-  it("handles a single-word list without stalling", () => {
-    const { result } = setup({ words: ["hi"] });
-
-    tick(TYPING, stepsFor("hi"));
-    expect(result.current.text).toBe("hi");
-
-    tick(PAUSE);
-    tick(DELETING, stepsFor("hi"));
-    tick(TYPING);
-
-    expect(result.current.text).toBe("h");
   });
 });

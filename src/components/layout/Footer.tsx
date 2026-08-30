@@ -1,14 +1,19 @@
 "use client";
 
-import SocialLinks from "../common/SocialLinks";
+import SocialMediaLinks from "../common/SocialMediaLinks";
 import ExternalLink from "../common/ExternalLink";
 import { siteConfig } from "@/content/site.config";
 
+/**
+ * Renders the site footer: social icons (mobile only) and attribution text.
+ *
+ * @returns The site footer.
+ */
 export default function Footer() {
   return (
-    <div>
+    <footer>
       <div className="inline-flex w-full items-center justify-center gap-4 xl:hidden">
-        <SocialLinks iconClassName="bg-bodyColor text-zinc-200 border-zinc-700" />
+        <SocialMediaLinks iconClassName="bg-bodyColor text-zinc-200 border-zinc-700" />
       </div>
       <p className="justify-center py-3 text-center text-xs">
         {siteConfig.footer.builtBy}{" "}
@@ -18,10 +23,9 @@ export default function Footer() {
         <br />
         {siteConfig.footer.inspiredBy}{" "}
         <ExternalLink href={siteConfig.footer.credit.href} className="text-textGreen">
-          {" "}
           {siteConfig.footer.credit.name}
         </ExternalLink>
       </p>
-    </div>
+    </footer>
   );
 }

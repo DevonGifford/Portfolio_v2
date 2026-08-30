@@ -52,7 +52,7 @@ describe("parseContent()", () => {
     );
   });
 
-  it("reaches into nested arrays with a usable path", () => {
+  it("names the exact broken bullet point, not just the entry", () => {
     const entry = validEntry();
     entry.componentProps.bullets[0].heading = "";
 
@@ -61,7 +61,7 @@ describe("parseContent()", () => {
     );
   });
 
-  it("falls back to the index when an entry has no nameable field", () => {
+  it("names the index when an entry has no nameable field", () => {
     expect(() => parseContent("experience", experienceSchema, [{}])).toThrow(/entry #0/);
   });
 
@@ -80,15 +80,15 @@ describe("parseContent()", () => {
     }
   });
 
-  it("rejects an empty content list", () => {
-    expect(() => parseContent("experience", experienceSchema, [])).toThrow(
-      /needs at least one entry/
+  it("labels the error correctly for single-item content, like site.config", () => {
+    expect(() => parseContent("site", z.object({ name: z.string() }), {})).toThrow(
+      /Invalid content in "site"/
     );
   });
 
-  it("names the section on a non-list schema", () => {
-    expect(() => parseContent("site", z.object({ name: z.string() }), {})).toThrow(
-      /Invalid content in "site"/
+  it("rejects an empty content list", () => {
+    expect(() => parseContent("experience", experienceSchema, [])).toThrow(
+      /needs at least one entry/
     );
   });
 });

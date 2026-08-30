@@ -30,14 +30,14 @@ describe("smoothScrollToSection()", () => {
     expect(section.scrollIntoView).toHaveBeenCalledWith({ behavior: "smooth" });
   });
 
-  it("no-ops when no element has that id", () => {
+  it("no-ops if section does not exist on the page", () => {
     expect(() => smoothScrollToSection("does-not-exist")).not.toThrow();
     expect(Element.prototype.scrollIntoView).not.toHaveBeenCalled();
   });
 });
 
 describe("scrollToAnchor()", () => {
-  it("prevents navigation and scrolls to the href target", () => {
+  it("smooth scrolls to correction section instead of jumping to new page", () => {
     const section = document.createElement("section");
     section.id = "about";
     document.body.append(section);
@@ -49,7 +49,7 @@ describe("scrollToAnchor()", () => {
     expect(section.scrollIntoView).toHaveBeenCalledWith({ behavior: "smooth" });
   });
 
-  it("fires onNavigate", () => {
+  it("can close the mobile menue after scrolling to a section", () => {
     const onNavigate = vi.fn();
     const { event } = anchorEvent("http://localhost/#contact");
 

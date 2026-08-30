@@ -8,10 +8,6 @@ import ProjectsMini from "./ProjectsMini";
 import type { CapstoneEntry, MiniProjectEntry } from "@/lib/content";
 import { siteConfig } from "@/content/site.config";
 
-/**
- * @param props.capstone - Parsed featured projects.
- * @param props.mini - Parsed smaller projects.
- */
 export default function Projects({
   capstone,
   mini,
