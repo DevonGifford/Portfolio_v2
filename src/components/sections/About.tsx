@@ -3,7 +3,7 @@
 import { Fragment } from "react";
 import Image, { type StaticImageData } from "next/image";
 import { cn } from "@/lib/utils/cn";
-import { profileImgCircle } from "@/public/assets";
+import { profilePicture } from "@/public/assets";
 import SectionTitle from "../common/SectionTitle";
 import ParagraphText from "../common/ParagraphText";
 import type { About as AboutCopy, SkillGroup } from "@/lib/content";
@@ -12,7 +12,7 @@ function SkillIcon({
   src,
   alt,
   title,
-  className = "w-12 max-md:w-6 rounded-full",
+  className = "w-11 max-md:w-5 rounded-full",
 }: {
   src: StaticImageData;
   alt: string;
@@ -20,7 +20,7 @@ function SkillIcon({
   className?: string;
 }) {
   return (
-    <li className="flex items-center transition-all duration-300 hover:-translate-y-2">
+    <li className="flex items-center transition-all duration-300 hover:-translate-y-1 hover:scale-125 hover:-rotate-6 active:scale-95">
       <Image
         className={cn(className, "hover:animate-pulse hover:contrast-150")}
         src={src}
@@ -36,7 +36,7 @@ export default function About({ copy, skills }: { copy: AboutCopy; skills: Skill
   return (
     <section
       id="about"
-      className="max-w-containerSmall mdl:px-10 lgl:py-32 mx-auto flex h-screen flex-col justify-center gap-8 py-96"
+      className="max-w-containerSmall mdl:px-10 lgl:py-28 mx-auto flex h-screen flex-col justify-center gap-8 py-96"
     >
       <div className="sml:pt-5 flex items-center gap-10 pt-20">
         <SectionTitle titleNumber={copy.title.number} titleName={copy.title.name} />
@@ -51,7 +51,7 @@ export default function About({ copy, skills }: { copy: AboutCopy; skills: Skill
               <div className="relative">
                 <Image
                   className="border-textGreen sml:w-40 mdl:hidden top-0 left-0 w-24 rounded-full border-2 sm:w-32 md:w-48"
-                  src={profileImgCircle}
+                  src={profilePicture}
                   alt={copy.portraitAlt}
                 />
                 <div className="bg-textGreen/20 sml:h-40 sml:w-40 mdl:hidden absolute top-0 left-0 h-24 w-24 rounded-full duration-300 hover:bg-transparent sm:h-32 sm:w-32 md:h-48 md:w-48" />
@@ -77,7 +77,7 @@ export default function About({ copy, skills }: { copy: AboutCopy; skills: Skill
           <div className="lgl:h-80 lgl:w-80 absolute -top-6 -left-6 h-52 w-52 rounded-full">
             <Image
               className="fill border-textGreen lgl:h-80 lgl:w-80 absolute z-30 h-52 w-52 rounded-full border-2 object-cover"
-              src={profileImgCircle}
+              src={profilePicture}
               alt={copy.portraitAlt}
             />
             <div className="bg-textGreen/20 mdl:inline-block lgl:h-80 lgl:w-80 absolute top-0 left-0 z-30 hidden h-52 w-52 rounded-full duration-300 group-hover:bg-transparent" />
@@ -87,13 +87,19 @@ export default function About({ copy, skills }: { copy: AboutCopy; skills: Skill
 
         {/* Skills Section (Hard Skills + Exploring) */}
         <div className="col-span-full row-start-3 pt-5">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-            {skills.map(({ title, skills }) => (
+          <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-10 lg:gap-x-14">
+            {skills.map(({ title, skills, layout }) => (
               <div key={title}>
                 <p className="font-codeFont text-textDark pb-5 text-center text-sm font-bold lg:text-base">
                   {title}:
                 </p>
-                <ul className="flex flex-row flex-wrap justify-center gap-5 md:gap-10">
+                <ul
+                  className={
+                    layout === "compact"
+                      ? "mx-auto flex flex-row flex-wrap justify-center gap-5 md:max-w-65 md:gap-10"
+                      : "flex flex-row flex-wrap justify-center gap-5 md:gap-10"
+                  }
+                >
                   {skills.map(({ src, alt, title, className }) => (
                     <SkillIcon
                       key={title}

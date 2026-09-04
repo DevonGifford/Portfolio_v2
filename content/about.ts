@@ -17,31 +17,34 @@ export const about = {
   paragraphs: [
     [
       { text: "Hello there, I'm a " },
-      { text: "fullstack developer", highlight: true },
+      { text: "full-stack developer", highlight: true },
       {
-        text: ". Originally from South Africa, holding British citizenship and now currently based in Madrid, Spain.",
+        text: ". Originally from South Africa, a British citizen, and currently based in Madrid, Spain.",
       },
     ],
     [
       { text: "I have " },
-      { text: "7+ years", highlight: true },
+      { text: "8+ years", highlight: true },
       {
-        text: " of experience in the tech industry, including stints at various startups. I specialize in developing responsive and accessible web applications using ",
+        text: " of experience in the tech industry, including stints across startups, big tech and enterprise platforms. I specialise in frontend development using ",
       },
-      { text: "JavaScript & React", highlight: true },
+      { text: "React & TypeScript", highlight: true },
       { text: "." },
     ],
     [
-      { text: "Recently, I had the incredible opportunity to join a " },
-      { text: "leading FAANG", highlight: true },
+      { text: "My career has taken me from quality engineering at a " },
+      { text: "major FAANG", highlight: true },
       {
-        text: " company as a Quality Engineer, and later advanced to the role of Team Lead. Immersing myself in big-tech best practices, with a specific focus on ",
+        text: " company to building large-scale enterprise web applications. Along the way, I've had the privilege of leading engineering teams, ",
       },
-      { text: "E2E & integration testing.", highlight: true },
+      { text: "modernising legacy systems", highlight: true },
+      {
+        text: ", and working across a wide range of tech stacks and cloud environments.",
+      },
     ],
   ],
 
-  closing: "Currently leading a team and project rewriting a large-scale legacy system.",
+  closing: "Outside of work, I tinker with Linux, homelabs and AI tooling.",
 
   portraitAlt: "Devon Gifford - Profile picture",
 } satisfies About;

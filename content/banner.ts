@@ -17,17 +17,16 @@ export const banner = {
   paragraphs: [
     [
       {
-        text: "Self taught software engineer with a strong focus on frontend development. I specialize in crafting web and mobile applications using React & TypeScript.",
+        text: "Self-taught software engineer with a strong focus on frontend development. I specialise in building modern web applications using ",
       },
+      { text: "React, TypeScript & Next.js.", emphasis: true },
     ],
     [
       {
-        text: "Leveraging my background in Marketing and experience in Software Testing at a renowned ",
+        text: "Drawing on my background in quality engineering, architecture and technical leadership, I bring a unique perspective that prioritises ",
       },
-      { text: "FAANG", emphasis: true },
-      {
-        text: " company, my approach brings a unique perspective that prioritizes clean and reliable code.",
-      },
+      { text: "clean, reliable software ", emphasis: true },
+      { text: "and thoughtful use of AI." },
     ],
   ],
 

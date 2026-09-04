@@ -13,15 +13,16 @@ export const siteConfig = {
   name: "Devon Gifford",
   role: "Full-Stack Developer",
   taglines: [
-    "Full-Stack Developer",
+    "Frontend Engineer",
     "React Specialist",
+    "TypeScript Developer",
+    "Full-Stack Developer",
+    "AI-Assisted Engineer",
     "Python Enthusiast",
-    "Next.js Developer",
-    "Web Developer",
     "ex-FAANG",
-    "Senior Developer",
-    "Aspiring Principal Engineer",
     "Quality Engineer",
+    "Linux Tinkerer",
+    "Aspiring Principal Engineer",
   ],
 
   email: "devongifford@outlook.com",
@@ -33,7 +34,7 @@ export const siteConfig = {
     twitter: "https://twitter.com/devon_the_dev",
   },
 
-  resumePath: "/assets/DevonGifford-FullstackDeveloper-2025.pdf",
+  resumePath: "/assets/DevonGifford-FullstackDeveloper-2026.pdf",
 
   seo: {
     title: "Devon Gifford – Portfolio",

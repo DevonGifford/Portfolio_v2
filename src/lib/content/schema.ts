@@ -145,6 +145,7 @@ export const skillSchema = z.object({
 export const skillGroupSchema = z.object({
   title: text,
   skills: z.array(skillSchema).min(1),
+  layout: z.enum(["wrap", "compact"]),
 });
 
 export type Skill = z.infer<typeof skillSchema>;

@@ -1,5 +1,5 @@
 import logo from "./images/LogoBig.png";
-import profileImgCircle from "./images/Devon_circle.png";
+import profilePicture from "./images/Devon_profilePicture.jpeg";
 import JavaScriptL from "./images/Skills/JavaScriptL.png";
 import TypeScript from "./images/Skills/TypeScript.png";
 import Python from "./images/Skills/Python.png";
@@ -15,6 +15,17 @@ import Vite from "./images/Skills/Vite.png";
 import Remix from "./images/Skills/Remix.png";
 import Neovim from "./images/Skills/Neovim.png";
 import Electron from "./images/Skills/Electron.png";
+import Figma from "./images/Skills/Figma.png";
+import Azure from "./images/Skills/Azure.png";
+import Go from "./images/Skills/Go.png";
+import Kubernetes from "./images/Skills/Kubernetes.png";
+import Linux from "./images/Skills/Linux.png";
+import Lua from "./images/Skills/Lua.png";
+import PostCSS from "./images/Skills/PostCSS.png";
+import Redis from "./images/Skills/Redis.png";
+import Storybook from "./images/Skills/Storybook.png";
+import Zig from "./images/Skills/Zig.png";
+import Claude from "./images/Skills/claude-seeklogo.png";
 
 export {
   ReactL,
@@ -30,8 +41,19 @@ export {
   Tailwind,
   Vite,
   logo,
-  profileImgCircle,
+  profilePicture,
   Remix,
   Neovim,
   Electron,
+  Figma,
+  Azure,
+  Go,
+  Kubernetes,
+  Linux,
+  Lua,
+  PostCSS,
+  Redis,
+  Storybook,
+  Zig,
+  Claude,
 };

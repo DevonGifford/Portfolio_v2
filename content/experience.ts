@@ -32,38 +32,38 @@ export const experience = [
   {
     key: "tuvLead",
     label: "TÜV Rheinland",
-    sub: "Lead Frontend Developer",
+    sub: "Lead Developer",
     componentProps: {
       title: "Lead Frontend Developer",
       company: "TÜV Rheinland",
       dates: "Jan 2025 - Present",
       intro:
-        "Leading the frontend strategy and architecture for multiple projects at TÜV Rheinland, with a focus on headless CMS integration, team scaling, and optimizing user interfaces for scalability and performance.",
+        "Led the greenfield rebuild and production launch of TÜV Rheinland's enterprise web platform, replacing a 20-year SSG monolith with a reusable headless Next.js architecture powering international web applications.",
       bullets: [
         {
-          heading: "Headless CMS Integration",
+          heading: "Architecture & Development",
           content:
-            "Orchestrated the transition to a headless CMS using RESTful and GraphQL API's, enabling flexible content delivery and seamless integration with Next.js and React applications.",
+            "Owned frontend architecture while remaining hands-on across FirstSpirit CMS, Redis caching, content validation & Storybook components, delivering requirements into production.",
         },
         {
           heading: "Team Leadership & Scaling",
           content:
-            "Managed and scaled a frontend team of 10+ engineers, implementing Agile processes, conducting sprint planning, and mentoring developers to improve velocity and code quality.",
+            "Led 10+ engineers across internal and external teams, hiring and onboarding developers while coordinating agency support across frontend, backend and DevOps workstreams.",
         },
         {
-          heading: "CI/CD and DevOps Leadership",
+          heading: "Code Quality & Maintainability",
           content:
-            "Led the integration of CI/CD pipelines using GitLab-CI and Docker, automating deployments to Azure Kubernetees Services & ensuring reliable delivery of features and bug fixes.",
+            "Established TypeScript, ESLint, Prettier, Husky and unit, integration and E2E testing standards, alongside review gates, branching conventions and technical documentation.",
         },
         {
-          heading: "UI/UX Enhancements & Performance Optimization",
+          heading: "CI/CD & Cloud Delivery",
           content:
-            "Worked closely with UX/UI teams to ensure design consistency and implement performance optimizations (lazy loading, code splitting) for a faster, more responsive application.",
+            "Built multi-stage GitLab CI/CD and Docker workflows for automated delivery across Azure, Kubernetes and Akamai, supporting migration from the legacy on-prem platform.",
         },
         {
-          heading: "Cloud Infrastructure and API Management",
+          heading: "AI-Assisted Development",
           content:
-            "Oversaw the integration of cloud-based infrastructure (AWS, Lambda) and API management, enabling real-time data fetching and improved content rendering with minimal latency.",
+            "Modernised day-to-day engineering through AI-assisted development, introducing agent-based workflows across implementation, debugging, code review & developer productivity.",
         },
       ],
     },
@@ -78,32 +78,32 @@ export const experience = [
       company: "TÜV Rheinland",
       dates: "June 2024 - Jan 2025",
       intro:
-        "Drove the development of scalable, modern frontend and backend systems at TÜV Rheinland, enhancing architecture with cutting-edge technologies and ensuring long-term maintainability.",
+        "Joined TÜV Rheinland's enterprise legacy web-platform team, stabilising the existing system and delivering critical changes while defining the React, TypeScript and engineering foundations for its complete replacement.",
       bullets: [
+        {
+          heading: "Legacy Platform & Stabilisation",
+          content:
+            "Kept the legacy CMS/SSG platform operational through critical fixes, dependency cleanup and the Webtrekk → FullStory migration while evaluating its replacement.",
+        },
+        {
+          heading: "React & TypeScript Modernisation",
+          content:
+            "Spearheaded the shift to React, TypeScript and Next.js, presenting and defending the replacement architecture across technical, project and senior stakeholder groups.",
+        },
         {
           heading: "Component Library Development",
           content:
-            "Designed and developed a scalable component library using React, TypeScript, and Storybook, enabling reusability and reducing time to market across multiple teams.",
+            "Started the React / TypeScript / Storybook component library, later scaling to hundreds of reusable components and distributed as a shared package across TÜV applications.",
         },
         {
-          heading: "Tech Stack Optimization",
+          heading: "Engineering Practices & Collaboration",
           content:
-            "Optimized frontend performance by integrating modern frameworks (Next.js, TypeScript) and tools (Vite, Webpack) to improve build times and overall application efficiency.",
+            "Introduced modern Git, CI/CD and Agile practices while supporting project leadership with technical planning, architecture decisions, resourcing and cross-team delivery.",
         },
         {
-          heading: "Cross-Functional Collaboration",
+          heading: "Mentorship & Technical Guidance",
           content:
-            "Collaborated closely with backend, UX, and QA teams to ensure seamless integration of APIs and automated testing pipelines (Jest, Cypress) for robust, scalable solutions.",
-        },
-        {
-          heading: "Code Quality and Maintainability",
-          content:
-            "Established and enforced best practices for code quality and maintainability, implementing ESLint, Prettier, and TypeScript for type safety and consistency across the codebase.",
-        },
-        {
-          heading: "Mentorship and Team Guidance",
-          content:
-            "Mentored junior developers, conducting regular code reviews and knowledge-sharing sessions to elevate team standards and foster a collaborative learning environment.",
+            "Mentored developers through code review, implementation guidance and knowledge sharing, helping establish consistent frontend patterns across internal and external teams.",
         },
       ],
     },
@@ -116,34 +116,34 @@ export const experience = [
       title: "Team Lead",
       company: "Apple (Cognizant)",
       // companyIcon: <BsApple />,
-      dates: "June 2022 - Jan 2023",
+      dates: "Jan 2022 - Jan 2023",
       intro:
-        "Promoted to Team Lead, managing multiple teams while continuing engineering duties. Focused on supporting managers, streamlining workflows, and guiding teams to meet project goals.",
+        "Promoted into team leadership while remaining hands-on in Quality Engineering, co-leading multiple teams across concurrent testing and delivery workstreams and driving project outcomes.",
       bullets: [
         {
-          heading: "Strategic Manager Support",
+          heading: "Cross-Team Delivery",
           content:
-            "Collaborated closely with senior management to optimize daily operations, proactively addressing bottlenecks and ensuring seamless team coordination for mission-critical projects.",
+            "Coordinated delivery across multiple teams, clearing blockers, managing priorities and maintaining quality standards across concurrent testing workstreams.",
         },
         {
-          heading: "Cross-Team Task Coordination & Delivery",
+          heading: "Manager & Stakeholder Support",
           content:
-            "Coordinated complex tasks across multiple teams, ensuring timely, high-quality delivery of milestones while adhering to Apple’s strategic goals and standards.",
+            "Supported senior management with technical context, delivery risks, resourcing concerns and day-to-day coordination across active projects.",
         },
         {
-          heading: "Team Leadership & Performance Optimization",
+          heading: "Team Leadership",
           content:
-            "Provided dynamic leadership and mentorship to engineers, delivering regular performance feedback, and fostering a culture of continuous improvement and high accountability.",
+            "Provided regular guidance and performance feedback, helping engineers & testers improve quality, delivery and consistency across Agile sprints.",
         },
         {
-          heading: "Executive Reporting & Decision-Making",
+          heading: "Onboarding & Development",
           content:
-            "Delivered detailed progress reports to upper management, highlighting risks, achievements, and mitigation strategies, enabling data-driven decision-making at the executive level.",
+            "Led onboarding for new team members, helping them become productive across specialised in-house tooling, workflows and quality processes.",
         },
         {
-          heading: "Onboarding & Talent Development",
+          heading: "Reporting & Coordination",
           content:
-            "Facilitated the onboarding of new team members, while providing constructive feedback and professional development opportunities to support team performance & engagement.",
+            "Communicated progress, dependencies and delivery risks between engineers, team leads and management across parallel projects.",
         },
       ],
     },
@@ -163,27 +163,27 @@ export const experience = [
         {
           heading: "Automation Engineering",
           content:
-            "Designed and maintained automation frameworks in Python and Swift, optimizing NLP workflows for millions of users and ensuring scalable test automation.",
+            "Worked on a widely used AI/ML virtual assistant, supporting automated testing, NLP training and large-scale regression workflows within Apple's secure engineering environment.",
         },
         {
-          heading: "System Validation",
+          heading: "AI/ML Training & Evaluation",
           content:
-            "Led end-to-end testing, validating AI integration across cloud-based services, edge devices, and third-party APIs while maintaining high availability and fault tolerance.",
-        },
-        {
-          heading: "Defect Management",
-          content:
-            "Identified, triaged, and documented critical bugs, collaborating with cross-functional teams to resolve issues and enhance platform stability & user experience at scale.",
+            "Supported NLP model training and evaluation across language and dialect datasets, automating repeatable test runs and identifying behavioural regressions.",
         },
         {
           heading: "Version Control & CI/CD",
           content:
-            "Managed complex Git & GitHub workflows in multi-CI/CD pipeline environment, enabling agile development cycles, ensuring rapid and reliable deployments, and version control practices",
+            "Worked within large-scale Git, GitHub & multi-pipeline CI/CD workflows, supporting automated validation and reliable test execution across distributed engineering teams.",
         },
         {
-          heading: "Product Lifecycle Testing",
+          heading: "System Validation",
           content:
-            "Led testing efforts for AI products, employing methodologies like unit, integration, smoke, pent, regression, and performance testing to ensure seamless production deployment.",
+            "Performed E2E, integration and API testing across connected services, devices and third-party integrations, tracing failures across system boundaries.",
+        },
+        {
+          heading: "Defect Triage",
+          content:
+            "Triaged complex failures and regressions, producing detailed defect reports with reproducible steps, technical evidence and diagnostic context for engineering teams.",
         },
       ],
     },
@@ -200,24 +200,24 @@ export const experience = [
         "As a Frontend Developer at Mashauri Limited, I contributed to the UI/UX design support for an EdTech startup, designing wireframes and developing landing pages and user forms using JavaScript and React.",
       bullets: [
         {
+          heading: "React Frontend Development",
+          content:
+            "Built and maintained React & JavaScript interfaces across B2B/B2C flows, authentication and responsive UI, alongside parallel WordPress and Moodle applications.",
+        },
+        {
+          heading: "Moodle Integration",
+          content:
+            "Customised the open-source Moodle LMS using PHP & CSS, creating a consistent experience across the wider platform.",
+        },
+        {
+          heading: "Data Automation",
+          content:
+            "Automated recurring CRUD and data-management tasks with Python & MySQL, replacing repetitive administrative work with reusable scripts.",
+        },
+        {
           heading: "Database Migration & Optimization",
           content:
-            "Managed the migration of legacy databases to more efficient, scalable PostgreSQL solutions, ensuring data integrity and optimizing queries for performance across the platform.",
-        },
-        {
-          heading: "Content Management & Site Administration",
-          content:
-            "Managed content updates and integrations on WordPress and Drupal, ensuring SEO optimization and efficient content workflows for smooth platform operation.",
-        },
-        {
-          heading: "Frontend Development & UI Optimization",
-          content:
-            "Developed responsive, dynamic user interfaces using React and JavaScript, ensuring a seamless experience for students and educators across web and mobile platforms.",
-        },
-        {
-          heading: "Cross-Functional Collaboration & Problem Solving",
-          content:
-            "Collaborated with backend and design teams to troubleshoot and resolve issues related to CMS, frontend, and database integrations, ensuring timely delivery of new features.",
+            "Supported migration of legacy data to PostgreSQL, validating data integrity and improving database structure and query performance.",
         },
       ],
     },
@@ -234,24 +234,24 @@ export const experience = [
         "In my role supporting the growth of an art auction start-up, I utilized HTML/CSS, JavaScript/jQuery, and a content management system (CMS) to enhance the websites functionality and user experience.",
       bullets: [
         {
-          heading: "HTML/CSS and JavaScript",
+          heading: "Frontend Development",
           content:
-            "Developed dynamic, visually appealing portfolio websites for artists, showcasing their unique style and artwork using HTML, CSS, and JavaScript/jQuery.",
+            "Developed responsive interfaces using jQuery, Bootstrap & Sass, including reusable templates for artist storefronts, exhibitions and marketplace content.",
         },
         {
-          heading: "Content Management with WordPress",
+          heading: "CMS Integration",
           content:
-            "Managed and integrated new pages, articles, and multimedia using WordPress, ensuring a seamless user experience with customized styling through the Theme Editor.",
+            "Integrated CMS-managed content into dynamic frontend views, supporting artist profiles, artwork, editorial content and commercial listings.",
         },
         {
-          heading: "Website UI/UX Enhancements",
+          heading: "UI/UX Enhancements",
           content:
             "I refined the website's aesthetics and usability with CSS and UI enhancements while implementing dynamic JavaScript/jQuery features for enhanced user experience.",
         },
         {
-          heading: "Product Management Support",
+          heading: "Product & Data Support",
           content:
-            "Assisted in product management, adding new products and converting an Excel database to PostgreSQL to streamline data management processes.",
+            "Supported catalogue management and operational data tasks, including product updates and migration of structured data from Excel to PostgreSQL.",
         },
       ],
     },
@@ -265,27 +265,27 @@ export const experience = [
       company: "Freelance",
       dates: "2015 - January 2019",
       intro:
-        "As a freelance WordPress developer, I specialized in crafting responsive, user-friendly websites for small to medium-sized enterprises (SMEs) in the hospitality industry, focusing on theme customization, plugin integration, and tailored solutions. Key accomplishments include:",
+        "Built and maintained WordPress sites for hospitality clients, combining frontend customisation, third-party integrations and ongoing technical support.",
       bullets: [
         {
-          heading: "Customization & Feature Implementation",
+          heading: "WordPress Development",
           content:
-            "Tailored themes and integrated plugins to optimize site performance, ensuring responsive design for seamless navigation across devices.",
+            "Configured and customised WordPress themes and plugins, adapting layouts, functionality and responsive behaviour to individual client requirements.",
         },
         {
-          heading: "E-commerce Integration",
+          heading: "Booking & Platform Integrations",
           content:
-            "Set up e-commerce functionality, including payment gateways and product catalog management.",
+            "Integrated Booking.com, NightsBridge and other reservation platforms, connecting customer-facing websites with external booking and hospitality workflows.",
         },
         {
-          heading: "Branding & Design Alignment",
+          heading: "Frontend & Brand Implementation",
           content:
-            "Customized themes to align with clients' branding, ensuring a cohesive and visually appealing web presence.",
+            "Refined responsive layouts and branding using HTML, CSS and WordPress theme tooling, creating consistent experiences across desktop and mobile.",
         },
         {
-          heading: "Project Management & Ongoing Maintenance",
+          heading: "Client Support",
           content:
-            "Managed multiple projects, meeting deadlines while providing regular updates, bug fixes, and client training on website management.",
+            "Handled promotions, content updates, bug fixes and ongoing site administration for small businesses without dedicated technical staff.",
         },
       ],
     },
