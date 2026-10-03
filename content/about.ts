@@ -19,7 +19,7 @@ export const about = {
       { text: "Hello there, I'm a " },
       { text: "full-stack developer", highlight: true },
       {
-        text: ". Originally from South Africa, a British citizen, and currently based in Madrid, Spain.",
+        text: ". Originally from South Africa, a British citizen and currently based in Madrid, Spain.",
       },
     ],
     [
@@ -39,7 +39,7 @@ export const about = {
       },
       { text: "modernising legacy systems", highlight: true },
       {
-        text: ", and working across a wide range of tech stacks and cloud environments.",
+        text: " and working across a wide range of tech stacks and cloud environments.",
       },
     ],
   ],
