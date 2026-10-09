@@ -152,16 +152,33 @@ imageUrl: "/assets/images/ProjectPictures/small-images/myproject_small.webp",
 
 ## 4. Replace images and static files
 
-The main static assets live under [`public/`](public). Replace the existing files or add your own,
-then update the relevant import or configuration path.
+The main static assets live under [`public/`](public). These files are deliberately named for what
+they _are_ rather than whose they are, so in most cases you can **overwrite the file and keep the
+name** — no code change needed.
 
-| Asset          | Location or configuration                                                                                                                                               |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Logo           | [`public/assets/images/LogoBig.png`](public/assets/images/LogoBig.png), exported through [`public/assets/index.ts`](public/assets/index.ts)                             |
-| Profile photo  | [`public/assets/images/Devon_profilePicture.jpeg`](public/assets/images/Devon_profilePicture.jpeg), exported through [`public/assets/index.ts`](public/assets/index.ts) |
-| CV             | [`public/assets/DevonGifford-FullstackDeveloper-2026.pdf`](public/assets/DevonGifford-FullstackDeveloper-2026.pdf); update `resumePath`                                 |
-| Social preview | [`public/assets/PortfolioDemoDevon.png`](public/assets/PortfolioDemoDevon.png); update `seo.ogImage` if renamed                                                         |
-| Favicon        | [`public/favicon.ico`](public/favicon.ico); update `seo.favicon` if renamed                                                                                             |
+| Asset          | File                                                                                                               | To use your own                                  |
+| -------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------ |
+| Logo           | [`public/assets/images/logo.png`](public/assets/images/logo.png)                                                   | Replace the file, keep the name                  |
+| Profile photo  | [`public/assets/images/profile-picture.jpeg`](public/assets/images/profile-picture.jpeg)                           | Replace the file, keep the name                  |
+| Social preview | [`public/assets/social-preview.png`](public/assets/social-preview.png)                                             | Replace the file, keep the name                  |
+| Favicon        | [`public/favicon.ico`](public/favicon.ico)                                                                         | Replace the file, keep the name                  |
+| CV             | [`public/assets/DevonGifford-FullstackDeveloper-2026.pdf`](public/assets/DevonGifford-FullstackDeveloper-2026.pdf) | **Rename to your own**, then update `resumePath` |
+
+> [!NOTE]
+> **Why the CV is the exception.** Its filename is the one a visitor ends up with in their Downloads
+> folder, so it should carry your name, not a generic one. That is also why it is referenced as a
+> plain string in [`content/site.config.ts`](content/site.config.ts) rather than imported: drop your
+> PDF into `public/assets/`, point `resumePath` at it, and you are done — a one-line config edit, not
+> a code change.
+
+> The file **extension** is still load-bearing, and where you update it depends on the asset: <br/>
+> • **Logo and profile photo** are static imports — a `.png` profile photo means updating its import
+> line in [`public/assets/index.ts`](public/assets/index.ts). <br/>
+> • **Social preview and favicon** are plain paths — a `social-preview.jpg` means updating
+> `seo.ogImage` in [`content/site.config.ts`](content/site.config.ts).
+>
+> _Either way `npm run test` will tell you: the content suite checks that every one of these paths
+> resolves to a file that actually exists._
 
 > Project screenshots belong in [`public/assets/images/ProjectPictures/`](public/assets/images/ProjectPictures/). <br/>
 > Skill icons belong in [`public/assets/images/Skills/`](public/assets/images/Skills/).

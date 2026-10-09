@@ -40,7 +40,7 @@ export const siteConfig = {
     title: "Devon Gifford – Portfolio",
     description: "Full-stack developer. Quality engineer. React enjoyer.",
     /** Social preview image. Leave empty to emit no `og:image`. */
-    ogImage: "/assets/PortfolioDemoDevon.png",
+    ogImage: "/assets/social-preview.png",
     url: "https://devongifford.vercel.app",
     favicon: "/favicon.ico",
     canonical: "/",

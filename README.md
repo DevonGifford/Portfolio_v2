@@ -1,7 +1,7 @@
 <div align="center">
   <!-- cover logo -->
   <p align='center'>
-    <img src="public/assets/Portfolio-Demo-Logo.webp" alt="Demo" title="DemoImage" height="250">
+    <img src="public/assets/readme-banner.webp" alt="Demo" title="DemoImage" height="250">
   </p>
   <!-- sub headline -->
   <h2>
