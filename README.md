@@ -33,6 +33,14 @@ _The content has also been separated from components and validated with **Zod** 
 
 <br/>
 
+### Forking & Cloning
+
+---
+
+Want to steal this? **Go for it!** <br/> This project is open-source, and you're welcome to fork it, make it your own, or use it as a starting point for your own portfolio. I've built it with exactly that in mind and put together a [quickstart guide](QUICKSTART.md) to help you get up and running in about 5 minutes.
+
+<br/>
+
 ### Acknowledgements
 
 ---
@@ -40,8 +48,10 @@ _The content has also been separated from components and validated with **Zod** 
 Built from scratch, with design inspiration from [Brittany Chiang](https://brittanychiang.com). Full credit for the original design concept goes to her. The [MIT License](LICENSE) covers this code, not the original design concept.
 
 <br/>
+<br/>
 
-> [!TIP]
-> **Want to steal this? Go for it.** <br/>
-> The [quickstart guide](QUICKSTART.md) will get you forking, customizing and deploying in about 5 minutes. <br/> <br/>
-> _If you found it useful, a ⭐ is always appreciated._ <br/>
+<div align="center">
+  <sub>
+    <em>If you found it useful, a ⭐ is always appreciated.</em>
+  </sub>
+</div>
