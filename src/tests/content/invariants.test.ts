@@ -86,7 +86,34 @@ describe("siteConfig points at things that exist", () => {
     expect(existsSync(resume), siteConfig.resumePath).toBe(true);
   });
 
+  it("resolves the favicon to a real file under public/", () => {
+    const favicon = path.join(process.cwd(), "public", siteConfig.seo.favicon);
+
+    expect(existsSync(favicon), siteConfig.seo.favicon).toBe(true);
+  });
+
+  it("resolves ogImage to a real file under public/ when one is set", () => {
+    // An empty ogImage is intentional — layout.tsx then emits no `og:image` at all.
+    if (!siteConfig.seo.ogImage) return;
+
+    const ogImage = path.join(process.cwd(), "public", siteConfig.seo.ogImage);
+
+    expect(existsSync(ogImage), siteConfig.seo.ogImage).toBe(true);
+  });
+
   it("has at least one tagline for the typewriter", () => {
     expect(siteConfig.taglines.length).toBeGreaterThan(0);
+  });
+});
+
+describe("capstone mobile backgrounds point at things that exist", () => {
+  // `image.src` is a static import, so the build catches a bad path. `imageUrl` is a
+  // plain string read into a CSS `url()` by ProjectsCapstone, so nothing else would.
+  it("resolves every capstone imageUrl to a real file under public/", () => {
+    for (const project of capstoneProjects) {
+      const image = path.join(process.cwd(), "public", project.imageUrl);
+
+      expect(existsSync(image), `${project.title}: ${project.imageUrl}`).toBe(true);
+    }
   });
 });

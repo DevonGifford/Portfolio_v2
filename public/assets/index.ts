@@ -1,5 +1,5 @@
-import logo from "./images/LogoBig.png";
-import profilePicture from "./images/Devon_profilePicture.jpeg";
+import logo from "./images/logo.png";
+import profilePicture from "./images/profile-picture.jpeg";
 import JavaScriptL from "./images/Skills/JavaScriptL.png";
 import TypeScript from "./images/Skills/TypeScript.png";
 import Python from "./images/Skills/Python.png";
